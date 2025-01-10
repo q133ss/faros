@@ -5,26 +5,28 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
+    <title>Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах</title>
     <script src="http://faros.media/local/templates/faros/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="http://faros.media/local/templates/faros/css/styles.min.css?v=56">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://faros.media/local/templates/faros/css/styles.min.css?v=11">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="1С-Битрикс, CMS, PHP, bitrix, система управления контентом" />
-    <meta name="description" content="Комплекс услуг по мониторингу, анализу и формированию деловой репутации компаний и персон. Репутационный менеджмент на высоком уровне качества" />
-    <link rel="canonical" href="https://faros.media/" />
+    <meta name="keywords" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
+    <meta name="description" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
+    <link rel="canonical" href="https://faros.media/video/anna-timofeeva-rasskazala-o-tom-mozhno-li-zarabatyvat-na-memakh/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="FAROS" />
     <meta property="og:url" content="https://faros.media" />
-    <meta property="og:title" content="Агентство Faros.Media - управление репутацией и восприятием с 2016 года" />
-    <meta property="og:description" content="Комплекс услуг по мониторингу, анализу и формированию деловой репутации компаний и персон. Репутационный менеджмент на высоком уровне качества" />
+    <meta property="og:title" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
+    <meta property="og:description" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
     <!-- dev2fun module opengraph -->
-    <meta property="og:title" content="Агентство Faros.Media - управление репутацией и восприятием с 2016 года"/>
-    <meta property="og:description" content="Работа с репутацией, формирование и корректировка восприятия и стереотипов"/>
-    <meta property="og:url" content="https://faros.media/"/>
+    <meta property="og:title" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах"/>
+    <meta property="og:description" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах"/>
+    <meta property="og:url" content="https://faros.media/video/anna-timofeeva-rasskazala-o-tom-mozhno-li-zarabatyvat-na-memakh/"/>
     <meta property="og:type" content="website"/>
     <!-- /dev2fun module opengraph -->
+
+
 
     <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d4e4e5a0a85d485b74c9e5539d376e8e"]); _ba.push(["host", "faros.media"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
 
@@ -60,7 +62,7 @@
     </script>
 
     <!-- Zverushki\Microm --><script data-skip-moving="true">window.Zverushki=window.Zverushki||{};window.Zverushki.Microm={"Breadcrumb":true,"Business":true,"Product":"Disabled","Article":false,"version":"2.2.1","format":{"json-ld":"Disabled","microdata":true},"execute":{"time":0,"scheme":{"Breadcrumb":null,"Business":null,"Article":null}}};</script><!-- end Zverushki\Microm --></head>
-<body class="custom">
+<body class="_bgLightGray">
 <style>
     @keyframes light {
         0% {
@@ -415,56 +417,56 @@
 <!--Header START-->
 <header class="header" id="header">
     <div class="header__dt">
-        <a href="index.html" class="header__logoWrap">
-            <img src="images/min/logo.svg" alt="" class="header__logoWrap__logo">
-            <img src="images/min/logourl.svg" alt="" class="header__logoWrap__logo-hover">
+        <a href="../../index.html" class="header__logoWrap">
+            <img src="../../images/min/logo.svg" alt="" class="header__logoWrap__logo">
+            <img src="../../images/min/logourl.svg" alt="" class="header__logoWrap__logo-hover">
         </a>
 
         <nav class="header__menu hide-scroll">
-            <a href="{{route('index')}}#form" class="header__menu__item">
+            <a href="../../index.html#form" class="header__menu__item">
                 <div class="header__menu__item__icoWrap">
-                    <img src="images/min/icons/start.svg" alt="" class="header__menu__item__ico">
+                    <img src="../../images/min/icons/start.svg" alt="" class="header__menu__item__ico">
                 </div>
                 <span class="header__menu__item__name">Начать проект</span>
-                <a href="{{route('service.index')}}" class="header__menu__item">
+                <a href="../../service/index.html" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
-                        <img src="images/min/icons/services.svg" alt="" class="header__menu__item__ico">
+                        <img src="../../images/min/icons/services.svg" alt="" class="header__menu__item__ico">
                     </div>
                     <span class="header__menu__item__name">Услуги</span>
                 </a>
-                <a href="{{route('case.index')}}" class="header__menu__item">
+                <a href="../../case/index.html" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
-                        <img src="images/min/icons/keyses.svg" alt="" class="header__menu__item__ico">
+                        <img src="../../images/min/icons/keyses.svg" alt="" class="header__menu__item__ico">
                     </div>
                     <span class="header__menu__item__name">Кейсы</span>
                 </a>
-                <a href="{{route('team.index')}}" class="header__menu__item">
+                <a href="../../team/index.html" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
-                        <img src="images/min/icons/teams.svg" alt="" class="header__menu__item__ico">
+                        <img src="../../images/min/icons/teams.svg" alt="" class="header__menu__item__ico">
                     </div>
                     <span class="header__menu__item__name">Команда</span>
                 </a>
-                <a href="{{route('articles.index')}}" class="header__menu__item">
+                <a href="../../articles/index.html" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
-                        <img src="images/min/icons/blogs.svg" alt="" class="header__menu__item__ico">
+                        <img src="../../images/min/icons/blogs.svg" alt="" class="header__menu__item__ico">
                     </div>
                     <span class="header__menu__item__name">Статьи</span>
                 </a>
-                <a href="{{route('video.index')}}" class="header__menu__item">
+                <a href="../index.html" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
-                        <img src="images/min/icons/media.svg" alt="" class="header__menu__item__ico">
+                        <img src="../../images/min/icons/media.svg" alt="" class="header__menu__item__ico">
                     </div>
                     <span class="header__menu__item__name">Мы в эфире</span>
                 </a>
-                <a href="{{route('smi.index')}}" class="header__menu__item">
+                <a href="../../smi/index.html" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
-                        <img src="images/min/icons/videos.svg" alt="" class="header__menu__item__ico">
+                        <img src="../../images/min/icons/videos.svg" alt="" class="header__menu__item__ico">
                     </div>
                     <span class="header__menu__item__name">СМИ</span>
                 </a>
-                <a href="{{route('pay.index')}}" class="header__menu__item">
+                <a href="../../pay/index.html" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
-                        <img src="images/min/icons/onlinepay.svg" alt="" class="header__menu__item__ico">
+                        <img src="../../images/min/icons/onlinepay.svg" alt="" class="header__menu__item__ico">
                     </div>
                     <span class="header__menu__item__name">Online-оплата</span>
                 </a>
@@ -472,8 +474,8 @@
 
         <div class="header__footer">
             <div class="header__footer__wrap">
-                <a href="/#form">
-                    <img src="images/min/lighthouse.svg" alt="" class="header__footer__wrap__ico">
+                <a href="../../index.html#form">
+                    <img src="../../images/min/lighthouse.svg" alt="" class="header__footer__wrap__ico">
                     <span class="header__menu__item__name">Консультация</span>
                 </a>
             </div>
@@ -483,12 +485,12 @@
     <div class="header__mb mobMenuContainer">
         <div class="burger" id="burger"></div>
 
-        <a href="index.html" class="header__mobLogoWrap">
-            <img src="images/min/logomob.svg" alt="" class="header__mobLogoWrap__ico">
+        <a href="../../index.html" class="header__mobLogoWrap">
+            <img src="../../images/min/logomob.svg" alt="" class="header__mobLogoWrap__ico">
         </a>
 
-        <a href="index.html#form" class="header__phoneWrap">
-            <img src="images/min/icons/phone.svg" alt="" class="header__phoneWrap__ico">
+        <a href="../../index.html#form" class="header__phoneWrap">
+            <img src="../../images/min/icons/phone.svg" alt="" class="header__phoneWrap__ico">
         </a>
     </div>
 </header>
@@ -496,36 +498,36 @@
 <nav class="mobilemenu mobMenuContainer custom-scroll" id="menu">
     <div class="mobilemenu__wrapMenu">
         <div class="mobilemenu__wrapMenu__menu">
-            <a href="index.html#form" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/start.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../../index.html#form" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/start.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">Начать проект</span>
             </a>
-            <a href="articles/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/blogs.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../../articles/index.html" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/blogs.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">Статьи</span>
             </a>
-            <a href="service/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/services.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../../service/index.html" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/services.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">Услуги</span>
             </a>
-            <a href="smi/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/media.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../../smi/index.html" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/media.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">СМИ</span>
             </a>
-            <a href="case/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/keyses.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../../case/index.html" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/keyses.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">Кейсы</span>
             </a>
-            <a href="video/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/videos.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../index.html" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/videos.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">Мы в эфире</span>
             </a>
-            <a href="team/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/teams.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../../team/index.html" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/teams.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">Команда</span>
             </a>
-            <a href="pay/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/onlinepay.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
+            <a href="../../pay/index.html" class="mobilemenu__wrapMenu__menu__link">
+                <img src="../../images/min/icons/onlinepay.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
                 <span class="mobilemenu__wrapMenu__menu__link__text">Online-оплата</span>
             </a>
         </div>
@@ -540,7 +542,7 @@
 
         <div class="mobilemenu__footer__right">
             <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="images/min/icons/vk.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
+                <img src="../../images/min/icons/vk.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
             </a>
 
             <!--<a href="#" class="mobilemenu__footer__right__icoWrap">
@@ -552,17 +554,314 @@
             </a>-->
 
             <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="images/min/icons/tg.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
+                <img src="../../images/min/icons/tg.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
             </a>
         </div>
     </div>
 </nav>
 <!--Header END--><div class="hidden" id="hidden">
-    <div class="wrapper @yield('wrap_class')" id="wrapper">
-        @yield('content')
+    <div class="wrapper" id="wrapper">
+
+        <div class="authorWrap authorWrap_footer">
+            <div class="authorWrap__left videoPage">
+                <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="../../index.html" title="Главная" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                            <meta itemprop="position" content="0">
+                        </a>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="../index.html" title="Мы в эфире" itemprop="item">
+                            <span itemprop="name">Мы в эфире</span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a title="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" itemprop="item">
+                            <span itemprop="name">Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах</span>
+                            <meta itemprop="position" content="2">
+
+                        </a>
+                    </li>
+                </ul>
+                <div class="sinpleHeader">
+                    <div class="sinpleHeader__bread">
+                        <a href="index.html#" class="sinpleHeader__bread__tag">ВИДЕО</a>
+                    </div>
+                </div>
+
+                <h1 class="sinpleHeaderTitle">Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах</h1>
+
+                <div class="sinpleHeader__data">
+                    <div class="sinpleHeader__data__item">
+                        <img src="../../images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <p class="sinpleHeader__data__item__text">06.02.2022</p>
+                    </div>
+
+                    <div class="sinpleHeader__data__item">
+                        <img src="../../images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <p class="sinpleHeader__data__item__text">1934 просмотров</p>
+                    </div>
+                </div>
+
+                <iframe width="560" height="315" src="https://nastroenie.tv/video/iframe/id/199939/isPlay/true/?acc_video_id=/episode/199939" title="Анна Тимофеева на телевидении о мемах - anutacandy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div class="blogBG blogBG_nomt"></div>
+
+                <div class="simpleSliderWrap">
+                    <p class="simpleSliderWrap__tit">Похожие видео</p>
+
+                    <div class="simpleSlider" id="simpleSlider">
+                        <a href="../ekaterina-tulyankina-i-elena-kirilenko-v-programme-3600-sekund-na-mediametrics/index.html" class="simpleSlider__slide">
+                            <div class="simpleSlider__slide__picWrap">
+                                <picture class="simpleSlider__slide__picWrap__pic">
+                                    <img src="../../upload/iblock/0f9/9e3g0sysnln96cw33ar4cwbbr3m5tw6j/cover-03.jpg">
+                                </picture>
+
+                                <img class="simpleSlider__slide__picWrap__play" src="../../images/min/icons/play.svg">
+                            </div>
+                            <p class="simpleSlider__slide__text">Екатерина Тулянкина и Елена Кириленко в программе 3600 секунд на Mediametrics</p>
+                        </a>
+                        <a href="../ekaterina-tulyankina-s-obuchayushchey-lektsiey-obzory-metodov-prodvizheniya-v-sotssetyakh/index.html" class="simpleSlider__slide">
+                            <div class="simpleSlider__slide__picWrap">
+                                <picture class="simpleSlider__slide__picWrap__pic">
+                                    <img src="../../upload/iblock/64a/e5e26l5bt47r3pdh8bnk4d9yw3luqzz7/cover-01.jpg">
+                                </picture>
+
+                                <img class="simpleSlider__slide__picWrap__play" src="../../images/min/icons/play.svg">
+                            </div>
+                            <p class="simpleSlider__slide__text">Екатерина Тулянкина с обучающей лекцией «обзоры методов продвижения в соцсетях»</p>
+                        </a>
+                        <a href="../smm-dlya-bukmekerskikh-kontor-faros-media/index.html" class="simpleSlider__slide">
+                            <div class="simpleSlider__slide__picWrap">
+                                <picture class="simpleSlider__slide__picWrap__pic">
+                                    <img src="../../upload/iblock/1c3/aqiql18nrpkud1ez0e1odcrhsqlammk0/cover-02.jpg">
+                                </picture>
+
+                                <img class="simpleSlider__slide__picWrap__play" src="../../images/min/icons/play.svg">
+                            </div>
+                            <p class="simpleSlider__slide__text">SMM для букмекерских контор // Faros.media</p>
+                        </a>
+                        <a href="../neyroseti-i-otzyvy-ekaterina-tulyankina-v-programme-dobroe-utro-na-pervom-kanale/index.html" class="simpleSlider__slide">
+                            <div class="simpleSlider__slide__picWrap">
+                                <picture class="simpleSlider__slide__picWrap__pic">
+                                    <img src="../../upload/iblock/e82/j213984p5acaggc38q3842vggrca1c5e/cover-04.jpg">
+                                </picture>
+
+                                <img class="simpleSlider__slide__picWrap__play" src="../../images/min/icons/play.svg">
+                            </div>
+                            <p class="simpleSlider__slide__text">«Нейросети и отзывы», — Екатерина Тулянкина в программе «доброе утро» на первом канале</p>
+                        </a>
+                        <a href="index.html" class="simpleSlider__slide">
+                            <div class="simpleSlider__slide__picWrap">
+                                <picture class="simpleSlider__slide__picWrap__pic">
+                                </picture>
+
+                                <img class="simpleSlider__slide__picWrap__play" src="../../images/min/icons/play.svg">
+                            </div>
+                            <p class="simpleSlider__slide__text">Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах</p>
+                        </a>
+                        <a href="../ekaterina-tulyankina-aktivatsii-v-sotssetyakh/index.html" class="simpleSlider__slide">
+                            <div class="simpleSlider__slide__picWrap">
+                                <picture class="simpleSlider__slide__picWrap__pic">
+                                    <img src="../../upload/iblock/a84/ka14y8m33zt8stx312cq1e8qj9qklu0e/Screenshot_46.webp">
+                                </picture>
+
+                                <img class="simpleSlider__slide__picWrap__play" src="../../images/min/icons/play.svg">
+                            </div>
+                            <p class="simpleSlider__slide__text">Екатерина Тулянкина : Активации в соцсетях</p>
+                        </a>
+                        <a href="../biznes-insayt-elena-medvedeva-upravlenie-vospriyatiem-prodazhi-po-lyubvi/index.html" class="simpleSlider__slide">
+                            <div class="simpleSlider__slide__picWrap">
+                                <picture class="simpleSlider__slide__picWrap__pic">
+                                    <img src="../../upload/iblock/d12/qldczkjpkz2g01orkhbkhoy3a1plqtsz/webpc-passthru.webp">
+                                </picture>
+
+                                <img class="simpleSlider__slide__picWrap__play" src="../../images/min/icons/play.svg">
+                            </div>
+                            <p class="simpleSlider__slide__text">БИЗНЕС ИНСАЙТ: Елена Медведева. Управление восприятием: продажи по любви</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vidgets">
+                <div class="articlesVidget">
+                    <p class="articlesVidget__tit">Популярные статьи </p>
+                    <div class="articlesVidget__body">
+                        <div class="articlesVidget__body__item">
+                            <picture class="articlesVidget__body__item__pic">
+                                <img src="../../upload/iblock/969/35oirxizpns95ekmoq0u9xv5dif3gnuh/webpc-passthru.webp">
+                            </picture>
+
+                            <div class="articlesVidget__body__item__data">
+                                <a href="../../articles/nazad-v-budushhee-kontekstnoj-reklamy/index.html"
+                                   class="articlesVidget__body__item__data__tit">Назад в будущее контекстной рекламы</a>
+                                <a href="../../articles/index.html@section_id=6.html"
+                                   class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
+                            </div>
+                        </div>
+                        <div class="articlesVidget__body__item">
+                            <picture class="articlesVidget__body__item__pic">
+                                <img src="../../upload/iblock/bd8/yrd0poqsy7be60qpz0n5e24vlmn6xjo0/webpc-passthru.webp">
+                            </picture>
+
+                            <div class="articlesVidget__body__item__data">
+                                <a href="../../articles/10-kreativnyh-idej-po-ispolzovaniyu-chat-botov/index.html"
+                                   class="articlesVidget__body__item__data__tit">10 креативных идей по использованию чат-ботов</a>
+                                <a href="../../articles/index.html@section_id=6.html"
+                                   class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
+                            </div>
+                        </div>
+                        <div class="articlesVidget__body__item">
+                            <picture class="articlesVidget__body__item__pic">
+                                <img src="http://faros.media/upload/iblock/763/804or0hwsew8labo8iopergp9m34n3t5/%D0%A1%D0%8C%D0%A0%D1%98%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A0%D1%91%20%D0%A0%D0%86%20%D0%A0%D1%98%D0%A0%C2%B0%D0%A1%D0%82%D0%A0%D1%94%D0%A0%C2%B5%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D0%85%D0%A0%D1%96%D0%A0%C2%B5%20%D0%A0%D1%91%20%D0%A0%D1%91%D0%A1%E2%80%A6%20%D0%A1%D0%82%D0%A0%D1%95%D0%A0%C2%BB%D0%A1%D0%8A.png">
+                            </picture>
+
+                            <div class="articlesVidget__body__item__data">
+                                <a href="../../articles/emotsii-v-reklame-bespoleznye-chuvstva-ili-effektivnyy-instrument-dlya-povysheniya-prodazh-/index.html"
+                                   class="articlesVidget__body__item__data__tit">Эмоции в рекламе: бесполезные чувства или эффективный инструмент для повышения продаж </a>
+                                <a href="../../articles/index.html@section_id=6.html"
+                                   class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
+                            </div>
+                        </div>
+                        <div class="articlesVidget__body__item">
+                            <picture class="articlesVidget__body__item__pic">
+                                <img src="../../upload/iblock/d3a/sawvta75ht6xuhbum9oozhk226skqyj6/webpc-passthru&#32;(1).webp">
+                            </picture>
+
+                            <div class="articlesVidget__body__item__data">
+                                <a href="../../articles/biznes-v-instagram-chto-luchshe-vsego-prodayotsya-v-2021-godu/index.html"
+                                   class="articlesVidget__body__item__data__tit">Бизнес в Инстаграм: что лучше всего продаётся в 2021 году</a>
+                                <a href="../../articles/index.html@section_id=5.html"
+                                   class="articlesVidget__body__item__data__link">СОЦСЕТИ</a>
+                            </div>
+                        </div>
+                        <div class="articlesVidget__body__item">
+                            <picture class="articlesVidget__body__item__pic">
+                                <img src="../../upload/iblock/e13/m50e9k7no1nrv81o16bt43cvracdzofz/webpc-passthru&#32;(5).webp">
+                            </picture>
+
+                            <div class="articlesVidget__body__item__data">
+                                <a href="../../articles/kak-sozdat-i-prodvigat-telegram-kanal-2021/index.html"
+                                   class="articlesVidget__body__item__data__tit">Как создать и продвигать telegram-канал</a>
+                                <a href="../../articles/index.html@section_id=5.html"
+                                   class="articlesVidget__body__item__data__link">СОЦСЕТИ</a>
+                            </div>
+                        </div>
+                        <div class="articlesVidget__body__item">
+                            <picture class="articlesVidget__body__item__pic">
+                                <img src="../../upload/iblock/b2e/7qqqt2upuz338hs22hxd043cadxfvse2/stat_rep.webp">
+                            </picture>
+
+                            <div class="articlesVidget__body__item__data">
+                                <a href="../../articles/chto-takoe-reputatsiya-persony-i-pochemu-ona-vazhna/index.html"
+                                   class="articlesVidget__body__item__data__tit">Что такое репутация персоны и почему она важна</a>
+                                <a href="../../articles/index.html@section_id=8.html"
+                                   class="articlesVidget__body__item__data__link">РЕПУТАЦИЯ</a>
+                            </div>
+                        </div>
+                        <div class="articlesVidget__body__item">
+                            <picture class="articlesVidget__body__item__pic">
+                                <img src="http://faros.media/upload/iblock/ab1/7n20lfcq0h38f7jwyskn3yvtx6nzyv1i/%D0%A0%D1%94%D0%A0%C2%B0%D0%A0%D1%94%20%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A1%D0%8A%20%D0%A0%D2%91%D0%A0%C2%B5%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D0%86%D0%A1%D1%93%D0%A1%D0%8B%20%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%97%D0%A1%D1%93%D0%A1%E2%80%9A%D0%A0%C2%B0%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A1%D0%8B%20%D0%A0%D1%94%D0%A0%D1%95%D0%A0%D1%98%D0%A0%D1%97%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D1%91%D0%A0%D1%91%20-%20%D0%A0%D1%96%D0%A1%D1%93%D0%A0%D2%91%D0%A0%D0%86%D0%A0%D1%91%D0%A0%C2%BB%D0%A0%C2%BB.png">
+                            </picture>
+
+                            <div class="articlesVidget__body__item__data">
+                                <a href="../../articles/chto-takoe-delovaya-reputatsiya/index.html"
+                                   class="articlesVidget__body__item__data__tit">Что такое деловая репутация</a>
+                                <a href="../../articles/index.html@section_id=8.html"
+                                   class="articlesVidget__body__item__data__link">РЕПУТАЦИЯ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="../../articles/index.html" class="arrow-link vidgets__arrow-link">
+                        <span class="arrow-link__text">Все статьи</span>
+                        <img src="../../images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
+                    </a>
+                </div>
+
+
+
+
+            </div>
+            <!--full height, contacts home block START-->
+            <div class="contacts contacts__vertical">
+                <div class="contacts__data">
+                    <div class="grow-full"></div>
+
+                    <div class="contacts__data__logoWrap">
+                        <img src="../../images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+                    </div>
+                    <p class="contacts__data__adress">
+                        Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10
+                    </p>
+                    <div class="contacts__data__items">
+                        <div class="contacts__data__items__part">
+                            <a href="mailto:info@faros.media" class="contacts__data__items__part__contact">info@faros.media</a>
+                            <p class="contacts__data__items__part__descr">
+                                По всем вопросам пишите нам
+                            </p>
+                        </div>
+                        <div class="contacts__data__items__part">
+                            <a href="tel:88006008613" class="contacts__data__items__part__contact">8 800 600 86 13</a>
+                            <p class="contacts__data__items__part__descr">
+                                Звонок по РФ бесплатен
+                            </p>
+                        </div>
+                    </div>
+                    <br>        <div id="coordinates" style="display: none">55.69451, 37.422584</div>
+                    <div class="grow-full"></div>
+
+                    <div class="contacts__data__links">
+                        <div class="contacts__data__links__nav">
+                            <a href="../../team/index.html" class="contacts__data__links__nav__link">Команда</a>
+                            <a href="../../service/index.html" class="contacts__data__links__nav__link">Услуги</a>
+                            <a href="../../case/index.html" class="contacts__data__links__nav__link">Кейсы</a>
+                        </div>
+
+                        <div class="contacts__data__links__soc">
+                            <!--noindex--><a  href="https://vk.com/faros.media"  class="contacts__data__links__soc__link" rel="nofollow">
+                                <svg viewBox="0 0 48 48" class="contacts__data__links__soc__link__img">
+                                    <circle cx="24" cy="24" r="23.5" stroke="#EAEAEA" fill="rgba(26,26,26, 0)"/>
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M31.915 25.028C31.527 24.538 31.638 24.32 31.915 23.882C31.92 23.877 35.123 19.451 35.453 17.95L35.455 17.949C35.619 17.402 35.455 17 34.662 17H32.038C31.37 17 31.062 17.345 30.897 17.731C30.897 17.731 29.561 20.929 27.671 23.002C27.061 23.601 26.779 23.793 26.446 23.793C26.282 23.793 26.027 23.601 26.027 23.054V17.949C26.027 17.293 25.84 17 25.287 17H21.161C20.742 17 20.493 17.306 20.493 17.591C20.493 18.213 21.438 18.356 21.536 20.106V23.903C21.536 24.735 21.385 24.888 21.05 24.888C20.158 24.888 17.993 21.677 16.71 18.002C16.451 17.289 16.198 17.001 15.525 17.001H12.9C12.151 17.001 12 17.346 12 17.732C12 18.414 12.892 21.805 16.148 26.285C18.318 29.343 21.374 31 24.154 31C25.825 31 26.029 30.632 26.029 29.999C26.029 27.077 25.878 26.801 26.715 26.801C27.103 26.801 27.771 26.993 29.331 28.468C31.114 30.217 31.407 31 32.405 31H35.029C35.777 31 36.156 30.632 35.938 29.906C35.439 28.379 32.067 25.238 31.915 25.028Z" fill="#1A1A1A"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a><!--/noindex-->
+                            <!--noindex--><a  href="https://t.me/Farosmedia"  class="contacts__data__links__soc__link" rel="nofollow">
+                                <svg viewBox="0 0 48 48" class="contacts__data__links__soc__link__img">
+                                    <circle cx="24" cy="24" r="23.5" stroke="#EAEAEA" fill="rgba(26,26,26, 0)"/>
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M21.4172 27.181L21.0202 32.765C21.5882 32.765 21.8342 32.521 22.1292 32.228L24.7922 29.683L30.3102 33.724C31.3222 34.288 32.0352 33.991 32.3082 32.793L35.9302 15.821L35.9312 15.82C36.2522 14.324 35.3902 13.739 34.4042 14.106L13.1142 22.257C11.6612 22.821 11.6832 23.631 12.8672 23.998L18.3102 25.691L30.9532 17.78C31.5482 17.386 32.0892 17.604 31.6442 17.998L21.4172 27.181Z" fill="#1A1A1A"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a><!--/noindex-->
+                        </div>
+                    </div>
+
+                    <p class="contacts__data__copyrigth">© 2025 FAROS MEDIA. Все права защищены.</p>
+                </div>
+
+                <div class="contacts__map">
+                    <div class="contacts__map__pic" id="map"></div>
+                </div>
+            </div>
+            <!--full height, contacts home block END-->        </div>
     </div>
-</div>
-<br><!--PDF POPUP-->
+</div><!--PDF POPUP-->
 <div class="pdf-popap" style="display: none;" id="pdfPopUp">
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
@@ -577,11 +876,11 @@
 <script src="http://faros.media/local/templates/faros/js/animation.gsap.min.js"></script>
 <script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
 <script src="http://faros.media/local/templates/faros/js/sticky.js"></script>
-<script src="http://faros.media/local/templates/faros/js/scripts.min.js?v=32"></script>
+<script src="http://faros.media/local/templates/faros/js/scripts.min.js?v=19"></script>
 <script src="http://faros.media/local/templates/faros/js/maskedinput.js"></script>
 <script src="http://faros.media/local/templates/faros/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../../index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

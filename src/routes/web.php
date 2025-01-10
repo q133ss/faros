@@ -9,13 +9,17 @@ Route::get('/case', [\App\Http\Controllers\CaseController::class, 'index'])->nam
 Route::get('/case/{slug}', [\App\Http\Controllers\CaseController::class, 'show'])->name('case.show');
 Route::get('/team', [\App\Http\Controllers\TeamController::class, 'index'])->name('team.index');
 Route::get('/authors/{slug}', [\App\Http\Controllers\TeamController::class, 'show'])->name('team.show');
-#todo тут layout нету! Нужны INC
+#todo тут везде ниже layout нету! Нужны INC
 Route::get('/articles', [\App\Http\Controllers\ArticlesController::class, 'index'])->name('articles.index');
 Route::get('/articles/{slug}', [\App\Http\Controllers\ArticlesController::class, 'show'])->name('articles.show');
-
-// Нам осталось: video, smi, online
-
+Route::get('/video', [\App\Http\Controllers\VideoController::class, 'index'])->name('video.index');
+Route::get('/video/{slug}', [\App\Http\Controllers\VideoController::class, 'show'])->name('video.show');
+// Нам осталось: online
+Route::get('/smi', [\App\Http\Controllers\SmiController::class, 'index'])->name('smi.index');
+Route::get('/smi/{slug}', [\App\Http\Controllers\SmiController::class, 'show'])->name('smi.show');
+Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 # TODO перенести потом все SEO теги для всех страниц в БД meta, content, image ...
 # TODO объеденить меню в layout
 # TODO сделать inc для SEO полей
 # TODO скачать все стили и скрипты с удаленного сервера
+# TODO попросить данные от платежки! ЛИБО ГЛЯНУТЬ НА ХОСТЕ!
