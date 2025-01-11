@@ -10,58 +10,8 @@
     <link rel="stylesheet" href="http://faros.media/local/templates/faros/css/styles.min.css?v=11">
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
-    <meta name="description" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
-    <link rel="canonical" href="https://faros.media/video/anna-timofeeva-rasskazala-o-tom-mozhno-li-zarabatyvat-na-memakh/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="FAROS" />
-    <meta property="og:url" content="https://faros.media" />
-    <meta property="og:title" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
-    <meta property="og:description" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах" />
-    <!-- dev2fun module opengraph -->
-    <meta property="og:title" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах"/>
-    <meta property="og:description" content="Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах"/>
-    <meta property="og:url" content="https://faros.media/video/anna-timofeeva-rasskazala-o-tom-mozhno-li-zarabatyvat-na-memakh/"/>
-    <meta property="og:type" content="website"/>
-    <!-- /dev2fun module opengraph -->
-
-
-
-    <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d4e4e5a0a85d485b74c9e5539d376e8e"]); _ba.push(["host", "faros.media"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
-
-
-    <link rel="preconnect" href="http://api-maps.yandex.ru/">
-    <link rel="dns-prefetch" href="http://api-maps.yandex.ru/">
-    <meta property="og:description" content="">
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(47553889, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            trackHash:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/47553889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89493693-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-89493693-1');
-    </script>
-
-    <!-- Zverushki\Microm --><script data-skip-moving="true">window.Zverushki=window.Zverushki||{};window.Zverushki.Microm={"Breadcrumb":true,"Business":true,"Product":"Disabled","Article":false,"version":"2.2.1","format":{"json-ld":"Disabled","microdata":true},"execute":{"time":0,"scheme":{"Breadcrumb":null,"Business":null,"Article":null}}};</script><!-- end Zverushki\Microm --></head>
+    @include('inc.seo')
+</head>
 <body class="_bgLightGray">
 <style>
     @keyframes light {

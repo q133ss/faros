@@ -14,13 +14,11 @@ Route::get('/articles', [\App\Http\Controllers\ArticlesController::class, 'index
 Route::get('/articles/{slug}', [\App\Http\Controllers\ArticlesController::class, 'show'])->name('articles.show');
 Route::get('/video', [\App\Http\Controllers\VideoController::class, 'index'])->name('video.index');
 Route::get('/video/{slug}', [\App\Http\Controllers\VideoController::class, 'show'])->name('video.show');
-// Нам осталось: online
 Route::get('/smi', [\App\Http\Controllers\SmiController::class, 'index'])->name('smi.index');
 Route::get('/smi/{slug}', [\App\Http\Controllers\SmiController::class, 'show'])->name('smi.show');
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
 # TODO перенести потом все SEO теги для всех страниц в БД meta, content, image ...
-# TODO объеденить меню в layout
 # TODO сделать inc для SEO полей
 # TODO скачать все стили и скрипты с удаленного сервера
 # TODO попросить данные от платежки! ЛИБО ГЛЯНУТЬ НА ХОСТЕ!

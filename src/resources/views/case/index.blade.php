@@ -9,16 +9,15 @@
              style="background-color: #E31E24"
         >
             <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/d5d/e3ajd9tt8o8b41twzna56ewrj9fr6o9z/1122.webp" data-depth="0.6">
-                                                    </span>
+                <span class="miniBlock__layer__pic parallax">
+                        <img src="../upload/resize_cache/webp/iblock/d5d/e3ajd9tt8o8b41twzna56ewrj9fr6o9z/1122.webp" data-depth="0.6">
+                </span>
             </div>
 
             <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/resize_cache/webp/iblock/223/procncjqjf3ck0d2bvepcdbnltzo6oab/2a22737c829158537637231d0ddb3ab8-benzin-preview.webp">
-                                                    </span>
-
+                <span class="miniBlock__wrap__pic">
+                        <img src="../upload/resize_cache/webp/iblock/223/procncjqjf3ck0d2bvepcdbnltzo6oab/2a22737c829158537637231d0ddb3ab8-benzin-preview.webp">
+                </span>
 
                 <a href="reputatsiya-banka-otrazhenie-hakerskoj-ataki/index.html" class="miniBlock__wrap__tit _colorWhite"
                 >Репутация банка: отражение хакерской атаки</a>
