@@ -16,8 +16,8 @@
                 <span style="color: #000000;">(Чарьлз Калеб Колтон о репутации)</span><br>
                 <br></p>
             <div class="fullHeightBigWidth__wrap__control">
-                <a href="index.html#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
-                <a href="service/index.html" class="arrow-link">
+                <a href="/#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
+                <a href="{{route('service.index')}}" class="arrow-link">
                     <span class="arrow-link__text">Все услуги</span>
                     <img src="images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
                 </a>
@@ -91,8 +91,8 @@
                 <a class="fullHeightMinWidth__bottom__content__title" href="case/ubeditelnyy-brending-kurinogo-myasa-dlya-detskogo-pitaniya/index.html">Нейминг и брендинг для новой категории продуктов детского питания - куриного мяса "Фрегат Kids"</a>
 
                 <div class="fullHeightMinWidth__bottom__content__tags">
-                    <a href="case/index.html@tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html" class="fullHeightMinWidth__bottom__content__tags__item">#Бренд-менеджмент</a>
-                    <a href="case/index.html@tag=РќРµР№РјРёРЅРі.html" class="fullHeightMinWidth__bottom__content__tags__item">#Нейминг</a>
+                    <a href="{{route('case.index')}}@tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html" class="fullHeightMinWidth__bottom__content__tags__item">#Бренд-менеджмент</a>
+                    <a href="{{route('case.index')}}@tag=РќРµР№РјРёРЅРі.html" class="fullHeightMinWidth__bottom__content__tags__item">#Нейминг</a>
                 </div>
             </div>
         </div>
@@ -586,10 +586,10 @@
                 >Нейминг и брендинг для новой категории продуктов детского питания - куриного мяса "Фрегат Kids"</a>
 
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="case/index.html@tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #6b2421"
                     >#Бренд-менеджмент</a>
-                    <a href="case/index.html@tag=РќРµР№РјРёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РќРµР№РјРёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #6b2421"
                     >#Нейминг</a>
                 </div>
@@ -619,7 +619,7 @@
                 >Комплекс&nbsp;услуг по репозиционированию бренда строительной компании</a>
 
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="case/index.html@tag=РґРµСЂРµРІСЏРЅРЅРѕРµ&#32;СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРѕ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РґРµСЂРµРІСЏРЅРЅРѕРµ&#32;СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРѕ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #000000"
                     >#деревянное строительство</a>
                 </div>
@@ -643,7 +643,7 @@
                 <p class="miniCenterBlock__wrap__descr _colorBlack">Наш источник вдохновения – это наши клиенты. Мы помогли
                     более 150 компаниям улучшить репутацию и увеличить обороты.</p>
 
-                <a href="case/index.html" class="button">ВСЕ КЕЙСЫ</a>
+                <a href="{{route('case.index')}}" class="button">ВСЕ КЕЙСЫ</a>
 
                 <p class="miniCenterBlock__wrap__subdescr _colorGray12">Нажимая “Отправить”, вы соглашаетесь с Политикой
                     конфиденциальности</p>
@@ -673,16 +673,16 @@
                 >SMM-прокачка мирового бренда подгузников в соцсетях</a>
 
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="case/index.html@tag=РљРµР№СЃС‹&#32;РїРѕ&#32;smm.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РљРµР№СЃС‹&#32;РїРѕ&#32;smm.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #500b76"
                     >#Кейсы по smm</a>
-                    <a href="case/index.html@tag=KPI.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=KPI.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #500b76"
                     >#KPI</a>
-                    <a href="case/index.html@tag=Instagram.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=Instagram.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #500b76"
                     >#Instagram</a>
-                    <a href="case/index.html@tag=Р»РѕСЏР»СЊРЅРѕСЃС‚СЊ&#32;Рє&#32;Р±СЂРµРЅРґСѓ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=Р»РѕСЏР»СЊРЅРѕСЃС‚СЊ&#32;Рє&#32;Р±СЂРµРЅРґСѓ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #500b76"
                     >#лояльность к бренду</a>
                 </div>
@@ -710,16 +710,16 @@
                 >Нейминг для образовательного проекта </a>
 
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="case/index.html@tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #7494b9"
                     >#Бренд-менеджмент</a>
-                    <a href="case/index.html@tag=РњР°СЂРєРµС‚РёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РњР°СЂРєРµС‚РёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #7494b9"
                     >#Маркетинг</a>
-                    <a href="case/index.html@tag=РќРµР№РјРёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РќРµР№РјРёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #7494b9"
                     >#Нейминг</a>
-                    <a href="case/index.html@tag=РћР±СЂР°Р·РѕРІР°РЅРёРµ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РћР±СЂР°Р·РѕРІР°РЅРёРµ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #7494b9"
                     >#Образование</a>
                 </div>
@@ -747,17 +747,17 @@
                 >Школа иностранных языков</a>
 
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="case/index.html@tag=SMM.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=SMM.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                     >#SMM</a>
-                    <a href="case/index.html@tag=РљРѕРЅРєСѓСЂСЃРЅС‹Рµ&#32;РјРµС…Р°РЅРёРєРё.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РљРѕРЅРєСѓСЂСЃРЅС‹Рµ&#32;РјРµС…Р°РЅРёРєРё.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                     >#Конкурсные механики</a>
-                    <a href="case/index.html@tag=РњР°СЂРєРµС‚РёРЅРі-РєРѕРЅСЃР°Р»С‚РёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РњР°СЂРєРµС‚РёРЅРі-РєРѕРЅСЃР°Р»С‚РёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                     >#Маркетинг-консалтинг</a>
-                    <a href="case/index.html@tag=РџСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±СЂРµРЅРґР°.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РџСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±СЂРµРЅРґР°.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                     >#Продвижение бренда</a>
-                    <a href="case/index.html@tag=Р¤РѕСЂРјРёСЂРѕРІР°РЅРёРµ&#32;СЃРїСЂРѕСЃР°.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=Р¤РѕСЂРјРёСЂРѕРІР°РЅРёРµ&#32;СЃРїСЂРѕСЃР°.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                     >#Формирование спроса</a>
-                    <a href="case/index.html@tag=РЇР·С‹РєРѕРІР°СЏ&#32;С€РєРѕР»Р°.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РЇР·С‹РєРѕРІР°СЏ&#32;С€РєРѕР»Р°.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                     >#Языковая школа</a>
                 </div>
             </div>
@@ -785,22 +785,22 @@
                 >Продвижение брендовых кормов для домашних животных</a>
 
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="case/index.html@tag=SMM.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=SMM.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #fff"
                     >#SMM</a>
-                    <a href="case/index.html@tag=РљРѕСЂРј&#32;РґР»СЏ&#32;Р¶РёРІРѕС‚РЅС‹С….html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РљРѕСЂРј&#32;РґР»СЏ&#32;Р¶РёРІРѕС‚РЅС‹С….html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #fff"
                     >#Корм для животных</a>
-                    <a href="case/index.html@tag=Р›РёРґРѕРіРµРЅРµСЂР°С†РёСЏ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=Р›РёРґРѕРіРµРЅРµСЂР°С†РёСЏ.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #fff"
                     >#Лидогенерация</a>
-                    <a href="case/index.html@tag=РњР°СЂРєРµС‚РёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РњР°СЂРєРµС‚РёРЅРі.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #fff"
                     >#Маркетинг</a>
-                    <a href="case/index.html@tag=Р РµРєР»Р°РјР°&#32;РІ&#32;СЃРѕС†СЃРµС‚СЏС….html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=Р РµРєР»Р°РјР°&#32;РІ&#32;СЃРѕС†СЃРµС‚СЏС….html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #fff"
                     >#Реклама в соцсетях</a>
-                    <a href="case/index.html@tag=РўР“Р‘.html" class="miniBlock__wrap__hashWrap__link _colorSky"
+                    <a href="{{route('case.index')}}@tag=РўР“Р‘.html" class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #fff"
                     >#ТГБ</a>
                 </div>
@@ -1043,7 +1043,7 @@
         <img src="images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img">
         <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
         <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
-        <a href="case/index.html" class="button">НАШИ КЕЙСЫ</a>
+        <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
     </div>
     <!--full height, form END--> <!--home news blocks START--> <div class="newsBlocks">
         <!--news home menu START-->
@@ -1280,7 +1280,7 @@
                 <div class="contacts__data__links__nav">
                     <a href="team/index.html" class="contacts__data__links__nav__link">Команда</a>
                     <a href="service/index.html" class="contacts__data__links__nav__link">Услуги</a>
-                    <a href="case/index.html" class="contacts__data__links__nav__link">Кейсы</a>
+                    <a href="{{route('case.index')}}" class="contacts__data__links__nav__link">Кейсы</a>
                 </div>
 
                 <div class="contacts__data__links__soc">

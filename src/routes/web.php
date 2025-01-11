@@ -19,6 +19,5 @@ Route::get('/smi/{slug}', [\App\Http\Controllers\SmiController::class, 'show'])-
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
 # TODO перенести потом все SEO теги для всех страниц в БД meta, content, image ...
-# TODO сделать inc для SEO полей
 # TODO скачать все стили и скрипты с удаленного сервера
 # TODO попросить данные от платежки! ЛИБО ГЛЯНУТЬ НА ХОСТЕ!
