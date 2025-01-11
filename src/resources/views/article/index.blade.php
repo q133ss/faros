@@ -6,62 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Материалы по маркетингу, digital, ORM и SERM от агентства с именем</title>
-    <script src="http://faros.media/local/templates/faros/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="http://faros.media/local/templates/faros/css/styles.min.css?v=71">
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="/js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="/css/styles.min.css?v=71">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="1С-Битрикс, CMS, PHP, bitrix, система управления контентом" />
-    <meta name="description" content="Статьи, материалы, лайфхаки, гайды и инструкции по маркетингу и управлению репутацией от агентства Faros.Media" />
-    <link rel="canonical" href="../articles.1.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="FAROS" />
-    <meta property="og:url" content="https://faros.media" />
-    <meta property="og:title" content="Материалы по маркетингу, digital, ORM и SERM от агентства с именем" />
-    <meta property="og:description" content="Статьи, материалы, лайфхаки, гайды и инструкции по маркетингу и управлению репутацией от агентства Faros.Media" />
-    <!-- dev2fun module opengraph -->
-    <meta property="og:title" content="Материалы по маркетингу, digital, ORM и SERM от агентства с именем"/>
-    <meta property="og:description" content="Статьи, материалы, лайфхаки, гайды и инструкции по маркетингу и управлению репутацией от агентства Faros.Media"/>
-    <meta property="og:url" content="https://faros.media/articles/"/>
-    <meta property="og:type" content="website"/>
-    <!-- /dev2fun module opengraph -->
-
-
-
-    <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d4e4e5a0a85d485b74c9e5539d376e8e"]); _ba.push(["host", "faros.media"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
-
-
-    <link rel="preconnect" href="http://api-maps.yandex.ru/">
-    <link rel="dns-prefetch" href="http://api-maps.yandex.ru/">
-    <meta property="og:description" content="">
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(47553889, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            trackHash:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/47553889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89493693-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-89493693-1');
-    </script>
-
-    <!-- Zverushki\Microm --><script data-skip-moving="true">window.Zverushki=window.Zverushki||{};window.Zverushki.Microm={"Breadcrumb":true,"Business":true,"Product":"Disabled","Article":false,"version":"2.2.1","format":{"json-ld":"Disabled","microdata":true},"execute":{"time":0,"scheme":{"Breadcrumb":null,"Business":null,"Article":null}}};</script><!-- end Zverushki\Microm --></head>
+    @include('inc.header')
+</head>
 <body class="_bgLightGray">
 <style>
     @keyframes light {
@@ -415,86 +365,7 @@
 </div>
 
 <!--Header START-->
-<header class="header" id="header">
-    <div class="header__dt">
-        <a href="../index.html" class="header__logoWrap">
-            <img src="../images/min/logo.svg" alt="" class="header__logoWrap__logo">
-            <img src="../images/min/logourl.svg" alt="" class="header__logoWrap__logo-hover">
-        </a>
-
-        <nav class="header__menu hide-scroll">
-            <a href="../index.html#form" class="header__menu__item">
-                <div class="header__menu__item__icoWrap">
-                    <img src="../images/min/icons/start.svg" alt="" class="header__menu__item__ico">
-                </div>
-                <span class="header__menu__item__name">Начать проект</span>
-                <a href="../service/index.html" class="header__menu__item">
-                    <div class="header__menu__item__icoWrap">
-                        <img src="../images/min/icons/services.svg" alt="" class="header__menu__item__ico">
-                    </div>
-                    <span class="header__menu__item__name">Услуги</span>
-                </a>
-                <a href="../case/index.html" class="header__menu__item">
-                    <div class="header__menu__item__icoWrap">
-                        <img src="../images/min/icons/keyses.svg" alt="" class="header__menu__item__ico">
-                    </div>
-                    <span class="header__menu__item__name">Кейсы</span>
-                </a>
-                <a href="../team/index.html" class="header__menu__item">
-                    <div class="header__menu__item__icoWrap">
-                        <img src="../images/min/icons/teams.svg" alt="" class="header__menu__item__ico">
-                    </div>
-                    <span class="header__menu__item__name">Команда</span>
-                </a>
-                <a href="index.html" class="header__menu__item">
-                    <div class="header__menu__item__icoWrap">
-                        <img src="../images/min/icons/blogs.svg" alt="" class="header__menu__item__ico">
-                    </div>
-                    <span class="header__menu__item__name">Статьи</span>
-                </a>
-                <a href="../video/index.html" class="header__menu__item">
-                    <div class="header__menu__item__icoWrap">
-                        <img src="../images/min/icons/media.svg" alt="" class="header__menu__item__ico">
-                    </div>
-                    <span class="header__menu__item__name">Мы в эфире</span>
-                </a>
-                <a href="../smi/index.html" class="header__menu__item">
-                    <div class="header__menu__item__icoWrap">
-                        <img src="../images/min/icons/videos.svg" alt="" class="header__menu__item__ico">
-                    </div>
-                    <span class="header__menu__item__name">СМИ</span>
-                </a>
-                <a href="../pay/index.html" class="header__menu__item">
-                    <div class="header__menu__item__icoWrap">
-                        <img src="../images/min/icons/onlinepay.svg" alt="" class="header__menu__item__ico">
-                    </div>
-                    <span class="header__menu__item__name">Online-оплата</span>
-                </a>
-        </nav>
-
-        <div class="header__footer">
-            <div class="header__footer__wrap">
-                <a href="../index.html#form">
-                    <img src="../images/min/lighthouse.svg" alt="" class="header__footer__wrap__ico">
-                    <span class="header__menu__item__name">Консультация</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="header__mb mobMenuContainer">
-        <div class="burger" id="burger"></div>
-
-        <a href="../index.html" class="header__mobLogoWrap">
-            <img src="../images/min/logomob.svg" alt="" class="header__mobLogoWrap__ico">
-        </a>
-
-        <a href="../index.html#form" class="header__phoneWrap">
-            <img src="../images/min/icons/phone.svg" alt="" class="header__phoneWrap__ico">
-        </a>
-    </div>
-</header>
-
+@include('inc.header')
 <nav class="mobilemenu mobMenuContainer custom-scroll" id="menu">
     <div class="mobilemenu__wrapMenu">
         <div class="mobilemenu__wrapMenu__menu">
@@ -5342,15 +5213,15 @@
         </div>
     </div>
 </div>
-<script src="http://faros.media/local/templates/faros/js/TweenMax.min.js"></script>
-<script src="http://faros.media/local/templates/faros/js/ScrollMagic.js"></script>
-<script src="http://faros.media/local/templates/faros/js/debug.addIndicators.js"></script>
-<script src="http://faros.media/local/templates/faros/js/animation.gsap.min.js"></script>
+<script src="/js/TweenMax.min.js"></script>
+<script src="/js/ScrollMagic.js"></script>
+<script src="/js/debug.addIndicators.js"></script>
+<script src="/js/animation.gsap.min.js"></script>
 <script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
-<script src="http://faros.media/local/templates/faros/js/sticky.js"></script>
-<script src="http://faros.media/local/templates/faros/js/scripts.min.js?v=33"></script>
-<script src="http://faros.media/local/templates/faros/js/maskedinput.js"></script>
-<script src="http://faros.media/local/templates/faros/js/custom.js"></script>
+<script src="/js/sticky.js"></script>
+<script src="/js/scripts.min.js?v=33"></script>
+<script src="/js/maskedinput.js"></script>
+<script src="/js/custom.js"></script>
 
 <!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><meta itemprop="name" content="Материалы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
