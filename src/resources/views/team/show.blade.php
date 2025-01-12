@@ -1,24 +1,24 @@
 @extends('layouts.team')
-@section('title', 'Екатерина Игоревна Тулянкина - основатель и руководитель агентства Faros.media')
+@section('title', $author->name)
 @section('content')
     <div class="authorWrap">
         <div class="authorWrap__left">
             <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="../../index.html" title="Главная" itemprop="item">
+                    <a href="/" title="Главная" itemprop="item">
                         <span itemprop="name">Главная</span>
                         <meta itemprop="position" content="0">
                     </a>
                 </li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="../../team/index.html" title="Команда" itemprop="item">
+                    <a href="{{route('team.index')}}" title="Команда" itemprop="item">
                         <span itemprop="name">Команда</span>
                         <meta itemprop="position" content="1">
                     </a>
                 </li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="Екатерина Тулянкина" itemprop="item">
-                        <span itemprop="name">Екатерина Тулянкина</span>
+                    <a title="{{$author->name}}" itemprop="item">
+                        <span itemprop="name">{{$author->name}}</span>
                         <meta itemprop="position" content="2">
 
                     </a>
@@ -28,12 +28,12 @@
                 <div class="user">
                     <div class="user__data">
                         <picture class="user__data__pic">
-                            <img src="../../upload/iblock/3c1/2uslay8qo2cbqcidhgu44k0g2gnkwull/IMG_7470.jpg">
+                            <img src="{{$author->img}}">
                         </picture>
 
                         <div class="user__data__info">
-                            <h1 class="user__data__info__name">Екатерина Тулянкина</h1>
-                            <p class="user__data__info__post">Основатель и руководитель</p>
+                            <h1 class="user__data__info__name">{{$author->name}}</h1>
+                            <p class="user__data__info__post">{{$author->post}}</p>
                         </div>
                     </div>
 
@@ -64,36 +64,40 @@
 
                 <div class="indicators">
                     <div class="indicators__wrap">
+                        @if($author->rating != 0)
                         <div class="indicators__item">
                             <img src="../../images/min/author/star.svg" alt=""
                                  class="indicators__item__ico">
 
                             <div class="indicators__item__data">
                                 <p class="indicators__item__data__title">Рейтинг</p>
-                                <p class="indicators__item__data__quant">1244</p>
+                                <p class="indicators__item__data__quant">{{$author->rating}}</p>
                             </div>
                         </div>
+                        @endif
+                        @if($author->post_count != '')
                         <div class="indicators__item">
                             <img src="../../images/min/author/micro.svg" alt=""
                                  class="indicators__item__ico">
 
                             <div class="indicators__item__data">
                                 <p class="indicators__item__data__title">Написано</p>
-                                <p class="indicators__item__data__quant">51 статья</p>
+                                <p class="indicators__item__data__quant">{{$author->post_count}}</p>
                             </div>
                         </div>
-
+                        @endif
+                        @if($author->smi_count != '')
                         <div class="indicators__item">
                             <img src="../../images/min/author/megaphone.svg" alt=""
                                  class="indicators__item__ico">
 
                             <div class="indicators__item__data">
                                 <p class="indicators__item__data__title">СМИ</p>
-                                <p class="indicators__item__data__quant">1 публикация</p>
+                                <p class="indicators__item__data__quant">{{$author->smi_count}}</p>
                             </div>
                         </div>
+                       @endif
                     </div>
-
                     <div class="subscribeWrap subscribe_min1000">
                         <button class="subscribe toggleSoc-js" type="button">
                             <img src="../../images/min/icons/subscribe.svg" alt="" class="subscribe__ico">
@@ -137,7 +141,7 @@
                         <ul class="dropdown-menu"></ul>
                     </li>
                     <li class="horizMenu__menu__item  material-section" data-order="1">
-                        <a href="index.html#" class="horizMenu__menu__item__link" data-id="0">
+                        <a href="{{route('articles.index')}}" class="horizMenu__menu__item__link" data-id="0">
                             ВСЕ СТАТЬИ
                         </a>
                     </li>
@@ -273,31 +277,19 @@
                 <p class="author1__partName">Слова от автора</p>
 
                 <div class="author1__partCont">
-                    <p class="author1__partCont__text">
-                        Верить в себя, в свою команду и в качество того, что ты делаешь — вот в чем залог успеха. Мы не стремимся стать гигантами, выполняющими на конвейере проекты по маркетингу. Наша задача — качественно улучшить показатели вашего бизнеса: обеспечить рост продаж, увеличить средний чек, сформировать лояльность потребителя.                            </p>
+                    <p class="author1__partCont__text">{!! $author->from_author !!}</p>
                 </div>
 
                 <p class="author1__partName">Образование</p>
 
                 <div class="author1__partCont">
-                    <p class="author1__partCont__tit">
-                        Финансовый университет при Правительстве Российской Федерации, 2004-2009
-                    </p>
+                    <p class="author1__partCont__tit">{!! $author->education !!}</p>
                     <p class="author1__partCont__date">
                         <br>
                     </p>                        </div>
                 <p class="author1__partName">Дополнительное образование</p>
 
-                <div class="author1__partCont">
-                    <br>
-                    <br>
-                    Екатерина Тулянкина родилась в 1987 году. Она получила высшее образование в Финансовом университете при Правительстве Российской Федерации, где обучалась с 2004 по 2009 год на факультете учета, анализа и аудита.<br>
-                    <br>
-                    Екатерина является основателем и руководителем репутационного агентства "Фарос Медиа". С 2019 года преподает в РАНХиГС при Президенте РФ, где ведет авторские дисциплины "Репутационный менеджмент", "Управление восприятием" и "Междисциплинарный проект" для студентов 2-4 курса бакалавриата.<br>
-                    <br>
-                    Помимо преподавательской деятельности, Екатерина разработала ряд коммерческих курсов&nbsp; и стратегий, а также&nbsp;написала книгу по работе с репутацией. Она также является со-основателем благотворительного фонда, который оказывает помощь участникам специальной военной операции и их семьям.<br>
-                    <br>
-                    В личной жизни Екатерина - мать, воспитывающая дочь. Ее профессиональное кредо заключается в вере в себя, свою команду и качество выполняемой работы. Екатерина стремится не к количественному масштабированию бизнеса, а к качественному, которое позволяет обеспечивать рост показателей для клиентов: росту продаж, увеличению среднего чека и формированию лояльности потребителей.&nbsp;                        </div>
+                <div class="author1__partCont">{!! $author->additional_educational !!}</div>
             </div>
             <div class="author allarticles all-articles" style="display: none;">
                 <!--1/2 height, min width, news home block START-->
@@ -320,7 +312,7 @@
 
                         <div class="grow-full"></div>
 
-                        <a href="index.html#" class="newsMiniBlock__cont__name _colorBlue">Екатерина Тулянкина</a>
+                        <a href="/" class="newsMiniBlock__cont__name _colorBlue">Екатерина Тулянкина</a>
                     </div>
                 </div>
                 <!--1/2 height, min width, news home block END-->
@@ -1582,7 +1574,7 @@
                     </div>
                     <div class="articlesVidget__body__item">
                         <picture class="articlesVidget__body__item__pic">
-                            <img src="http://faros.media/upload/iblock/763/804or0hwsew8labo8iopergp9m34n3t5/%D0%A1%D0%8C%D0%A0%D1%98%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A0%D1%91%20%D0%A0%D0%86%20%D0%A0%D1%98%D0%A0%C2%B0%D0%A1%D0%82%D0%A0%D1%94%D0%A0%C2%B5%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D0%85%D0%A0%D1%96%D0%A0%C2%B5%20%D0%A0%D1%91%20%D0%A0%D1%91%D0%A1%E2%80%A6%20%D0%A1%D0%82%D0%A0%D1%95%D0%A0%C2%BB%D0%A1%D0%8A.png">
+                            <img src="https://faros.media/upload/resize_cache/webp/iblock/763/804or0hwsew8labo8iopergp9m34n3t5/%D1%8D%D0%BC%D0%BE%D1%86%D0%B8%D0%B8%20%D0%B2%20%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3%D0%B5%20%D0%B8%20%D0%B8%D1%85%20%D1%80%D0%BE%D0%BB%D1%8C.webp">
                         </picture>
 
                         <div class="articlesVidget__body__item__data">
@@ -1630,7 +1622,7 @@
                     </div>
                     <div class="articlesVidget__body__item">
                         <picture class="articlesVidget__body__item__pic">
-                            <img src="http://faros.media/upload/iblock/ab1/7n20lfcq0h38f7jwyskn3yvtx6nzyv1i/%D0%A0%D1%94%D0%A0%C2%B0%D0%A0%D1%94%20%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A1%D0%8A%20%D0%A0%D2%91%D0%A0%C2%B5%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D0%86%D0%A1%D1%93%D0%A1%D0%8B%20%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%97%D0%A1%D1%93%D0%A1%E2%80%9A%D0%A0%C2%B0%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A1%D0%8B%20%D0%A0%D1%94%D0%A0%D1%95%D0%A0%D1%98%D0%A0%D1%97%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D1%91%D0%A0%D1%91%20-%20%D0%A0%D1%96%D0%A1%D1%93%D0%A0%D2%91%D0%A0%D0%86%D0%A0%D1%91%D0%A0%C2%BB%D0%A0%C2%BB.png">
+                            <img src="https://faros.media/upload/resize_cache/webp/iblock/ab1/7n20lfcq0h38f7jwyskn3yvtx6nzyv1i/%D0%BA%D0%B0%D0%BA%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D1%83%D1%8E%20%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D1%86%D0%B8%D1%8E%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8%20-%20%D0%B3%D1%83%D0%B4%D0%B2%D0%B8%D0%BB%D0%BB.webp">
                         </picture>
 
                         <div class="articlesVidget__body__item__data">
