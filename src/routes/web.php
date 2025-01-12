@@ -31,7 +31,7 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 # ПРОВЕРЯЕМ ВСЕ ССЫЛКИ И ТАК ДАЛЕЕ!
 # Услуги +
 # Кейсы
-# Команда
+# Команда+
 # Статьи
 # Мы в эфире
 # СМИ

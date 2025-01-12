@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Репутационные риски скидок и акций: как не загубить лояльность</title>
-    <script src="http://faros.media/local/templates/faros/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="http://faros.media/local/templates/faros/css/styles.min.css?v=55">
-    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <script src="/js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="/css/styles.min.css?v=55">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo')
 </head>
@@ -109,7 +109,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
             .st0 {
-                clip-path: url(index.html);
+                clip-path: url(/);
             }
 
             .st1 {
@@ -366,70 +366,7 @@
 
 <!--Header START-->
 @include('inc.header')
-<nav class="mobilemenu mobMenuContainer custom-scroll" id="menu">
-    <div class="mobilemenu__wrapMenu">
-        <div class="mobilemenu__wrapMenu__menu">
-            <a href="../../index.html#form" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/start.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Начать проект</span>
-            </a>
-            <a href="../index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/blogs.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Статьи</span>
-            </a>
-            <a href="../../service/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/services.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Услуги</span>
-            </a>
-            <a href="../../smi/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/media.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">СМИ</span>
-            </a>
-            <a href="../../case/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/keyses.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Кейсы</span>
-            </a>
-            <a href="../../video/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/videos.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Мы в эфире</span>
-            </a>
-            <a href="../../team/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/teams.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Команда</span>
-            </a>
-            <a href="../../pay/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../../images/min/icons/onlinepay.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Online-оплата</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="mobilemenu__footer">
-        <div class="mobilemenu__footer__left">
-            <a href="tel:88006008613" class="mobilemenu__footer__left__item">8 800 600 86 13</a>
-            <div class="mobilemenu__footer__left__br"></div>
-            <a href="mailto:a@a.aa" class="mobilemenu__footer__left__item">info@faros.media</a>
-        </div>
-
-        <div class="mobilemenu__footer__right">
-            <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="../../images/min/icons/vk.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>
-
-            <!--<a href="#" class="mobilemenu__footer__right__icoWrap">
-                <img src="/images/min/icons/fb.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>-->
-
-            <!--<a href="#" class="mobilemenu__footer__right__icoWrap">
-                <img src="/images/min/icons/tw.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>-->
-
-            <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="../../images/min/icons/tg.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>
-        </div>
-    </div>
-</nav>
+@include('inc.mobmenu')
 <!--Header END--><div class="hidden" id="hidden">
     <div class="wrapper" id="wrapper">
 
@@ -437,13 +374,13 @@
             <div class="authorWrap__left">
                 <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="../../index.html" title="Главная" itemprop="item">
+                        <a href="/" title="Главная" itemprop="item">
                             <span itemprop="name">Главная</span>
                             <meta itemprop="position" content="0">
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="../index.html" title="Статьи" itemprop="item">
+                        <a href="{{route('articles.index')}}" title="Статьи" itemprop="item">
                             <span itemprop="name">Статьи</span>
                             <meta itemprop="position" content="1">
                         </a>
@@ -459,9 +396,9 @@
                 <div class="sinpleHeaderTitle sticker">
                     <div class="sinpleHeader">
                         <div class="sinpleHeader__bread">
-                            <a href="../../authors/lena-medvedeva/index.html"
+                            <a href="/authors/lena-medvedeva/"
                                class="sinpleHeader__bread__link">Лена Медведева</a>
-                            <a href="../index.html@section_id=6.html" class="sinpleHeader__bread__tag">МАРКЕТИНГ</a>
+                            <a href="../@section_id=6" class="sinpleHeader__bread__tag">МАРКЕТИНГ</a>
                         </div>
                     </div>
                     <h1 class="sinpleHeaderTitle">Как загубить лояльность маркетинговыми активностями</h1>
@@ -470,26 +407,26 @@
 
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
-                        <img src="../../images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">20.10.2022</p>
                     </div>
 
                     <div class="sinpleHeader__data__item">
-                        <img src="../../images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">3128 просмотров</p>
                     </div>
                     <div class="sinpleHeader__data__item sinpleHeader__data__item_headerTags">
-                        <a href="../index.html@material_tag=FarosMedia.html"
+                        <a href="../@material_tag=FarosMedia"
                            class="sinpleHeader__data__item__tag">#FarosMedia</a>
-                        <a href="../index.html@material_tag=РњР°СЂРєРµС‚РёРЅРі.html"
+                        <a href="../@material_tag=РњР°СЂРєРµС‚РёРЅРі"
                            class="sinpleHeader__data__item__tag">#Маркетинг</a>
-                        <a href="../index.html@material_tag=СѓРїСЂР°РІР»РµРЅРёРµ&#32;СЂРµРїСѓС‚Р°С†РёРµР№.html"
+                        <a href="../@material_tag=СѓРїСЂР°РІР»РµРЅРёРµ&#32;СЂРµРїСѓС‚Р°С†РёРµР№"
                            class="sinpleHeader__data__item__tag">#управление репутацией</a>
                     </div>
                 </div>
 
                 <picture class="authorWrap__left__banner authorWrap__left__banner_articles">
-                    <img src="../../upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp" alt="Как загубить лояльность маркетинговыми активностями" title="Как загубить лояльность маркетинговыми активностями">
+                    <img src="/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp" alt="Как загубить лояльность маркетинговыми активностями" title="Как загубить лояльность маркетинговыми активностями">
                 </picture>
 
                 <div class="author1 blog">
@@ -560,7 +497,7 @@
 
                     <div class="author1__partName author1__partName_contents">
                         <div class="author1__partName_contents__button" id="contentButton">
-                            <img src="../../images/min/icons/slickprev.svg" alt=""
+                            <img src="/images/min/icons/slickprev.svg" alt=""
                                  class="author1__partName_contents__button__arrow">
                             <span>Содержание статьи</span>
                         </div>
@@ -583,13 +520,13 @@
                 <div class="pageAuthor">
                     <div class="pageAuthor__left">
                         <picture class="pageAuthor__left__pic">
-                            <a href="../../authors/lena-medvedeva/index.html">
-                                <img src="../../upload/iblock/297/gzuagvngx86f1rqte0ytw81c1qfa8qi1/lena.webp" alt="Лена Медведева" title="Лена Медведева">
+                            <a href="/authors/lena-medvedeva/">
+                                <img src="/upload/iblock/297/gzuagvngx86f1rqte0ytw81c1qfa8qi1/lena.webp" alt="Лена Медведева" title="Лена Медведева">
                             </a>
                         </picture>
 
                         <div class="pageAuthor__left__data">
-                            <a href="../../authors/lena-medvedeva/index.html"
+                            <a href="/authors/lena-medvedeva/"
                                class="pageAuthor__left__name">Лена Медведева</a>
                             <p class="pageAuthor__left__post">Автор</p>
                         </div>
@@ -598,13 +535,13 @@
 
                     <div class="pageAuthor__right">
                         <button class="pageAuthor__right__top" id="scrolltotop">
-                            <img class="pageAuthor__right__top__ico" src="../../images/min/icons/top.svg">
+                            <img class="pageAuthor__right__top__ico" src="/images/min/icons/top.svg">
                             <span class="pageAuthor__right__top__text">Наверх</span>
                         </button>
 
                         <div class="subscribeWrap">
                             <button class="subscribe" type="button" id="toggleSoc">
-                                <img src="../../images/min/icons/shareblog.svg" alt="" class="subscribe__ico">
+                                <img src="/images/min/icons/shareblog.svg" alt="" class="subscribe__ico">
                                 <span class="subscribe__text">Поделиться статьей</span>
                             </button>
 
@@ -680,58 +617,58 @@
                     <p class="simpleSliderWrap__tit">Читать далее</p>
 
                     <div class="simpleSlider" id="simpleSlider">
-                        <a href="../reklama-otklika-brenda-v-2022-m-godu-chto-eto-i-kak-ee-zapustit/index.html" class="simpleSlider__slide">
+                        <a href="../reklama-otklika-brenda-v-2022-m-godu-chto-eto-i-kak-ee-zapustit/" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="http://faros.media/upload/iblock/f47/jxz3oc7jv0xng0nr1155604cyp6v3afd/%D0%A0%D1%94%D0%A0%C2%B0%D0%A0%D1%94%20%D0%A0%D1%97%D0%A0%D1%95%D0%A0%D1%97%D0%A1%D0%82%D0%A0%D1%95%D0%A1%D0%83%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A1%D0%8A%20%D0%A0%D1%95%D0%A1%D0%83%D0%A1%E2%80%9A%D0%A0%C2%B0%D0%A0%D0%86%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A1%D0%8A%20%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%C2%B7%D0%A1%E2%80%B9%D0%A0%D0%86%20(334%20x%20221%20px)%20(15).png">
+                                    <img src="https://faros.media/upload/iblock/3ab/ynvlpk808rvhmbwxhxqpumk1z7yv6t5q/webpc-passthru.webp">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">Реклама отклика бренда в 2022-м году: что это и как ее запустить</p>
                         </a>
-                        <a href="../tri-priema-kotorye-delayut-kontent-luchshe/index.html" class="simpleSlider__slide">
+                        <a href="../tri-priema-kotorye-delayut-kontent-luchshe/" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/1d7/gejwi8xt6bbxp0hgk9ysurovxg84vdo9/webpc-passthru.webp">
+                                    <img src="/upload/iblock/1d7/gejwi8xt6bbxp0hgk9ysurovxg84vdo9/webpc-passthru.webp">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">Три приема, которые делают контент лучше</p>
                         </a>
-                        <a href="../v-gostyah-horosho-a-doma-luchshe/index.html" class="simpleSlider__slide">
+                        <a href="../v-gostyah-horosho-a-doma-luchshe/" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/6dc/2xeb3mnh38d4sf14hk15hys979uomk2p/webpc-passthru.webp">
+                                    <img src="/upload/iblock/6dc/2xeb3mnh38d4sf14hk15hys979uomk2p/webpc-passthru.webp">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">В гостях хорошо, а дома лучше</p>
                         </a>
-                        <a href="../5-klassicheskih-fakapov-s-reputatsiej/index.html" class="simpleSlider__slide">
+                        <a href="../5-klassicheskih-fakapov-s-reputatsiej/" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/576/eblyekiyivbdtu0miuqu6tld5rloomil/5.webp">
+                                    <img src="/upload/iblock/576/eblyekiyivbdtu0miuqu6tld5rloomil/5.webp">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">5 классических факапов с репутацией</p>
                         </a>
-                        <a href="../kakie-tipy-statej-lyubit-facebook/index.html" class="simpleSlider__slide">
+                        <a href="../kakie-tipy-statej-lyubit-facebook/" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/6b9/zl33l6ft07a3g2f09kiwz74xan378sfh/webpc-passthru.webp">
+                                    <img src="/upload/iblock/6b9/zl33l6ft07a3g2f09kiwz74xan378sfh/webpc-passthru.webp">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">Какие типы статей любит Facebook?</p>
                         </a>
-                        <a href="../vazhnost-marketingovykh-issledovaniy-dlya-pravitelstva/index.html" class="simpleSlider__slide">
+                        <a href="../vazhnost-marketingovykh-issledovaniy-dlya-pravitelstva/" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="http://faros.media/upload/resize_cache/webp/iblock/4af/wyd8tmeyp74izi44bdwzcrioey0hvv71/%D0%A1%D0%82%D0%A0%D1%95%D0%A0%C2%BB%D0%A1%D0%8A%20%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%C2%B0%D0%A0%C2%BB%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A1%E2%80%A1%D0%A0%C2%B5%D0%A1%D0%83%D0%A0%D1%94%D0%A0%D1%91%D0%A1%E2%80%A6%20%D0%A0%D2%91%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D0%85%D0%A1%E2%80%B9%D0%A1%E2%80%A6%20%D0%A0%D1%91%D0%A1%D0%83%D0%A1%D0%83%D0%A0%C2%BB%D0%A0%C2%B5%D0%A0%D2%91%D0%A0%D1%95%D0%A0%D0%86%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D1%91%D0%A0%D1%91%D0%9C%E2%80%A0%20%D0%A1%D0%82%D0%A1%E2%80%B9%D0%A0%D0%85%D0%A0%D1%94%D0%A0%C2%B0.webp">
+                                    <img src="https://faros.media/upload/iblock/3ab/ynvlpk808rvhmbwxhxqpumk1z7yv6t5q/webpc-passthru.webp">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">Важность маркетинговых исследований для правительства</p>
                         </a>
-                        <a href="../5-sposobov-prodvigat-tovary-v-sotssetyah-i-ne-byt-navyazchivym/index.html" class="simpleSlider__slide">
+                        <a href="../5-sposobov-prodvigat-tovary-v-sotssetyah-i-ne-byt-navyazchivym/" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/resize_cache/webp/iblock/955/qn3c07itxet53hy25u42e5epji0ibify/rr.webp">
+                                    <img src="/upload/resize_cache/webp/iblock/955/qn3c07itxet53hy25u42e5epji0ibify/rr.webp">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">5 способов продвигать товары в соцсетях и не быть навязчивым</p>
@@ -747,93 +684,93 @@
                     <div class="articlesVidget__body">
                         <div class="articlesVidget__body__item">
                             <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/969/35oirxizpns95ekmoq0u9xv5dif3gnuh/webpc-passthru.webp">
+                                <img src="/upload/iblock/969/35oirxizpns95ekmoq0u9xv5dif3gnuh/webpc-passthru.webp">
                             </picture>
 
                             <div class="articlesVidget__body__item__data">
-                                <a href="../nazad-v-budushhee-kontekstnoj-reklamy/index.html"
+                                <a href="../nazad-v-budushhee-kontekstnoj-reklamy/"
                                    class="articlesVidget__body__item__data__tit">Назад в будущее контекстной рекламы</a>
-                                <a href="../index.html@section_id=6.html"
+                                <a href="../@section_id=6"
                                    class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
                             </div>
                         </div>
                         <div class="articlesVidget__body__item">
                             <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/bd8/yrd0poqsy7be60qpz0n5e24vlmn6xjo0/webpc-passthru.webp">
+                                <img src="/upload/iblock/bd8/yrd0poqsy7be60qpz0n5e24vlmn6xjo0/webpc-passthru.webp">
                             </picture>
 
                             <div class="articlesVidget__body__item__data">
-                                <a href="../10-kreativnyh-idej-po-ispolzovaniyu-chat-botov/index.html"
+                                <a href="../10-kreativnyh-idej-po-ispolzovaniyu-chat-botov/"
                                    class="articlesVidget__body__item__data__tit">10 креативных идей по использованию чат-ботов</a>
-                                <a href="../index.html@section_id=6.html"
+                                <a href="../@section_id=6"
                                    class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
                             </div>
                         </div>
                         <div class="articlesVidget__body__item">
                             <picture class="articlesVidget__body__item__pic">
-                                <img src="http://faros.media/upload/iblock/763/804or0hwsew8labo8iopergp9m34n3t5/%D0%A1%D0%8C%D0%A0%D1%98%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A0%D1%91%20%D0%A0%D0%86%20%D0%A0%D1%98%D0%A0%C2%B0%D0%A1%D0%82%D0%A0%D1%94%D0%A0%C2%B5%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D0%85%D0%A0%D1%96%D0%A0%C2%B5%20%D0%A0%D1%91%20%D0%A0%D1%91%D0%A1%E2%80%A6%20%D0%A1%D0%82%D0%A0%D1%95%D0%A0%C2%BB%D0%A1%D0%8A.png">
+                                <img src="https://faros.media/upload/resize_cache/webp/iblock/763/804or0hwsew8labo8iopergp9m34n3t5/%D1%8D%D0%BC%D0%BE%D1%86%D0%B8%D0%B8%20%D0%B2%20%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3%D0%B5%20%D0%B8%20%D0%B8%D1%85%20%D1%80%D0%BE%D0%BB%D1%8C.webp">
                             </picture>
 
                             <div class="articlesVidget__body__item__data">
-                                <a href="../emotsii-v-reklame-bespoleznye-chuvstva-ili-effektivnyy-instrument-dlya-povysheniya-prodazh-/index.html"
+                                <a href="../emotsii-v-reklame-bespoleznye-chuvstva-ili-effektivnyy-instrument-dlya-povysheniya-prodazh-/"
                                    class="articlesVidget__body__item__data__tit">Эмоции в рекламе: бесполезные чувства или эффективный инструмент для повышения продаж </a>
-                                <a href="../index.html@section_id=6.html"
+                                <a href="../@section_id=6"
                                    class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
                             </div>
                         </div>
                         <div class="articlesVidget__body__item">
                             <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/d3a/sawvta75ht6xuhbum9oozhk226skqyj6/webpc-passthru&#32;(1).webp">
+                                <img src="/upload/iblock/d3a/sawvta75ht6xuhbum9oozhk226skqyj6/webpc-passthru&#32;(1).webp">
                             </picture>
 
                             <div class="articlesVidget__body__item__data">
-                                <a href="../biznes-v-instagram-chto-luchshe-vsego-prodayotsya-v-2021-godu/index.html"
+                                <a href="../biznes-v-instagram-chto-luchshe-vsego-prodayotsya-v-2021-godu/"
                                    class="articlesVidget__body__item__data__tit">Бизнес в Инстаграм: что лучше всего продаётся в 2021 году</a>
-                                <a href="../index.html@section_id=5.html"
+                                <a href="../@section_id=5"
                                    class="articlesVidget__body__item__data__link">СОЦСЕТИ</a>
                             </div>
                         </div>
                         <div class="articlesVidget__body__item">
                             <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/e13/m50e9k7no1nrv81o16bt43cvracdzofz/webpc-passthru&#32;(5).webp">
+                                <img src="/upload/iblock/e13/m50e9k7no1nrv81o16bt43cvracdzofz/webpc-passthru&#32;(5).webp">
                             </picture>
 
                             <div class="articlesVidget__body__item__data">
-                                <a href="../kak-sozdat-i-prodvigat-telegram-kanal-2021/index.html"
+                                <a href="../kak-sozdat-i-prodvigat-telegram-kanal-2021/"
                                    class="articlesVidget__body__item__data__tit">Как создать и продвигать telegram-канал</a>
-                                <a href="../index.html@section_id=5.html"
+                                <a href="../@section_id=5"
                                    class="articlesVidget__body__item__data__link">СОЦСЕТИ</a>
                             </div>
                         </div>
                         <div class="articlesVidget__body__item">
                             <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/b2e/7qqqt2upuz338hs22hxd043cadxfvse2/stat_rep.webp">
+                                <img src="/upload/iblock/b2e/7qqqt2upuz338hs22hxd043cadxfvse2/stat_rep.webp">
                             </picture>
 
                             <div class="articlesVidget__body__item__data">
-                                <a href="../chto-takoe-reputatsiya-persony-i-pochemu-ona-vazhna/index.html"
+                                <a href="../chto-takoe-reputatsiya-persony-i-pochemu-ona-vazhna/"
                                    class="articlesVidget__body__item__data__tit">Что такое репутация персоны и почему она важна</a>
-                                <a href="../index.html@section_id=8.html"
+                                <a href="../@section_id=8"
                                    class="articlesVidget__body__item__data__link">РЕПУТАЦИЯ</a>
                             </div>
                         </div>
                         <div class="articlesVidget__body__item">
                             <picture class="articlesVidget__body__item__pic">
-                                <img src="http://faros.media/upload/iblock/ab1/7n20lfcq0h38f7jwyskn3yvtx6nzyv1i/%D0%A0%D1%94%D0%A0%C2%B0%D0%A0%D1%94%20%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A1%D0%8A%20%D0%A0%D2%91%D0%A0%C2%B5%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D0%86%D0%A1%D1%93%D0%A1%D0%8B%20%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%97%D0%A1%D1%93%D0%A1%E2%80%9A%D0%A0%C2%B0%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A1%D0%8B%20%D0%A0%D1%94%D0%A0%D1%95%D0%A0%D1%98%D0%A0%D1%97%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D1%91%D0%A0%D1%91%20-%20%D0%A0%D1%96%D0%A1%D1%93%D0%A0%D2%91%D0%A0%D0%86%D0%A0%D1%91%D0%A0%C2%BB%D0%A0%C2%BB.png">
+                                <img src="https://faros.media/upload/resize_cache/webp/iblock/ab1/7n20lfcq0h38f7jwyskn3yvtx6nzyv1i/%D0%BA%D0%B0%D0%BA%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D1%83%D1%8E%20%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D1%86%D0%B8%D1%8E%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8%20-%20%D0%B3%D1%83%D0%B4%D0%B2%D0%B8%D0%BB%D0%BB.webp">
                             </picture>
 
                             <div class="articlesVidget__body__item__data">
-                                <a href="../chto-takoe-delovaya-reputatsiya/index.html"
+                                <a href="../chto-takoe-delovaya-reputatsiya/"
                                    class="articlesVidget__body__item__data__tit">Что такое деловая репутация</a>
-                                <a href="../index.html@section_id=8.html"
+                                <a href="../@section_id=8"
                                    class="articlesVidget__body__item__data__link">РЕПУТАЦИЯ</a>
                             </div>
                         </div>
                     </div>
 
-                    <a href="../index.html" class="arrow-link vidgets__arrow-link">
+                    <a href="../" class="arrow-link vidgets__arrow-link">
                         <span class="arrow-link__text">Все статьи</span>
-                        <img src="../../images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
+                        <img src="/images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
                     </a>
                 </div>
 
@@ -847,7 +784,7 @@
                     <div class="grow-full"></div>
 
                     <div class="contacts__data__logoWrap">
-                        <img src="../../images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+                        <img src="/images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
                     </div>
                     <p class="contacts__data__adress">
                         Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10
@@ -871,9 +808,9 @@
 
                     <div class="contacts__data__links">
                         <div class="contacts__data__links__nav">
-                            <a href="../../team/index.html" class="contacts__data__links__nav__link">Команда</a>
-                            <a href="../../service/index.html" class="contacts__data__links__nav__link">Услуги</a>
-                            <a href="../../case/index.html" class="contacts__data__links__nav__link">Кейсы</a>
+                            <a href="/team/" class="contacts__data__links__nav__link">Команда</a>
+                            <a href="/service/" class="contacts__data__links__nav__link">Услуги</a>
+                            <a href="/case/" class="contacts__data__links__nav__link">Кейсы</a>
                         </div>
 
                         <div class="contacts__data__links__soc">
@@ -922,21 +859,21 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="index.html" width="100%" class="pdf-popap__embed"  />
+            <embed src="/" width="100%" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>
-<script src="http://faros.media/local/templates/faros/js/TweenMax.min.js"></script>
-<script src="http://faros.media/local/templates/faros/js/ScrollMagic.js"></script>
-<script src="http://faros.media/local/templates/faros/js/debug.addIndicators.js"></script>
-<script src="http://faros.media/local/templates/faros/js/animation.gsap.min.js"></script>
+<script src="/js/TweenMax.min.js"></script>
+<script src="/js/ScrollMagic.js"></script>
+<script src="/js/debug.addIndicators.js"></script>
+<script src="/js/animation.gsap.min.js"></script>
 <script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
-<script src="http://faros.media/local/templates/faros/js/sticky.js"></script>
-<script src="http://faros.media/local/templates/faros/js/scripts.min.js?v=62"></script>
-<script src="http://faros.media/local/templates/faros/js/maskedinput.js"></script>
-<script src="http://faros.media/local/templates/faros/js/custom.js"></script>
+<script src="/js/sticky.js"></script>
+<script src="/js/scripts.min.js?v=62"></script>
+<script src="/js/maskedinput.js"></script>
+<script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../../index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../index.html"><meta itemprop="name" content="Материалы"></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../index.html"><meta itemprop="name" content="МАРКЕТИНГ"></a><meta itemprop="position" content="3"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Article" style="display:none"><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://faros.media/articles/kak-zagubit-loyalnost-marketingovymi-aktivnostyami/"><meta itemprop="headline" content="Как загубить лояльность маркетинговыми активностями"><div itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="32"></div><div itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><link itemprop="url" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><meta itemprop="width" content="1920px"><meta itemprop="height" content="1440px"></div><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/images/min/logourl.svg"><link itemprop="url" href="https://faros.media/images/min/logourl.svg"><meta itemprop="width" content="px"><meta itemprop="height" content="px"></div><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="name" content="репутационное агентство Фарос.Медиа"></div><meta itemprop="datePublished" content="2021-10-20T10:55:19+03:00"><meta itemprop="dateModified" content="2023-08-21T14:16:30+03:00"><meta itemprop="description" content="Как загубить лояльность маркетинговыми активностями "></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../"><meta itemprop="name" content="Материалы"></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../"><meta itemprop="name" content="МАРКЕТИНГ"></a><meta itemprop="position" content="3"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Article" style="display:none"><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://faros.media/articles/kak-zagubit-loyalnost-marketingovymi-aktivnostyami/"><meta itemprop="headline" content="Как загубить лояльность маркетинговыми активностями"><div itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="32"></div><div itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><link itemprop="url" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><meta itemprop="width" content="1920px"><meta itemprop="height" content="1440px"></div><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/images/min/logourl.svg"><link itemprop="url" href="https://faros.media/images/min/logourl.svg"><meta itemprop="width" content="px"><meta itemprop="height" content="px"></div><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="name" content="репутационное агентство Фарос.Медиа"></div><meta itemprop="datePublished" content="2021-10-20T10:55:19+03:00"><meta itemprop="dateModified" content="2023-08-21T14:16:30+03:00"><meta itemprop="description" content="Как загубить лояльность маркетинговыми активностями "></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

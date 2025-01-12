@@ -694,6 +694,7 @@
 
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', 'cookies-v-marketinge-sladko-no-ne-ochen')}}">
+                        <img src="https://faros.media/upload/iblock/466/782t315514juw2z6664ygpx54c0we9au/%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0%20%D0%BD%D0%B0%20%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%BB%D0%B8%20%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82.png" alt="">
                     </a>
                 </picture>
 
@@ -721,7 +722,7 @@
 
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', 'cookies-v-marketinge-sladko-no-ne-ochen')}}">
-                        <img src="http://faros.media/upload/iblock/13e/an4cy3xyxp3os4m6ini3mjdvux715b73/%D0%A0%D1%91%D0%A0%D0%85%D0%A1%E2%80%9E%D0%A0%C2%BB%D0%A1%D0%8B%D0%A0%C2%B5%D0%A0%D0%85%D0%A1%D0%83%20%D0%A0%D1%98%D0%A0%C2%B0%D0%A1%D0%82%D0%A0%D1%94%D0%A0%C2%B5%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D0%85%D0%A0%D1%96%20%D0%A0%D0%86%202025.png" alt="" title="">
+                        <img src="https://faros.media/upload/resize_cache/webp/upload/dev2fun_opengraph/0ed/cyf2unof1t2pe8yxi2945aki5yubeo0b.webp" alt="" title="">
                     </a>
                 </picture>
 
@@ -767,6 +768,7 @@
 
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', 'cookies-v-marketinge-sladko-no-ne-ochen')}}">
+                        <img src="https://faros.media/upload/resize_cache/webp/upload/dev2fun_opengraph/2e8/dj13hh100wn7ip3d0uavdf25w7r04kae.webp" alt="">
                     </a>
                 </picture>
 
@@ -794,7 +796,7 @@
 
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', 'cookies-v-marketinge-sladko-no-ne-ochen')}}">
-                        <img src="http://faros.media/upload/iblock/e33/rpo84uat787z57o62s9f73bonin8p6i2/%D0%A0%D1%94%D0%A0%C2%B0%D0%A0%D1%94%20%D0%A0%D1%96%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%D1%95%D0%A0%D0%86%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A1%D0%8A%20%D0%A0%D1%94%D0%A0%C2%B0%D0%A1%E2%80%A1%D0%A0%C2%B5%D0%A1%D0%83%D0%A1%E2%80%9A%D0%A0%D0%86%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D0%85%D0%A1%E2%80%B9%D0%A0%D1%91%D0%9C%E2%80%A0%20%D0%A0%D1%94%D0%A0%D1%95%D0%A0%D0%85%D0%A1%E2%80%9A%D0%A0%C2%B5%D0%A0%D0%85%D0%A1%E2%80%9A%20%D0%A0%D0%85%D0%A0%C2%B0%20%D0%A1%D0%83%D0%A0%C2%B0%D0%A0%D1%91%D0%9C%E2%80%A0%D0%A1%E2%80%9A%20%D0%A0%D0%86%202025%20%D0%A0%D1%96%D0%A0%D1%95%D0%A0%D2%91%D0%A1%D1%93.png" alt="" title="">
+                        <img src="https://faros.media/upload/iblock/28c/y2wmchj6qcxduh2qc765dre8zrlmv6c8/%D0%BA%D0%B0%D0%BA%20%D1%81%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B8%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%D0%B5%D0%B1%D0%B8%D0%BD%D0%B0%D1%80.png" alt="" title="">
                     </a>
                 </picture>
 

@@ -7437,7 +7437,7 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
-.author1 .author1__partCont img, 
+.author1 .author1__partCont img,
 .author1 .author1__partCont video {
     width: 100%; /* Занимает всю ширину контейнера */
     /* Фиксированная высота, можно изменить height: 300px; по необходимости */
@@ -7452,7 +7452,7 @@ textarea {
 }
 
 /* Эффект затемнения при наведении */
-.author1 .author1__partCont img:hover, 
+.author1 .author1__partCont img:hover,
 .author1 .author1__partCont video:hover {
     filter: brightness(0.8);
 }
@@ -8034,7 +8034,7 @@ textarea {
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
     margin-top: 1rem;
-  
+
 }
 @media screen and (orientation: portrait), screen and (max-width: 768px) {
   .author1__partCont h4 {
@@ -12541,7 +12541,7 @@ letter-spacing: -0.02em;
  .search input::-webkit-input-placeholder {
     color: #1a1a1a;
 opacity: 1 !important;
-   } 
+   }
    .search input::-moz-placeholder {
     color: #1a1a1a;
 opacity: 1 !important;
@@ -12560,7 +12560,7 @@ color: #1a1a1a;
 width: 1.6rem;
 height: 1.6rem;
 background-color: transparent;
-background-image: url(../images/mr.svg);
+background-image: url(/images/mr.svg);
 background-repeat: no-repeat;
 left: -43px;
 top: 7.2px;

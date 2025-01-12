@@ -165,6 +165,7 @@
                         <a class="horizMenu__menu__item__link"
                            data-id="11">ВАКАНСИИ</a>
                     </li>
+                    @if($author->slug == 'ekaterina-tulyankina')
                     <li class="horizMenu__menu__item material-section" data-order="7">
                         <a class="horizMenu__menu__item__link"
                            data-id="12">Работа в digital</a>
@@ -173,6 +174,7 @@
                         <a class="horizMenu__menu__item__link"
                            data-id="13">Блог Екатерины Тулянкиной</a>
                     </li>
+                    @endif
                 </ul>
 
                 <div class="selectWrap author-tags" style="display: none">
