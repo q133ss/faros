@@ -32,7 +32,7 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 # Услуги +
 # Кейсы
 # Команда+
-# Статьи
+# Статьи+
 # Мы в эфире
 # СМИ
 # Онлайн оплата

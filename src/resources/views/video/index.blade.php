@@ -2,167 +2,25 @@
 @section('title', 'Видео')
 @section('content')
     <div class="allVideoContainer" style="grid-template-columns: repeat(6, min-content);">
+        @foreach($videos as $video)
         <div class="allVideoContainer__item " >
             <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/iblock/d12/qldczkjpkz2g01orkhbkhoy3a1plqtsz/webpc-passthru.webp">
+                <img src="{{$video->img}}">
             </picture>
 
             <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
+                <a href="{{route('video.show', $video->slug)}}" class="allVideoContainer__item__content__playWrap">
                     <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
                     </svg>
                 </a>
 
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">БИЗНЕС ИНСАЙТ: Елена Медведева. Управление восприятием: продажи по любви</a>
+                <a href="{{route('video.show', $video->slug)}}"
+                   class="allVideoContainer__item__content__tit">{{$video->title}}</a>
             </div>
         </div>
-        <div class="allVideoContainer__item " >
-            <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/iblock/37f/dtxedz65buozpt22soxw56m1k02wvkwk/webpc-passthru&#32;(1).webp">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">Лена Медведева: Карьерный путь в интернет-маркетинге</a>
-            </div>
-        </div>
-        <div class="allVideoContainer__item " >
-            <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/iblock/a84/ka14y8m33zt8stx312cq1e8qj9qklu0e/Screenshot_46.webp">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">Екатерина Тулянкина : Активации в соцсетях</a>
-            </div>
-        </div>
-        <div class="allVideoContainer__item " >
-            <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/resize_cache/webp/iblock/64a/e5e26l5bt47r3pdh8bnk4d9yw3luqzz7/cover-01.webp">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">Екатерина Тулянкина с обучающей лекцией «обзоры методов продвижения в соцсетях»</a>
-            </div>
-        </div>
-        <div class="allVideoContainer__item " >
-            <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/resize_cache/webp/iblock/0f9/9e3g0sysnln96cw33ar4cwbbr3m5tw6j/cover-03.webp">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">Екатерина Тулянкина и Елена Кириленко в программе 3600 секунд на Mediametrics</a>
-            </div>
-        </div>
-        <div class="allVideoContainer__item " >
-            <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/resize_cache/webp/iblock/e82/j213984p5acaggc38q3842vggrca1c5e/cover-04.webp">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">«Нейросети и отзывы», — Екатерина Тулянкина в программе «доброе утро» на первом канале</a>
-            </div>
-        </div>
-        <div class="allVideoContainer__item " >
-            <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/resize_cache/webp/iblock/1c3/aqiql18nrpkud1ez0e1odcrhsqlammk0/cover-02.webp">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">SMM для букмекерских контор // Faros.media</a>
-            </div>
-        </div>
-        <div class="allVideoContainer__item double _bgBlue2" style='grid-column: 3 /span 2;'>
-            <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="../upload/resize_cache/webp/iblock/62b/rjqvjtrx4owvla6uroltam2kqckgj1rt/cover-05.webp">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">Екатерина Тулянкина для канала Москва24: отзывы и их сила</a>
-            </div>
-        </div>
-        <div class="allVideoContainer__item " >
-            <picture class="allVideoContainer__item__pic absolute-full">
-            </picture>
-
-            <div class="allVideoContainer__item__content">
-                <a href="{{route('video.show', 'video')}}" class="allVideoContainer__item__content__playWrap">
-                    <svg class="allVideoContainer__item__content__playWrap__play" viewBox="0 0 80 80"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 0C17.9427 0 0 17.9444 0 40C0 62.0556 17.9427 80 40 80C62.0573 80 80 62.0556 80 40C80 17.9444 62.0573 0 40 0ZM55.9017 41.4014L32.5684 56.4014C32.295 56.5788 31.9792 56.6667 31.6667 56.6667C31.3933 56.6667 31.1166 56.5983 30.8692 56.4633C30.332 56.1703 30 55.6103 30 55V25C30 24.3897 30.332 23.8297 30.8692 23.5367C31.3966 23.247 32.0573 23.2648 32.5684 23.5986L55.9017 38.5986C56.377 38.9045 56.6667 39.4336 56.6667 40C56.6667 40.5664 56.377 41.0953 55.9017 41.4014Z"/>
-                    </svg>
-                </a>
-
-
-                <a href="{{route('video.show', 'video')}}"
-                   class="allVideoContainer__item__content__tit">Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах</a>
-            </div>
-        </div>
+        @endforeach
     </div>
 
 

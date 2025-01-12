@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(SeoSeeder::class);
         $this->call(AuthorsSeeder::class);
+        $this->call(VideoSeeder::class);
     }
 }
