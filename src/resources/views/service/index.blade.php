@@ -16,7 +16,7 @@
                     личный
                     бизнес-консультант</p>
                 <div class="fullHeightBigWidth__wrap__control">
-                    <a href="..//#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
+                    <a href="/#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
                 </div>
 
                 <div class="fullHeightBigWidth__wrap__afterGrow"></div>
@@ -297,7 +297,7 @@
             <div class="formBlock__footer">
                 <button type="submit" class="button formBlock__footer__button">Отправить</button>
                 <p class="formBlock__footer__text _colorGray14">Нажимая “Отправить”, вы соглашаетесь с <a target="_blank"
-                                                                                                          href="http://faros.media/%D0%A0%D1%9F%D0%A0%D1%95%D0%A0%C2%BB%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D1%94%D0%A0%C2%B0_%D0%A0%D0%86_%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%D0%85%D0%A0%D1%95%D0%A1%E2%82%AC%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D1%91%D0%A0%D1%91_%D0%A0%D1%95%D0%A0%C2%B1%D0%A1%D0%82%D0%A0%C2%B0%D0%A0%C2%B1%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%D1%94%D0%A0%D1%91_%D0%A0%D1%97%D0%A0%C2%B5%D0%A1%D0%82%D0%A1%D0%83%D0%A0%D1%95%D0%A0%D0%85%D0%A0%C2%B0%D0%A0%C2%BB%D0%A1%D0%8A%D0%A0%D0%85%D0%A1%E2%80%B9%D0%A1%E2%80%A6_%D0%A0%D2%91%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D0%85%D0%A1%E2%80%B9%D0%A1%E2%80%A6.pdf"
+                                                                                                          href="/Политика_в_отношении_обработки_персональных_данных.pdf"
                                                                                                           class="formBlock__footer__text__link _colorBlack">Политикой
                         конфиденциальности</a></p>
             </div>

@@ -8,7 +8,7 @@
     <title>СМИ</title>
     <script src="/js/modernizr-custom.js"></script>
     <link rel="stylesheet" href="/css/styles.min.css?v=53">
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo')
 </head>
@@ -109,7 +109,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
             .st0 {
-                clip-path: url(index.html);
+                clip-path: url(/);
             }
 
             .st1 {
@@ -366,70 +366,7 @@
 
 <!--Header START-->
 @include('inc.header')
-<nav class="mobilemenu mobMenuContainer custom-scroll" id="menu">
-    <div class="mobilemenu__wrapMenu">
-        <div class="mobilemenu__wrapMenu__menu">
-            <a href="../index.html#form" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/start.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Начать проект</span>
-            </a>
-            <a href="../articles/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/blogs.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Статьи</span>
-            </a>
-            <a href="../service/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/services.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Услуги</span>
-            </a>
-            <a href="index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/media.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">СМИ</span>
-            </a>
-            <a href="../case/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/keyses.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Кейсы</span>
-            </a>
-            <a href="../video/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/videos.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Мы в эфире</span>
-            </a>
-            <a href="../team/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/teams.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Команда</span>
-            </a>
-            <a href="../pay/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="../images/min/icons/onlinepay.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Online-оплата</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="mobilemenu__footer">
-        <div class="mobilemenu__footer__left">
-            <a href="tel:88006008613" class="mobilemenu__footer__left__item">8 800 600 86 13</a>
-            <div class="mobilemenu__footer__left__br"></div>
-            <a href="mailto:a@a.aa" class="mobilemenu__footer__left__item">info@faros.media</a>
-        </div>
-
-        <div class="mobilemenu__footer__right">
-            <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="../images/min/icons/vk.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>
-
-            <!--<a href="#" class="mobilemenu__footer__right__icoWrap">
-                <img src="/images/min/icons/fb.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>-->
-
-            <!--<a href="#" class="mobilemenu__footer__right__icoWrap">
-                <img src="/images/min/icons/tw.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>-->
-
-            <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="../images/min/icons/tg.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>
-        </div>
-    </div>
-</nav>
+@include('inc.mobmenu')
 <!--Header END--><div class="hidden" id="hidden">
     <div class="wrapper" id="wrapper">
         <!--news home menu START-->
@@ -439,14 +376,14 @@
             <p class="bread horizMenu__menu horizMenu__menu__media">СМИ о нас</p>
 
             <div class="horizMenu__filter horizMenu__filter_mw">
-                <img src="../images/min/icons/top_bottom.svg" alt=""
+                <img src="/images/min/icons/top_bottom.svg" alt=""
                      class="horizMenu__filter__sort horizMenu__filter__sort_abs">
                 <select class="selectWrap__sel" id="sortSelMedia">
                     <option value="new">Новые</option>
                     <option value="old">Старые</option>
                     <option value="popular">По популярности</option>
                 </select>
-                <img src="../images/min/icons/arroworange.svg" alt=""
+                <img src="/images/min/icons/arroworange.svg" alt=""
                      class="horizMenu__filter__arrow horizMenu__filter__arrow_abs">
             </div>
         </div>
@@ -458,7 +395,7 @@
                     <div class="articlesDoubleBlock__content__top">
                         <!--noindex--><a  href="https://kontur.ru/articles/5138"  class="articlesDoubleBlock__content__top__logo" rel="nofollow">
                             <picture class="articlesDoubleBlock__content__top__logo__img">
-                                <img src="../upload/resize_cache/webp/iblock/5cd/hdqoh5jts4q5bgjaugibwidkaa64d4z3/kontur-logo.webp">
+                                <img src="/upload/resize_cache/webp/iblock/5cd/hdqoh5jts4q5bgjaugibwidkaa64d4z3/kontur-logo.webp">
                             </picture>
                         </a><!--/noindex-->
                     </div>
@@ -468,7 +405,7 @@
                 </div>
 
                 <picture class="articlesDoubleBlock__pic parallax">
-                    <img src="../upload/resize_cache/webp/iblock/e54/irdum5i0vc4wcf01fojmfpqyjurvwzqz/smi2.webp" data-depth="0.6">
+                    <img src="/upload/resize_cache/webp/iblock/e54/irdum5i0vc4wcf01fojmfpqyjurvwzqz/smi2.webp" data-depth="0.6">
                 </picture>
             </div>
 
@@ -476,7 +413,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/0e9/o1dj11vkm7utf3p910duxvmg4d8mefxf/kingdom-come-back-later&#32;1.webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/0e9/o1dj11vkm7utf3p910duxvmg4d8mefxf/kingdom-come-back-later&#32;1.webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -488,7 +425,7 @@
 
                     <!--noindex--><a  href="https://www.dirsalona.ru/article/1103-kak-salonu-krasoty-prodvigatsya-v-sotssetyah-i-kak-vybirat-ploshchadki"  class="newsMiniBlock__cont__logo" rel="nofollow">
                         <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="../upload/resize_cache/webp/iblock/229/i25lp8td0fqw6zgzaohnuk33eck8f453/logo&#32;(2)&#32;1.webp" data-depth="0.6">
+                            <img src="/upload/resize_cache/webp/iblock/229/i25lp8td0fqw6zgzaohnuk33eck8f453/logo&#32;(2)&#32;1.webp" data-depth="0.6">
                         </picture>
                     </a><!--/noindex-->
                 </div>
@@ -498,7 +435,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/iblock/113/600cfwqsxgc7p4t42ux7o2p3xxshmc26/ozero_seliger_8.jpg" data-depth="0.6">
+                        <img src="/upload/iblock/113/600cfwqsxgc7p4t42ux7o2p3xxshmc26/ozero_seliger_8.jpg" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -510,7 +447,7 @@
 
                     <!--noindex--><a  href="https://vc.ru/marketing/51333-prodvizhenie-mini-gostinicy-s-nulevym-marketingovym-byudzhetom-nu-pochti-s-nulevym"  class="newsMiniBlock__cont__logo" rel="nofollow">
                         <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="../upload/resize_cache/webp/iblock/d02/eanwu78jsfmpz3pedlntqo2v7k95mlgc/VC-logo.webp" data-depth="0.6">
+                            <img src="/upload/resize_cache/webp/iblock/d02/eanwu78jsfmpz3pedlntqo2v7k95mlgc/VC-logo.webp" data-depth="0.6">
                         </picture>
                     </a><!--/noindex-->
                 </div>
@@ -520,7 +457,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/cc7/b9sl3gfokbi08t32lzor94i3x68pmnad/Rectangle&#32;15&#32;(4).webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/cc7/b9sl3gfokbi08t32lzor94i3x68pmnad/Rectangle&#32;15&#32;(4).webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -534,7 +471,7 @@
 
                     <!--noindex--><a  href="https://www.likeni.ru/analytics/spetsifika-raboty-smm-spetsialista-vnutri-kompanii/"  class="newsMiniBlock__cont__logo" rel="nofollow">
                         <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="../upload/resize_cache/webp/iblock/b31/48fug75ia7tm80fmr13cn76ice2dvzwp/logo.webp" data-depth="0.6">
+                            <img src="/upload/resize_cache/webp/iblock/b31/48fug75ia7tm80fmr13cn76ice2dvzwp/logo.webp" data-depth="0.6">
                         </picture>
                     </a><!--/noindex-->
                 </div>
@@ -544,7 +481,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/25e/5pvjl3hhpp1e424xopcqnbp3lloe5qtu/Rectangle&#32;15&#32;(5).webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/25e/5pvjl3hhpp1e424xopcqnbp3lloe5qtu/Rectangle&#32;15&#32;(5).webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -556,7 +493,7 @@
 
                     <!--noindex--><a  href="https://vc.ru/marketing/51675-aeroflot-i-aleshkovskiy-razbor-reputacionnogo-keysa"  class="newsMiniBlock__cont__logo" rel="nofollow">
                         <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="../upload/resize_cache/webp/iblock/437/vg5n2z728pfoy2mv20opud4hpeoq630o/search_logo&#32;1.webp" data-depth="0.6">
+                            <img src="/upload/resize_cache/webp/iblock/437/vg5n2z728pfoy2mv20opud4hpeoq630o/search_logo&#32;1.webp" data-depth="0.6">
                         </picture>
                     </a><!--/noindex-->
                 </div>
@@ -567,7 +504,7 @@
                     <div class="articlesDoubleBlock__content__top">
                         <!--noindex--><a  href="https://www.forbes.ru/forbes-woman/365373-na-vidu-kak-zhenshchine-vystroit-svoyu-reputaciyu-s-nulya"  class="articlesDoubleBlock__content__top__logo" rel="nofollow">
                             <picture class="articlesDoubleBlock__content__top__logo__img">
-                                <img src="../upload/resize_cache/webp/iblock/1b0/0rte9cadg138hc0su8kcsankfvdyne40/medialogo.webp" data-depth="0.6">
+                                <img src="/upload/resize_cache/webp/iblock/1b0/0rte9cadg138hc0su8kcsankfvdyne40/medialogo.webp" data-depth="0.6">
                             </picture>
                         </a><!--/noindex-->
 
@@ -580,7 +517,7 @@
                 </div>
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="articlesDoubleBlock__pic articlesDoubleBlock__pic_second">
-                        <img src="../upload/iblock/9e6/sg1ards3y4oz74ky2sn4l6s6ubxn6lsq/webpc-passthru.webp" data-depth="0.6">
+                        <img src="/upload/iblock/9e6/sg1ards3y4oz74ky2sn4l6s6ubxn6lsq/webpc-passthru.webp" data-depth="0.6">
                     </picture>
                 </a>
             </div>
@@ -589,7 +526,7 @@
                     <div class="articlesDoubleBlock__content__top">
                         <!--noindex--><a  href="https://www.cossa.ru/trends/214956/"  class="articlesDoubleBlock__content__top__logo" rel="nofollow">
                             <picture class="articlesDoubleBlock__content__top__logo__img">
-                                <img src="../upload/resize_cache/webp/iblock/649/bwbsitj2xbikmwcllxojrxxo019bqa6n/cossa_logo&#32;1.webp">
+                                <img src="/upload/resize_cache/webp/iblock/649/bwbsitj2xbikmwcllxojrxxo019bqa6n/cossa_logo&#32;1.webp">
                             </picture>
                         </a><!--/noindex-->
                     </div>
@@ -598,7 +535,7 @@
                 </div>
 
                 <picture class="articlesDoubleBlock__pic parallax">
-                    <img src="../upload/resize_cache/webp/iblock/a54/p8v0rpubszr4elnaee0xvdl5xwvs1mxf/Rectangle&#32;15&#32;(3).webp" data-depth="0.6">
+                    <img src="/upload/resize_cache/webp/iblock/a54/p8v0rpubszr4elnaee0xvdl5xwvs1mxf/Rectangle&#32;15&#32;(3).webp" data-depth="0.6">
                 </picture>
             </div>
 
@@ -606,7 +543,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/448/2y1icgrod07qurvjy3982ljimuo1tv12/Group&#32;2.webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/448/2y1icgrod07qurvjy3982ljimuo1tv12/Group&#32;2.webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -618,7 +555,7 @@
 
                     <!--noindex--><a  href="https://www.likeni.ru/analytics/negativ-eto-norma-esli-ego-ne-ochen-mnogo/"  class="newsMiniBlock__cont__logo" rel="nofollow">
                         <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="../upload/resize_cache/webp/iblock/64e/6b01dzdlqm9phyuye09ljc3j8j44zoz5/Group&#32;1098.webp" data-depth="0.6">
+                            <img src="/upload/resize_cache/webp/iblock/64e/6b01dzdlqm9phyuye09ljc3j8j44zoz5/Group&#32;1098.webp" data-depth="0.6">
                         </picture>
                     </a><!--/noindex-->
                 </div>
@@ -628,7 +565,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/229/wdb7unehp7ij1gqe86lirkdtod9xwrop/4-Sotsseti-mogut-horosho-pomoch.webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/229/wdb7unehp7ij1gqe86lirkdtod9xwrop/4-Sotsseti-mogut-horosho-pomoch.webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -642,7 +579,7 @@
 
                     <!--noindex--><a  href="https://vc.ru/marketing/33881-aktivacionnye-mehaniki-v-socsetyah-kak-odna-publikaciya-vyzvala-shirokoe-obsuzhdenie-i-popala-v-federalnye-smi?from=yandex"  class="newsMiniBlock__cont__logo" rel="nofollow">
                         <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="../upload/resize_cache/webp/iblock/d02/eanwu78jsfmpz3pedlntqo2v7k95mlgc/VC-logo.webp" data-depth="0.6">
+                            <img src="/upload/resize_cache/webp/iblock/d02/eanwu78jsfmpz3pedlntqo2v7k95mlgc/VC-logo.webp" data-depth="0.6">
                         </picture>
                     </a><!--/noindex-->
                 </div>
@@ -652,7 +589,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/dev2fun_opengraph/100/teyxw2cv0q6dwar4d7ytdw0tnlv746lk.jpg" data-depth="0.6">
+                        <img src="/upload/dev2fun_opengraph/100/teyxw2cv0q6dwar4d7ytdw0tnlv746lk.jpg" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -674,7 +611,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/dev2fun_opengraph/ecb/ys02aupgi1mzj0iirsigp29oo5t23jpf.jpg" data-depth="0.6">
+                        <img src="/upload/dev2fun_opengraph/ecb/ys02aupgi1mzj0iirsigp29oo5t23jpf.jpg" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -696,7 +633,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/f5c/26u2t9v41oiepstcgmbw80ywmx9pv3u5/29149.webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/f5c/26u2t9v41oiepstcgmbw80ywmx9pv3u5/29149.webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -718,7 +655,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/8b5/ppmnqwfg9exo6oj3t56d8t1els7u3y78/4789552.webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/8b5/ppmnqwfg9exo6oj3t56d8t1els7u3y78/4789552.webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -740,7 +677,7 @@
             <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                 <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
                     <picture class="newsMiniBlock__pic">
-                        <img src="../upload/resize_cache/webp/iblock/255/4idd1573dt04edfwp7wcvvqrtu6f79mv/3871751.webp" data-depth="0.6">
+                        <img src="/upload/resize_cache/webp/iblock/255/4idd1573dt04edfwp7wcvvqrtu6f79mv/3871751.webp" data-depth="0.6">
                     </picture>
                 </a>
 
@@ -753,7 +690,7 @@
 
                     <!--noindex--><a  href="https://netology.ru/blog/03-2022-reputation-drivers"  class="newsMiniBlock__cont__logo" rel="nofollow">
                         <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="http://faros.media/upload/iblock/d90/1awjfr02brcpmfvbcw9wlsvh4ih4va7z/%D0%A0%E2%80%BA%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95_%D0%A0%D1%9A%D0%A0%C2%B5%D0%A0%D2%91%D0%A0%D1%91%D0%A0%C2%B0_%D0%A0%D1%9C%D0%A0%C2%B5%D0%A1%E2%80%9A%D0%A0%D1%95%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%91%D0%A0%D1%91.svg" data-depth="0.6">
+                            <img src="https://faros.media/upload/iblock/d90/1awjfr02brcpmfvbcw9wlsvh4ih4va7z/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0_%D0%9D%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8.svg" data-depth="0.6">
                         </picture>
                     </a><!--/noindex-->
                 </div>
@@ -768,7 +705,7 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="index.html" width="100%" class="pdf-popap__embed"  />
+            <embed src="/" width="100%" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>
@@ -782,7 +719,7 @@
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

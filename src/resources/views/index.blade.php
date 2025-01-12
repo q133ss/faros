@@ -84,7 +84,7 @@
         </div>
         <div class="fullHeightMinWidth__bottom">
             <picture class="fullHeightMinWidth__bottom__bg">
-                <img src="http://faros.media/upload/iblock/439/gmg0a4xb1xa59q6lvsow6gxwvfvho9qm/%D0%A0%C2%A4%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%96%D0%A0%C2%B0%D0%A1%E2%80%9AKids_2.png">
+                <img src="https://faros.media/upload/resize_cache/webp/iblock/0ab/grf92k70c07d2pxjq7niiu4z0lyajtdq/%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D1%85%D1%83%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BF%D1%80%D0%B5%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2.webp">
             </picture>
             <div class="fullHeightMinWidth__bottom__content">
                 <p class="fullHeightMinWidth__bottom__content__status">НОВЫЙ КЕЙС</p>
@@ -101,7 +101,7 @@
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="http://faros.media/upload/iblock/67d/0brc6c9cgg6zpmrchz1a5hbzskwoncqy/%D0%A0%D2%91%D0%A0%D1%91%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%C2%B0%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.jpeg" alt=""
+                    <img src="https://faros.media/upload/resize_cache/webp/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/%D0%B1%D0%B5%D0%BB%D1%8B%D0%B8%CC%86%20%D1%84%D1%80%D0%B5%D0%B3%D0%B0%D1%82%20%D0%BB%D0%BE%D0%B3%D0%BE.webp" alt=""
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
             </div>
@@ -113,7 +113,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="http://faros.media/upload/iblock/67d/0brc6c9cgg6zpmrchz1a5hbzskwoncqy/%D0%A0%D2%91%D0%A0%D1%91%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%C2%B0%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.jpeg">
+                        <img src="https://faros.media/upload/resize_cache/webp/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/%D0%B1%D0%B5%D0%BB%D1%8B%D0%B8%CC%86%20%D1%84%D1%80%D0%B5%D0%B3%D0%B0%D1%82%20%D0%BB%D0%BE%D0%B3%D0%BE.webp">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -140,7 +140,7 @@
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="http://faros.media/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/%D0%A0%D1%96%D0%A0%C2%B5%D0%A0%D1%98%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%C2%B5%D0%A1%D0%83%D0%A1%E2%80%9A%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.jpeg" alt=""
+                    <img src="https://faros.media/upload/resize_cache/webp/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/%D0%B3%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%81%D1%82%20%D0%BB%D0%BE%D0%B3%D0%BE.webp" alt=""
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
             </div>
@@ -152,7 +152,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="http://faros.media/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/%D0%A0%D1%96%D0%A0%C2%B5%D0%A0%D1%98%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%C2%B5%D0%A1%D0%83%D0%A1%E2%80%9A%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.jpeg">
+                        <img src="https://faros.media/upload/resize_cache/webp/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/%D0%B3%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%81%D1%82%20%D0%BB%D0%BE%D0%B3%D0%BE.webp">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -179,46 +179,7 @@
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="http://faros.media/upload/iblock/877/fk0snb6nx59y1q49y7yy2gucylwo8183/%D0%A1%D0%83%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D1%98%D0%A0%D1%95%D0%A0%C2%B1%D0%A0%D1%91%D0%A0%C2%BB%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.png" alt=""
-                         class="fullHeightMinWidthComents__header__logoWrap__logo">
-                </div>
-            </div>
-
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
-
-            <div class="fullHeightMinWidthComents__beforeGrow"></div>
-
-            <div class="fullHeightMinWidthComents__cont">
-                <div class="fullHeightMinWidthComents__cont__user">
-                    <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="http://faros.media/upload/iblock/877/fk0snb6nx59y1q49y7yy2gucylwo8183/%D0%A1%D0%83%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D1%98%D0%A0%D1%95%D0%A0%C2%B1%D0%A0%D1%91%D0%A0%C2%BB%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.png">
-                    </picture>
-
-                    <div class="fullHeightMinWidthComents__cont__user__data">
-                        <p class="fullHeightMinWidthComents__cont__user__data__name">Ситимобил</p>
-                        <p class="fullHeightMinWidthComents__cont__user__data__prof">Руководитель специальных проектов и социальных медиа</p>
-                    </div>
-                </div>
-                <p class="fullHeightMinWidthComents__cont__text">Выражаем благодарность репутационному агентству Faros.Media и Екатерине Тулянкиной лично за оказание комплексных услуг по мониторингу и анализу информационного поля, нивелированию негатива, наращиванию NPS и выстраиванию клиентской поддержки в период 2020-2021 гг.</p>
-
-                <a href="http://faros.media/upload/iblock/4db/ql1n7a3v0ng3z3nnt8q5wcrjw3jsv19i/farosmedia_%D0%A1%D0%83%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D1%98%D0%A0%D1%95%D0%A0%C2%B1%D0%A0%D1%91%D0%A0%C2%BB.pdf" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
-                    <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
-                </a>
-            </div>
-
-            <div class="fullHeightMinWidthComents__afterGrow"></div>
-
-            <a href="reviews/index.html" class="arrow-link fullHeightMinWidthComents__arrow-link">
-                <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
-                     class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
-            </a>
-        </div>
-        <div class="fullHeightMinWidthComents">
-            <div class="fullHeightMinWidthComents__header">
-                <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="http://faros.media/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/%D0%A0%C2%B1%D0%A0%C2%B5%D0%A0%C2%BB%D0%A1%E2%80%B9%D0%A0%D1%91%D0%9C%E2%80%A0%20%D0%A1%E2%80%9E%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%96%D0%A0%C2%B0%D0%A1%E2%80%9A%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.jpeg" alt=""
+                    <img src="https://faros.media/upload/resize_cache/webp/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/%D0%B1%D0%B5%D0%BB%D1%8B%D0%B8%CC%86%20%D1%84%D1%80%D0%B5%D0%B3%D0%B0%D1%82%20%D0%BB%D0%BE%D0%B3%D0%BE.webp" alt=""
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
                 <a href="https://faros.media/cases/55/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
@@ -234,7 +195,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="http://faros.media/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/%D0%A0%C2%B1%D0%A0%C2%B5%D0%A0%C2%BB%D0%A1%E2%80%B9%D0%A0%D1%91%D0%9C%E2%80%A0%20%D0%A1%E2%80%9E%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%96%D0%A0%C2%B0%D0%A1%E2%80%9A%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.jpeg">
+                        <img src="https://faros.media/upload/resize_cache/webp/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/%D0%B1%D0%B5%D0%BB%D1%8B%D0%B8%CC%86%20%D1%84%D1%80%D0%B5%D0%B3%D0%B0%D1%82%20%D0%BB%D0%BE%D0%B3%D0%BE.webp">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -569,14 +530,14 @@
         >
             <div class="miniBlock__layer">
                 <picture class="miniBlock__layer__pic parallax">
-                    <img src="http://faros.media/upload/iblock/439/gmg0a4xb1xa59q6lvsow6gxwvfvho9qm/%D0%A0%C2%A4%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%96%D0%A0%C2%B0%D0%A1%E2%80%9AKids_2.png" data-depth="0.6">
+                    <img src="https://faros.media/upload/resize_cache/webp/upload/iblock/439/gmg0a4xb1xa59q6lvsow6gxwvfvho9qm/%D0%A4%D1%80%D0%B5%D0%B3%D0%B0%D1%82Kids_2.webp" data-depth="0.6">
                 </picture>
             </div>
 
             <div class="miniBlock__wrap">
 
                 <picture class="miniBlock__wrap__pic">
-                    <img src="http://faros.media/upload/iblock/f84/cawj4mvta1z73if6c9he1m8rq8hvtn5q/%D0%A0%C2%A4%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%96%D0%A0%C2%B0%D0%A1%E2%80%9AKids_2.png">
+                    <img src="https://faros.media/upload/resize_cache/webp/upload/iblock/f84/cawj4mvta1z73if6c9he1m8rq8hvtn5q/%D0%A4%D1%80%D0%B5%D0%B3%D0%B0%D1%82Kids_2.webp">
                 </picture>
 
 
@@ -602,14 +563,14 @@
         >
             <div class="miniBlock__layer">
                 <picture class="miniBlock__layer__pic parallax">
-                    <img src="http://faros.media/upload/iblock/71d/joc7tg7bi8e2pchvmrb6c7psjt0nv6by/%D0%A1%D0%8C%D0%A0%C2%BB%D0%A1%D0%8A%D0%A0%C2%B1%D0%A1%D0%82%D0%A1%D1%93%D0%A1%D0%83%20%D0%A0%D2%91%D0%A0%D1%95%D0%A0%D1%98.png" data-depth="0.6">
+                    <img src="https://faros.media/upload/resize_cache/webp/iblock/71d/joc7tg7bi8e2pchvmrb6c7psjt0nv6by/%D1%8D%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81%20%D0%B4%D0%BE%D0%BC.webp" data-depth="0.6">
                 </picture>
             </div>
 
             <div class="miniBlock__wrap">
 
                 <picture class="miniBlock__wrap__pic">
-                    <img src="http://faros.media/upload/iblock/864/mi14bbk2504n8eo1gcz3nocvnwz3795c/%D0%A1%D0%8C%D0%A0%C2%BB%D0%A1%D0%8A%D0%A0%C2%B1%D0%A1%D0%82%D0%A1%D1%93%D0%A1%D0%83%20%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D1%96%D0%A0%D1%95.png">
+                    <img src="https://faros.media/upload/iblock/864/mi14bbk2504n8eo1gcz3nocvnwz3795c/%D1%8D%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81%20%D0%BB%D0%BE%D0%B3%D0%BE.png">
                 </picture>
 
 
@@ -1087,7 +1048,7 @@
             </ul>
 
 
-            <a href="articles.1.html" class="arrow-link horizMenu__arrow-link">
+            <a href="{{route('articles.index')}}" class="arrow-link horizMenu__arrow-link">
                 <span class="arrow-link__text">Все статьи</span>
                 <img src="images/min/icons/grayarrow.svg" alt="" class="arrow-link__arrow">
             </a>
@@ -1162,6 +1123,12 @@
             <div class="newsMiniBlock _bgWhite material-item
                                     material-tag-8                                ">
 
+                <picture class="newsMiniBlock__pic">
+                    <a href="article/marketing-vliyaniya-kak-rabotat-s-inflyuenserami/index.html">
+                        <img src="https://faros.media/upload/resize_cache/webp/upload/dev2fun_opengraph/907/xnleh97arzoxnaztwuioekfplrfex7g5.webp">
+                    </a>
+                </picture>
+
                 <div class="newsMiniBlock__cont">
                     <div class="newsMiniBlock__cont__links">
                         <a href="articles/index.html@section_id=8.html"
@@ -1181,7 +1148,7 @@
                                 ">
                 <picture class="newsMiniBlock__pic">
                     <a href="article/marketing-vliyaniya-kak-rabotat-s-inflyuenserami/index.html">
-                        <img src="http://faros.media/upload/iblock/13e/an4cy3xyxp3os4m6ini3mjdvux715b73/%D0%A0%D1%91%D0%A0%D0%85%D0%A1%E2%80%9E%D0%A0%C2%BB%D0%A1%D0%8B%D0%A0%C2%B5%D0%A0%D0%85%D0%A1%D0%83%20%D0%A0%D1%98%D0%A0%C2%B0%D0%A1%D0%82%D0%A0%D1%94%D0%A0%C2%B5%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D0%85%D0%A0%D1%96%20%D0%A0%D0%86%202025.png">
+                        <img src="https://faros.media/upload/iblock/ab2/1fzt0hcxp0lses26z2v6eqk4lmhg68pf/%D0%BA%D0%B0%D0%BA%20%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%20%D0%B2%D1%8B%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B8%CC%86%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%D1%81%20%D0%B1%D0%BB%D0%BE%D0%B3%D0%B5%D1%80%D0%B0%D0%BC%D0%B8.png">
                     </a>
                 </picture>
 
