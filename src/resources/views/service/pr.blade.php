@@ -1,32 +1,33 @@
 @extends('layouts.service')
-@section('title', 'Агентство по управлению репутацией из топ ORM SERM 2022 Faros.Media')
+@section('title', 'PR')
 @section('content')
     <div class="ormBanner"
+         style="background-color: #000000"
     >
         <div class="ormBanner__left">
-            <a href="#" class="ormBanner__left__tag">ORM</a>
-            <h1 class="ormBanner__left__tit">Комплексное управление репутацией от ведущего SERM и ORM агентства</h1>
-            <p class="ormBanner__left__descr">87% потребителей интересуются репутацией компании до момента принятия решения</p>
-            <a href="#orderservice" type="submit" class="button ormButton">ЗАКАЗАТЬ УСЛУГУ</a>
+            <a href="/#" class="ormBanner__left__tag">PR</a>
+            <h1 class="ormBanner__left__tit">Обеспечим рост популярности вашего бренда через продвижение на авторитетных площадках</h1>
+            <p class="ormBanner__left__descr"></p>
+            <a href="/#orderservice" type="submit" class="button ormButton">ЗАКАЗАТЬ УСЛУГУ</a>
 
             <picture class="ormBanner__left__pic">
-                <img src="../../upload/iblock/c9c/k25xohuxr8oi31l8l3lv7yuy20k3jl6u/s.png">
+                <img src="/upload/iblock/a17/ca0vky3miofiklevfums4qfeudrurcj9/ss.png">
             </picture>
         </div>
 
         <picture class="ormBanner__right">
-            <img src="../../upload/iblock/c9c/k25xohuxr8oi31l8l3lv7yuy20k3jl6u/s.png">
+            <img src="/upload/iblock/a17/ca0vky3miofiklevfums4qfeudrurcj9/ss.png">
         </picture>
     </div>
 
     <div class="ormBlock">
         <div class="ormBlock__left">
             <div class="ormBlock__left__persent">
-                <img src="../../images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
+                <img src="/images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
 
                 <div class="ormBlock__left__persent__data">
-                    <p class="ormBlock__left__persent__data__count">80%</p>
-                    <p class="ormBlock__left__persent__data__descr">пользователей читают отзывы о Вашей кампании</p>
+                    <p class="ormBlock__left__persent__data__count"></p>
+                    <p class="ormBlock__left__persent__data__descr"></p>
                 </div>
             </div>
         </div>
@@ -34,47 +35,58 @@
         <div class="ormBlock__right">
             <div class="ormBlock__right__content">
                 <div class="ormBlock__right__content__mini">
-                    <p class="ormBlock__right__content__mini__tit">Что дает репутация?</p>
-                    <p class="ormBlock__right__content__mini__text">Репутация - чье-то мнение о ком-то или о чем-то. То есть, в репутации всегда есть две стороны: объект и субъект. И репутация - не статичное, а динамичное понятие. Она может кардинально меняться за очень быстрый промежуток времени.
-
-                        Задача SERM агентства Farosmedia - сформировать устойчивое восприятие у целевых субъектов репутации, затем контролировать и корректировать его. </p>
+                    <p class="ormBlock__right__content__mini__tit">Что дает PR</p>
+                    <p class="ormBlock__right__content__mini__text">Ответ - создание положительной репутации. Развиваем личный бренд экспертов компании. Создаем и публикуем материалы в топовых СМИ, организовываем выступления на мероприятиях. Запускаем спецпроекты онлайн и офлайн.<br>
+                        <br>
+                        В зависимости от области применения PR выполняет следующие функции:<br>
+                        - внутренние — взаимопонимание персонала и руководства;<br>
+                        - социальные — взаимоотношения в обществе;<br>
+                        - политические – сотрудничество с органами власти;<br>
+                        - маркетинговые – взаимоотношения покупателей с компаниями;<br>
+                        - экономические – взаимодействие организации с поставщиками и подрядчиками.<br>
+                        <br>
+                        Итак, чтобы постоянно поддерживать положительный имидж организации, учреждения или персоны, должны правильно работать PR – технологии, а именно это предполагает:<br>
+                        - постоянное поддержание связей с общественностью;<br>
+                        - подбор правильного контента как на внешних, так и на внутренних ресурсах;<br>
+                        - использование различных каналов для связи с общественностью;<br>
+                        - привлечение спонсорской помощи и иные инструменты.<br></p>
                 </div>
 
                 <div class="ormBlock__right__content__iconBlock ormBlock__right__content__slider1200"
                      id="ormAdvantage">
                     <div class="ormBlock__right__content__iconBlock__block">
-                        <img src="../../upload/iblock/2b5/g95cvien8ombd0usn018ta6zh6d61z3d/orm_dol.svg" alt=""
+                        <img src="/upload/iblock/2b3/dylvr8goqv1zn7rhhuykmxly44e73zev/глаз1.svg" alt=""
                              class="ormBlock__right__content__iconBlock__block__ico">
-                        <p class="ormBlock__right__content__iconBlock__block__text">Обеспечивает рост кликабельности сайта целевой аудитории до 30%</p>
+                        <p class="ormBlock__right__content__iconBlock__block__text">Информационные поводы</p>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block">
-                        <img src="../../upload/iblock/eaf/ca0ndqb0sxbxpqnctoymzub0f854jczk/smile.svg" alt=""
+                        <img src="/upload/iblock/2b3/dylvr8goqv1zn7rhhuykmxly44e73zev/всми2.svg" alt=""
                              class="ormBlock__right__content__iconBlock__block__ico">
-                        <p class="ormBlock__right__content__iconBlock__block__text">Увеличивает до 80% индекс потребительской лояльности</p>
+                        <p class="ormBlock__right__content__iconBlock__block__text">Публикации в профильных СМИ</p>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block">
-                        <img src="../../upload/iblock/7f8/gtwumb9rh0v5ydr8hmm5h44wdsby1whr/67.svg" alt=""
+                        <img src="/upload/iblock/2b3/dylvr8goqv1zn7rhhuykmxly44e73zev/меро3.svg" alt=""
                              class="ormBlock__right__content__iconBlock__block__ico">
-                        <p class="ormBlock__right__content__iconBlock__block__text">Увеличивает охват целевой аудитории в 6-7 раз</p>
+                        <p class="ormBlock__right__content__iconBlock__block__text">Мероприятия под ключ</p>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block">
-                        <img src="../../upload/iblock/47f/t1xwfc0df8j7bbugh70ntw9g2jcc8w64/10.svg" alt=""
+                        <img src="/upload/iblock/2b3/dylvr8goqv1zn7rhhuykmxly44e73zev/имидж4.svg" alt=""
                              class="ormBlock__right__content__iconBlock__block__ico">
-                        <p class="ormBlock__right__content__iconBlock__block__text">Создание и продвижение брендовых ресурсов в ТОП-10 Яндекса и Google</p>
+                        <p class="ormBlock__right__content__iconBlock__block__text">Индивидуальный имидж</p>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block">
-                        <img src="../../upload/iblock/3ba/cabb99i2sk21q1jhlu7jr3wk0co41hi3/40.svg" alt=""
+                        <img src="/upload/iblock/2b3/dylvr8goqv1zn7rhhuykmxly44e73zev/дов4.svg" alt=""
                              class="ormBlock__right__content__iconBlock__block__ico">
-                        <p class="ormBlock__right__content__iconBlock__block__text">До 40% снижает риск возникновения финансовых рисков</p>
+                        <p class="ormBlock__right__content__iconBlock__block__text">Доверие целевой аудитории</p>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block">
-                        <img src="../../upload/iblock/1db/dv5kikbjj8lmiybx3b40hjgkt80wh99w/80.svg" alt=""
+                        <img src="/upload/iblock/2b3/dylvr8goqv1zn7rhhuykmxly44e73zev/тон5.svg" alt=""
                              class="ormBlock__right__content__iconBlock__block__ico">
-                        <p class="ormBlock__right__content__iconBlock__block__text">До 80% снижает число отказных обращений на сайт компании</p>
+                        <p class="ormBlock__right__content__iconBlock__block__text">Управление тональностью инфополя</p>
                     </div>
                 </div>
 
-                <a href="index.html#audit" type="submit" class="button">АУДИТ РЕПУТАЦИИ БЕСПЛАТНО</a>
+                <a href="/#audit" type="submit" class="button">ОСТАВИТЬ ЗАЯВКУ</a>
             </div>
         </div>
     </div>
@@ -82,11 +94,11 @@
     <div class="ormBlock _bgWhite">
         <div class="ormBlock__left">
             <div class="ormBlock__left__persent">
-                <img src="../../images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
+                <img src="/images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
 
                 <div class="ormBlock__left__persent__data">
-                    <p class="ormBlock__left__persent__data__count">2%</p>
-                    <p class="ormBlock__left__persent__data__descr">пользователей всегда недовольны</p>
+                    <p class="ormBlock__left__persent__data__count"></p>
+                    <p class="ormBlock__left__persent__data__descr"></p>
                 </div>
             </div>
         </div>
@@ -96,18 +108,12 @@
                 <div class="ormBlock__right__content__mini">
                     <div class="author1__partCont">
                         <p>
-                        <p class="ormBlock__right__content__mini__tit">
-                            Почему бизнесу необходима работа с репутацией от ORM агентства&nbsp;<span class="_colorYellow">Faros.Media</span>?
-                        </p>
-                        <p class="ormBlock__right__content__mini__text ormBlock__right__content__mini__text__mb">
-                            87% потребителей интересуются отзывами о вашей компании до момента принятия решения&nbsp;
-                        </p>
-                        <p class="ormBlock__right__content__mini__text ormBlock__right__content__mini__text__mb">
-                            Довольный потребитель в 100% случаев не напишет положительный отзыв, потому что приобретая товар или услуг, он был готов к надлежащему выполнению условий с вашей стороны.
-                        </p>
-                        <p class="ormBlock__right__content__mini__text">
-                            2% клиентов всегда недовольны, это статистика, которая складывается на человеческом факторе. Даже если у вас отличный сервис, ваш потребитель мог быть просто не в настроении, и тогда он заметит и обратит против вас любые изъяны. Чем крупнее бизнес, тем больше в абсолютных значениях эти 2%.
-                        </p>                            </p>
+                            Первое упоминание о PR-технологиях прозвучало в 80-х годах XX века в Америке. Считалось, что с помощью PR-технологий изучается аудитория, с которой планируется налаживать диалог. Именно так звучит дословный перевод Public Relations – связи с общественностью.<br>
+                            Уже позднее определение PR было сформулировано более научно Лонги и Хазелтоном, прозвучало оно так: PR – это один из методов управления, обращенный на адаптацию компании к окружающей среде через коммуникации. Иными словами, комплекс услуг по&nbsp;PR -&nbsp;&nbsp;это работа специалистов, которые&nbsp;посредством коммуникации с целевой аудиторией&nbsp;помогает бизнесу (организации, фирме, компании) сформировать определенный имидж в обществе. К целевой аудитории относятся все стейкхолдера компании&nbsp;– клиенты, конкуренты,&nbsp;фонды, учреждения, СМИ и пр.<br>
+                        <div>
+                            Таким образом PR-менеджер формирует имидж компании, т. е. составляет основу&nbsp;управления&nbsp;ее репутацией. В услуги&nbsp;PR от Faros.Media&nbsp;входит выяснение общественного мнения и формирование стратегии по укреплению положительного имиджа. Мы знаем, как&nbsp;установить&nbsp;взаимовыгодные&nbsp;отношений между общественностью и вашей компанией.
+                        </div>
+                        <br>                            </p>
                     </div>
                 </div>
             </div>
@@ -133,30 +139,30 @@
                 <div class="ormBlock__right__content__iconBlock ormBlock__right__content__slider1000600"
                      id="ormWork">
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="../../upload/iblock/21c/bwxay1xkpl7d0dbpm3vpuh86c2k9ooe5/display.svg" alt=""
+                        <img src="/upload/iblock/db3/xbvo2qsyydj9k2hzj62fqv744p1h0ufj/analytics&#32;(1)&#32;1.png" alt=""
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__work__content__light ormBlock__right__content__iconBlock__block__work__content__mb">
                                 Шаг 1</p>
-                            <p class="ormBlock__right__content__iconBlock__block__work__content__black">Брифование по проекту и анализ ситуации                                        </p>
+                            <p class="ormBlock__right__content__iconBlock__block__work__content__black">Мониторинг ситуации                                        </p>
                         </div>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="../../upload/iblock/3c2/zwofooh568i3vyag0mjnijacxd9s3gjd/analytics&#32;(3)&#32;1.png" alt=""
+                        <img src="/upload/iblock/c79/0q16z9m0929e31yyru3i3iw723vhcrcn/analytics&#32;(3)&#32;1.png" alt=""
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__work__content__light ormBlock__right__content__iconBlock__block__work__content__mb">
                                 Шаг 2</p>
-                            <p class="ormBlock__right__content__iconBlock__block__work__content__black">Постановка целей проекта, разработка плана действий для их достижения                                        </p>
+                            <p class="ormBlock__right__content__iconBlock__block__work__content__black">Анализ и планирование действий                                        </p>
                         </div>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="../../upload/iblock/ca3/a3e3o57qtpj48wrw4qym0cske3hvpak7/Group.png" alt=""
+                        <img src="/upload/iblock/313/2he41z74jo50rgziwcyd9s9ty0jqapzd/thumb-up-gesture&#32;1.png" alt=""
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__work__content__light ormBlock__right__content__iconBlock__block__work__content__mb">
                                 Шаг 3</p>
-                            <p class="ormBlock__right__content__iconBlock__block__work__content__black">Реализация комплексной ORM и SERM/PR стратегии                                        </p>
+                            <p class="ormBlock__right__content__iconBlock__block__work__content__black">Реализация действий                                        </p>
                         </div>
                     </div>
                 </div>
@@ -172,10 +178,10 @@
                     бесплатно!</p>
 
                 <div class="ormBlock__right__formBlock__bottom">
-                    <form action="index.html#" class="ormBlock__right__formBlock__bottom__form" id="audit_form">
+                    <form action="/#" class="ormBlock__right__formBlock__bottom__form" id="audit_form">
                         <input type="hidden" name="form_name" value="Оставьте заявку сейчас и получите экспресс-анализ
                 бесплатно!">
-                        <input type="hidden" name="page" value="ORM">
+                        <input type="hidden" name="page" value="PR">
                         <input name="name" type="text" class="ormBlock__right__formBlock__bottom__form__inp"
                                placeholder="Как к Вам обращаться?" required/>
                         <input name="phone" type="text"
@@ -190,7 +196,7 @@
                             <p class="ormBlock__right__formBlock__bottom__form__footer__descr">Нажимая “Отправить”,
                                 вы
                                 соглашаетесь с <a target="_blank"
-                                                  href="http://faros.media/%D0%A0%D1%9F%D0%A0%D1%95%D0%A0%C2%BB%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D1%94%D0%A0%C2%B0_%D0%A0%D0%86_%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%D0%85%D0%A0%D1%95%D0%A1%E2%82%AC%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D1%91%D0%A0%D1%91_%D0%A0%D1%95%D0%A0%C2%B1%D0%A1%D0%82%D0%A0%C2%B0%D0%A0%C2%B1%D0%A0%D1%95%D0%A1%E2%80%9A%D0%A0%D1%94%D0%A0%D1%91_%D0%A0%D1%97%D0%A0%C2%B5%D0%A1%D0%82%D0%A1%D0%83%D0%A0%D1%95%D0%A0%D0%85%D0%A0%C2%B0%D0%A0%C2%BB%D0%A1%D0%8A%D0%A0%D0%85%D0%A1%E2%80%B9%D0%A1%E2%80%A6_%D0%A0%D2%91%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D0%85%D0%A1%E2%80%B9%D0%A1%E2%80%A6.pdf"
+                                                  href="/Политика_в_отношении_обработки_персональных_данных.pdf"
                                                   class="formBlock__footer__text__link _colorBlack">Политикой
                                     конфиденциальности</a></p>
                         </div>
@@ -200,7 +206,7 @@
 
             <picture class="ormBlock__right__formPic">
                 <source type="image/webp" srcset="/images/min/orm/form.webp">
-                <img src="../../images/min/orm/form.png">
+                <img src="/images/min/orm/form.png">
             </picture>
         </div>
     </div>
@@ -219,30 +225,30 @@
                 <div class="ormBlock__right__content__iconBlock ormBlock__right__content__slider1400700"
                      id="ormWe">
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="../../upload/iblock/38f/65ava1e1dzf73c34zlk00son3nz1dgno/protection&#32;(2)&#32;1.png" alt=""
+                        <img src="/upload/iblock/38f/65ava1e1dzf73c34zlk00son3nz1dgno/protection&#32;(2)&#32;1.png" alt=""
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__block__work__content__black ormBlock__right__content__iconBlock__block__work__content__mb grow-full">
-                                Конфиденциальность и безопасность</p>
-                            <p class="ormBlock__right__content__iconBlock__block__work__content__light">Ваша репутация - наша работа. Мы не только заботимся о ваших данных, но и несем ответственность за свои действия перед ФАС и пр. </p>
+                                СМИ</p>
+                            <p class="ormBlock__right__content__iconBlock__block__work__content__light">Разветвленная партнерская сеть</p>
                         </div>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="../../upload/iblock/ae6/b01kopiimgx3p07rz22cn1gqbw2ja0v2/writing&#32;1.png" alt=""
+                        <img src="/upload/iblock/ae6/b01kopiimgx3p07rz22cn1gqbw2ja0v2/writing&#32;1.png" alt=""
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__block__work__content__black ormBlock__right__content__iconBlock__block__work__content__mb grow-full">
-                                Ручное размещение и производство без третьих лиц</p>
-                            <p class="ormBlock__right__content__iconBlock__block__work__content__light">Мы работаем без автоматических сервисов и авторазмещения, а также исключаем сторонних подрядчиков и биржи. </p>
+                                Журналисты</p>
+                            <p class="ormBlock__right__content__iconBlock__block__work__content__light">Налаженные связи</p>
                         </div>
                     </div>
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="../../upload/iblock/331/95buj147rk2zkrvk635n4o3ptkbtrubz/manager-avatar&#32;1.png" alt=""
+                        <img src="/upload/iblock/331/95buj147rk2zkrvk635n4o3ptkbtrubz/manager-avatar&#32;1.png" alt=""
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__block__work__content__black ormBlock__right__content__iconBlock__block__work__content__mb grow-full">
                                 Персональный менеджер</p>
-                            <p class="ormBlock__right__content__iconBlock__block__work__content__light">У нас есть корпоративная шутка: &quot;У репутации нет 1-го января&quot;. Руководитель проекта на страже вашей репутации 24/7 365 дней в году.</p>
+                            <p class="ormBlock__right__content__iconBlock__block__work__content__light">С Вами работает персональный менеджер, который всегда на связи.</p>
                         </div>
                     </div>
                 </div>
@@ -270,12 +276,12 @@
                         <div class="ormBlock__right__content__iconBlock__block__we__bottom _bgWhite">
                             <div class="ormBlock__right__content__iconBlock__block__we__bottom__right">
                                 <p class="ormBlock__right__content__iconBlock__block__we__cont__item__data _colorBlack11 _mr">
-                                    от 75 000</p>
+                                    от 60 000</p>
                                 <p class="ormBlock__right__content__iconBlock__block__we__cont__item__name _colorGray19">
                                     руб./мес.</p>
                             </div>
 
-                            <a href="../index.html@price=&amp;service_id=51.html#form"
+                            <a href="/price=&amp;service_id=69#form"
                                class="ormBlock__right__content__iconBlock__block__we__bottom__plus _bgBlack7">
                                 <svg class="ormBlock__right__content__iconBlock__block__we__bottom__plus__ico"
                                      viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -296,12 +302,12 @@
                         <div class="ormBlock__right__content__iconBlock__block__we__bottom _bgWhite">
                             <div class="ormBlock__right__content__iconBlock__block__we__bottom__right">
                                 <p class="ormBlock__right__content__iconBlock__block__we__cont__item__data _colorBlack11 _mr">
-                                    от 120 000</p>
+                                    от 110 000</p>
                                 <p class="ormBlock__right__content__iconBlock__block__we__cont__item__name _colorGray19">
                                     руб./мес.</p>
                             </div>
 
-                            <a href="../index.html@price=&amp;service_id=51.html#form"
+                            <a href="/price=&amp;service_id=69#form"
                                class="ormBlock__right__content__iconBlock__block__we__bottom__plus _bgBlack7">
                                 <svg class="ormBlock__right__content__iconBlock__block__we__bottom__plus__ico"
                                      viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -322,12 +328,12 @@
                         <div class="ormBlock__right__content__iconBlock__block__we__bottom _bgBlack7">
                             <div class="ormBlock__right__content__iconBlock__block__we__bottom__right">
                                 <p class="ormBlock__right__content__iconBlock__block__we__cont__item__data _colorWhite _mr">
-                                    от 200 000</p>
+                                    от 270 000</p>
                                 <p class="ormBlock__right__content__iconBlock__block__we__cont__item__name _colorGray19">
                                     руб./мес.</p>
                             </div>
 
-                            <a href="../index.html@price=&amp;service_id=51.html#form"
+                            <a href="/price=&amp;service_id=69#form"
                                class="ormBlock__right__content__iconBlock__block__we__bottom__plus _bgYellow">
                                 <svg class="ormBlock__right__content__iconBlock__block__we__bottom__plus__ico"
                                      viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -344,11 +350,11 @@
     <div class="ormBlock _bgWhite">
         <div class="ormBlock__left">
             <div class="ormBlock__left__persent">
-                <img src="../../images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
+                <img src="/images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
 
                 <div class="ormBlock__left__persent__data">
-                    <p class="ormBlock__left__persent__data__count">400</p>
-                    <p class="ormBlock__left__persent__data__descr">успешных кейсов у нас за плечами</p>
+                    <p class="ormBlock__left__persent__data__count"></p>
+                    <p class="ormBlock__left__persent__data__descr"></p>
                 </div>
             </div>
         </div>
@@ -364,11 +370,11 @@
 
                 <!--full height, form START-->
                 <div class="formBlockWrap">
-                    <form action="index.html#" class="formBlock" id="orderservice_form">
+                    <form action="/#" class="formBlock" id="orderservice_form">
                         <div class="formBlock__top">
                             <input type="hidden" name="form_name"
                                    value="Оставьте заявку на расчет рекламной стратегии">
-                            <input type="hidden" name="page" value="ORM">
+                            <input type="hidden" name="page" value="PR">
                             <input name="email" type="email" class="formBlock__input" placeholder="Укажите Email"
                                    required/>
                             <input name="name" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$" class="formBlock__input"
@@ -396,76 +402,5 @@
         </div>
     </div>
 
-    <!--full height, contacts home block START-->
-    <div class="contacts contacts__vertical">
-        <div class="contacts__data">
-            <div class="grow-full"></div>
-
-            <div class="contacts__data__logoWrap">
-                <img src="../../images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
-            </div>
-            <p class="contacts__data__adress">
-                Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10
-            </p>
-            <div class="contacts__data__items">
-                <div class="contacts__data__items__part">
-                    <a href="mailto:info@faros.media" class="contacts__data__items__part__contact">info@faros.media</a>
-                    <p class="contacts__data__items__part__descr">
-                        По всем вопросам пишите нам
-                    </p>
-                </div>
-                <div class="contacts__data__items__part">
-                    <a href="tel:88006008613" class="contacts__data__items__part__contact">8 800 600 86 13</a>
-                    <p class="contacts__data__items__part__descr">
-                        Звонок по РФ бесплатен
-                    </p>
-                </div>
-            </div>
-            <br>        <div id="coordinates" style="display: none">55.69451, 37.422584</div>
-            <div class="grow-full"></div>
-
-            <div class="contacts__data__links">
-                <div class="contacts__data__links__nav">
-                    <a href="../../team/index.html" class="contacts__data__links__nav__link">Команда</a>
-                    <a href="../index.html" class="contacts__data__links__nav__link">Услуги</a>
-                    <a href="../../case/index.html" class="contacts__data__links__nav__link">Кейсы</a>
-                </div>
-
-                <div class="contacts__data__links__soc">
-                    <!--noindex--><a  href="https://vk.com/faros.media"  class="contacts__data__links__soc__link" rel="nofollow">
-                        <svg viewBox="0 0 48 48" class="contacts__data__links__soc__link__img">
-                            <circle cx="24" cy="24" r="23.5" stroke="#EAEAEA" fill="rgba(26,26,26, 0)"/>
-                            <g clip-path="url(#clip0)">
-                                <path d="M31.915 25.028C31.527 24.538 31.638 24.32 31.915 23.882C31.92 23.877 35.123 19.451 35.453 17.95L35.455 17.949C35.619 17.402 35.455 17 34.662 17H32.038C31.37 17 31.062 17.345 30.897 17.731C30.897 17.731 29.561 20.929 27.671 23.002C27.061 23.601 26.779 23.793 26.446 23.793C26.282 23.793 26.027 23.601 26.027 23.054V17.949C26.027 17.293 25.84 17 25.287 17H21.161C20.742 17 20.493 17.306 20.493 17.591C20.493 18.213 21.438 18.356 21.536 20.106V23.903C21.536 24.735 21.385 24.888 21.05 24.888C20.158 24.888 17.993 21.677 16.71 18.002C16.451 17.289 16.198 17.001 15.525 17.001H12.9C12.151 17.001 12 17.346 12 17.732C12 18.414 12.892 21.805 16.148 26.285C18.318 29.343 21.374 31 24.154 31C25.825 31 26.029 30.632 26.029 29.999C26.029 27.077 25.878 26.801 26.715 26.801C27.103 26.801 27.771 26.993 29.331 28.468C31.114 30.217 31.407 31 32.405 31H35.029C35.777 31 36.156 30.632 35.938 29.906C35.439 28.379 32.067 25.238 31.915 25.028Z" fill="#1A1A1A"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0">
-                                    <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a><!--/noindex-->
-                    <!--noindex--><a  href="https://t.me/Farosmedia"  class="contacts__data__links__soc__link" rel="nofollow">
-                        <svg viewBox="0 0 48 48" class="contacts__data__links__soc__link__img">
-                            <circle cx="24" cy="24" r="23.5" stroke="#EAEAEA" fill="rgba(26,26,26, 0)"/>
-                            <g clip-path="url(#clip0)">
-                                <path d="M21.4172 27.181L21.0202 32.765C21.5882 32.765 21.8342 32.521 22.1292 32.228L24.7922 29.683L30.3102 33.724C31.3222 34.288 32.0352 33.991 32.3082 32.793L35.9302 15.821L35.9312 15.82C36.2522 14.324 35.3902 13.739 34.4042 14.106L13.1142 22.257C11.6612 22.821 11.6832 23.631 12.8672 23.998L18.3102 25.691L30.9532 17.78C31.5482 17.386 32.0892 17.604 31.6442 17.998L21.4172 27.181Z" fill="#1A1A1A"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0">
-                                    <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-
-            <p class="contacts__data__copyrigth">© 2025 FAROS MEDIA. Все права защищены.</p>
-        </div>
-
-        <div class="contacts__map">
-            <div class="contacts__map__pic" id="map"></div>
-        </div>
-    </div>
+    @include('inc.service.footer')
 @endsection

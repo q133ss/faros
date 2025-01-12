@@ -109,7 +109,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
             .st0 {
-                clip-path: url(index.html);
+                clip-path: url(/);
             }
 
             .st1 {
@@ -366,71 +366,7 @@
 
 <!--Header START-->
 @include('inc.header')
-
-<nav class="mobilemenu mobMenuContainer custom-scroll" id="menu">
-    <div class="mobilemenu__wrapMenu">
-        <div class="mobilemenu__wrapMenu__menu">
-            <a href="index.html#form" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/start.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Начать проект</span>
-            </a>
-            <a href="articles/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/blogs.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Статьи</span>
-            </a>
-            <a href="service/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/services.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Услуги</span>
-            </a>
-            <a href="smi/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/media.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">СМИ</span>
-            </a>
-            <a href="case/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/keyses.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Кейсы</span>
-            </a>
-            <a href="video/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/videos.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Мы в эфире</span>
-            </a>
-            <a href="team/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/teams.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Команда</span>
-            </a>
-            <a href="pay/index.html" class="mobilemenu__wrapMenu__menu__link">
-                <img src="images/min/icons/onlinepay.svg" alt="" class="mobilemenu__wrapMenu__menu__link__ico">
-                <span class="mobilemenu__wrapMenu__menu__link__text">Online-оплата</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="mobilemenu__footer">
-        <div class="mobilemenu__footer__left">
-            <a href="tel:88006008613" class="mobilemenu__footer__left__item">8 800 600 86 13</a>
-            <div class="mobilemenu__footer__left__br"></div>
-            <a href="mailto:a@a.aa" class="mobilemenu__footer__left__item">info@faros.media</a>
-        </div>
-
-        <div class="mobilemenu__footer__right">
-            <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="images/min/icons/vk.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>
-
-            <!--<a href="#" class="mobilemenu__footer__right__icoWrap">
-                <img src="/images/min/icons/fb.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>-->
-
-            <!--<a href="#" class="mobilemenu__footer__right__icoWrap">
-                <img src="/images/min/icons/tw.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>-->
-
-            <a href="index.html#" class="mobilemenu__footer__right__icoWrap">
-                <img src="images/min/icons/tg.svg" alt="" class="mobilemenu__footer__right__icoWrap__ico">
-            </a>
-        </div>
-    </div>
-</nav>
+@include('inc.mobmenu')
 <!--Header END--><div class="hidden" id="hidden">
     <div class="wrapper @yield('wrap_class')" id="wrapper">
         @yield('content')
@@ -441,7 +377,7 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="index.html" width="100%" class="pdf-popap__embed"  />
+            <embed src="/" width="100%" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>
@@ -455,7 +391,7 @@
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->
