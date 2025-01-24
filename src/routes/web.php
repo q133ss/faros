@@ -28,6 +28,11 @@ Route::get('/smi/{slug}', [\App\Http\Controllers\SmiController::class, 'show'])-
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
 # TODO постранично | Делаем фул страницу!
+# MAIN: Делаем модель SMI, переносим фото нижние и верхние!!
+# Переносим все статьи, теги и фото
+# КЕЙСЫ переносим, теги и фото
+
+
 # ПРОВЕРЯЕМ ВСЕ ССЫЛКИ И ТАК ДАЛЕЕ!
 # ГЛАВНАЯ+
 # Услуги +
@@ -44,3 +49,5 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 # TODO с помощью GPT попробовать убрать ошибки из консоли
 # TODO перенести потом все SEO теги для всех страниц в БД meta, content, image ...
 # TODO попросить данные от платежки! ЛИБО ГЛЯНУТЬ НА ХОСТЕ!
+
+# TODO при переносе на хост в отдельную фотку сохраним бекап!

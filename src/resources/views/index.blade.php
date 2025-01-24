@@ -67,9 +67,9 @@
     <div class="fullHeightMinWidth">
         <div class="fullHeightMinWidth__top">
             <div class="fullHeightMinWidth__top__comp">
-                <img src="http://faros.media/local/templates/faros/images/min/home/gerb.svg" alt="" class="fullHeightMinWidth__top__comp__gerb">
+                <img src="/images/min/home/gerb.svg" alt="" class="fullHeightMinWidth__top__comp__gerb">
                 <p class="fullHeightMinWidth__top__comp__amount">170</p>
-                <img src="http://faros.media/local/templates/faros/images/min/home/gerb.svg" alt=""
+                <img src="/images/min/home/gerb.svg" alt=""
                      class="fullHeightMinWidth__top__comp__gerb fullHeightMinWidth__top__comp__gerb_right">
             </div>
 
@@ -78,7 +78,7 @@
 
             <a href="team.1.html" class="arrow-link">
                 <span class="arrow-link__text">Наша команда</span>
-                <img src="http://faros.media/local/templates/faros/images/min/icons/yellowarrow.svg" alt=""
+                <img src="/images/min/icons/yellowarrow.svg" alt=""
                      class="arrow-link__arrow fullHeightMinWidth__top__arrow">
             </a>
         </div>
