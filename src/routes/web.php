@@ -24,6 +24,7 @@ Route::get('/video/{slug}', [\App\Http\Controllers\VideoController::class, 'show
 
 Route::get('/smi', [\App\Http\Controllers\SmiController::class, 'index'])->name('smi.index');
 Route::get('/smi/{slug}', [\App\Http\Controllers\SmiController::class, 'show'])->name('smi.show');
+Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->name('smi.sort');
 
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 

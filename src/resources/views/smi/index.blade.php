@@ -390,313 +390,75 @@
         <!--news home menu END-->
 
         <div class="media">
-            <div class="articlesDoubleBlock _bgGray16 scene">
-                <div class="articlesDoubleBlock__content">
-                    <div class="articlesDoubleBlock__content__top">
-                        <!--noindex--><a  href="https://kontur.ru/articles/5138"  class="articlesDoubleBlock__content__top__logo" rel="nofollow">
-                            <picture class="articlesDoubleBlock__content__top__logo__img">
-                                <img src="/upload/resize_cache/webp/iblock/5cd/hdqoh5jts4q5bgjaugibwidkaa64d4z3/kontur-logo.webp">
-                            </picture>
-                        </a><!--/noindex-->
+            @foreach($smi as $post)
+                @if($post->type == 'gray_bg')
+                    <div class="articlesDoubleBlock _bgGray16 scene">
+                        <div class="articlesDoubleBlock__content">
+                            <div class="articlesDoubleBlock__content__top">
+                                @if($post->logo != '')
+                                <!--noindex--><a href="{{$post->source}}" target="_blank" class="articlesDoubleBlock__content__top__logo" rel="nofollow">
+                                    <picture class="articlesDoubleBlock__content__top__logo__img">
+                                        <img src="{{$post->logo}}">
+                                    </picture>
+                                </a><!--/noindex-->
+                                @endif
+                            </div>
+                            <a href="{{route('smi.show', $post->slug)}}"
+                               class="articlesDoubleBlock__content__title _colorBlack">{!! $post->list_title !!}</a>
+                        </div>
+
+                        <picture class="articlesDoubleBlock__pic parallax">
+                            <img src="{{$post->img}}" data-depth="0.6">
+                        </picture>
                     </div>
-                    <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}"
-                       class="articlesDoubleBlock__content__title _colorBlack">Мотивация маркетолога:<br>
-                        формула и примеры расчета в таблицах</a>
-                </div>
+                @elseif($post->type == 'yellow_bg')
+                        <div class="articlesDoubleBlock _bgYellow">
+                            <div class="articlesDoubleBlock__content">
+                                <div class="articlesDoubleBlock__content__top">
+                                    @if($post->logo != '')
+                                    <!--noindex--><a target="_blank" href="{{$post->source}}" class="articlesDoubleBlock__content__top__logo" rel="nofollow">
+                                        <picture class="articlesDoubleBlock__content__top__logo__img">
+                                            <img src="{{$post->logo}}" data-depth="0.6">
+                                        </picture>
+                                    </a><!--/noindex-->
+                                    @endif
+                                    <div class="articlesDoubleBlock__content__top__viz">
 
-                <picture class="articlesDoubleBlock__pic parallax">
-                    <img src="/upload/resize_cache/webp/iblock/e54/irdum5i0vc4wcf01fojmfpqyjurvwzqz/smi2.webp" data-depth="0.6">
-                </picture>
-            </div>
-
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/0e9/o1dj11vkm7utf3p910duxvmg4d8mefxf/kingdom-come-back-later&#32;1.webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Как салону красоты<br>продвигаться<br>в соцсетях</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://www.dirsalona.ru/article/1103-kak-salonu-krasoty-prodvigatsya-v-sotssetyah-i-kak-vybirat-ploshchadki"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="/upload/resize_cache/webp/iblock/229/i25lp8td0fqw6zgzaohnuk33eck8f453/logo&#32;(2)&#32;1.webp" data-depth="0.6">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/iblock/113/600cfwqsxgc7p4t42ux7o2p3xxshmc26/ozero_seliger_8.jpg" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Продвижение мини-гостиницы <br> с нулевым маркетинговым <br>бюджетом</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://vc.ru/marketing/51333-prodvizhenie-mini-gostinicy-s-nulevym-marketingovym-byudzhetom-nu-pochti-s-nulevym"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="/upload/resize_cache/webp/iblock/d02/eanwu78jsfmpz3pedlntqo2v7k95mlgc/VC-logo.webp" data-depth="0.6">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/cc7/b9sl3gfokbi08t32lzor94i3x68pmnad/Rectangle&#32;15&#32;(4).webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Специфика работы <br>
-                            SMM-специалиста <br>
-                            внутри компании</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://www.likeni.ru/analytics/spetsifika-raboty-smm-spetsialista-vnutri-kompanii/"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="/upload/resize_cache/webp/iblock/b31/48fug75ia7tm80fmr13cn76ice2dvzwp/logo.webp" data-depth="0.6">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/25e/5pvjl3hhpp1e424xopcqnbp3lloe5qtu/Rectangle&#32;15&#32;(5).webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">«Аэрофлот» и Алешковский: разбор репутационного кейса</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://vc.ru/marketing/51675-aeroflot-i-aleshkovskiy-razbor-reputacionnogo-keysa"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="/upload/resize_cache/webp/iblock/437/vg5n2z728pfoy2mv20opud4hpeoq630o/search_logo&#32;1.webp" data-depth="0.6">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <div class="articlesDoubleBlock _bgYellow">
-                <div class="articlesDoubleBlock__content">
-                    <div class="articlesDoubleBlock__content__top">
-                        <!--noindex--><a  href="https://www.forbes.ru/forbes-woman/365373-na-vidu-kak-zhenshchine-vystroit-svoyu-reputaciyu-s-nulya"  class="articlesDoubleBlock__content__top__logo" rel="nofollow">
-                            <picture class="articlesDoubleBlock__content__top__logo__img">
-                                <img src="/upload/resize_cache/webp/iblock/1b0/0rte9cadg138hc0su8kcsankfvdyne40/medialogo.webp" data-depth="0.6">
+                                    </div>
+                                </div>
+                                <p class="articlesDoubleBlock__content__title _colorBlack"><a
+                                        href="{{route('smi.show', $post->slug)}}">{!! $post->list_title !!}</a></p>
+                            </div>
+                            <a href="{{route('smi.show', $post->slug)}}">
+                                <picture class="articlesDoubleBlock__pic articlesDoubleBlock__pic_second">
+                                    <img src="{{$post->img}}" data-depth="0.6">
+                                </picture>
+                            </a>
+                        </div>
+                @else
+                    <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
+                        <a href="{{route('smi.show', $post->slug)}}">
+                            <picture class="newsMiniBlock__pic">
+                                <img src="{{$post->img}}" data-depth="0.6">
                             </picture>
-                        </a><!--/noindex-->
+                        </a>
 
-                        <div class="articlesDoubleBlock__content__top__viz">
+                        <div class="newsMiniBlock__cont">
 
+                            <p class="newsMiniBlock__cont__tit _colorBlack"><a
+                                    href="{{route('smi.show', $post->slug)}}">{!! $post->list_title !!}</a></p>
+                            <div class="grow-full"></div>
+                            @if($post->logo != '')
+                            <!--noindex--><a target="_blank" href="{{$post->source}}"  class="newsMiniBlock__cont__logo" rel="nofollow">
+                                <picture class="newsMiniBlock__cont__logo__pic">
+                                    <img src="{{$post->logo}}" data-depth="0.6">
+                                </picture>
+                            </a><!--/noindex-->
+                            @endif
                         </div>
                     </div>
-                    <p class="articlesDoubleBlock__content__title _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">На виду: как женщине выстроить свою репутацию с нуля</a></p>
-                </div>
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="articlesDoubleBlock__pic articlesDoubleBlock__pic_second">
-                        <img src="/upload/iblock/9e6/sg1ards3y4oz74ky2sn4l6s6ubxn6lsq/webpc-passthru.webp" data-depth="0.6">
-                    </picture>
-                </a>
-            </div>
-            <div class="articlesDoubleBlock _bgGray16 scene">
-                <div class="articlesDoubleBlock__content">
-                    <div class="articlesDoubleBlock__content__top">
-                        <!--noindex--><a  href="https://www.cossa.ru/trends/214956/"  class="articlesDoubleBlock__content__top__logo" rel="nofollow">
-                            <picture class="articlesDoubleBlock__content__top__logo__img">
-                                <img src="/upload/resize_cache/webp/iblock/649/bwbsitj2xbikmwcllxojrxxo019bqa6n/cossa_logo&#32;1.webp">
-                            </picture>
-                        </a><!--/noindex-->
-                    </div>
-                    <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}"
-                       class="articlesDoubleBlock__content__title _colorBlack">Репутационный кейс. Facebook, Собянин и одна звезда в рейтинге</a>
-                </div>
-
-                <picture class="articlesDoubleBlock__pic parallax">
-                    <img src="/upload/resize_cache/webp/iblock/a54/p8v0rpubszr4elnaee0xvdl5xwvs1mxf/Rectangle&#32;15&#32;(3).webp" data-depth="0.6">
-                </picture>
-            </div>
-
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/448/2y1icgrod07qurvjy3982ljimuo1tv12/Group&#32;2.webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Работа с негативом в соцсетях: кейс Zenden</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://www.likeni.ru/analytics/negativ-eto-norma-esli-ego-ne-ochen-mnogo/"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="/upload/resize_cache/webp/iblock/64e/6b01dzdlqm9phyuye09ljc3j8j44zoz5/Group&#32;1098.webp" data-depth="0.6">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/229/wdb7unehp7ij1gqe86lirkdtod9xwrop/4-Sotsseti-mogut-horosho-pomoch.webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Активационные механики в соцсетях: <br>
-                            как одна публикация вызвала широкое обсуждение<br>
-                            и попала в федеральные СМИ</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://vc.ru/marketing/33881-aktivacionnye-mehaniki-v-socsetyah-kak-odna-publikaciya-vyzvala-shirokoe-obsuzhdenie-i-popala-v-federalnye-smi?from=yandex"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="/upload/resize_cache/webp/iblock/d02/eanwu78jsfmpz3pedlntqo2v7k95mlgc/VC-logo.webp" data-depth="0.6">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/dev2fun_opengraph/100/teyxw2cv0q6dwar4d7ytdw0tnlv746lk.jpg" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Как вести себя спикерам: <br />
-                            нужно ли соблюдать режим тишины во время кризиса</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://www.sostav.ru/publication/faros-media-53287.html"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/dev2fun_opengraph/ecb/ys02aupgi1mzj0iirsigp29oo5t23jpf.jpg" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Куда идем мы с Пятачком:<br />
-                            экономика России в условиях санкций</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://delovoymir.biz/chem-grozit-uhod-inostrannyh-kompaniy-iz-rossii-i-sankcii-dlya-malogo-i-srednego-biznesa-obzor-mneniy-ekspertov.html"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/f5c/26u2t9v41oiepstcgmbw80ywmx9pv3u5/29149.webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Рынок покидают бренды: стоит ли<br />
-                            бояться дефицита товаров на полках?</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://rutube.ru/video/a8a1088d8cfe8336bdbd8b55f40d0fd3/"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/8b5/ppmnqwfg9exo6oj3t56d8t1els7u3y78/4789552.webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">Как выиграть в войне с черным пиаром и<br />
-                            привлечь клиентов</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://kontur.ru/articles/4313"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-            <!--1/2 height, min width, news home block START-->
-            <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
-                <a href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">
-                    <picture class="newsMiniBlock__pic">
-                        <img src="/upload/resize_cache/webp/iblock/255/4idd1573dt04edfwp7wcvvqrtu6f79mv/3871751.webp" data-depth="0.6">
-                    </picture>
-                </a>
-
-                <div class="newsMiniBlock__cont">
-
-                    <p class="newsMiniBlock__cont__tit _colorBlack"><a
-                            href="{{route('smi.show', 'motivatsiya-marketologa-formula-i-primery-rascheta-v-tablitsah')}}">2022-й год: подходы к репутации <br />
-                            в России и на Западе</a></p>
-                    <div class="grow-full"></div>
-
-                    <!--noindex--><a  href="https://netology.ru/blog/03-2022-reputation-drivers"  class="newsMiniBlock__cont__logo" rel="nofollow">
-                        <picture class="newsMiniBlock__cont__logo__pic">
-                            <img src="https://faros.media/upload/iblock/d90/1awjfr02brcpmfvbcw9wlsvh4ih4va7z/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0_%D0%9D%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8.svg" data-depth="0.6">
-                        </picture>
-                    </a><!--/noindex-->
-                </div>
-            </div>
-            <!--1/2 height, min width, news home block END-->
-
+                @endif
+            @endforeach
         </div>
 
     </div>
@@ -713,7 +475,8 @@
 <script src="/js/ScrollMagic.js"></script>
 <script src="/js/debug.addIndicators.js"></script>
 <script src="/js/animation.gsap.min.js"></script>
-<script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
+{{--<script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>--}}
+<script src="//api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
 <script src="/js/sticky.js"></script>
 <script src="/js/scripts.min.js?v=5"></script>
 <script src="/js/maskedinput.js"></script>

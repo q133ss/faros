@@ -337,15 +337,12 @@ if ($($('select')).is('#sortSelMedia')) {
 
 $('#sortSelMedia').on('select2:select', function (e) {
     let sort = $('#sortSelMedia').val();
+    console.log(sort)
     $.ajax({
-        url: '/ajax/media.php',
-        type: 'post',
-        data: {sort: sort},
-        dataType: 'json',
+        url: '/sort/smi?'+sort+'=1',
+        type: 'get',
         success: function (res) {
-            if (res.success) {
-                $('.media').html(res.html);
-            }
+            $('.media').html(res);
         }
     });
     return false;
