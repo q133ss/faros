@@ -381,16 +381,15 @@
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="../" title="СМИ" itemprop="item">
+                        <a href="{{route('smi.index')}}" title="СМИ" itemprop="item">
                             <span itemprop="name">СМИ</span>
                             <meta itemprop="position" content="1">
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a title="Как салону красоты продвигаться в соцсетях" itemprop="item">
-                            <span itemprop="name">Как салону красоты продвигаться в соцсетях</span>
+                        <a title="{{$post->post_title}}" itemprop="item">
+                            <span itemprop="name">{{$post->post_title}}</span>
                             <meta itemprop="position" content="2">
-
                         </a>
                     </li>
                 </ul>
@@ -402,17 +401,17 @@
                     </div>
 
 
-                    <h1 class="sinpleHeaderTitle">Как салону красоты продвигаться в соцсетях</h1>
+                    <h1 class="sinpleHeaderTitle">{{$post->post_title}}</h1>
                 </div>
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
                         <img src="/images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
-                        <p class="sinpleHeader__data__item__text">20.09.2021</p>
+                        <p class="sinpleHeader__data__item__text">{{$post->created_at->format('d.m.Y')}}</p>
                     </div>
 
                     <div class="sinpleHeader__data__item">
                         <img src="/images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
-                        <p class="sinpleHeader__data__item__text">2086 просмотр(ов)</p>
+                        <p class="sinpleHeader__data__item__text">{{$post->views}} просмотр(ов)</p>
                     </div>
                 </div>
 
@@ -426,65 +425,21 @@
                     </div>
 
 
-                    <div class="author1__partCont">
-                        <p>
-                            Анна Тимофеева, руководитель производственного отдела агентства Faros.Media, и Мария Шейкина, руководитель SMM-направления Creon PR, поделились своей экспертизой на тему продвижения салонов красоты в социальных сетях. Их материал, опубликованный на платформе Dirsalona, раскрывает ключевые аспекты успешного SMM для бьюти-бизнеса, дает практические советы, которые помогут не только привлечь клиентов, но и превратить подписчиков в постоянных посетителей.
-                        </p>
-                        <h3></h3>
-                        <h2>Как салону красоты выделиться в соцсетях? </h2>
-                        <p>
-                            Салоны красоты, как отмечают авторы, сталкиваются с рядом вызовов при продвижении в социальных сетях. Конкуренция в этой сфере крайне высока, а аудитория капризна. Поэтому грамотная стратегия, баланс контента и использование современных инструментов становятся основой успешного продвижения.
-                        </p>
-                        <p>
-                            Анна Тимофеева подчеркивает, что идеальный вариант – это наличие четкой стратегии, которую реализуют профессионалы. Однако, если бюджет ограничен, вести соцсети можно и самостоятельно. Главное – соблюдать баланс: 20% контента должно быть продающим, а 80% – информационным или развлекательным. Такой подход помогает удерживать интерес аудитории, не перегружая ее рекламой.
-                        </p>
-                        <p>
-                            Особое внимание уделяется активационным механикам: конкурсы, голосования и розыгрыши активно вовлекают пользователей. Важно учитывать и геотаргетинг – клиенты редко готовы ехать в салон через весь город, поэтому настройка рекламы по локации становится ключевым инструментом.
-                        </p>
-                        <h2>Почему быстрые ответы – это важно? </h2>
-                        <p>
-                            Еще один важный аспект, который выделяет Анна, – это скорость и простота коммуникации. Клиент должен получить всю информацию об услугах и их стоимости максимально быстро. Фразы вроде «Напишите нам в директ» или «Узнайте цену в WhatsApp» только усложняют процесс и снижают конверсию. Ответы должны быть доступными, понятными и оперативными.
-                        </p>
-                        <p>
-                            Что касается контента, автор советует отказаться от формата «до и после», так как такие фото редко привлекают новых подписчиков. Вместо этого лучше делать акцент на живые фотографии, сториз и рассказы о жизни салона изнутри. Это помогает создать атмосферу доверия и вовлеченности.
-                        </p>
-                        <h2>Instagram как главный инструмент </h2>
-                        <p>
-                            Мария Шейкина, в свою очередь, делает акцент на Instagram как на главной площадке для продвижения салонов красоты. Эстетика и визуальная составляющая играют ключевую роль в этой сфере. Подписчики приходят за вдохновением, поэтому контент должен быть тщательно продуманным: единая концепция, постоянный фильтр, гармоничные цвета и стиль.
-                        </p>
-                        <p>
-                            Мария также отмечает, что для салонов красоты важно продвигать не только услуги, но и мастеров. Рассказы о специалистах, их успехах и достижениях помогают создать эмоциональную связь с аудиторией. Например, можно предлагать бесплатные консультации у мастеров, чтобы привлечь нерешительных клиентов.
-                        </p>
-                        <p>
-                            Еще одним важным инструментом являются бизнес-приложения, которые позволяют добавить кнопку «Записаться» прямо в профиль, что значительно упрощает процесс для клиентов.
-                        </p>
-                        <h2>Как удержать внимание аудитории? </h2>
-                        <p>
-                            Оба автора сходятся во мнении, что стандартные маркетинговые уловки вроде скидок и акций постепенно теряют свою эффективность. Сегодня клиенты больше стремятся быть причастными к чему-то красивому и модному. Поэтому фотографии, видео и сториз должны создавать особую атмосферу, которая будет вдохновлять и привлекать.
-                        </p>
-                        <p>
-                            Для улучшения качества контента эксперты рекомендуют использовать приложения вроде VSCO, SnapSeed, Adobe Lightroom и другие. А для создания промо-видео и сториз отлично подойдут сервисы Supa и Splice.
-                        </p>
-                        <h2>Выводы и рекомендации </h2>
-                        <p>
-                            Материал, опубликованный на Dirsalona.ru, не просто дает практические советы, но и вдохновляет владельцев салонов красоты на новые подходы к продвижению. Авторы подчеркивают, что успех в соцсетях – это результат продуманной стратегии, качественного контента и постоянной работы с аудиторией.
-                        </p>
-                        <p>
-                            Если вы хотите, чтобы ваш салон выделялся на фоне конкурентов, используйте современные инструменты, экспериментируйте с форматами и не забывайте о вовлеченности клиентов. Ведь именно она станет залогом долгосрочной коммуникации.
-                        </p>                            </div>
+                    <div class="author1__partCont">{!! $post->text !!}</div>
                 </div>
 
                 <div class="blogBG blogBG_mtBig blogBG_nomb"></div>
 
                 <div class="pageAuthor">
+                    @if($post->logo != '')
                     <div class="pageAuthor__left">
                         <picture class="pageAuthor__left__pic pageAuthor__left__pic_logo">
-                            <img src="/upload/iblock/229/i25lp8td0fqw6zgzaohnuk33eck8f453/logo&#32;(2)&#32;1.png" alt="" title="">
+                            <img src="{{$post->logo}}" alt="" title="">
                         </picture>
                     </div>
-
+                    @endif
                     <div class="pageAuthor__center">
-                        <!--noindex--><a  href="https://www.dirsalona.ru/article/1103-kak-salonu-krasoty-prodvigatsya-v-sotssetyah-i-kak-vybirat-ploshchadki"  target="_blank" class="pageAuthor__center__link" rel="nofollow">
+                        <!--noindex--><a  href="{{$post->source}}"  target="_blank" class="pageAuthor__center__link" rel="nofollow">
                             <svg class="pageAuthor__center__link__ico" viewBox="0 0 16 16"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.99973 0C3.58165 0 0 3.58192 0 7.99984C0 12.4178 3.58165 16 7.99973 16C12.4178 16 15.9999 12.418 15.9999 7.99984C15.9999 3.58171 12.4178 0 7.99973 0ZM12.0193 6.57611L10.0627 8.53269C9.85051 8.74491 9.56837 8.86176 9.26832 8.86176C8.96832 8.86176 8.68613 8.74485 8.47392 8.5328L8.39728 8.45616L8.18896 8.66448L8.26544 8.74096C8.70352 9.17904 8.70352 9.89184 8.26544 10.3299L6.30912 12.2865C6.09691 12.4987 5.81477 12.6156 5.51456 12.6156C5.2144 12.6156 4.93221 12.4987 4.71989 12.2863L3.98043 11.5467C3.54235 11.1089 3.54235 10.3961 3.98027 9.95787L5.93701 8.00139C6.14923 7.78917 6.43136 7.67232 6.73157 7.67232C7.03179 7.67232 7.31376 7.78923 7.52613 8.00139L7.60251 8.07776L7.81083 7.86944L7.73445 7.79307C7.29637 7.35515 7.29637 6.64235 7.73419 6.20427L9.69093 4.24768C9.90325 4.03536 10.1854 3.91845 10.4855 3.91845C10.7855 3.91845 11.0677 4.03536 11.2801 4.24752L12.0197 4.98741C12.4574 5.42523 12.4574 6.13813 12.0193 6.57611Z"
@@ -571,76 +526,18 @@
                     <p class="simpleSliderWrap__tit">Похожие видео</p>
 
                     <div class="simpleSlider" id="simpleSlider">
-                        <a href="/video/ekaterina-tulyankina-dlya-kanala-moskva24-otzyvy-i-ikh-sila/" class="simpleSlider__slide">
+                        @foreach($videos as $video)
+                        <a href="{{route('video.show', $video->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/62b/rjqvjtrx4owvla6uroltam2kqckgj1rt/cover-05.jpg">
+                                    <img src="{{$video->img}}">
                                 </picture>
 
                                 <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
                             </div>
                             <p class="simpleSlider__slide__text">Екатерина Тулянкина для канала Москва24: отзывы и их сила</p>
                         </a>
-                        <a href="/video/smm-dlya-bukmekerskikh-kontor-faros-media/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/1c3/aqiql18nrpkud1ez0e1odcrhsqlammk0/cover-02.jpg">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">SMM для букмекерских контор // Faros.media</p>
-                        </a>
-                        <a href="/video/neyroseti-i-otzyvy-ekaterina-tulyankina-v-programme-dobroe-utro-na-pervom-kanale/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/e82/j213984p5acaggc38q3842vggrca1c5e/cover-04.jpg">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">«Нейросети и отзывы», — Екатерина Тулянкина в программе «доброе утро» на первом канале</p>
-                        </a>
-                        <a href="/video/ekaterina-tulyankina-i-elena-kirilenko-v-programme-3600-sekund-na-mediametrics/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/0f9/9e3g0sysnln96cw33ar4cwbbr3m5tw6j/cover-03.jpg">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">Екатерина Тулянкина и Елена Кириленко в программе 3600 секунд на Mediametrics</p>
-                        </a>
-                        <a href="/video/ekaterina-tulyankina-s-obuchayushchey-lektsiey-obzory-metodov-prodvizheniya-v-sotssetyakh/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/64a/e5e26l5bt47r3pdh8bnk4d9yw3luqzz7/cover-01.jpg">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">Екатерина Тулянкина с обучающей лекцией «обзоры методов продвижения в соцсетях»</p>
-                        </a>
-                        <a href="/video/anna-timofeeva-rasskazala-o-tom-mozhno-li-zarabatyvat-na-memakh/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах</p>
-                        </a>
-                        <a href="/video/ekaterina-tulyankina-aktivatsii-v-sotssetyakh/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/a84/ka14y8m33zt8stx312cq1e8qj9qklu0e/Screenshot_46.webp">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">Екатерина Тулянкина : Активации в соцсетях</p>
-                        </a>
-
+                        @endforeach
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Smi;
+use App\Models\Video;
 use Illuminate\Http\Request;
 
 class SmiController extends Controller
@@ -15,7 +16,9 @@ class SmiController extends Controller
 
     public function show(string $slug)
     {
-        return view('smi.show');
+        $post = Smi::where('slug', $slug)->firstOrFail();
+        $videos = Video::inRandomOrder()->take(8)->get();
+        return view('smi.show', compact('post', 'videos'));
     }
 
     public function sort(Request $request)
