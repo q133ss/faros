@@ -9,7 +9,7 @@ Route::view('/service/orm', 'service.orm')->name('service.orm');
 Route::view('/service/smm', 'service.smm')->name('service.smm');
 Route::view('/service/pr', 'service.pr')->name('service.pr');
 Route::view('/service/marketing-strategiya-orm-pharm-serm/', 'service.marketing')->name('service.marketing');
-
+#todo вверх страницы не тот! нет тегов
 Route::get('/case', [\App\Http\Controllers\CaseController::class, 'index'])->name('case.index');
 Route::get('/case/{slug}', [\App\Http\Controllers\CaseController::class, 'show'])->name('case.show');
 
@@ -29,9 +29,14 @@ Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->n
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
 # TODO постранично | Делаем фул страницу!
-# MAIN: Делаем модель SMI, переносим фото нижние и верхние!!
 # Переносим все статьи, теги и фото
-# КЕЙСЫ переносим, теги и фото
+# КЕЙСЫ переносим, теги и фото + SEO
+# todo убрать везде <title>СМИ</title> Он будет в SEO
+# todo перенести все seo в smi
+# todo team.show авторы недели
+# todo case.show что там под популярными постами?
+
+# ВСЕ РАБОТАЕТ! В ТЕКСТ БУДЕМ В НАЧАЛЕ ЗАМЕНЯТЬ И УДАЛЯТЬ ПОСЛЕДНИЕ 5 СИМВОЛВО И ВСЕ! TODO TODO TODO
 
 
 # ПРОВЕРЯЕМ ВСЕ ССЫЛКИ И ТАК ДАЛЕЕ!
@@ -41,7 +46,7 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 # Команда+
 # Статьи+
 # Мы в эфире+
-# СМИ
+# СМИ+
 # Онлайн оплата+
 # Популярные статьи на страницах вывести в inc!
 # Мобилка!!!

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('seable_type');
             $table->string('seable_id');
 
-            $table->string('meta_title')->nullable();
+            $table->string('meta_title')->nullable(); // Название страницы
             $table->string('meta_description')->nullable();
             $table->string('meta_keywords')->nullable();
             $table->string('canonical')->default('https://faros.media/');

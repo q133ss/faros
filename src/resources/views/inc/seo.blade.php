@@ -3,6 +3,7 @@ $currentUrl = url()->current();
 $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
 @endphp
 @if($seo)
+    <title>{{$seo->meta_title}}</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="4 способа увеличить количество лидов из социальных сетей на сайте" />
     <meta name="description" content="{{$seo->meta_description}}" />

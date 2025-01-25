@@ -17,6 +17,7 @@ class SmiController extends Controller
     public function show(string $slug)
     {
         $post = Smi::where('slug', $slug)->firstOrFail();
+        $post->increment('views');
         $videos = Video::inRandomOrder()->take(8)->get();
         return view('smi.show', compact('post', 'videos'));
     }
