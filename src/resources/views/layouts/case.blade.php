@@ -397,57 +397,9 @@
             </button>
 
             <select class="selectWrap__sel" id="authSel" multiple="multiple">
-                <option value="ORM">ORM</option>
-                <option value="Банк">Банк</option>
-                <option value="Нивелирование негатива">Нивелирование негатива</option>
-                <option value="Репутация">Репутация</option>
-                <option value="Управление восприятием">Управление восприятием</option>
-                <option value="Бренд-менеджмент">Бренд-менеджмент</option>
-                <option value="Нейминг">Нейминг</option>
-                <option value="деревянное строительство">деревянное строительство</option>
-                <option value="Кейсы по smm">Кейсы по smm</option>
-                <option value="KPI">KPI</option>
-                <option value="Instagram">Instagram</option>
-                <option value="лояльность к бренду">лояльность к бренду</option>
-                <option value="Маркетинг">Маркетинг</option>
-                <option value="Образование">Образование</option>
-                <option value="SMM">SMM</option>
-                <option value="Конкурсные механики">Конкурсные механики</option>
-                <option value="Маркетинг-консалтинг">Маркетинг-консалтинг</option>
-                <option value="Продвижение бренда">Продвижение бренда</option>
-                <option value="Формирование спроса">Формирование спроса</option>
-                <option value="Языковая школа">Языковая школа</option>
-                <option value="Корм для животных">Корм для животных</option>
-                <option value="Лидогенерация">Лидогенерация</option>
-                <option value="Реклама в соцсетях">Реклама в соцсетях</option>
-                <option value="ТГБ">ТГБ</option>
-                <option value="Девелопер">Девелопер</option>
-                <option value="Деревянное строительство">Деревянное строительство</option>
-                <option value="Недвижимост">Недвижимост</option>
-                <option value="Музыкальная школа">Музыкальная школа</option>
-                <option value="кейсы по интерьерной тематике">кейсы по интерьерной тематике</option>
-                <option value="разработка фирменного стиля">разработка фирменного стиля</option>
-                <option value="кейсы по образованию">кейсы по образованию</option>
-                <option value="EDTECH">EDTECH</option>
-                <option value="аудит">аудит</option>
-                <option value="трафик из соцсетей">трафик из соцсетей</option>
-                <option value="дизайн в соцсетях">дизайн в соцсетях</option>
-                <option value="маркетинг для фармы">маркетинг для фармы</option>
-                <option value="оформление постов">оформление постов</option>
-                <option value="продвижение аптек">продвижение аптек</option>
-                <option value="телеком">телеком</option>
-                <option value="репутация оператора">репутация оператора</option>
-                <option value="b2b">b2b</option>
-                <option value="фарм маркетинг">фарм маркетинг</option>
-                <option value="репутация бадов">репутация бадов</option>
-                <option value="продвижение продуктов для похудения">продвижение продуктов для похудения</option>
-                <option value="анализ спроса и восприятия">анализ спроса и восприятия</option>
-                <option value="Застройщик">Застройщик</option>
-                <option value="Недвижимость">Недвижимость</option>
-                <option value="Управляющая компания">Управляющая компания</option>
-                <option value="управление репутацией банка">управление репутацией банка</option>
-                <option value="финтех">финтех</option>
-                <option value="продвижение бадов">продвижение бадов</option>
+                @foreach($tags as $tag)
+                <option value="{{$tag->id}}">{{$tag->name}}</option>
+                @endforeach
             </select>
 
             <button class="horizMenu__reset" id="tagreset"></button>
