@@ -1,188 +1,69 @@
-@extends('layouts.app')
+@extends('layouts.case')
 @section('title', 'Кейсы по управлению репутацией от агентства Faros.Media')
 @section('wrap_class', 'wrapper_cases')
 @section('content')
     <!--home mMini blocks START-->
     <div class="homeMiniBlocks allcases homeMiniBlocks_allcases">
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #E31E24"
+        @foreach($mainCases as $case)
+            @if($case->type == 'default')
+            <div class="miniBlock _bgDarkBlue scene "
+             style="background-color: {{$case->bg_color}}"
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="../upload/resize_cache/webp/iblock/d5d/e3ajd9tt8o8b41twzna56ewrj9fr6o9z/1122.webp" data-depth="0.6">
+                        <img src="{{$case->list_img}}" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
-                        <img src="../upload/resize_cache/webp/iblock/223/procncjqjf3ck0d2bvepcdbnltzo6oab/2a22737c829158537637231d0ddb3ab8-benzin-preview.webp">
+                    @if($case->logo != null)
+                        <img src="{{$case->logo}}">
+                    @endif
                 </span>
 
-                <a href="/case/reputatsiya-banka-otrazhenie-hakerskoj-ataki" class="miniBlock__wrap__tit _colorWhite"
-                >Репутация банка: отражение хакерской атаки</a>
+                <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"
+                >{{$case->list_name}}</a>
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=ORM.html"
+                    @foreach($case->tags as $tag)
+                    <a href="?tag={{$tag->id}}"
                        class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #b9b9b9"
-                    >#ORM</a>
-                    <a href="/@case_tag=Р‘Р°РЅРє.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Банк</a>
-                    <a href="/@case_tag=РќРёРІРµР»РёСЂРѕРІР°РЅРёРµ&#32;РЅРµРіР°С‚РёРІР°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Нивелирование негатива</a>
-                    <a href="/@case_tag=Р РµРїСѓС‚Р°С†РёСЏ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Репутация</a>
-                    <a href="/@case_tag=РЈРїСЂР°РІР»РµРЅРёРµ&#32;РІРѕСЃРїСЂРёСЏС‚РёРµРј.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Управление восприятием</a>
+                    >#{{$tag->name}}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #b5cf4d"
+            @elseif($case->type == 'double')
+            <div class="miniBlock _bgDarkBlue scene miniBlock_double"
+             style="background-color: {{$case->bg_color}}"
         >
             <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="https://faros.media/upload/iblock/439/gmg0a4xb1xa59q6lvsow6gxwvfvho9qm/%D0%A4%D1%80%D0%B5%D0%B3%D0%B0%D1%82Kids_2.png" data-depth="0.6">
-                                                    </span>
+                <span class="miniBlock__layer__pic parallax">
+                        <img src="{{$case->list_img}}" data-depth="0.6">
+                </span>
             </div>
 
             <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="https://faros.media/upload/resize_cache/webp/upload/iblock/f84/cawj4mvta1z73if6c9he1m8rq8hvtn5q/%D0%A4%D1%80%D0%B5%D0%B3%D0%B0%D1%82Kids_2.webp">
-                                                    </span>
-
-
-                <a href="/case/ubeditelnyy-brending-kurinogo-myasa-dlya-detskogo-pitaniya" class="miniBlock__wrap__tit _colorWhite"
-                   style="color: #6b2421"
-                >Нейминг и брендинг для новой категории продуктов детского питания - куриного мяса &quot;Фрегат Kids&quot;</a>
+                <span class="miniBlock__wrap__pic">
+                    @if($case->logo != null)
+                        <img src="{{$case->logo}}">
+                    @endif
+                </span>
+                <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"
+                >{{$case->list_name}}</a>
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html"
+                    @foreach($case->tags as $tag)
+                    <a href="?tag={{$tag->id}}"
                        class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #6b2421"
-                    >#Бренд-менеджмент</a>
-                    <a href="/@case_tag=РќРµР№РјРёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #6b2421"
-                    >#Нейминг</a>
+                       style="color: #7494b9"
+                    >#{{$tag->name}}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #ffba07"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="https://faros.media/upload/iblock/71d/joc7tg7bi8e2pchvmrb6c7psjt0nv6by/%D1%8D%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81%20%D0%B4%D0%BE%D0%BC.png" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="https://faros.media/upload/iblock/864/mi14bbk2504n8eo1gcz3nocvnwz3795c/%D1%8D%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81%20%D0%BB%D0%BE%D0%B3%D0%BE.png">
-                                                    </span>
-
-
-                <a href="/case/kompleksnyy-marketing-i-rabota-s-reputatsiey-stroitelnoy-kompanii" class="miniBlock__wrap__tit _colorWhite"
-                   style="color: #000000"
-                >Комплекс&nbsp;услуг по репозиционированию бренда строительной компании</a>
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=РґРµСЂРµРІСЏРЅРЅРѕРµ&#32;СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРѕ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #000000"
-                    >#деревянное строительство</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #fefffd"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/iblock/a38/llgjaxk2s59wijb63hx12sv1q1wmbp9s/baby_PNG51721.png" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/0bf/nc6t6mt8ziu6f3a7mfjx46dsevaac30x/store-image-3511.jpeg">
-                                                    </span>
-
-
-                <a href="/case/smm-dlya-brenda-detskikh-tovarov-na-primere-podguznikov-libero" class="miniBlock__wrap__tit _colorWhite"
-                   style="color: #500b76"
-                >SMM-прокачка мирового бренда подгузников в соцсетях</a>
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=РљРµР№СЃС‹&#32;РїРѕ&#32;smm.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #500b76"
-                    >#Кейсы по smm</a>
-                    <a href="/@case_tag=KPI.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #500b76"
-                    >#KPI</a>
-                    <a href="/@case_tag=Instagram.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #500b76"
-                    >#Instagram</a>
-                    <a href="/@case_tag=Р»РѕСЏР»СЊРЅРѕСЃС‚СЊ&#32;Рє&#32;Р±СЂРµРЅРґСѓ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #500b76"
-                    >#лояльность к бренду</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene miniBlock_double"
-             style="background-color: #8FDDD0"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/iblock/99f/u2yqx2jvq1t3wnzguerogd3pxad73ytw/1126.png" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                    </span>
-
-
-                <a href="/case/nejming-dlya-obrazovatelnogo-proekta" class="miniBlock__wrap__tit _colorWhite"
-                >Нейминг для образовательного проекта </a>
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=Р‘СЂРµРЅРґ-РјРµРЅРµРґР¶РјРµРЅС‚.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #7494b9"
-                    >#Бренд-менеджмент</a>
-                    <a href="/@case_tag=РњР°СЂРєРµС‚РёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #7494b9"
-                    >#Маркетинг</a>
-                    <a href="/@case_tag=РќРµР№РјРёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #7494b9"
-                    >#Нейминг</a>
-                    <a href="/@case_tag=РћР±СЂР°Р·РѕРІР°РЅРёРµ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #7494b9"
-                    >#Образование</a>
-                </div>
-            </div>
-        </div>
+            @endif
+        @endforeach
         <!--1/2 height, min width, home miniBlock END-->
     </div>
     <!--home mMini blocks END-->
@@ -203,652 +84,37 @@
     <!--home mMini blocks START-->
     <div class="homeMiniBlocksLast other-cases" title="10" style="grid-template-columns: repeat(10, max-content);">
         <!--1/2 height, min width, home miniBlock START-->
+
+        @foreach($otherCases as $case)
         <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #104076"
+             style="background-color: {{$case->bg_color}}"
         >
             <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/iblock/bbc/pv46pijhkimfwmcm9fx1vbjuc1btlo9i/1124.png" data-depth="0.6">
-                                                    </span>
+                <span class="miniBlock__layer__pic parallax">
+                        <img src="{{$case->list_img}}" data-depth="0.6">
+                </span>
             </div>
 
             <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                    </span>
-
-                <a href="/case/shkola-inostrannyh-yazykov" class="miniBlock__wrap__tit _colorWhite"
-                >Школа иностранных языков</a>
+                @if($case->logo != null)
+                <span class="miniBlock__wrap__pic">
+                        <img src="{{$case->logo}}">
+                </span>
+                @endif
+                <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"
+                >{{$case->list_name}}</a>
 
                 <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=SMM.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#SMM</a>
-                    <a href="/@case_tag=РљРѕРЅРєСѓСЂСЃРЅС‹Рµ&#32;РјРµС…Р°РЅРёРєРё.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Конкурсные механики</a>
-                    <a href="/@case_tag=РњР°СЂРєРµС‚РёРЅРі-РєРѕРЅСЃР°Р»С‚РёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Маркетинг-консалтинг</a>
-                    <a href="/@case_tag=РџСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±СЂРµРЅРґР°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Продвижение бренда</a>
-                    <a href="/@case_tag=Р¤РѕСЂРјРёСЂРѕРІР°РЅРёРµ&#32;СЃРїСЂРѕСЃР°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Формирование спроса</a>
-                    <a href="/@case_tag=РЇР·С‹РєРѕРІР°СЏ&#32;С€РєРѕР»Р°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Языковая школа</a>
+                    @foreach($case->tags as $tag)
+                        <a href="?tag={{$tag->id}}"
+                           class="miniBlock__wrap__hashWrap__link _colorSky"
+                           style="color: #7494b9"
+                        >#{{$tag->name}}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #114076"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/iblock/dc3/dv2wb72dknys2271zsyl3zrp5xxuqs7p/1127.png" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/d48/6m9dlv1tjtxa5w4yxaf4gxhgplf2a43u/logo2.png">
-                                                    </span>
-
-                <a href="/case/prodvizhenie-brendovyh-kormov-dlya-domashnih-zhivotnyh" class="miniBlock__wrap__tit _colorWhite"
-                >Продвижение брендовых кормов для домашних животных</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=SMM.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #fff"
-                    >#SMM</a>
-                    <a href="/@case_tag=РљРѕСЂРј&#32;РґР»СЏ&#32;Р¶РёРІРѕС‚РЅС‹С….html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #fff"
-                    >#Корм для животных</a>
-                    <a href="/@case_tag=Р›РёРґРѕРіРµРЅРµСЂР°С†РёСЏ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #fff"
-                    >#Лидогенерация</a>
-                    <a href="/@case_tag=РњР°СЂРєРµС‚РёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #fff"
-                    >#Маркетинг</a>
-                    <a href="/@case_tag=Р РµРєР»Р°РјР°&#32;РІ&#32;СЃРѕС†СЃРµС‚СЏС….html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #fff"
-                    >#Реклама в соцсетях</a>
-                    <a href="/@case_tag=РўР“Р‘.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #fff"
-                    >#ТГБ</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #DCE7F1"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/02b/udy0fx3t97x9a9nb9o2r128nttntm2c7/iI.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                    </span>
-
-                <a href="/case/statistika-byvshego-klienta" class="miniBlock__wrap__tit _colorWhite"
-                   style="color: #1a1a1a"
-                >Статистика бывшего клиента </a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=SMM.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#SMM</a>
-                    <a href="/@case_tag=Р”РµРІРµР»РѕРїРµСЂ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Девелопер</a>
-                    <a href="/@case_tag=Р”РµСЂРµРІСЏРЅРЅРѕРµ&#32;СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРѕ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Деревянное строительство</a>
-                    <a href="/@case_tag=РњР°СЂРєРµС‚РёРЅРі-РєРѕРЅСЃР°Р»С‚РёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Маркетинг-консалтинг</a>
-                    <a href="/@case_tag=РќРµРґРІРёР¶РёРјРѕСЃС‚.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Недвижимост</a>
-                    <a href="/@case_tag=РџСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±СЂРµРЅРґР°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Продвижение бренда</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #e0421f"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/6b0/te0pn705a69h6hrjc8g1utqsc5dolo8r/5e2ff14a32d2a3e67e94bf0a7eab99fa-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/b78/4p4lavwn9ddn66mack4w21x00p6y9vrf/webpc-passthru.webp">
-                                                    </span>
-
-                <a href="/case/prodvizhenie-rok-shkoly-s-pomoshhyu-aktivatsii-v-sotssetyah" class="miniBlock__wrap__tit _colorWhite"
-                >Продвижение рок-школы с помощью активации в соцсетях</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=SMM.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#SMM</a>
-                    <a href="/@case_tag=РљРѕРЅРєСѓСЂСЃРЅС‹Рµ&#32;РјРµС…Р°РЅРёРєРё.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Конкурсные механики</a>
-                    <a href="/@case_tag=РњР°СЂРєРµС‚РёРЅРі-РєРѕРЅСЃР°Р»С‚РёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Маркетинг-консалтинг</a>
-                    <a href="/@case_tag=РњСѓР·С‹РєР°Р»СЊРЅР°СЏ&#32;С€РєРѕР»Р°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Музыкальная школа</a>
-                    <a href="/@case_tag=РћР±СЂР°Р·РѕРІР°РЅРёРµ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Образование</a>
-                    <a href="/@case_tag=Р¤РѕСЂРјРёСЂРѕРІР°РЅРёРµ&#32;СЃРїСЂРѕСЃР°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Формирование спроса</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #000000"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/85a/dqfxxqzk8qqqm3yxlbr10e8ne949yr4s/5fc64301c29385585c9328ed_coworking&#32;espace&#32;de&#32;travail&#32;take&#32;a&#32;desk-p-800.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/resize_cache/webp/iblock/1c1/v6r3x9yoo9r0fv35fimdgxi7qdv7izka/5-prozrachnyi-fon.webp">
-                                                    </span>
-
-                <a href="/case/kak-my-razrabotali-brend-premialnoj-studii-intererov" class="miniBlock__wrap__tit _colorWhite"
-                >Как мы разработали бренд премиальной студии интерьеров</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="http://faros.media/case/?case_tag=%D0%A0%D1%94%D0%A0%C2%B5%D0%A0%E2%84%96%D0%A1%D0%83%D0%A1%E2%80%B9%20%D0%A0%D1%97%D0%A0%D1%95%20%D0%A0%D1%91%D0%A0%D0%85%D0%A1%E2%80%9A%D0%A0%C2%B5%D0%A1%D0%82%D0%A1%D0%8A%D0%A0%C2%B5%D0%A1%D0%82%D0%A0%D0%85%D0%A0%D1%95%D0%A0%E2%84%96%20%D0%A1%E2%80%9A%D0%A0%C2%B5%D0%A0%D1%98%D0%A0%C2%B0%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D1%94%D0%A0%C2%B5"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #ffffff"
-                    >#кейсы по интерьерной тематике</a>
-                    <a href="/@case_tag=СЂР°Р·СЂР°Р±РѕС‚РєР°&#32;С„РёСЂРјРµРЅРЅРѕРіРѕ&#32;СЃС‚РёР»СЏ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #ffffff"
-                    >#разработка фирменного стиля</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #0085C3"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/14c/f7nolo81vb37dco8ws2cnkdidfs19sod/istockphoto-1325168727-612x612-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/resize_cache/webp/iblock/431/enr5lyxkdruk4hprlj85hn7jkofuxx18/Template_Logo_New-3.webp">
-                                                    </span>
-
-                <a href="/case/kak-my-sobirali-posetitelej-na-yarmarku-obrazovaniya-za-7-dnej-do-starta" class="miniBlock__wrap__tit _colorWhite"
-                >Как мы собирали посетителей на ярмарку образования за 7 дней до старта</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=РєРµР№СЃС‹&#32;РїРѕ&#32;РѕР±СЂР°Р·РѕРІР°РЅРёСЋ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#кейсы по образованию</a>
-                    <a href="/@case_tag=EDTECH.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#EDTECH</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #CCDCF2"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/971/5hjh7hgnjzczvkfekfmhmp4g9o1rka83/3d-hand-holding-a-dish-with-a-lid-serving-hot-dishes-isolated-3d-rendering_468651-61-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/resize_cache/webp/iblock/30c/4s17454a0w1ocg4ae1tauoe32xucurlt/webpc-passthru&#32;(4)-benzin-preview.webp">
-                                                    </span>
-
-                <a href="/case/reputatsionnyj-audit-kak-proanalizirovat-vospriyatie-pishhevyh-produktov" class="miniBlock__wrap__tit _colorWhite"
-                >Репутационный аудит: как проанализировать восприятие пищевых продуктов </a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=Р°СѓРґРёС‚.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#аудит</a>
-                    <a href="/@case_tag=Р РµРїСѓС‚Р°С†РёСЏ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Репутация</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #0e3478"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/7f7/ffatch5gnpxc0xirvk2m8nhqz003330w/GL001199420_001-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/resize_cache/webp/iblock/86a/wdjlxsofequeq4i4nieu2egipwu522e6/BluLabel-e1542896318544.webp">
-                                                    </span>
-
-                <a href="/case/prodvizhenie-destkih-kolyasok-inglesina" class="miniBlock__wrap__tit _colorWhite"
-                >Продвижение бренда детских колясок и товаров INGLESINA&nbsp;&nbsp;</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=SMM.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#SMM</a>
-                    <a href="/@case_tag=РљРµР№СЃС‹&#32;РїРѕ&#32;smm.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Кейсы по smm</a>
-                    <a href="/@case_tag=РљРѕРЅРєСѓСЂСЃРЅС‹Рµ&#32;РјРµС…Р°РЅРёРєРё.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#Конкурсные механики</a>
-                    <a href="/@case_tag=С‚СЂР°С„РёРє&#32;РёР·&#32;СЃРѕС†СЃРµС‚РµР№.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#трафик из соцсетей</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #0285c3"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/742/wukhk6c3zuu586x8g7y37sb84hrn4nif/lego-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                    </span>
-
-                <a href="/case/razrabotka-brendinga-dlya-detskoy-produktsii" class="miniBlock__wrap__tit _colorWhite"
-                >Разработка брендинга для детской продукции</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #e21c23"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/c6c/k7cicbsw0npmgageuwfsop3k2m3lerin/medicine-pill-01-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/resize_cache/webp/iblock/a44/txr30wtf7qiq00mfhym1vilgm1jehezw/i.webp">
-                                                    </span>
-
-                <a href="/case/vizualnyj-kontent-dlya-sotssetej-regionalnoj-apteki" class="miniBlock__wrap__tit _colorWhite"
-                >Раскрутка аптеки. визуальный контент для соцсетей региональной сети</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=SMM.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#SMM</a>
-                    <a href="/@case_tag=РґРёР·Р°Р№РЅ&#32;РІ&#32;СЃРѕС†СЃРµС‚СЏС….html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#дизайн в соцсетях</a>
-                    <a href="/@case_tag=РјР°СЂРєРµС‚РёРЅРі&#32;РґР»СЏ&#32;С„Р°СЂРјС‹.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#маркетинг для фармы</a>
-                    <a href="/@case_tag=РѕС„РѕСЂРјР»РµРЅРёРµ&#32;РїРѕСЃС‚РѕРІ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#оформление постов</a>
-                    <a href="/@case_tag=РїСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р°РїС‚РµРє.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#продвижение аптек</a>
-                    <a href="/@case_tag=РџСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±СЂРµРЅРґР°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Продвижение бренда</a>
-                    <a href="/@case_tag=Р РµРєР»Р°РјР°&#32;РІ&#32;СЃРѕС†СЃРµС‚СЏС….html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Реклама в соцсетях</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: e80940"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/ea5/530ysl06qsebwswzflgmuzgjznilwl1h/Antenna-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/726/pba0j524rjvnmjx3a4lpe623884dlrlp/mgts.webp">
-                                                    </span>
-
-                <a href="/case/keys-reputation-mgts-faros" class="miniBlock__wrap__tit _colorWhite"
-                >Как мы выстраивали orm у провайдера связи</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=С‚РµР»РµРєРѕРј.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#телеком</a>
-                    <a href="/@case_tag=СЂРµРїСѓС‚Р°С†РёСЏ&#32;РѕРїРµСЂР°С‚РѕСЂР°.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#репутация оператора</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #8FDDD0"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/02a/us92jj3heszcbwfzgrxkdhrw6l2t7370/poluf.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/0be/3xn5om2el96t31xthlzq1er7he5fj2dz/vilon.png">
-                                                    </span>
-
-                <a href="/case/osobennosti-prodvizheniya-polufabrikatov-v-socsetyah" class="miniBlock__wrap__tit _colorWhite"
-                >Кейс по продвижению производителя полуфабрикатов в соцсетях</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: b6c7d8"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/705/mphml6aarpplfhn75m1v4ds5e8gz1770/pink-megaphone-with-flying-icons-bubbles-isolated-white-background_272897-671-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/9a3/uuaunj2ngek9opinkknyg6qowb71u7wn/bs.webp">
-                                                    </span>
-
-                <a href="/case/marketing-rebranding-i-prodvizhenie-konsaltingovoy-kompanii" class="miniBlock__wrap__tit _colorWhite"
-                   style="color: ffffff"
-                >Маркетинг, ребрендинг и продвижение консалтинговой компании</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=b2b.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: 000000"
-                    >#b2b</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #104076"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/ca9/xh1vuhy4u8rybetukmtt0pbhvysd2clv/medicine-capsules-3d-rendering-isolated_75891-1068-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/c87/3l2e2tga2vim4jwk69hw64t7lcfmu6ok/webpc-passthru&#32;(2).webp">
-                                                    </span>
-
-                <a href="/case/case-po-prodvizheniyu-badov-putem-prodvizheniya-printsipov-zozh" class="miniBlock__wrap__tit _colorWhite"
-                >Кейс по продвижение бада на принципах зож</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=С„Р°СЂРј&#32;РјР°СЂРєРµС‚РёРЅРі.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#фарм маркетинг</a>
-                    <a href="/@case_tag=СЂРµРїСѓС‚Р°С†РёСЏ&#32;Р±Р°РґРѕРІ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#репутация бадов</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: 5f00bf"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/7cb/gqbpzcp6rngxtklp8g0i04jvwd7rcb6o/fruitsPack_01.jpgA72B999A-EC10-48F8-B69B-4F65F34EB73DLarge-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/822/2zmovpc9j25liy7lka0ii9f9cexl3gcu/el.webp">
-                                                    </span>
-
-                <a href="/case/case-smm-prodvizhenie-diety-pohudenie" class="miniBlock__wrap__tit _colorWhite"
-                >Кейс по smm для готовых наборов еды от медийной личности</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=РїСЂРѕРґРІРёР¶РµРЅРёРµ&#32;РїСЂРѕРґСѓРєС‚РѕРІ&#32;РґР»СЏ&#32;РїР�.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#продвижение продуктов для похудения</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: e0421f"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/475/3g6moedxge149dak3gfmtm59nn4wa3r7/kisspng-look-what-i-did-today-an-accomplishment-journal-r-5afcfee186aad8.8119949115265297615516-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/cc4/xu4lxswxytxoxxqmizosob559ethfwmn/bork.webp">
-                                                    </span>
-
-                <a href="/case/bork-analiz-sprosa-na-byttehniku-orm" class="miniBlock__wrap__tit _colorWhite"
-                >BORK: анализ спроса на быт.технику и работы по его увеличению</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=Р°РЅР°Р»РёР·&#32;СЃРїСЂРѕСЃР°&#32;Рё&#32;РІРѕСЃРїСЂРёСЏС‚РёСЏ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#анализ спроса и восприятия</a>
-                    <a href="/@case_tag=Р»РѕСЏР»СЊРЅРѕСЃС‚СЊ&#32;Рє&#32;Р±СЂРµРЅРґСѓ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#лояльность к бренду</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #e21e23"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/094/aa8k76ln68xr36onx9uz3nnhep0k52bn/thumbnail.png3e6d443b-6daf-4c9e-9655-138bbbf0d816Large-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                    </span>
-
-                <a href="/case/reputatsiya-zastrojshhikov-i-upravlyayushhih-kompanij" class="miniBlock__wrap__tit _colorWhite"
-                >Репутация застройщиков и управляющих компаний</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=ORM.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#ORM</a>
-                    <a href="/@case_tag=Р”РµРІРµР»РѕРїРµСЂ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Девелопер</a>
-                    <a href="/@case_tag=Р—Р°СЃС‚СЂРѕР№С‰РёРє.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Застройщик</a>
-                    <a href="/@case_tag=РќРµРґРІРёР¶РёРјРѕСЃС‚СЊ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Недвижимость</a>
-                    <a href="/@case_tag=Р РµРїСѓС‚Р°С†РёСЏ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Репутация</a>
-                    <a href="/@case_tag=РЈРїСЂР°РІР»РµРЅРёРµ&#32;РІРѕСЃРїСЂРёСЏС‚РёРµРј.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Управление восприятием</a>
-                    <a href="/@case_tag=РЈРїСЂР°РІР»СЏСЋС‰Р°СЏ&#32;РєРѕРјРїР°РЅРёСЏ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                       style="color: #b9b9b9"
-                    >#Управляющая компания</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #f7d517"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/iblock/dd2/je0wf1znlby0dyf87h2yfmp63el0rz2g/284234047039211&#32;(1).webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/153/fw6imczm7c7ywxxc6j352kxysoglcheq/webpc-passthru.webp">
-                                                    </span>
-
-                <a href="/case/kak-udalit-negativ-v-bankovskoy-sfere-keys-po-yunistrim" class="miniBlock__wrap__tit _colorWhite"
-                >Как удалить негатив в банковской сфере. кейс по юнистрим</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="http://faros.media/case/?case_tag=%D0%A1%D1%93%D0%A0%D1%97%D0%A1%D0%82%D0%A0%C2%B0%D0%A0%D0%86%D0%A0%C2%BB%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D1%91%D0%A0%C2%B5%20%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%97%D0%A1%D1%93%D0%A1%E2%80%9A%D0%A0%C2%B0%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A0%C2%B5%D0%A0%E2%84%96%20%D0%A0%C2%B1%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D1%94%D0%A0%C2%B0"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#управление репутацией банка</a>
-                    <a href="/@case_tag=С„РёРЅС‚РµС….html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#финтех</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <div class="miniBlock _bgDarkBlue scene "
-             style="background-color: #0085C3"
-        >
-            <div class="miniBlock__layer">
-                        <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/50c/4ttgvxnvknnl1wm2vb4nxvkdfcnhsrf6/ab26c680443183def63020380731c629-benzin-preview.webp" data-depth="0.6">
-                                                    </span>
-            </div>
-
-            <div class="miniBlock__wrap">
-                        <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/659/6l1o4lz0glbm3cnh38x6ea0up4tqrx18/logo_ff.png">
-                                                    </span>
-
-                <a href="/case/keys-po-prodvizheniyu-badov-formiruem-spros-i-reputatsiyu" class="miniBlock__wrap__tit _colorWhite"
-                >Продвижение бада для женщин: формируем спрос и репутацию</a>
-
-                <div class="miniBlock__wrap__hashWrap">
-                    <a href="/@case_tag=РїСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±Р°РґРѕРІ.html"
-                       class="miniBlock__wrap__hashWrap__link _colorSky"
-                    >#продвижение бадов</a>
-                </div>
-            </div>
-        </div>
-        <!--1/2 height, min width, home miniBlock END-->
+        @endforeach
     </div>
     <!--home mMini blocks END-->
 

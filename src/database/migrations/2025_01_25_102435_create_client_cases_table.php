@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('client_cases', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('order');
             $table->string('slug')->unique();
             $table->string('list_name')->comment('Название в списке');
             $table->string('post_name')->comment('Название в деталке');
@@ -20,6 +21,7 @@ return new class extends Migration
             $table->string('list_img')->nullable()->comment('Изображение в списке');
             $table->string('img')->nullable()->comment('Изображение в деталке');
             $table->string('bg_color')->default('#104076');
+            $table->string('text_color')->default('#b9b9b9');
             $table->mediumText('text');
             $table->enum('type', ['default', 'bgYellow', 'double'])->comment('Обычный')->default('default');
             // default = miniBlock _bgDarkBlue scene

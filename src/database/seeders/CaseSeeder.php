@@ -5,9 +5,13 @@ namespace Database\Seeders;
 use App\Models\CaseTag;
 use App\Models\ClientCase;
 use App\Models\Seo;
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use function Symfony\Component\String\b;
 
 class CaseSeeder extends Seeder
 {
@@ -95,12 +99,55 @@ class CaseSeeder extends Seeder
                 $type = 'default';
             }
 
+            $formattedImg = basename(rawurldecode($case['Image']));
+            switch ($formattedImg){
+                case 'Frame 6356735 (1).webp':
+                    $formattedImg = 'Frame6356735.png';
+                    break;
+                case 'эльбрус дом.webp':
+                    $formattedImg = 'эльбрус дом.png';
+                    break;
+                case 'medicine-capsules-3d-rendering-isolated_75891-1068-benzin-preview.png':
+                    $formattedImg = 'medicine-capsules-3d-rendering-isolated_75891-1068-benzin-preview.webp';
+                    break;
+                case 'istockphoto-1325168727-612x612-benzin-preview.png':
+                    $formattedImg = 'istockphoto-1325168727-612x612-benzin-preview.webp';
+                    break;
+                case '3d-hand-holding-a-dish-with-a-lid-serving-hot-dishes-isolated-3d-rendering_468651-61-benzin-preview.png':
+                    $formattedImg = '3d-hand-holding-a-dish-with-a-lid-serving-hot-dishes-isolated-3d-rendering_468651-61-benzin-preview.webp';
+                    break;
+                case 'lego-benzin-preview.png':
+                    $formattedImg = 'lego-benzin-preview.webp';
+                    break;
+            }
+
+            $formattedLogo = basename(rawurldecode($case['Logo']));
+            switch ($formattedLogo){
+                case 'логотип getresponse.webp':
+                    $formattedLogo = 'logo_getresponse.png';
+                    break;
+                case 'эльбрус лого.webp':
+                    $formattedLogo = 'эльбрус лого.png';
+                    break;
+                case 'vilon.png':
+                    $formattedLogo = 'vilon.webp';
+                    break;
+            }
+
+            $color = $case['Background Color'];
+
+            if($color != null) {
+                if ($color[0] !== '#') {
+                    $color = '#' . $color;
+                }
+            }
+
             $clientCaseData = [
                 'list_name' => $case['Title'],
-                'logo' => $case['Logo'],
-                'list_img' => rawurldecode($case['Image']),
+                'logo' => $case['Logo'] != '' ?'/images/case/'.$formattedLogo : null,
+                'list_img' => '/images/case/'.$formattedImg,
                 'slug' => $slug,
-                'bg_color' => $case['Background Color'],
+                'bg_color' => $color,
                 'type' => $type
             ];
 
@@ -112,8 +159,9 @@ class CaseSeeder extends Seeder
 
             if ($caseDetail) {
                 $clientCaseData['post_name'] = $caseDetail['Title'];
-                $clientCaseData['img'] = $caseDetail['Image'];
+                $clientCaseData['img'] = '/images/case/'.basename($caseDetail['Image']);
                 $clientCaseData['text'] = substr(str_replace('<div class="author1__partCont">', '',$caseDetail['Text']), 0, -6);
+                $clientCaseData['created_at'] = Carbon::parse($caseDetail['Date']);
 
                 $clientCase = ClientCase::create($clientCaseData);
 
@@ -149,6 +197,35 @@ class CaseSeeder extends Seeder
                 ]);
             }
         }
+
+        ClientCase::where('id', '>=', 5)->increment('order');
+        ClientCase::where('slug', 'smm-dlya-brenda-detskikh-tovarov-na-primere-podguznikov-libero')->update([
+            'order' => 5,
+            'bg_color' => '#fefffd',
+            'text_color' => '#500b76'
+        ]);
+
+        // default === b9b9b9
+        ClientCase::find(3)->update(['text_color' => '#6b2421']);
+        ClientCase::find(4)->update(['text_color' => '#000000']);
+        ClientCase::find(7)->update(['text_color' => '#fff']);
+        ClientCase::find(7)->update(['text_color' => '#1a1a1a']);
+        ClientCase::find(8)->update(['text_color' => '#fff']);
+        ClientCase::find(9)->update(['text_color' => '#fff']);
+        ClientCase::find(10)->update(['text_color' => '#fff']);
+        ClientCase::find(12)->update(['text_color' => '#fff']);
+        ClientCase::find(15)->update(['text_color' => '#afafaf']);
+        ClientCase::find(16)->update(['text_color' => '#afafaf']);
+        ClientCase::find(17)->update(['text_color' => '#afafaf']);
+        ClientCase::find(18)->update(['text_color' => '#afafaf']);
+        ClientCase::find(19)->update(['text_color' => '#afafaf']);
+        ClientCase::find(20)->update(['text_color' => '#afafaf']);
+        ClientCase::find(21)->update(['text_color' => '#afafaf']);
+        ClientCase::find(22)->update(['text_color' => '#afafaf']);
+        ClientCase::find(23)->update(['text_color' => '#afafaf']);
+        ClientCase::find(24)->update(['text_color' => '#afafaf']);
+        ClientCase::find(25)->update(['text_color' => '#ffffff']);
+        ClientCase::find(25)->update(['text_color' => '#000000']);
     }
 
     /**

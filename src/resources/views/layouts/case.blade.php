@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Маркетинг, ребрендинг и продвижение консалтинговой компании</title>
-    <script src="/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="/css/styles.min.css?v=69">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Кейсы по управлению репутацией от агентства Faros.Media</title>
+    <script src="http://faros.media/local/templates/faros/js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="http://faros.media/local/templates/faros/css/styles.min.css?v=1">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo')
 </head>
-<body class="_bgLightGray">
+<body class="custom">
 <style>
     @keyframes light {
         0% {
@@ -368,11 +368,108 @@
 @include('inc.header')
 @include('inc.mobmenu')
 <!--Header END--><div class="hidden" id="hidden">
-    <div class="wrapper" id="wrapper">
+    <!--news home menu START-->
+    <div class="horizMenu _bgWhite cases" id="cases">
+        <input type="hidden" name="url" value="cases" id="url">
+
+        <ul class="horizMenu__menu horizMenu__menu__allarticles" id="newsMenu">
+            <li class="horizMenu__menu__item active case-section" data-order="0">
+                <a class="horizMenu__menu__item__link" data-id="0">ВСЕ КЕЙСЫ</a>
+            </li>
+            <li class="dd_menu">
+                <button class="dropdown-toggle" type="button">
+                    <span class="dropdown-toggle__point"></span>
+                    <span class="dropdown-toggle__point"></span>
+                    <span class="dropdown-toggle__point"></span>
+                </button>
+                <ul class="dropdown-menu"></ul>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Поиск.." name="q" id="search-input">
+        </div>
+
+        <div class="selectWrap">
+            <button class="horizMenu__filter" type="button">
+                <span class="horizMenu__filter__text">Теги</span>
+                <span class="horizMenu__filter__quant">0</span>
+                <img src="../images/min/icons/arroworange.svg" alt="" class="horizMenu__filter__arrow">
+            </button>
+
+            <select class="selectWrap__sel" id="authSel" multiple="multiple">
+                <option value="ORM">ORM</option>
+                <option value="Банк">Банк</option>
+                <option value="Нивелирование негатива">Нивелирование негатива</option>
+                <option value="Репутация">Репутация</option>
+                <option value="Управление восприятием">Управление восприятием</option>
+                <option value="Бренд-менеджмент">Бренд-менеджмент</option>
+                <option value="Нейминг">Нейминг</option>
+                <option value="деревянное строительство">деревянное строительство</option>
+                <option value="Кейсы по smm">Кейсы по smm</option>
+                <option value="KPI">KPI</option>
+                <option value="Instagram">Instagram</option>
+                <option value="лояльность к бренду">лояльность к бренду</option>
+                <option value="Маркетинг">Маркетинг</option>
+                <option value="Образование">Образование</option>
+                <option value="SMM">SMM</option>
+                <option value="Конкурсные механики">Конкурсные механики</option>
+                <option value="Маркетинг-консалтинг">Маркетинг-консалтинг</option>
+                <option value="Продвижение бренда">Продвижение бренда</option>
+                <option value="Формирование спроса">Формирование спроса</option>
+                <option value="Языковая школа">Языковая школа</option>
+                <option value="Корм для животных">Корм для животных</option>
+                <option value="Лидогенерация">Лидогенерация</option>
+                <option value="Реклама в соцсетях">Реклама в соцсетях</option>
+                <option value="ТГБ">ТГБ</option>
+                <option value="Девелопер">Девелопер</option>
+                <option value="Деревянное строительство">Деревянное строительство</option>
+                <option value="Недвижимост">Недвижимост</option>
+                <option value="Музыкальная школа">Музыкальная школа</option>
+                <option value="кейсы по интерьерной тематике">кейсы по интерьерной тематике</option>
+                <option value="разработка фирменного стиля">разработка фирменного стиля</option>
+                <option value="кейсы по образованию">кейсы по образованию</option>
+                <option value="EDTECH">EDTECH</option>
+                <option value="аудит">аудит</option>
+                <option value="трафик из соцсетей">трафик из соцсетей</option>
+                <option value="дизайн в соцсетях">дизайн в соцсетях</option>
+                <option value="маркетинг для фармы">маркетинг для фармы</option>
+                <option value="оформление постов">оформление постов</option>
+                <option value="продвижение аптек">продвижение аптек</option>
+                <option value="телеком">телеком</option>
+                <option value="репутация оператора">репутация оператора</option>
+                <option value="b2b">b2b</option>
+                <option value="фарм маркетинг">фарм маркетинг</option>
+                <option value="репутация бадов">репутация бадов</option>
+                <option value="продвижение продуктов для похудения">продвижение продуктов для похудения</option>
+                <option value="анализ спроса и восприятия">анализ спроса и восприятия</option>
+                <option value="Застройщик">Застройщик</option>
+                <option value="Недвижимость">Недвижимость</option>
+                <option value="Управляющая компания">Управляющая компания</option>
+                <option value="управление репутацией банка">управление репутацией банка</option>
+                <option value="финтех">финтех</option>
+                <option value="продвижение бадов">продвижение бадов</option>
+            </select>
+
+            <button class="horizMenu__reset" id="tagreset"></button>
+        </div>
+
+        <div class="horizMenu__filter horizMenu__filter_mw">
+            <img src="../images/min/icons/top_bottom.svg" alt=""
+                 class="horizMenu__filter__sort horizMenu__filter__sort_abs">
+            <select class="selectWrap__sel" id="sortSel">
+                <option value="new">Новые</option>
+                <option value="old">Старые</option>
+                <option value="popular">По популярности</option>
+            </select>
+            <img src="../images/min/icons/arroworange.svg" alt=""
+                 class="horizMenu__filter__arrow horizMenu__filter__arrow_abs">
+        </div>
+    </div>
+    <!--news home menu END-->
+    <div class="wrapper wrapper_cases" id="wrapper">
         @yield('content')
     </div>
-</div>
-
+</div><br>
 <!--PDF POPUP-->
 <div class="pdf-popap" style="display: none;" id="pdfPopUp">
     <div class="pdf-popap__close"></div>
@@ -388,15 +485,16 @@
 <script src="/js/animation.gsap.min.js"></script>
 <script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
 <script src="/js/sticky.js"></script>
-<script src="/js/scripts.min.js?v=62"></script>
+<script src="/js/scripts.min.js?v=93"></script>
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../index.html"><meta itemprop="name" content="Кейсы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
-</html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->
 <div id="vk_community_messages"></div>
 <script type="text/javascript">
     VK.Widgets.CommunityMessages("vk_community_messages", 127027390, {disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
 </script>
+
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><meta itemprop="name" content="Кейсы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+</html>
