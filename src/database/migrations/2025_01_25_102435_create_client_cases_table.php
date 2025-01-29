@@ -25,6 +25,11 @@ return new class extends Migration
             $table->mediumText('text');
             $table->unsignedBigInteger('views')->default(0);
             $table->enum('type', ['default', 'bgYellow', 'double'])->comment('Обычный')->default('default');
+            $table->string('author_img')->nullable();
+            $table->string('author_name')->nullable();
+            $table->string('author_post')->nullable();
+            $table->string('author_quote', 500)->nullable();
+            $table->foreignId('author_id')->nullable()->constrained('authors')->nullOnDelete();
             // default = miniBlock _bgDarkBlue scene
             // bgYellow = projBlock _bgYellow
             // double = miniBlock _bgDarkBlue scene miniBlock_double

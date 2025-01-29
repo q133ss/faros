@@ -19,10 +19,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-//        $this->call(SeoSeeder::class);
-//        $this->call(AuthorsSeeder::class);
-//        $this->call(VideoSeeder::class);
-//        $this->call(SmiSeeder::class);
+        $this->call(SeoSeeder::class);
+        $this->call(AuthorsSeeder::class);
+        $this->call(VideoSeeder::class);
+        $this->call(SmiSeeder::class);
         $this->call(CaseSeeder::class);
     }
 }

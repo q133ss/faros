@@ -21,7 +21,8 @@ class CaseController extends Controller
     {
         $case = ClientCase::where('slug', $slug)->firstOrFail();
         $case->increment('views');
-        return view('case.show', compact('case'));
+        $tags = CaseTag::all();
+        return view('case.show', compact('case', 'tags'));
     }
 
     public function filters(Request $request)
