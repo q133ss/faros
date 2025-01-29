@@ -71,4 +71,9 @@ class ClientCase extends Model
     {
         return $this->belongsToMany(CaseTag::class, 'case_tag', 'case_id', 'tag_id');
     }
+
+    public function author()
+    {
+        return $this->belongsTo(Author::class, 'author_id');
+    }
 }

@@ -32,6 +32,7 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 
 # TODO постранично | ИДЕМ ПО СПИСКУ
 # Переносим все статьи, теги и фото
+// TODO прокликать все кейсы и проверить все фото!!!
 # В ЛИСТЕ КЕЙСОВ ПРОВЕРИТЬ ФАЙЛЫ! Там CLI!!!
 
 # todo убрать везде <title>СМИ</title> Он будет в SEO | перенести все title

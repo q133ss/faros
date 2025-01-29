@@ -374,88 +374,55 @@
             <div class="authorWrap__left">
                 <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="../../index.html" title="Главная" itemprop="item">
+                        <a href="/" title="Главная" itemprop="item">
                             <span itemprop="name">Главная</span>
                             <meta itemprop="position" content="0">
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="../index.html" title="Кейсы" itemprop="item">
+                        <a href="{{route('case.index')}}" title="Кейсы" itemprop="item">
                             <span itemprop="name">Кейсы</span>
                             <meta itemprop="position" content="1">
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a title="Школа иностранных языков" itemprop="item">
-                            <span itemprop="name">Школа иностранных языков</span>
+                        <a title="{{$case->post_name}}" itemprop="item">
+                            <span itemprop="name">{{$case->post_name}}</span>
                             <meta itemprop="position" content="2">
 
                         </a>
                     </li>
                 </ul>
                 <div class="sinpleHeaderTitle sticker">
-                    <h1 class="sinpleHeaderTitle__text">Школа иностранных языков</h1>
+                    <h1 class="sinpleHeaderTitle__text">{{$case->post_name}}</h1>
                 </div>
 
 
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
                         <img src="../../images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
-                        <p class="sinpleHeader__data__item__text">13.10.2021</p>
+                        <p class="sinpleHeader__data__item__text">{{$case->created_at?->format('d.m.Y')}}</p>
                     </div>
                     <div class="sinpleHeader__data__item">
-                        <a href="../index.html@tag=SMM.html"
-                           class="sinpleHeader__data__item__tag">#SMM</a>
-                        <a href="../index.html@tag=РљРѕРЅРєСѓСЂСЃРЅС‹Рµ&#32;РјРµС…Р°РЅРёРєРё.html"
-                           class="sinpleHeader__data__item__tag">#Конкурсные механики</a>
-                        <a href="../index.html@tag=РњР°СЂРєРµС‚РёРЅРі-РєРѕРЅСЃР°Р»С‚РёРЅРі.html"
-                           class="sinpleHeader__data__item__tag">#Маркетинг-консалтинг</a>
-                        <a href="../index.html@tag=РџСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±СЂРµРЅРґР°.html"
-                           class="sinpleHeader__data__item__tag">#Продвижение бренда</a>
-                        <a href="../index.html@tag=Р¤РѕСЂРјРёСЂРѕРІР°РЅРёРµ&#32;СЃРїСЂРѕСЃР°.html"
-                           class="sinpleHeader__data__item__tag">#Формирование спроса</a>
-                        <a href="../index.html@tag=РЇР·С‹РєРѕРІР°СЏ&#32;С€РєРѕР»Р°.html"
-                           class="sinpleHeader__data__item__tag">#Языковая школа</a>
+                        @foreach($case->tags as $tag)
+                        <a href="{{route('case.index')}}?tag={{$tag->id}}"
+                           class="sinpleHeader__data__item__tag">#{{$tag->name}}</a>
+                        @endforeach
                     </div>
                 </div>
 
+                @if($case->img != null)
                 <picture class="authorWrap__left__banner authorWrap__left__banner_case">
-                    <img src="../../upload/iblock/1a7/ps9s0qo2j1twkwox2tsw4eek3qrma5uk/webpc-passthru&#32;(10)-benzin-preview.png">
+                    <img src="{{$case->img}}">
                 </picture>
+                @endif
 
                 <div class="author1 blog">
                     <div class="author1__partName author1__partName_center">
                     </div>
 
 
-                    <div class="author1__partCont">
-
-                        <p class="author1__partCont__text">
-                        <div>
-                            Бренд не использовал возможности социальных сетей как коммуникационного канала, что затрудняло выстраивание лояльности текущих учеников и привлечение новых.
-                        </div>
-                        <br>
-                        <div>
-                            Перед нами стояла задача продвижения двух продуктов Школы — непосредственно курсов иностранных языков и международной программы для школьников «поездка в Лондон».
-                        </div>
-                        <br>
-                        <div>
-                            Оба этих направления имеют уникальные особенности, которые отличают проект от конкурентов. Мы выстраивали коммуникационную, базируясь на этих УТП.
-                        </div>
-                        <br>
-                        <div>
-                            Для решения поставленных задач была разработана стратегия присутствия бренда в социальных сетях, идея конкурса, проработана механика его проведения.
-                        </div>
-                        <br>
-                        <div>
-                            Мы поддерживали запуск и проведение конкурс с розыгрышем поездки в Лондон, но механики проведения и привлечения участников разработано не было. Существовало большое количество нюансов, которые затрудняли реализацию конкурса, а именно: возраст участников не более 17 лет (т.е. несовершеннолетние), участники только из определенных школ, неуверенность со стороны участников о правдивости предусмотренного выигрыша.
-                        </div>
-                        <div>
-                            <br>
-                        </div>
-                        Результат для нас стал неожиданностью. Оказалось, что доверие целевой аудитории к подобным конкурсам очень низкое, и пользователи соцсетей игнорировали возможность посетить пробный урок и стать претендентом на победу. То есть мы не смогли до конца реализовать цель повышение продаж курсов. Однако конкурс повысил интерес к программе «поездка в Лондон» и сгенерировал множество заявок на нее.                        </p>
-
-                    </div>
+                    <div class="author1__partCont">{!! $case->text !!}</div>
 
 
                     <div class="author1__partName author1__partName_center">
@@ -469,18 +436,10 @@
                     <p class="author1__partName">Теги статьи</p>
 
                     <div class="author1__partCont author1__partCont_tags">
-                        <a href="../index.html@tag=SMM.html"
-                           class="author1__partCont__tag">#SMM</a>
-                        <a href="../index.html@tag=РљРѕРЅРєСѓСЂСЃРЅС‹Рµ&#32;РјРµС…Р°РЅРёРєРё.html"
-                           class="author1__partCont__tag">#Конкурсные механики</a>
-                        <a href="../index.html@tag=РњР°СЂРєРµС‚РёРЅРі-РєРѕРЅСЃР°Р»С‚РёРЅРі.html"
-                           class="author1__partCont__tag">#Маркетинг-консалтинг</a>
-                        <a href="../index.html@tag=РџСЂРѕРґРІРёР¶РµРЅРёРµ&#32;Р±СЂРµРЅРґР°.html"
-                           class="author1__partCont__tag">#Продвижение бренда</a>
-                        <a href="../index.html@tag=Р¤РѕСЂРјРёСЂРѕРІР°РЅРёРµ&#32;СЃРїСЂРѕСЃР°.html"
-                           class="author1__partCont__tag">#Формирование спроса</a>
-                        <a href="../index.html@tag=РЇР·С‹РєРѕРІР°СЏ&#32;С€РєРѕР»Р°.html"
-                           class="author1__partCont__tag">#Языковая школа</a>
+                        @foreach($case->tags as $tag)
+                            <a href="{{route('case.index')}}?tag={{$tag->id}}"
+                               class="author1__partCont__tag">{{$tag->name}}</a>
+                        @endforeach
                     </div>
                 </div>
 
@@ -490,169 +449,49 @@
                     <p class="simpleSliderWrap__tit">Наши другие кейсы</p>
 
                     <div class="simpleSlider" id="simpleSlider">
-                        <a href="../vizualnyj-kontent-dlya-sotssetej-regionalnoj-apteki/index.html" class="simpleSlider__slide">
+                        @foreach($related as $post)
+                        <a href="{{route('case.show', $post->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/29b/owpqjfbgldzm92b8f3616lq5tb6g8esr/social-media_da.png">
+                                    <img src="{{$post->list_img}}">
                                 </picture>
                             </div>
-                            <p class="simpleSlider__slide__text">Раскрутка аптеки. визуальный контент для соцсетей региональной сети</p>
+                            <p class="simpleSlider__slide__text">{{$post->list_name}}</p>
                         </a>
-                        <a href="../statistika-byvshego-klienta/index.html" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/0a2/5l4r9xi8ip2rnvmxxxxwxx6ej276lgtk/dreamstime_l_797200-min.jpeg">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">Статистика бывшего клиента </p>
-                        </a>
-                        <a href="../prodvizhenie-destkih-kolyasok-inglesina/index.html" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/174/h0z69vq95cno3czeiiwgdozjehpan8pb/item-05.jpg">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">Продвижение бренда детских колясок и товаров INGLESINA  </p>
-                        </a>
-                        <a href="../smm-dlya-brenda-detskikh-tovarov-na-primere-podguznikov-libero/index.html" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/da8/i8k2qenwwjxol7t8wg0yx4x6dph3rde1/baby-diapers-and-teddy-on-yellow-color-floor-2021-08-30-15-41-39-utc.JPG">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">SMM для бренда детских товаров на примере подгузников Libero</p>
-                        </a>
-                        <a href="../prodvizhenie-brendovyh-kormov-dlya-domashnih-zhivotnyh/index.html" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/eea/7uwqrqcxh32810o34woyxcxzu1x8h323/webpc-passthru&#32;(12)-benzin-preview.png">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">Продвижение брендовых кормов для домашних животных</p>
-                        </a>
-                        <a href="../prodvizhenie-rok-shkoly-s-pomoshhyu-aktivatsii-v-sotssetyah/index.html" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="../../upload/iblock/927/mlyq9onot68dmoquleaas5xy3t9vmacc/1114.jpeg">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">Продвижение рок-школы с помощью активации в соцсетях</p>
-                        </a>
+                        @endforeach
                     </div>
                 </div>
             </div>
 
             <div class="vidgets">
-                <div class="articlesVidget">
-                    <p class="articlesVidget__tit">Популярные статьи </p>
-                    <div class="articlesVidget__body">
-                        <div class="articlesVidget__body__item">
-                            <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/969/35oirxizpns95ekmoq0u9xv5dif3gnuh/webpc-passthru.webp">
-                            </picture>
-
-                            <div class="articlesVidget__body__item__data">
-                                <a href="../../articles/nazad-v-budushhee-kontekstnoj-reklamy/index.html"
-                                   class="articlesVidget__body__item__data__tit">Назад в будущее контекстной рекламы</a>
-                                <a href="../../articles/index.html@section_id=6.html"
-                                   class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
-                            </div>
-                        </div>
-                        <div class="articlesVidget__body__item">
-                            <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/bd8/yrd0poqsy7be60qpz0n5e24vlmn6xjo0/webpc-passthru.webp">
-                            </picture>
-
-                            <div class="articlesVidget__body__item__data">
-                                <a href="../../articles/10-kreativnyh-idej-po-ispolzovaniyu-chat-botov/index.html"
-                                   class="articlesVidget__body__item__data__tit">10 креативных идей по использованию чат-ботов</a>
-                                <a href="../../articles/index.html@section_id=6.html"
-                                   class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
-                            </div>
-                        </div>
-                        <div class="articlesVidget__body__item">
-                            <picture class="articlesVidget__body__item__pic">
-                                <img src="http://faros.media/upload/iblock/763/804or0hwsew8labo8iopergp9m34n3t5/%D0%A1%D0%8C%D0%A0%D1%98%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A0%D1%91%20%D0%A0%D0%86%20%D0%A0%D1%98%D0%A0%C2%B0%D0%A1%D0%82%D0%A0%D1%94%D0%A0%C2%B5%D0%A1%E2%80%9A%D0%A0%D1%91%D0%A0%D0%85%D0%A0%D1%96%D0%A0%C2%B5%20%D0%A0%D1%91%20%D0%A0%D1%91%D0%A1%E2%80%A6%20%D0%A1%D0%82%D0%A0%D1%95%D0%A0%C2%BB%D0%A1%D0%8A.png">
-                            </picture>
-
-                            <div class="articlesVidget__body__item__data">
-                                <a href="../../articles/emotsii-v-reklame-bespoleznye-chuvstva-ili-effektivnyy-instrument-dlya-povysheniya-prodazh-/index.html"
-                                   class="articlesVidget__body__item__data__tit">Эмоции в рекламе: бесполезные чувства или эффективный инструмент для повышения продаж </a>
-                                <a href="../../articles/index.html@section_id=6.html"
-                                   class="articlesVidget__body__item__data__link">МАРКЕТИНГ</a>
-                            </div>
-                        </div>
-                        <div class="articlesVidget__body__item">
-                            <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/d3a/sawvta75ht6xuhbum9oozhk226skqyj6/webpc-passthru&#32;(1).webp">
-                            </picture>
-
-                            <div class="articlesVidget__body__item__data">
-                                <a href="../../articles/biznes-v-instagram-chto-luchshe-vsego-prodayotsya-v-2021-godu/index.html"
-                                   class="articlesVidget__body__item__data__tit">Бизнес в Инстаграм: что лучше всего продаётся в 2021 году</a>
-                                <a href="../../articles/index.html@section_id=5.html"
-                                   class="articlesVidget__body__item__data__link">СОЦСЕТИ</a>
-                            </div>
-                        </div>
-                        <div class="articlesVidget__body__item">
-                            <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/e13/m50e9k7no1nrv81o16bt43cvracdzofz/webpc-passthru&#32;(5).webp">
-                            </picture>
-
-                            <div class="articlesVidget__body__item__data">
-                                <a href="../../articles/kak-sozdat-i-prodvigat-telegram-kanal-2021/index.html"
-                                   class="articlesVidget__body__item__data__tit">Как создать и продвигать telegram-канал</a>
-                                <a href="../../articles/index.html@section_id=5.html"
-                                   class="articlesVidget__body__item__data__link">СОЦСЕТИ</a>
-                            </div>
-                        </div>
-                        <div class="articlesVidget__body__item">
-                            <picture class="articlesVidget__body__item__pic">
-                                <img src="../../upload/iblock/b2e/7qqqt2upuz338hs22hxd043cadxfvse2/stat_rep.webp">
-                            </picture>
-
-                            <div class="articlesVidget__body__item__data">
-                                <a href="../../articles/chto-takoe-reputatsiya-persony-i-pochemu-ona-vazhna/index.html"
-                                   class="articlesVidget__body__item__data__tit">Что такое репутация персоны и почему она важна</a>
-                                <a href="../../articles/index.html@section_id=8.html"
-                                   class="articlesVidget__body__item__data__link">РЕПУТАЦИЯ</a>
-                            </div>
-                        </div>
-                        <div class="articlesVidget__body__item">
-                            <picture class="articlesVidget__body__item__pic">
-                                <img src="http://faros.media/upload/iblock/ab1/7n20lfcq0h38f7jwyskn3yvtx6nzyv1i/%D0%A0%D1%94%D0%A0%C2%B0%D0%A0%D1%94%20%D0%A0%D1%95%D0%A1%E2%80%A0%D0%A0%C2%B5%D0%A0%D0%85%D0%A0%D1%91%D0%A1%E2%80%9A%D0%A1%D0%8A%20%D0%A0%D2%91%D0%A0%C2%B5%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%D0%86%D0%A1%D1%93%D0%A1%D0%8B%20%D0%A1%D0%82%D0%A0%C2%B5%D0%A0%D1%97%D0%A1%D1%93%D0%A1%E2%80%9A%D0%A0%C2%B0%D0%A1%E2%80%A0%D0%A0%D1%91%D0%A1%D0%8B%20%D0%A0%D1%94%D0%A0%D1%95%D0%A0%D1%98%D0%A0%D1%97%D0%A0%C2%B0%D0%A0%D0%85%D0%A0%D1%91%D0%A0%D1%91%20-%20%D0%A0%D1%96%D0%A1%D1%93%D0%A0%D2%91%D0%A0%D0%86%D0%A0%D1%91%D0%A0%C2%BB%D0%A0%C2%BB.png">
-                            </picture>
-
-                            <div class="articlesVidget__body__item__data">
-                                <a href="../../articles/chto-takoe-delovaya-reputatsiya/index.html"
-                                   class="articlesVidget__body__item__data__tit">Что такое деловая репутация</a>
-                                <a href="../../articles/index.html@section_id=8.html"
-                                   class="articlesVidget__body__item__data__link">РЕПУТАЦИЯ</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="../../articles/index.html" class="arrow-link vidgets__arrow-link">
-                        <span class="arrow-link__text">Все статьи</span>
-                        <img src="../../images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
-                    </a>
-                </div>
-
-
+                @include('inc.articles')
                 <div class="blogBG blogBG_big"></div>
                 <div class="authVidget">
                     <div class="authVidget__header">
                         <div class="authVidget__body__item authVidget__body__item_top">
+                            @if($case->author_img != null)
                             <picture class="authVidget__body__item__pic">
-                                <a href="../../authors/ekaterina-tulyankina/index.html">
-                                    <img src="../../upload/iblock/3c1/2uslay8qo2cbqcidhgu44k0g2gnkwull/IMG_7470.jpg">
-                                </a>
+                                @if($case->author_id != null)
+                                    <a href="{{route('team.show', $case->author?->id)}}">
+                                        <img src="{{$case->author_img}}">
+                                    </a>
+                                @else
+                                    <a href="#">
+                                        <img src="{{$case->author_img}}">
+                                    </a>
+                                @endif
                             </picture>
-
+                            @endif
                             <div class="authVidget__body__item__data">
-                                <a href="../../authors/ekaterina-tulyankina/index.html"
-                                   class="authVidget__body__item__data__name">Екатерина Тулянкина</a>
-                                <p class="authVidget__body__item__data__post">Основатель и руководитель агентства Faros.Media</p>
+                                @if($case->author_id != null)
+                                    <a href="{{route('team.show', $case->author?->id)}}"
+                                       class="authVidget__body__item__data__name">{{$case->author_name}}</a>
+                                    <p class="authVidget__body__item__data__post">{{$case->author_post}}</p>
+                                @else
+                                    <a href="#"
+                                       class="authVidget__body__item__data__name">{{$case->author_name}}</a>
+                                    <p class="authVidget__body__item__data__post">{{$case->author_post}}</p>
+                                @endif
                             </div>
                         </div>
 
@@ -661,12 +500,8 @@
 
                     <div class="blogBG"></div>
 
-                    <p class="authVidget__wText">Особенностью этого проекта стоит считать то, что мы оказывали консультационные услуги - разрабатывали механику, корректировали стратегию, давали рекомендации по присутствию в соцсетях, оформлению и продвижению, контролировали работу сотрудника клиента, а не реализовывали все сами.<br>
-                        <br></p>
+                    <p class="authVidget__wText">{{$case->author_quote}}</p>
                 </div>
-
-
-
 
             </div>
             <!--full height, contacts home block START-->
