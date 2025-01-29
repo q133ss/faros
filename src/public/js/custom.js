@@ -90,74 +90,147 @@ function filterMaterials(section_id = null) {
     return false;
 }
 
-function filterCases(section_id = null) {
-    if (section_id == null) {
-        section_id = $('.case-section.active a').data('id');
-    }
+// Поле сортировки для кейсов
+let case_sort = 'new';
+$('.caseSortSelect').on('change', function() {
+    case_sort = $(this).val();
+    // todo а если дефолт????
+    caseSearch();
+    tagsFilter();
+});
 
-    let url = $('#url').val();
-    let sort = $('#sortSel').val();
-    let tags = $('#authSel').val();
-    let q = $('#search-input').val();
-    $.ajax({
-        url: '/ajax/cases.php',
-        type: 'post',
-        data: {section_id: section_id, url: url, sort: sort, tags: tags, q: q},
-        dataType: 'json',
-        success: function (res) {
-            if (res.success) {
-                let gridCols = Math.ceil(res.count.others / 2);
-                $('.other-cases').attr('title', gridCols);
-                $('.other-cases').css('grid-template-columns', 'repeat(' + gridCols + ', max-content');
-                $('.other-cases').html(res.html.others);
-                $('.allcases').html(res.html.firsts);
-                $('.horizMenu__filter__quant').text(tags.length);
+// Поиск в кейсах
+var delay = (function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout(timer);
+        timer = setTimeout(callback, ms);
+    };
+})();
+$('#case-search-input').on('input', function() {
+    caseSearch();
+});
+
+function caseSearch(){
+    var $this = $('#case-search-input');
+    delay(function() {
+        var query = $this.val();
+        if (query.length > 0) {
+            $.ajax({
+                url: '/filters/case',
+                method: 'GET',
+                data: {
+                    search: query,
+                    sort: case_sort
+                },
+                success: function(response) {
+                    $('.other-cases').remove();
+                    $('.homeMiniBlocks_allcases').html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Ошибка выполнения запроса:', error);
+                }
+            });
+        } else {
+            console.log('Очистка результатов поиска');
+        }
+    }, 500);  // Задержка в 500 миллисекунд
+}
+
+// Обработчик для выбора тегов
+$('#authSel').on('change', function() {
+    tagsFilter();
+});
+
+function tagsFilter(){
+    var selectedTags = $('#authSel').val();  // Получаем массив выбранных значений
+
+    // Обновляем количество выбранных тегов
+    var count = selectedTags ? selectedTags.length : 0;
+    $('.horizMenu__filter__quant').text(count);
+
+    // Отправляем AJAX-запрос с выбранными тегами
+    if (selectedTags && selectedTags.length > 0) {
+        $.ajax({
+            url: '/filters/case',
+            method: 'GET',
+            data: {
+                tags: selectedTags.join(','),
+                //sort: case_sort У нас уже есть сортировка там, но можно добавлять если что и доп!
+            },
+            success: function(response) {
+                $('.other-cases').remove();
+                $('.homeMiniBlocks_allcases').html(response);
+            },
+            error: function(xhr, status, error) {
+                console.error('Ошибка выполнения запроса:', error);
             }
-            $(window).resize();
+        });
+    } else {
+        console.log('Нет выбранных тегов');
+    }
+}
 
+// Обработчик для кнопки сброса
+$('#tagreset').on('click', function() {
+    $('#authSel').val([]).trigger('change');  // Сбрасываем выбранные значения
+    $('.horizMenu__filter__quant').text(0);   // Обнуляем счетчик
+    $('#case-search-input').val('');         // Обнуляем поиск
+
+    //  заменяем
+    $.ajax({
+        url: '/filters/case/reset',
+        method: 'GET',
+        success: function(response) {
+            $('.wrapper_cases').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Ошибка выполнения запроса:', error);
         }
     });
+});
 
-    return false;
-}
 
 $('.material-section a').click(function () {
     filterMaterials($(this).data('id'));
 });
 
-$('.case-section a').click(function () {
-    filterCases($(this).data('id'));
-    $('html, body').animate({scrollLeft: 0},500);
-    $('html, body').animate({scrollTop: 0},500);
-});
+// Это убрал я
+// $('.case-section a').click(function () {
+//     filterCases($(this).data('id'));
+//     $('html, body').animate({scrollLeft: 0},500);
+//     $('html, body').animate({scrollTop: 0},500);
+// });
 
-$('#authSel').on('select2:select', function (e) {
-    let url = $('#url').val();
-    if (url === 'cases') {
-        filterCases();
-    } else {
-        filterMaterials();
-    }
+// Это убрал я
+// $('#authSel').on('select2:select', function (e) {
+//     let url = $('#url').val();
+//     if (url === 'cases') {
+//         filterCases();
+//     } else {
+//         filterMaterials();
+//     }
+// });
 
-});
+// Это убрал я
+// $('#authSel').on('select2:unselect', function (e) {
+//     let url = $('#url').val();
+//     if (url === 'cases') {
+//         filterCases();
+//     } else {
+//         filterMaterials();
+//     }
+// });
 
-$('#authSel').on('select2:unselect', function (e) {
-    let url = $('#url').val();
-    if (url === 'cases') {
-        filterCases();
-    } else {
-        filterMaterials();
-    }
-});
-
-$('#sortSel').on('select2:select', function (e) {
-    let url = $('#url').val();
-    if (url === 'cases') {
-        filterCases();
-    } else {
-        filterMaterials();
-    }
-});
+// Это убрал я
+// $('#sortSel').on('select2:select', function (e) {
+//     let url = $('#url').val();
+//     if (url === 'cases') {
+//         filterCases();
+//     } else {
+//         filterMaterials();
+//     }
+// });
 
 function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
@@ -189,12 +262,12 @@ if (material_tag) {
     filterMaterials();
 }
 
-let case_tag = getUrlParameter('case_tag');
-if (case_tag) {
-    $('#authSel').val(case_tag); // Select the option with a value of '1'
-    $('#authSel').trigger('change'); // Notify any JS components that the value changed
-    filterCases();
-}
+// let case_tag = getUrlParameter('case_tag');
+// if (case_tag) {
+//     $('#authSel').val(case_tag); // Select the option with a value of '1'
+//     $('#authSel').trigger('change'); // Notify any JS components that the value changed
+//     filterCases();
+// }
 
 $('form.subscriptions').submit(function () {
     let form = $(this);
@@ -378,20 +451,21 @@ $("h1, h2, h3").each(function (i) {
         current.html() + "</a></li>");
 });
 
-$('#search-input').keyup(function() {
-    let q = $(this).val();
-    let url = $('#url').val();
-    if(q.length >= 3){
-        if (url === 'cases') {
-            filterCases();
-        } else {
-            filterMaterials();
-        }
-    }else if(q.length === 0){
-        if (url === 'cases') {
-            filterCases();
-        } else {
-            filterMaterials();
-        }
-    }
-});
+// Это убрал я
+// $('#search-input').keyup(function() {
+//     let q = $(this).val();
+//     let url = $('#url').val();
+//     if(q.length >= 3){
+//         if (url === 'cases') {
+//             filterCases();
+//         } else {
+//             filterMaterials();
+//         }
+//     }else if(q.length === 0){
+//         if (url === 'cases') {
+//             filterCases();
+//         } else {
+//             filterMaterials();
+//         }
+//     }
+// });

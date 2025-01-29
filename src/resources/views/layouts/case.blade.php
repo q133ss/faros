@@ -386,7 +386,7 @@
             </li>
         </ul>
         <div class="search">
-            <input type="text" placeholder="Поиск.." name="q" id="search-input">
+            <input type="text" placeholder="Поиск.." name="search" id="case-search-input">
         </div>
 
         <div class="selectWrap">
@@ -408,7 +408,7 @@
         <div class="horizMenu__filter horizMenu__filter_mw">
             <img src="../images/min/icons/top_bottom.svg" alt=""
                  class="horizMenu__filter__sort horizMenu__filter__sort_abs">
-            <select class="selectWrap__sel" id="sortSel">
+            <select class="selectWrap__sel caseSortSelect" id="sortSel">
                 <option value="new">Новые</option>
                 <option value="old">Старые</option>
                 <option value="popular">По популярности</option>

@@ -26,8 +26,6 @@ class ClientCase extends Model
 
     public function scopeWithFilters($query, Request $request)
     {
-        // просто через ,
-        // http://127.0.0.1:8000/case?tags=8,9
         return $query
             ->when(
                 $request->query('tags'),
@@ -49,7 +47,24 @@ class ClientCase extends Model
                         ->orderBy('tags_count', 'desc')
                         ->orderBy('order', 'asc');
                 }
-            );
+            )
+            ->when($request->query('search'),
+            function (Builder $query, $search) {
+                return $query->whereAny(['list_name', 'post_name', 'slug'], 'LIKE', "%{$search}%");
+            })
+            ->when($request->query('sort'), function (Builder $query, $sort) {
+                switch ($sort) {
+                    case 'new':
+                        return $query->orderBy('created_at', 'desc');
+                        break;
+                    case 'old':
+                        return $query->orderBy('created_at', 'asc');
+                        break;
+                    case 'popular':
+                        return $query->orderBy('views', 'desc');
+                        break;
+                }
+            });
     }
 
     public function tags(): \Illuminate\Database\Eloquent\Relations\BelongsToMany

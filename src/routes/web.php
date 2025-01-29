@@ -12,6 +12,8 @@ Route::view('/service/marketing-strategiya-orm-pharm-serm/', 'service.marketing'
 #todo вверх страницы не тот! нет тегов
 Route::get('/case', [\App\Http\Controllers\CaseController::class, 'index'])->name('case.index');
 Route::get('/case/{slug}', [\App\Http\Controllers\CaseController::class, 'show'])->name('case.show');
+Route::get('/filters/case', [\App\Http\Controllers\CaseController::class, 'filters'])->name('case.filters');
+Route::get('/filters/case/reset', [\App\Http\Controllers\CaseController::class, 'reset'])->name('case.reset');
 
 Route::get('/team', [\App\Http\Controllers\TeamController::class, 'index'])->name('team.index');
 Route::get('/authors/{slug}', [\App\Http\Controllers\TeamController::class, 'show'])->name('team.show');

@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('bg_color')->default('#104076');
             $table->string('text_color')->default('#b9b9b9');
             $table->mediumText('text');
+            $table->unsignedBigInteger('views')->default(0);
             $table->enum('type', ['default', 'bgYellow', 'double'])->comment('Обычный')->default('default');
             // default = miniBlock _bgDarkBlue scene
             // bgYellow = projBlock _bgYellow

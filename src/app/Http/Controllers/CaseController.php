@@ -19,6 +19,23 @@ class CaseController extends Controller
 
     public function show(string $slug)
     {
-        return view('case.show');
+        $case = ClientCase::where('slug', $slug)->firstOrFail();
+        $case->increment('views');
+        return view('case.show', compact('case'));
+    }
+
+    public function filters(Request $request)
+    {
+        $mainCases = ClientCase::withFilters($request)->get();
+        return view('case.filters', compact('mainCases'))->render();
+    }
+
+    public function reset()
+    {
+        $cases = ClientCase::orderBy('order', 'asc')->get();
+        $mainCases = $cases->slice(0, 5);
+        $otherCases = $cases->slice(5);
+        $tags = CaseTag::all();
+        return view('case.reset', compact('mainCases', 'otherCases', 'tags'))->render();
     }
 }
