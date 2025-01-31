@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кейсы по управлению репутацией от агентства Faros.Media</title>
-    <script src="http://faros.media/local/templates/faros/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="http://faros.media/local/templates/faros/css/styles.min.css?v=1">
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="/js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="/css/styles.min.css?v=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo')
 </head>
@@ -109,7 +109,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
             .st0 {
-                clip-path: url(index.html);
+                clip-path: url(/);
             }
 
             .st1 {
@@ -427,7 +427,7 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="index.html" width="100%" class="pdf-popap__embed"  />
+            <embed src="/" width="100%" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>
@@ -448,5 +448,5 @@
     VK.Widgets.CommunityMessages("vk_community_messages", 127027390, {disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
 </script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><meta itemprop="name" content="Кейсы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Кейсы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>

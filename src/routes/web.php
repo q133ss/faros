@@ -31,9 +31,8 @@ Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->n
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
 # TODO постранично | ИДЕМ ПО СПИСКУ
-# Переносим все статьи, теги и фото
-// TODO прокликать все кейсы и проверить все фото!!!
-# В ЛИСТЕ КЕЙСОВ ПРОВЕРИТЬ ФАЙЛЫ! Там CLI!!!
+# todo Переносим все статьи, теги и фото
+# todo прокликать все кейсы и проверить все фото!!! ТАМ ПОЛОВИНЫ НЕТ!
 
 # todo убрать везде <title>СМИ</title> Он будет в SEO | перенести все title
 # todo перенести все seo в smi  СПАРСИТЬ СЕО ТЕГИ У SMI!!!!! По слагу!!!
