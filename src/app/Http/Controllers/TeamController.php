@@ -9,7 +9,7 @@ class TeamController extends Controller
 {
     public function index()
     {
-        $teams = Author::orderBy('created_at', 'asc')->get();
+        $teams = Author::where('list_show', true)->orderBy('created_at', 'asc')->get();
         $counter = 0;
         return view('team.index', compact('teams', 'counter'));
     }

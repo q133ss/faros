@@ -5,12 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Репутационные риски скидок и акций: как не загубить лояльность</title>
     <script src="/js/modernizr-custom.js"></script>
     <link rel="stylesheet" href="/css/styles.min.css?v=55">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    @include('inc.seo')
+    @include('inc.seo', ['post' => $post])
 </head>
 <body class="_bgLightGray">
 <style>
@@ -387,7 +386,7 @@
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a title="Как загубить лояльность маркетинговыми активностями" itemprop="item">
-                            <span itemprop="name">Как загубить лояльность маркетинговыми активностями</span>
+                            <span itemprop="name">{{$post->post_name}}</span>
                             <meta itemprop="position" content="2">
 
                         </a>

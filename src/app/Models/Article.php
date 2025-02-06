@@ -11,4 +11,14 @@ class Article extends Model
     protected $casts = [
         'content_list' => 'array'
     ];
+
+    public function author()
+    {
+        return $this->hasOne(Author::class, 'id', 'author_id');
+    }
+
+    public function seo()
+    {
+        return $this->morphOne(Seo::class, 'seable');
+    }
 }

@@ -1,3 +1,4 @@
+@if(!isset($post))
 @php
 $currentUrl = url()->current();
 $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
@@ -36,6 +37,25 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
     <meta property="og:url" content="https://faros.media/"/>
     <meta property="og:type" content="website"/>
     <!-- /dev2fun module opengraph -->
+@endif
+@else
+    <title>{{$post->seo?->meta_title}}</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="4 способа увеличить количество лидов из социальных сетей на сайте" />
+    <meta name="description" content="{{$post->seo?->meta_description}}" />
+    <link rel="canonical" href="{{$post->seo?->canonical}}" />
+    <meta property="og:type" content="{{$post->seo?->og_type}}" />
+    <meta property="og:site_name" content="{{$post->seo?->og_site_name}}" />
+
+    <meta property="og:url" content="{{$post->seo?->og_url}}" />
+    <meta property="og:title" content="{{$post->seo?->og_title}}" />
+    <meta property="og:description" content="{{$post->seo?->og_description}}" />
+
+    <meta property="og:image" content="{{$post->seo?->og_image}}" />
+    <meta property="og:image:type" content="{{$post->seo?->og_image_type}}" />
+    <meta property="og:image:width" content="{{$post->seo?->og_image_width}}" />
+    <meta property="og:image:height" content="{{$post->seo?->og_image_height}}" />
+    <meta property="vk:image" content="{{$post->seo?->vk_image}}" />
 @endif
 
 <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d4e4e5a0a85d485b74c9e5539d376e8e"]); _ba.push(["host", "faros.media"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>

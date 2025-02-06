@@ -9,7 +9,6 @@ Route::view('/service/orm', 'service.orm')->name('service.orm');
 Route::view('/service/smm', 'service.smm')->name('service.smm');
 Route::view('/service/pr', 'service.pr')->name('service.pr');
 Route::view('/service/marketing-strategiya-orm-pharm-serm/', 'service.marketing')->name('service.marketing');
-#todo вверх страницы не тот! нет тегов
 Route::get('/case', [\App\Http\Controllers\CaseController::class, 'index'])->name('case.index');
 Route::get('/case/{slug}', [\App\Http\Controllers\CaseController::class, 'show'])->name('case.show');
 Route::get('/filters/case', [\App\Http\Controllers\CaseController::class, 'filters'])->name('case.filters');
@@ -17,9 +16,9 @@ Route::get('/filters/case/reset', [\App\Http\Controllers\CaseController::class, 
 
 Route::get('/team', [\App\Http\Controllers\TeamController::class, 'index'])->name('team.index');
 Route::get('/authors/{slug}', [\App\Http\Controllers\TeamController::class, 'show'])->name('team.show');
-#todo тут везде ниже layout нету! Нужны INC
 Route::get('/articles', [\App\Http\Controllers\ArticlesController::class, 'index'])->name('articles.index');
 Route::get('/articles/{slug}', [\App\Http\Controllers\ArticlesController::class, 'show'])->name('articles.show');
+Route::get('/articles/page/{page}', [\App\Http\Controllers\ArticlesController::class, 'more'])->name('articles.more');
 
 Route::get('/video', [\App\Http\Controllers\VideoController::class, 'index'])->name('video.index');
 Route::get('/video/{slug}', [\App\Http\Controllers\VideoController::class, 'show'])->name('video.show');
@@ -30,13 +29,16 @@ Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->n
 
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
+# TODO НЕОБЯЗАТЕЛЬНО ПЕРЕНОСИТЬ СЕО! СНАЧАЛА ДЕЛАЕМ АДМИНКУ СТАЬИ И ТАК ДАЛЕЕ!
+
 # TODO постранично | ИДЕМ ПО СПИСКУ
-# todo Переносим все статьи, теги и фото
-# todo прокликать все кейсы и проверить все фото!!! ТАМ ПОЛОВИНЫ НЕТ!
+# TODO У СТАТЬИ ЕСТЬ ЕЩЕ И КАТЕГОРИЯ! НАПРИМЕР МАРКЕТИНГ, РЕПУТАЦИЯ! ПАРСИМ ЕЩЕ РАЗ! У INC вывести тоже!
+
+# todo прокликать все кейсы и проверить все фото!!! ТАМ ПОЛОВИНЫ НЕТ! НУЖНО СКАЧАТЬ!
 
 # todo убрать везде <title>СМИ</title> Он будет в SEO | перенести все title
-# todo перенести все seo в smi  СПАРСИТЬ СЕО ТЕГИ У SMI!!!!! По слагу!!!
-# todo team.show авторы недели
+# todo перенести все seo в smi  СПАРСИТЬ СЕО ТЕГИ У SMI!!!!! По слагу!!! (Запускаем еще 1 сидер, он по слагу будет искать записи и добалвяь сео)
+
 # todo case.show что там под популярными постами?
 # todo добавить значок ВК
 

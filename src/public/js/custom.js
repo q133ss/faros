@@ -391,15 +391,15 @@ if (document.querySelector('#send_review')) {
         }
     });
 }
-$('.show-more-items').click(function () {
-    $('.none-display').each(function () {
-        $(this).removeClass('none-display');
-        $(this).show();
-    });
-    $('.allarticlesFooter').remove();
-    $(window).resize();
-
-});
+// $('.show-more-items').click(function () {
+//     $('.none-display').each(function () {
+//         $(this).removeClass('none-display');
+//         $(this).show();
+//     });
+//     $('.allarticlesFooter').remove();
+//     $(window).resize();
+//
+// });
 if ($($('select')).is('#sortSelMedia')) {
     $('#sortSelMedia').select2({
         // minimumResultsForSearch: -1,

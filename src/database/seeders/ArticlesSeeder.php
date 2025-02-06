@@ -5,9 +5,12 @@ namespace Database\Seeders;
 use App\Models\Article;
 use App\Models\ArticleTag;
 use App\Models\Author;
+use App\Models\CaseTag;
+use App\Models\Seo;
 use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class ArticlesSeeder extends Seeder
 {
@@ -169,9 +172,6 @@ class ArticlesSeeder extends Seeder
                 ];
             }
 
-            #todo СДЕЛАТЬ ПАРСИНГ СТРАНИЦ С 0!!! ЧТО БЫ ПРЯМ ХРОМ ОТКРЫВАЛСЯ!
-            // а так это не работает!
-            dd($case);
             $data = [
                 'list_name' => $case['list_name'],
                 'slug' => $slug,
@@ -206,8 +206,24 @@ class ArticlesSeeder extends Seeder
             }
 
             # Создаем SEO
-            # TODO удаляем брейк и делаем сео!!
-            break;
+            Seo::create([
+                'seable_type' => Article::class,
+                'seable_id' => $article->id,
+                'meta_title' => $case['og_title'],
+                'meta_description' => $case['meta_description'],
+                'meta_keywords' => $case['meta_keywords'],
+                'canonical' => $case['canonical'],
+                'og_title' => $case['og_title'],
+                'og_description' => $case['og_description'],
+                'og_url' => $case['og_url'],
+                'og_type' => $case['og_type'],
+                'og_site_name' => $case["og_site_name"],
+                'og_image' => $case['og_image'],
+                'og_image_type' => $case["og_image_type"],
+                'og_image_width' => $case["og_image_width"],
+                'og_image_height' => $case["og_image_height"],
+                'vk_image' => $case['vk_image'],
+            ]);
         }
 
     }
@@ -247,6 +263,10 @@ class ArticlesSeeder extends Seeder
     }
 
     private function getAuthorBySlug(string $slug) {
-        return Author::where('slug', $slug)->pluck('id')->first();
+        $author = Author::where('slug', $slug);
+        if($author->exists()){
+            return $author->pluck('id')->first();
+        }
+        return null;
     }
 }

@@ -17,12 +17,12 @@ return new class extends Migration
             $table->string('seable_id');
 
             $table->string('meta_title')->nullable(); // Название страницы
-            $table->string('meta_description')->nullable();
+            $table->text('meta_description')->nullable();
             $table->string('meta_keywords')->nullable();
             $table->string('canonical')->default('https://faros.media/');
 
             $table->string('og_title')->nullable();
-            $table->string('og_description')->nullable();
+            $table->text('og_description')->nullable();
             $table->string('og_url')->nullable();
             $table->string('og_type')->default('website');
             $table->string('og_site_name')->default('FAROS');

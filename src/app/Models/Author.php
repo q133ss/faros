@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Author extends Model
 {
     protected $guarded = [];
+
+    public function articles()
+    {
+        return $this->belongsTo(Article::class, 'author_id', 'id');
+    }
 }

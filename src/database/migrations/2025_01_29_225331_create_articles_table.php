@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('slug')->unique();
             $table->string('list_name');
-            $table->foreignId('author_id');
+            $table->foreignId('author_id')->nullable();
             $table->string('post_name');
             $table->text('pre_title')->nullable()->comment('Предзаголовок');
             $table->json('content_list')->nullable()->comment('Содержание статьи, генерируем автоматом');

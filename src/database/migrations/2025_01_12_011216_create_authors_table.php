@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
-            $table->string('img');
+            $table->string('img')->nullable();
             $table->string('name');
             $table->string('list_post')->comment('Должность на странице списка');
             $table->string('page_post')->comment('Должность на детальной странице')->nullable();
@@ -28,6 +28,7 @@ return new class extends Migration
             $table->string('instagram')->nullable();
             $table->boolean('has_detail')->default(true)->comment('Есть-ли детальная страница');
             $table->string('slug');
+            $table->boolean('list_show')->default(true)->comment('Показывать на странице команда?');
             $table->timestamps();
         });
     }

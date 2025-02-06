@@ -1560,32 +1560,21 @@
                 </div>
 
                 <div class="authVidget__body">
+                    @foreach(\App\Models\Author::whereIn('id', [1,2,10])->get() as $author)
                     <div class="authVidget__body__item">
                         <picture class="authVidget__body__item__pic">
                             <a href="index.html">
-                                <img src="../../upload/iblock/3c1/2uslay8qo2cbqcidhgu44k0g2gnkwull/IMG_7470.jpg">
+                                <img src="{{$author->img}}">
                             </a>
                         </picture>
 
                         <div class="authVidget__body__item__data">
                             <a href="index.html"
-                               class="authVidget__body__item__data__name">Екатерина Тулянкина</a>
-                            <p class="authVidget__body__item__data__post">Основатель и руководитель</p>
+                               class="authVidget__body__item__data__name">{{$author->name}}</a>
+                            <p class="authVidget__body__item__data__post">{{$author->list_post}}</p>
                         </div>
                     </div>
-                    <div class="authVidget__body__item">
-                        <picture class="authVidget__body__item__pic">
-                            <a href="../mariya-shakhova/index.html">
-                                <img src="../../upload/resize_cache/webp/dev2fun_opengraph/d3f/olvpuiucndrhavc0huxbroo99n2xkbl7.webp">
-                            </a>
-                        </picture>
-
-                        <div class="authVidget__body__item__data">
-                            <a href="../mariya-shakhova/index.html"
-                               class="authVidget__body__item__data__name">Мария Шахова</a>
-                            <p class="authVidget__body__item__data__post">редактор цифровых новостей</p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 

@@ -2,18 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 class ArticlesController extends Controller
 {
-    # TODO в этих 2х шаблонах убрать CDN и тд
     public function index()
     {
-        return view('article.index');
+        $articles = Article::paginate(8);
+        return view('article.index', compact('articles'));
     }
 
     public function show(string $slug)
     {
-        return view('article.show');
+        $post = Article::where('slug', $slug)->firstOrFail();
+        return view('article.show', compact('post'));
+    }
+
+    public function more(string $page)
+    {
+        $page = is_numeric($page) ? (int)$page : 1;
+        $articles = Article::paginate(8, ['*'], 'page', $page);
+        return view('article.more', compact('articles'))->render();
     }
 }
