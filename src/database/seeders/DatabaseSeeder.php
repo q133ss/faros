@@ -26,5 +26,6 @@ class DatabaseSeeder extends Seeder
         $this->call(CaseSeeder::class);
         $this->call(ArticlesSeeder::class);
         $this->call(CaseSeoSeeder::class);
+        $this->call(SmiSeoSeeder::class);
     }
 }

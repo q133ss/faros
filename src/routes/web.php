@@ -29,15 +29,12 @@ Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->n
 
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
-# TODO качаем все сео у СМИ!
-
-# todo перенести все seo в smi  СПАРСИТЬ СЕО ТЕГИ У SMI!!!!! По слагу!!! (Запускаем еще 1 сидер, он по слагу будет искать записи и добалвяь сео)
+# todo СПАРСИТЬ СЕО ТЕГИ У SMI!!!!! По слагу!!! (Запускаем еще 1 сидер, он по слагу будет искать записи и добалвяь сео)
 # todo убрать везде <title>СМИ</title> Он будет в SEO | перенести все title (КАЖИСЬ ОНО УЖЕ ЕСТЬ! ПРОСТО УБРАТЬ И ВСЕ)
 
 # todo добавить значок ВК
 
-
-# TODO с помощью GPT попробовать убрать ошибки из консоли + ускорить
+# TODO с помощью GPT попробовать убрать ошибки из консоли + ускорить  скажу. что завтра оптимизирую все за свой счет!!!!
 # TODO перенести потом все SEO теги для всех страниц в БД meta, content, image ...
 # TODO попросить данные от платежки! ЛИБО ГЛЯНУТЬ НА ХОСТЕ!
 
@@ -46,8 +43,8 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 # TODO при переносе на хост в отдельную фотку сохраним бекап!
 
 Route::get('/slugs', function (){
-    $c = \App\Models\ClientCase::pluck('slug')->all();
+    $c = \App\Models\Smi::pluck('slug')->all();
     foreach ($c as $slug) {
-        echo "https://faros.media/case/".$slug."<br>";
+        echo "https://faros.media/smi/".$slug."<br>";
     }
 });
