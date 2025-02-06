@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Article;
+use App\Models\ArticleCategory;
 use App\Models\ArticleTag;
 use App\Models\Author;
 use App\Models\CaseTag;
@@ -185,6 +186,12 @@ class ArticlesSeeder extends Seeder
                 'list_img' => $decoded_list_img,
                 'img' => $decoded_url
             ];
+
+            // category
+            if($case['category'] != null){
+                $category = ArticleCategory::firstOrCreate(['name' => $case['category']]);
+                $data['category_id'] = $category->id;
+            }
 
             try{
                 $article = Article::create($data);

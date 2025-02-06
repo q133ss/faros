@@ -23,6 +23,7 @@ return new class extends Migration
             $table->unsignedBigInteger('views')->default(0);
             $table->string('list_img');
             $table->string('img')->nullable();
+            $table->foreignId('category_id')->nullable()->constrained('article_categories')->nullOnDelete();
             $table->timestamps();
         });
     }

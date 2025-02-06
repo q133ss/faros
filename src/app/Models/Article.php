@@ -12,13 +12,18 @@ class Article extends Model
         'content_list' => 'array'
     ];
 
-    public function author()
+    public function author(): \Illuminate\Database\Eloquent\Relations\HasOne
     {
         return $this->hasOne(Author::class, 'id', 'author_id');
     }
 
-    public function seo()
+    public function seo(): \Illuminate\Database\Eloquent\Relations\MorphOne
     {
         return $this->morphOne(Seo::class, 'seable');
+    }
+
+    public function category(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(ArticleCategory::class, 'id', 'category_id');
     }
 }
