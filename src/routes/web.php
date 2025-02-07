@@ -29,8 +29,7 @@ Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->n
 
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
-# todo СПАРСИТЬ СЕО ТЕГИ У SMI!!!!! По слагу!!! (Запускаем еще 1 сидер, он по слагу будет искать записи и добалвяь сео)
-# todo убрать везде <title>СМИ</title> Он будет в SEO | перенести все title (КАЖИСЬ ОНО УЖЕ ЕСТЬ! ПРОСТО УБРАТЬ И ВСЕ)
+# TODO сделать фильтрацию у статей
 
 # todo добавить значок ВК
 
@@ -39,6 +38,7 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 # TODO попросить данные от платежки! ЛИБО ГЛЯНУТЬ НА ХОСТЕ!
 
 # TODO админка
+# todo при сохранении фото в админке добавить вебп (но это потом)
 
 # TODO при переносе на хост в отдельную фотку сохраним бекап!
 

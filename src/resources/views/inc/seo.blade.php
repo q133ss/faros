@@ -6,7 +6,7 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
 @if($seo)
     <title>{{$seo->meta_title}}</title>
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="4 способа увеличить количество лидов из социальных сетей на сайте" />
+    <meta name="keywords" content="{{$seo->meta_keywords}}" />
     <meta name="description" content="{{$seo->meta_description}}" />
     <link rel="canonical" href="{{$seo->canonical}}" />
     <meta property="og:type" content="{{$seo->og_type}}" />
@@ -41,7 +41,7 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
 @else
     <title>{{$post->seo?->meta_title}}</title>
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="4 способа увеличить количество лидов из социальных сетей на сайте" />
+    <meta name="keywords" content="{{$post->seo?->meta_keywords}}" />
     <meta name="description" content="{{$post->seo?->meta_description}}" />
     <link rel="canonical" href="{{$post->seo?->canonical}}" />
     <meta property="og:type" content="{{$post->seo?->og_type}}" />

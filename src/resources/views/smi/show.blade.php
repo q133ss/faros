@@ -5,7 +5,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Как привлечь внимание клиентов и увеличить доход студии красоты: советы от Анны Тимофеевой</title>
     <script src="/js/modernizr-custom.js"></script>
     <link rel="stylesheet" href="/css/styles.min.css?v=63">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
