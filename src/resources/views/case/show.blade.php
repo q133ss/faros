@@ -593,7 +593,7 @@
 <script src="/js/ScrollMagic.js"></script>
 <script src="/js/debug.addIndicators.js"></script>
 <script src="/js/animation.gsap.min.js"></script>
-<script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="//api-maps.yandex.ru/2.1/?load=package.standard&lang=ru_RU" type="text/javascript"></script>
 <script src="/js/sticky.js"></script>
 <script src="/js/scripts.min.js?v=11"></script>
 <script src="/js/maskedinput.js"></script>

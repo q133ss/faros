@@ -34,9 +34,12 @@ Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->n
 
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
-# todo добавить значок ВК
-# TODO попросить данные от платежки! ЛИБО ГЛЯНУТЬ НА ХОСТЕ!
 # TODO админка
+
+# TODO ГЛАВНАЯ СТРАНИЦА!
+# TODO убрать все .html
+# todo добавить значок ВК
+# TODO Спросить, что делать с платежкой?
 
 # TODO ищем все тудушки
 

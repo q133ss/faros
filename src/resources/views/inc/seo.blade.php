@@ -61,8 +61,8 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
 <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d4e4e5a0a85d485b74c9e5539d376e8e"]); _ba.push(["host", "faros.media"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
 
 
-<link rel="preconnect" href="http://api-maps.yandex.ru/">
-<link rel="dns-prefetch" href="http://api-maps.yandex.ru/">
+<link rel="preconnect" href="//api-maps.yandex.ru">
+<link rel="dns-prefetch" href="//api-maps.yandex.ru">
 <meta property="og:description" content="">
 
 <!-- Yandex.Metrika counter -->
