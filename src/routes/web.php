@@ -34,6 +34,8 @@ Route::get('/sort/smi', [\App\Http\Controllers\SmiController::class, 'sort'])->n
 
 Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name('pay.index');
 
+Route::get('/reviews', [\App\Http\Controllers\ReviewController::class, 'index'])->name('review.index');
+
 # TODO админка
 
 # TODO ГЛАВНАЯ СТРАНИЦА!

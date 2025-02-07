@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title', 'Агентство по управлению репутацией и восприятием брендов Faros.Media сотрудники, команда')
 @section('content')
     <div class="fullHeightBigDarkBlock _bgBlack6 _first fullHeightBigDarkBlock_teamFirst">
         <h1 class="fullHeightBigDarkBlock__title fullHeightBigDarkBlock__title_team _colorWhite"><span

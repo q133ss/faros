@@ -126,5 +126,19 @@ class SeoSeeder extends Seeder
             'og_type' => 'website',
             'og_site_name' => 'FAROS',
         ]);
+
+        Seo::create([
+            'seable_type' => 'App\Models\Page',
+            'seable_id' => route('review.index'),
+            'meta_title' => 'Отзывы о сотрудничестве и работе с агентством по ORM/SERM Faros.Media',
+            'meta_description' => 'FarosMedia отзывы сотрудников и клиентов компании с предоставленными рекомендациями и благодарственными письмами',
+            'meta_keywords' => 'Faros,Работа с репутацией',
+            'canonical' => 'https://faros.media/reviews',
+            'og_title' => 'Отзывы о сотрудничестве и работе с агентством по ORM/SERM Faros.Media',
+            'og_description' => 'FarosMedia отзывы сотрудников и клиентов компании с предоставленными рекомендациями и благодарственными письмами',
+            'og_url' => 'https://faros.media/reviews',
+            'og_type' => 'website',
+            'og_site_name' => 'FAROS',
+        ]);
     }
 }
