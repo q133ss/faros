@@ -274,6 +274,26 @@ function articleCategory(id){
     });
 }
 
+function indexCategory(id) {
+    if(id == 0){
+        id = null;
+    }
+    $.ajax({
+        url: '/filters/index',
+        method: 'GET',
+        data: {
+            category: id
+        },
+        success: function(response) {
+            $('.newsDoubleBlock').remove();
+            $('.all-articles').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Ошибка выполнения запроса:', error);
+        }
+    });
+}
+
 
 // Форма обратной связи
 $(document).ready(function () {

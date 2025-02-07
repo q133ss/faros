@@ -693,32 +693,14 @@
         <div class="horizMenu _bgWhite">
             <ul class="horizMenu__menu" id="newsMenu">
                 <li class="horizMenu__menu__item active material-section" data-order="0">
-                    <a class="horizMenu__menu__item__link" data-id="0">ВСЕ СТАТЬИ</a>
+                    <a class="horizMenu__menu__item__link" data-id="0" onclick="indexCategory(0)">ВСЕ СТАТЬИ</a>
                 </li>
-                <li class="horizMenu__menu__item material-section" data-order="1">
+                @foreach($categories as $category)
+                <li class="horizMenu__menu__item material-section" data-order="1" onclick="indexCategory({{$category->id}})">
                     <a class="horizMenu__menu__item__link"
-                       data-id="5">СОЦСЕТИ</a>
+                       data-id="5">{{$category->name}}</a>
                 </li>
-                <li class="horizMenu__menu__item material-section" data-order="2">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="6">МАРКЕТИНГ</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="3">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="7">ЛАЙФХАКИ</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="4">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="8">РЕПУТАЦИЯ</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="5">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="12">Работа в digital</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="6">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="13">Блог Екатерины Тулянкиной</a>
-                </li>
+                @endforeach
                 <li class="dd_menu">
                     <button class="dropdown-toggle" type="button">
                         <span class="dropdown-toggle__point"></span>

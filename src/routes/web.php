@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('index');
+Route::get('/filters/index', [\App\Http\Controllers\IndexController::class, 'filter']);
 
 Route::get('/service', [\App\Http\Controllers\ServiceController::class, 'index'])->name('service.index');
 Route::view('/service/orm', 'service.orm')->name('service.orm');
@@ -40,18 +41,14 @@ Route::post('/feedback', [\App\Http\Controllers\FeedbackController::class, 'stor
 
 # TODO админка
 
-# TODO доделываем фильтры на главной + inc feedback!
 
-# TODO убрать все .html
+
 # todo добавить значок ВК
 # TODO Спросить, что делать с платежкой?
 
 # TODO ищем все тудушки
-
 # todo при сохранении фото в админке добавить вебп (но это потом)
-
 # TODO при переносе на хост в отдельную фотку сохраним бекап!
-
 # TODO с помощью GPT попробовать убрать ошибки из консоли + ускорить  скажу. что завтра оптимизирую все за свой счет!!!!
 
 Route::get('/slugs', function (){
