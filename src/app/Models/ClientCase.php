@@ -76,4 +76,9 @@ class ClientCase extends Model
     {
         return $this->belongsTo(Author::class, 'author_id');
     }
+
+    public function seo()
+    {
+        return $this->morphOne(Seo::class, 'seable');
+    }
 }

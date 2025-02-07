@@ -39,8 +39,18 @@ Route::get('/reviews', [\App\Http\Controllers\ReviewController::class, 'index'])
 
 Route::post('/feedback', [\App\Http\Controllers\FeedbackController::class, 'store'])->name('feedback.store');
 
-# TODO админка
+Route::view('/login', 'auth.login');
+Route::post('/login', [\App\Http\Controllers\LoginController::class, 'login'])->name('login');
 
+Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(function () {
+   Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('index');
+   Route::get('/callbacks', [\App\Http\Controllers\Admin\CallbackController::class, 'index'])->name('callbacks.index');
+   #todo теги!
+   Route::resource('case', \App\Http\Controllers\Admin\CaseController::class);
+});
+
+# TODO админка
+// Список заявок+++, CRUD| Услуги++, кейсы++, команда, статьи, мы в эфире, СМИ, Отзывы!
 
 
 # todo добавить значок ВК

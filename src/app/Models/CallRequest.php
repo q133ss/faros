@@ -31,4 +31,15 @@ class CallRequest extends Model
         6 => "корректировка восприятия и стереотипов"
     ];
 
+    public function getService()
+    {
+        $selectedServices = array_intersect_key(self::SERVICE_TYPE, array_flip($this->service_type ?? []));
+        return implode(', ', $selectedServices);
+    }
+
+    public function getProblem()
+    {
+        $selectedProblems = array_intersect_key(self::PROBLEM, array_flip($this->problem ?? []));
+        return implode(', ', $selectedProblems);
+    }
 }
