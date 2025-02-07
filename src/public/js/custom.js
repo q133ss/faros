@@ -1,24 +1,24 @@
 if ($('.phone_mask').length) {
     $(".phone_mask").mask("+7 (999) 999-9999");
 }
-$('form#feedback').submit(function () {
-    let form = $(this);
-    $.ajax({
-        url: '/ajax/send.php',
-        type: 'post',
-        dataType: 'json',
-        data: form.serialize(),
-        success: function (res) {
-            if (res.success) {
-                $('.formBlockWrap').hide();
-                $('.fullHeightMinWidth_thanks').show();
-                // form.addClass('res-message')
-                // form.html(res.msg);
-            }
-        }
-    });
-    return false;
-});
+// $('form#feedback').submit(function () {
+//     let form = $(this);
+//     $.ajax({
+//         url: '/ajax/send.php',
+//         type: 'post',
+//         dataType: 'json',
+//         data: form.serialize(),
+//         success: function (res) {
+//             if (res.success) {
+//                 $('.formBlockWrap').hide();
+//                 $('.fullHeightMinWidth_thanks').show();
+//                 // form.addClass('res-message')
+//                 // form.html(res.msg);
+//             }
+//         }
+//     });
+//     return false;
+// });
 
 $('form#orderservice_form').submit(function () {
     let form = $(this);
@@ -273,6 +273,35 @@ function articleCategory(id){
         }
     });
 }
+
+
+// Форма обратной связи
+$(document).ready(function () {
+    $('#feedback').on('submit', function (e) {
+        e.preventDefault(); // Предотвращаем стандартную отправку формы
+
+        // Собираем данные формы
+        let formData = $(this).serialize();
+
+        // Отправляем AJAX-запрос
+        $.ajax({
+            url: '/feedback', // URL для обработки данных
+            method: 'POST',
+            data: formData,
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            success: function (response) {
+                $('.formBlockWrap').hide();
+                $('.fullHeightMinWidth_thanks').show();
+
+            },
+            error: function (xhr, status, error) {
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
 
 
 // Это убрал я

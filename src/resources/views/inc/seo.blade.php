@@ -65,6 +65,8 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
 <link rel="dns-prefetch" href="//api-maps.yandex.ru">
 <meta property="og:description" content="">
 
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

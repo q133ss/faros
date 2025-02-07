@@ -36,9 +36,12 @@ Route::get('/pay', [\App\Http\Controllers\PayController::class, 'index'])->name(
 
 Route::get('/reviews', [\App\Http\Controllers\ReviewController::class, 'index'])->name('review.index');
 
+Route::post('/feedback', [\App\Http\Controllers\FeedbackController::class, 'store'])->name('feedback.store');
+
 # TODO админка
 
-# TODO ГЛАВНАЯ СТРАНИЦА!
+# TODO доделываем фильтры на главной + inc feedback!
+
 # TODO убрать все .html
 # todo добавить значок ВК
 # TODO Спросить, что делать с платежкой?
