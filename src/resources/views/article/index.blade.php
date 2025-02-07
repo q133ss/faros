@@ -436,39 +436,16 @@
             <input type="hidden" name="url" value="materials" id="url">
 
             <ul class="horizMenu__menu horizMenu__menu__allarticles" id="newsMenu">
-                <li class="horizMenu__menu__item active material-section" data-order="0">
+                <li class="horizMenu__menu__item active material-section" data-order="0" onclick="articleCategory(0)">
                     <a class="horizMenu__menu__item__link" data-id="0">ВСЕ СТАТЬИ</a>
                 </li>
-                <li class="horizMenu__menu__item material-section" data-order="1"
-                    data-id="5">
+                @foreach($categories as $category)
+                <li class="horizMenu__menu__item material-section" onclick="articleCategory({{$category->id}})" data-order="1"
+                    data-id="{{$category->id}}">
                     <a class="horizMenu__menu__item__link"
-                       data-id="5">СОЦСЕТИ</a>
+                       data-id="{{$category->id}}">{{$category->name}}</a>
                 </li>
-                <li class="horizMenu__menu__item material-section" data-order="2"
-                    data-id="6">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="6">МАРКЕТИНГ</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="3"
-                    data-id="7">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="7">ЛАЙФХАКИ</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="4"
-                    data-id="8">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="8">РЕПУТАЦИЯ</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="5"
-                    data-id="12">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="12">Работа в digital</a>
-                </li>
-                <li class="horizMenu__menu__item material-section" data-order="6"
-                    data-id="13">
-                    <a class="horizMenu__menu__item__link"
-                       data-id="13">Блог Екатерины Тулянкиной</a>
-                </li>
+                @endforeach
                 <li class="dd_menu">
                     <button class="dropdown-toggle" type="button">
                         <span class="dropdown-toggle__point"></span>
@@ -479,7 +456,7 @@
                 </li>
             </ul>
             <div class="search">
-                <input type="text" placeholder="Поиск.." name="q" id="search-input">
+                <input type="text" placeholder="Поиск.." name="q" id="article-search-input">
             </div>
 
             <div class="selectWrap">
@@ -489,115 +466,10 @@
                     <img src="../images/min/icons/arroworange.svg" alt="" class="horizMenu__filter__arrow">
                 </button>
 
-                <select class="selectWrap__sel" id="authSel" multiple="multiple">
-                    <option value="Контент-маркетинг">Контент-маркетинг</option>
-                    <option value="KPI">KPI</option>
-                    <option value="рассылки">рассылки</option>
-                    <option value="smm">smm</option>
-                    <option value="аналитика">аналитика</option>
-                    <option value="Маркетинг">Маркетинг</option>
-                    <option value="эффективность">эффективность</option>
-                    <option value="соцсети">соцсети</option>
-                    <option value="контент-маркетинг">контент-маркетинг</option>
-                    <option value="дизайн">дизайн</option>
-                    <option value="личный бренд">личный бренд</option>
-                    <option value="Instagram">Instagram</option>
-                    <option value="блогеры">блогеры</option>
-                    <option value="маркетинговые исследования">маркетинговые исследования</option>
-                    <option value="анализ спроса и восприятия">анализ спроса и восприятия</option>
-                    <option value="отзыв">отзыв</option>
-                    <option value="маркет-плейс">маркет-плейс</option>
-                    <option value="инструкция для потребителей">инструкция для потребителей</option>
-                    <option value="квизы">квизы</option>
-                    <option value="quiz-маркетинг">quiz-маркетинг</option>
-                    <option value="опросы">опросы</option>
-                    <option value="коммуникации">коммуникации</option>
-                    <option value="сервис">сервис</option>
-                    <option value="вконтакте">вконтакте</option>
-                    <option value="рейтинг">рейтинг</option>
-                    <option value="культура отмены">культура отмены</option>
-                    <option value="поведение потребителя">поведение потребителя</option>
-                    <option value="как удалить негатив">как удалить негатив</option>
-                    <option value="обратная связь">обратная связь</option>
-                    <option value="Репутация">Репутация</option>
-                    <option value="NPS">NPS</option>
-                    <option value="баланс">баланс</option>
-                    <option value="Бизнес">Бизнес</option>
-                    <option value="деловая репутация">деловая репутация</option>
-                    <option value="микроэкономика">микроэкономика</option>
-                    <option value="финансовая отчетность">финансовая отчетность</option>
-                    <option value="психология восприятия">психология восприятия</option>
-                    <option value="маркетинговые приемы">маркетинговые приемы</option>
-                    <option value="влияние на потребителя">влияние на потребителя</option>
-                    <option value="лайфхаки для бизнеса">лайфхаки для бизнеса</option>
-                    <option value="лидеры мнений">лидеры мнений</option>
-                    <option value="работа с блогерами">работа с блогерами</option>
-                    <option value="доверие клиентов">доверие клиентов</option>
-                    <option value="лояльность потребителей">лояльность потребителей</option>
-                    <option value="конверсия">конверсия</option>
-                    <option value="FarosMedia">FarosMedia</option>
-                    <option value="управление репутацией">управление репутацией</option>
-                    <option value="Сайт">Сайт</option>
-                    <option value="tripadvisor">tripadvisor</option>
-                    <option value="smm-щик">smm-щик</option>
-                    <option value="digital">digital</option>
-                    <option value="digital профессии">digital профессии</option>
-                    <option value="Маркетинг влияния">Маркетинг влияния</option>
-                    <option value="Бренд-менеджмент">Бренд-менеджмент</option>
-                    <option value="instastories">instastories</option>
-                    <option value="Статистика">Статистика</option>
-                    <option value="Аудитория">Аудитория</option>
-                    <option value="чат-бот">чат-бот</option>
-                    <option value="web-сайт">web-сайт</option>
-                    <option value="прототип">прототип</option>
-                    <option value="инфографика">инфографика</option>
-                    <option value="обзор">обзор</option>
-                    <option value="b2b">b2b</option>
-                    <option value="стратегия">стратегия</option>
-                    <option value="стимулирование сбыта">стимулирование сбыта</option>
-                    <option value="Сегментация ЦА">Сегментация ЦА</option>
-                    <option value="Образование">Образование</option>
-                    <option value="tone of voice бренда">tone of voice бренда</option>
-                    <option value="Вимм-Билль-Данн">Вимм-Билль-Данн</option>
-                    <option value="Stories">Stories</option>
-                    <option value="GoogleAnalytics">GoogleAnalytics</option>
-                    <option value="YandexMetrika">YandexMetrika</option>
-                    <option value="Веб-аналитика">Веб-аналитика</option>
-                    <option value="Контекстная реклама">Контекстная реклама</option>
-                    <option value="Показатель отказов">Показатель отказов</option>
-                    <option value="Facebook">Facebook</option>
-                    <option value="shadowban">shadowban</option>
-                    <option value="Зарубежный опы">Зарубежный опы</option>
-                    <option value="Персонализация сайта">Персонализация сайта</option>
-                    <option value="Скорость загрузки">Скорость загрузки</option>
-                    <option value="CPC">CPC</option>
-                    <option value="GoogleAdwords">GoogleAdwords</option>
-                    <option value="YandexDirect">YandexDirect</option>
-                    <option value="КМС">КМС</option>
-                    <option value="РСЯ">РСЯ</option>
-                    <option value="Telegram">Telegram</option>
-                    <option value="Таргетированная реклама">Таргетированная реклама</option>
-                    <option value="персонализация">персонализация</option>
-                    <option value="SEO">SEO</option>
-                    <option value="лайки">лайки</option>
-                    <option value="реклама">реклама</option>
-                    <option value="лендинг">лендинг</option>
-                    <option value="анализ">анализ</option>
-                    <option value="конкуренты">конкуренты</option>
-                    <option value="лучшие подрядчики по ORM">лучшие подрядчики по ORM</option>
-                    <option value="рейтинг агентств по репутации">рейтинг агентств по репутации</option>
-                    <option value="таргетинг">таргетинг</option>
-                    <option value="вовлеченность">вовлеченность</option>
-                    <option value="HR-бренд">HR-бренд</option>
-                    <option value="Отзывы сотрудников#стратегия">Отзывы сотрудников#стратегия</option>
-                    <option value="необычные аксессуары">необычные аксессуары</option>
-                    <option value="продвижение интернет-магазина">продвижение интернет-магазина</option>
-                    <option value="гайды в соцсетях">гайды в соцсетях</option>
-                    <option value="бизнес-идеи">бизнес-идеи</option>
-                    <option value="алгоритмы соцсетей">алгоритмы соцсетей</option>
-                    <option value="для smm-щика">для smm-щика</option>
-                    <option value="нивелирование негатива">нивелирование негатива</option>
-                    <option value="регламенты">регламенты</option>
+                <select class="selectWrap__sel articleTags" id="authSel" multiple="multiple">
+                    @foreach($tags as $tag)
+                        <option value="{{$tag->id}}">{{$tag->name}}</option>
+                    @endforeach
                 </select>
 
                 <button class="horizMenu__reset" id="tagreset"></button>
@@ -606,7 +478,7 @@
             <div class="horizMenu__filter horizMenu__filter_mw">
                 <img src="../images/min/icons/top_bottom.svg" alt=""
                      class="horizMenu__filter__sort horizMenu__filter__sort_abs">
-                <select class="selectWrap__sel" id="sortSel">
+                <select class="selectWrap__sel article-sort-select" id="sortSel">
                     <option value="new">Новые</option>
                     <option value="old">Старые</option>
                     <option value="popular">По популярности</option>

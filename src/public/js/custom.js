@@ -115,25 +115,21 @@ function caseSearch(){
     var $this = $('#case-search-input');
     delay(function() {
         var query = $this.val();
-        if (query.length > 0) {
-            $.ajax({
-                url: '/filters/case',
-                method: 'GET',
-                data: {
-                    search: query,
-                    sort: case_sort
-                },
-                success: function(response) {
-                    $('.other-cases').remove();
-                    $('.homeMiniBlocks_allcases').html(response);
-                },
-                error: function(xhr, status, error) {
-                    console.error('Ошибка выполнения запроса:', error);
-                }
-            });
-        } else {
-            console.log('Очистка результатов поиска');
-        }
+        $.ajax({
+            url: '/filters/case',
+            method: 'GET',
+            data: {
+                search: query,
+                sort: case_sort
+            },
+            success: function(response) {
+                $('.other-cases').remove();
+                $('.homeMiniBlocks_allcases').html(response);
+            },
+            error: function(xhr, status, error) {
+                console.error('Ошибка выполнения запроса:', error);
+            }
+        });
     }, 500);  // Задержка в 500 миллисекунд
 }
 
@@ -191,11 +187,99 @@ $('#tagreset').on('click', function() {
 });
 
 
-$('.material-section a').click(function () {
-    filterMaterials($(this).data('id'));
+// Поле сортировки для статей
+let article_sort = 'new';
+$('.article-sort-select').on('change', function() {
+    article_sort = $(this).val();
+    articleCaseSearch();
+    articleTagsFilter();
 });
 
+// Поиск в статьях
+$('#article-search-input').on('input', function() {
+    articleCaseSearch();
+});
+
+function articleCaseSearch(){
+    var $this = $('#article-search-input');
+    delay(function() {
+        var query = $this.val();
+            $.ajax({
+                url: '/filters/articles',
+                method: 'GET',
+                data: {
+                    search: query,
+                    sort: article_sort
+                },
+                success: function(response) {
+                    $('.show-more-items').remove();
+                    $('.allarticles').html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Ошибка выполнения запроса:', error);
+                }
+            });
+    }, 500);  // Задержка в 500 миллисекунд
+}
+
+
+// Обработчик для выбора тегов в статьях
+$('.articleTags').on('change', function() {
+    articleTagsFilter();
+});
+
+function articleTagsFilter(){
+    var selectedTags = $('.articleTags').val();  // Получаем массив выбранных значений
+
+    // Обновляем количество выбранных тегов
+    var count = selectedTags ? selectedTags.length : 0;
+    $('.horizMenu__filter__quant').text(count);
+
+    // Отправляем AJAX-запрос с выбранными тегами
+    $.ajax({
+        url: '/filters/articles',
+        method: 'GET',
+        data: {
+            tags: selectedTags.join(','),
+        },
+        success: function(response) {
+            $('.show-more-items').remove();
+            $('.allarticles').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Ошибка выполнения запроса:', error);
+        }
+    });
+}
+
+// Фильтрация статей по категории
+function articleCategory(id){
+    if(id == 0){
+        id = null;
+    }
+    $.ajax({
+        url: '/filters/articles',
+        method: 'GET',
+        data: {
+            category: id,
+            sort: article_sort
+        },
+        success: function(response) {
+            $('.show-more-items').remove();
+            $('.allarticles').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Ошибка выполнения запроса:', error);
+        }
+    });
+}
+
+
 // Это убрал я
+// $('.material-section a').click(function () {
+//     filterMaterials($(this).data('id'));
+// });
+
 // $('.case-section a').click(function () {
 //     filterCases($(this).data('id'));
 //     $('html, body').animate({scrollLeft: 0},500);
