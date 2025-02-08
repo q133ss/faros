@@ -1,15 +1,15 @@
 @extends('layouts.admin')
-@section('title', 'Изменить кейс ' . $case->list_name)
+@section('title', 'Изменить статью')
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Изменить кейс</h3>
+            <h3 class="card-title">Изменить статью</h3>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form method="POST" action="{{route('admin.case.update', $case->id)}}" enctype="multipart/form-data">
-            @method('PATCH')
+        <form method="POST" action="{{route('admin.post.update', $post->id)}}" enctype="multipart/form-data">
             @csrf
+            @method('PATCH')
             @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
@@ -22,75 +22,43 @@
             <div class="card-body">
                 <!-- Общие поля -->
                 <div class="form-group">
-                    <label for="slug">Slug</label>
-                    <input type="text" class="form-control" id="slug" name="slug" value="{{ $case->slug }}">
+                    <label for="slug">Slug (генерируется автоматически)</label>
+                    <input type="text" class="form-control" id="slug" name="slug" value="{{ $post->slug }}">
                 </div>
                 <div class="form-group">
                     <label for="list_name">Название в списке*</label>
-                    <input type="text" class="form-control" id="list_name" name="list_name" value="{{ $case->list_name }}">
+                    <input type="text" class="form-control" id="list_name" name="list_name" value="{{ $post->list_name }}">
                 </div>
                 <div class="form-group">
                     <label for="post_name">Название на детальной странице*</label>
-                    <input type="text" class="form-control" id="post_name" name="post_name" value="{{ $case->post_name }}">
-                </div>
-                <div class="form-group">
-                    <label for="type">Тип</label>
-                    <select class="form-control" name="type" id="type">
-                        <option value="default" @if($case->type == 'default') selected @endif>Обычный</option>
-                        <option value="bgYellow" @if($case->type == 'bgYellow') selected @endif>Желтый фон</option>
-                        <option value="double" @if($case->type == 'double') selected @endif>Двойной</option>
-                    </select>
+                    <input type="text" class="form-control" id="post_name" name="post_name" value="{{ $post->post_name }}">
                 </div>
                 <div class="form-group">
                     <label for="author_id">Автор*</label>
                     <select class="form-control" name="author_id" id="author_id">
                         @foreach($authors as $author)
-                            <option value="{{ $author->id }}" @if($case->author_id == $author->id) selected @endif>{{ $author->name }}</option>
+                            <option value="{{ $author->id }}" @if($post->author_id) == $author->id) selected @endif>{{ $author->name }}</option>
                         @endforeach
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="text">Текст</label>
-                    <textarea id="text" name="text" rows="3">{{ $case->text ?? '' }}</textarea>
-                </div>
-
-                <!-- Цвет фона и текста -->
-                <div class="form-group">
-                    <label for="bg_color">Цвет фона</label>
-                    <input type="color" class="form-control my-colorpicker1 colorpicker-element" name="bg_color" value="{{ $case->bg_color ?? '' }}">
-                </div>
-                <div class="form-group">
-                    <label for="text_color">Цвет текста</label>
-                    <input type="color" class="form-control my-colorpicker2 colorpicker-element" name="text_color" value="{{ $case->text_color ?? '' }}">
+                    <label for="pre_title">Подзаголовок</label>
+                    <textarea class="form-control d-none text-edit" id="pre_title" name="pre_title" rows="3">{{ $post->pre_title }}</textarea>
+                    <div id="code-editor"></div>
                 </div>
 
                 <div class="form-group">
-                    <label for="tags">Теги</label>
-                    @foreach($tags as $tag)
-                        <div class="form-check">
-                            <input id="tag_{{$tag->id}}" @if(in_array($tag->id, $caseTags)) checked @endif class="form-check-input" value="{{$tag->id}}" name="tags[]" type="checkbox">
-                            <label for="tag_{{$tag->id}}" class="form-check-label">{{$tag->name}}</label>
-                        </div>
-                    @endforeach
+                    <label for="content">Содержание статьи</label>
+                    <textarea class="form-control d-none text-edit" id="content" name="content" rows="3">{{ $post->content }}</textarea>
+                    <div id="code-editor"></div>
                 </div>
 
                 <!-- Изображения -->
                 <div class="border mt-2 p-2">
-                    <img src="{{ $case->logo }}" width="100px" alt="Логотип">
-                    <div class="form-group mt-2">
-                        <label for="logo">Логотип</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" name="logo" class="custom-file-input" id="logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="border mt-2 p-2">
-                    <img src="{{ $case->list_img }}" width="100px">
                     <div class="form-group mt-2">
                         <label for="list_img">Изображение в списке</label>
+                        <img src="{{$post->list_img}}" width="100px" alt="">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="list_img" class="custom-file-input" id="list_img">
@@ -99,15 +67,35 @@
                     </div>
                 </div>
                 <div class="border mt-2 p-2">
-                    <img src="{{ $case->img }}" width="100px">
                     <div class="form-group mt-2">
                         <label for="img">Изображение на детальной странице</label>
+                        <img src="{{$post->img}}" width="100px" alt="">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="img" class="custom-file-input" id="img">
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="category_id">Категория*</label>
+                    <select class="form-control" name="category_id" id="category_id">
+                        @foreach($categories as $category)
+                            <option value="{{ $category->id }}" @if($post->category_id == $category->id) selected @endif>{{ $category->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Теги</label>
+                    @php $postTags = $post->tags?->pluck('id')->all() @endphp
+                    @foreach($tags as $tag)
+                        <div class="form-check">
+                            <input id="tag_{{$tag->id}}" @if($postTags != null && in_array($tag->id, $postTags)) checked @endif class="form-check-input" value="{{$tag->id}}" name="tags[]" type="checkbox">
+                            <label for="tag_{{$tag->id}}" class="form-check-label">{{$tag->name}}</label>
+                        </div>
+                    @endforeach
                 </div>
 
                 <!-- Настройки SEO -->
@@ -118,59 +106,59 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="meta_title">Meta Title</label>
-                            <input type="text" class="form-control" id="meta_title" name="meta_title" value="{{ $case->seo?->meta_title ?? '' }}">
+                            <input type="text" class="form-control" id="meta_title" name="meta_title" value="{{ $post->seo?->meta_title ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="meta_description">Meta Description</label>
-                            <textarea class="form-control" id="meta_description" name="meta_description" rows="3">{{ $case->seo?->meta_description ?? '' }}</textarea>
+                            <textarea class="form-control" id="meta_description" name="meta_description" rows="3">{{ $post->seo?->meta_description ?? '' }}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="meta_keywords">Meta Keywords</label>
-                            <input type="text" class="form-control" id="meta_keywords" name="meta_keywords" value="{{ $case->seo?->meta_keywords ?? '' }}">
+                            <input type="text" class="form-control" id="meta_keywords" name="meta_keywords" value="{{ $post->seo?->meta_keywords ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="canonical">Canonical URL</label>
-                            <input type="text" class="form-control" id="canonical" name="canonical" value="{{ $case->seo?->canonical ?? '' }}">
+                            <input type="text" class="form-control" id="canonical" name="canonical" value="{{ $post->seo?->canonical ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_title">OG Title</label>
-                            <input type="text" class="form-control" id="og_title" name="og_title" value="{{ $case->seo?->og_title ?? '' }}">
+                            <input type="text" class="form-control" id="og_title" name="og_title" value="{{ $post->seo?->og_title ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_description">OG Description</label>
-                            <textarea class="form-control" id="og_description" name="og_description" rows="3">{{ $case->seo?->og_description ?? '' }}</textarea>
+                            <textarea class="form-control" id="og_description" name="og_description" rows="3">{{ $post->seo?->og_description ?? '' }}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="og_url">OG URL</label>
-                            <input type="text" class="form-control" id="og_url" name="og_url" value="{{ $case->seo?->og_url ?? '' }}">
+                            <input type="text" class="form-control" id="og_url" name="og_url" value="{{ $post->seo?->og_url ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_type">OG Type</label>
-                            <input type="text" class="form-control" id="og_type" name="og_type" value="{{ $case->seo?->og_type ?? '' }}">
+                            <input type="text" class="form-control" id="og_type" name="og_type" value="{{ $post->seo?->og_type ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_site_name">OG Site Name</label>
-                            <input type="text" class="form-control" id="og_site_name" name="og_site_name" value="{{ $case->seo?->og_site_name ?? '' }}">
+                            <input type="text" class="form-control" id="og_site_name" name="og_site_name" value="{{ $post->seo?->og_site_name ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_image">OG Image</label>
-                            <input type="text" class="form-control" id="og_image" name="og_image" value="{{ $case->seo?->og_image ?? '' }}">
+                            <input type="text" class="form-control" id="og_image" name="og_image" value="{{ $post->seo?->og_image ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_image_type">OG Image Type</label>
-                            <input type="text" class="form-control" id="og_image_type" name="og_image_type" value="{{ $case->seo?->og_image_type ?? '' }}">
+                            <input type="text" class="form-control" id="og_image_type" name="og_image_type" value="{{ $post->seo?->og_image_type ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_image_width">OG Image Width</label>
-                            <input type="number" class="form-control" id="og_image_width" name="og_image_width" value="{{ $case->seo?->og_image_width ?? '' }}">
+                            <input type="number" class="form-control" id="og_image_width" name="og_image_width" value="{{ $post->seo?->og_image_width ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="og_image_height">OG Image Height</label>
-                            <input type="number" class="form-control" id="og_image_height" name="og_image_height" value="{{ $case->seo?->og_image_height ?? '' }}">
+                            <input type="number" class="form-control" id="og_image_height" name="og_image_height" value="{{ $post->seo?->og_image_height ?? '' }}">
                         </div>
                         <div class="form-group">
                             <label for="vk_image">VK Image</label>
-                            <input type="text" class="form-control" id="vk_image" name="vk_image" value="{{ $case->seo?->vk_image ?? '' }}">
+                            <input type="text" class="form-control" id="vk_image" name="vk_image" value="{{ $post->seo?->vk_image ?? '' }}">
                         </div>
                     </div>
                 </div>
@@ -197,7 +185,6 @@
         }
     </style>
 @endsection
-
 @section('scripts')
     <!-- Подключение Froala CSS -->
     <link href="https://cdn.jsdelivr.net/npm/froala-editor@4.0.1/css/froala_editor.pkgd.min.css" rel="stylesheet">
@@ -208,7 +195,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            new FroalaEditor('#text', {
+            new FroalaEditor('.text-edit', {
                 language: 'ru', // Язык (русский)
                 heightMin: 300, // Минимальная высота редактора
                 //toolbarButtons: ['bold', 'italic', 'formatOL', 'formatUL', 'h2'], // Ограничиваем инструменты

@@ -32,7 +32,7 @@ class Article extends Model
 
     public function tags(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToMany(ArticleTag::class, 'case_tag', 'case_id', 'tag_id');
+        return $this->belongsToMany(ArticleTag::class, 'articles_tag', 'article_id', 'tag_id');
     }
 
     public function scopeWithFilters($query, Request $request)

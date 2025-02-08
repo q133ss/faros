@@ -7,7 +7,7 @@
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form method="POST" action="{{route('admin.case.store')}}" enctype="multipart/form-data">
+        <form method="POST" action="{{route('admin.post.store')}}" enctype="multipart/form-data">
             @csrf
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -42,38 +42,18 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="text">Подзаголовок</label>
-                    <textarea class="form-control d-none" id="pre_title" name="pre_title" rows="3">{{ old('pre_title') }}</textarea>
+                    <label for="pre_title">Подзаголовок</label>
+                    <textarea class="form-control d-none text-edit" id="pre_title" name="pre_title" rows="3">{{ old('pre_title') }}</textarea>
                     <div id="code-editor"></div>
                 </div>
 
                 <div class="form-group">
-                    <label for="text">Подзаголовок</label>
-                    <textarea class="form-control d-none" id="pre_title" name="pre_title" rows="3">{{ old('pre_title') }}</textarea>
+                    <label for="content">Содержание статьи</label>
+                    <textarea class="form-control d-none text-edit" id="content" name="content" rows="3">{{ old('content') }}</textarea>
                     <div id="code-editor"></div>
-                </div>
-
-                <!-- Цвет фона и текста -->
-                <div class="form-group">
-                    <label for="bg_color">Цвет фона</label>
-                    <input type="color" class="form-control my-colorpicker1 colorpicker-element" name="bg_color" value="{{ old('bg_color') }}">
-                </div>
-                <div class="form-group">
-                    <label for="text_color">Цвет текста</label>
-                    <input type="color" class="form-control my-colorpicker2 colorpicker-element" name="text_color" value="{{ old('text_color') }}">
                 </div>
 
                 <!-- Изображения -->
-                <div class="border mt-2 p-2">
-                    <div class="form-group mt-2">
-                        <label for="logo">Логотип</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" name="logo" class="custom-file-input" id="logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
                         <label for="list_img">Изображение в списке</label>
@@ -93,6 +73,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="category_id">Категория*</label>
+                    <select class="form-control" name="category_id" id="category_id">
+                        @foreach($categories as $category)
+                            <option value="{{ $category->id }}" @if(old('category_id') == $category->id) selected @endif>{{ $category->name }}</option>
+                        @endforeach
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -203,7 +192,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            new FroalaEditor('#text', {
+            new FroalaEditor('.text-edit', {
                 language: 'ru', // Язык (русский)
                 heightMin: 300, // Минимальная высота редактора
                 //toolbarButtons: ['bold', 'italic', 'formatOL', 'formatUL', 'h2'], // Ограничиваем инструменты

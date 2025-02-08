@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('author_id')->nullable();
             $table->string('post_name');
             $table->text('pre_title')->nullable()->comment('Предзаголовок');
-            $table->json('content_list')->nullable()->comment('Содержание статьи, генерируем автоматом');
+            $table->json('content_list')->nullable()->comment('Содержание статьи, уже не используется!');
             $table->text('content')->nullable()->comment('Контент');
             $table->unsignedBigInteger('views')->default(0);
             $table->string('list_img');

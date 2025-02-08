@@ -49,7 +49,6 @@ class CaseController extends Controller
             'text' => $data['text']
         ];
 
-        // 'slug' => $data['slug'],
         if($request->slug != null){
             $caseData['slug'] = $request->slug;
         }else{
@@ -83,19 +82,19 @@ class CaseController extends Controller
             'meta_title' => $data['meta_title'],
             'meta_description' => $data['meta_description'],
             'meta_keywords' => $data['meta_keywords'],
-            'canonical' => $data['canonical'],
+            'canonical' => $request->canonical ?? 'https://faros.media',
             'og_title' => $data['og_title'],
             'og_description' => $data['og_description'],
             'og_url' => $data['og_url'],
-            'og_type' => $data['og_type'],
-            'og_site_name' => $data['og_site_name'],
+            'og_type' => $data['og_type'] ?? 'website',
+            'og_site_name' => $data['og_site_name'] ?? 'FAROS',
             'og_image' => $data['og_image'],
             'og_image_type' => $data['og_image_type'],
             'og_image_width' => $data['og_image_width'],
             'og_image_height' => $data['og_image_height'],
             'vk_image' => $data['vk_image']
         ];
-        $case->seo()?->update($seoData);
+        $case->seo()?->updateOrCreate($seoData);
         return to_route('admin.case.index')->withSuccess('Кейс успешно обновлен!');
     }
 
@@ -157,19 +156,19 @@ class CaseController extends Controller
             'meta_title' => $data['meta_title'],
             'meta_description' => $data['meta_description'],
             'meta_keywords' => $data['meta_keywords'],
-            'canonical' => $data['canonical'],
+            'canonical' => $request->canonical ?? 'https://faros.media',
             'og_title' => $data['og_title'],
             'og_description' => $data['og_description'],
             'og_url' => $data['og_url'],
-            'og_type' => $data['og_type'],
-            'og_site_name' => $data['og_site_name'],
+            'og_type' => $data['og_type'] ?? 'website',
+            'og_site_name' => $data['og_site_name'] ?? 'FAROS',
             'og_image' => $data['og_image'],
             'og_image_type' => $data['og_image_type'],
             'og_image_width' => $data['og_image_width'],
             'og_image_height' => $data['og_image_height'],
             'vk_image' => $data['vk_image']
         ];
-        $case->seo()?->update($seoData);
+        $case->seo()?->updateOrCreate($seoData);
         return to_route('admin.case.index')->withSuccess('Кейс успешно обновлен!');
     }
 
