@@ -36,4 +36,9 @@ class Smi extends Model
     {
         return $query->orderBy('id', 'desc');
     }
+
+    public function seo(): \Illuminate\Database\Eloquent\Relations\MorphOne
+    {
+        return $this->morphOne(Seo::class, 'seable');
+    }
 }

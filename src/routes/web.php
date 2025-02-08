@@ -49,6 +49,7 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
    Route::resource('team', \App\Http\Controllers\Admin\TeamController::class);
    Route::resource('post', \App\Http\Controllers\Admin\PostController::class);
    Route::resource('video', \App\Http\Controllers\Admin\VideoController::class);
+   Route::resource('smi', \App\Http\Controllers\Admin\SmiController::class);
 });
 
 # TODO админка

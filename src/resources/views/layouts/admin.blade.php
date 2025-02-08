@@ -179,6 +179,13 @@
                             <p>Видео</p>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="{{route('admin.smi.index')}}" class="nav-link">
+                            <i class="nav-icon bi bi-palette"></i>
+                            <p>СМИ</p>
+                        </a>
+                    </li>
                 </ul>
                 <!--end::Sidebar Menu-->
             </nav>
