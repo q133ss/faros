@@ -90,7 +90,11 @@ class PostController extends Controller
             'vk_image' => $request->vk_image
         ];
 
-        $post->seo()?->updateOrCreate($seoData);
+        if($post->seo == null){
+            $post->seo()?->create($seoData);
+        }else{
+            $post->seo()?->update($seoData);
+        }
 
         return to_route('admin.post.index')->withSuccess('Запись успешно добавлена');
     }
@@ -165,7 +169,12 @@ class PostController extends Controller
             'og_image_height' => $request->og_image_height,
             'vk_image' => $request->vk_image
         ];
-        $post->seo()?->updateOrCreate($seoData);
+
+        if($post->seo == null){
+            $post->seo()?->create($seoData);
+        }else{
+            $post->seo()?->update($seoData);
+        }
 
         return to_route('admin.post.index')->withSuccess('Запись успешно обновлена');
     }

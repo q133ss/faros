@@ -103,11 +103,11 @@ class CaseController extends Controller
      */
     public function edit(string $id)
     {
-        $case = ClientCase::findOrFail($id);
+        $post = ClientCase::findOrFail($id);
         $authors = Author::get();
         $tags = CaseTag::get();
-        $caseTags = $case->tags->pluck('id')->toArray();
-        return view('admin.case.edit', compact('case', 'authors', 'tags', 'caseTags'));
+        $caseTags = $post->tags->pluck('id')->toArray();
+        return view('admin.case.edit', compact('post', 'authors', 'tags', 'caseTags'));
     }
 
     /**
@@ -168,7 +168,13 @@ class CaseController extends Controller
             'og_image_height' => $data['og_image_height'],
             'vk_image' => $data['vk_image']
         ];
-        $case->seo()?->updateOrCreate($seoData);
+
+        if($case->seo == null){
+            $case->seo()?->create($seoData);
+        }else{
+            $case->seo()?->update($seoData);
+        }
+
         return to_route('admin.case.index')->withSuccess('Кейс успешно обновлен!');
     }
 

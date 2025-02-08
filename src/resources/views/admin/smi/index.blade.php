@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Видео')
+@section('title', 'СМИ')
 @section('content')
     <a href="{{route('admin.smi.create')}}" class="btn btn-primary">Добавить</a>
     <div class="card-body table-responsive p-0">

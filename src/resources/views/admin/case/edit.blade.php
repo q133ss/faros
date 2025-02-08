@@ -1,14 +1,15 @@
 @extends('layouts.admin')
-@section('title', 'Изменить статью')
+@section('title', 'Изменить кейс')
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Изменить статью</h3>
+            <h3 class="card-title">Изменить кейс</h3>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form method="POST" action="{{route('admin.post.store')}}" enctype="multipart/form-data">
+        <form method="POST" action="{{route('admin.case.update', $post->id)}}" enctype="multipart/form-data">
             @csrf
+            @method('PATCH')
             @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
@@ -32,6 +33,16 @@
                     <label for="post_name">Название на детальной странице*</label>
                     <input type="text" class="form-control" id="post_name" name="post_name" value="{{ $post->post_name }}">
                 </div>
+
+                <div class="form-group">
+                    <label for="type">Тип</label>
+                    <select class="form-control" name="type" id="type">
+                        <option value="default" @if($post->type == 'default') selected @endif>Обычный</option>
+                        <option value="bgYellow" @if($post->type == 'bgYellow') selected @endif>Желтый фон</option>
+                        <option value="double" @if($post->type == 'double') selected @endif>Двойной</option>
+                    </select>
+                </div>
+
                 <div class="form-group">
                     <label for="author_id">Автор*</label>
                     <select class="form-control" name="author_id" id="author_id">
@@ -42,21 +53,39 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="pre_title">Подзаголовок</label>
-                    <textarea class="form-control d-none text-edit" id="pre_title" name="pre_title" rows="3">{{ $post->pre_title }}</textarea>
+                    <label for="text">Текст</label>
+                    <textarea class="form-control d-none" id="text" name="text" rows="3">{{ $post->text }}</textarea>
                     <div id="code-editor"></div>
                 </div>
 
+
+                <!-- Цвет фона и текста -->
                 <div class="form-group">
-                    <label for="content">Содержание статьи</label>
-                    <textarea class="form-control d-none text-edit" id="content" name="content" rows="3">{{ $post->content }}</textarea>
-                    <div id="code-editor"></div>
+                    <label for="bg_color">Цвет фона</label>
+                    <input type="color" class="form-control my-colorpicker1 colorpicker-element" name="bg_color" value="{{ $post->bg_color }}">
                 </div>
+                <div class="form-group">
+                    <label for="text_color">Цвет текста</label>
+                    <input type="color" class="form-control my-colorpicker2 colorpicker-element" name="text_color" value="{{ $post->text_color }}">
+                </div>
+
 
                 <!-- Изображения -->
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
+                        <label for="logo">Логотип</label>
+                        <img src="{{$post->logo}}" width="100px" alt="">
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" name="logo" class="custom-file-input" id="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border mt-2 p-2">
+                    <div class="form-group mt-2">
                         <label for="list_img">Изображение в списке</label>
+                        <img src="{{$post->list_img}}" width="100px" alt="">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="list_img" class="custom-file-input" id="list_img">
@@ -67,6 +96,7 @@
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
                         <label for="img">Изображение на детальной странице</label>
+                        <img src="{{$post->img}}" width="100px" alt="">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="img" class="custom-file-input" id="img">
@@ -76,19 +106,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="category_id">Категория*</label>
-                    <select class="form-control" name="category_id" id="category_id">
-                        @foreach($categories as $category)
-                            <option value="{{ $category->id }}" @if(old('category_id') == $category->id) selected @endif>{{ $category->name }}</option>
-                        @endforeach
-                    </select>
-                </div>
-
-                <div class="form-group">
                     <label for="tags">Теги</label>
                     @foreach($tags as $tag)
                         <div class="form-check">
-                            <input id="tag_{{$tag->id}}" @if(old('tags') != null && in_array($tag->id, old('tags'))) checked @endif class="form-check-input" value="{{$tag->id}}" name="tags[]" type="checkbox">
+                            <input id="tag_{{$tag->id}}" @if(in_array($tag->id, $caseTags)) checked @endif class="form-check-input" value="{{$tag->id}}" name="tags[]" type="checkbox">
                             <label for="tag_{{$tag->id}}" class="form-check-label">{{$tag->name}}</label>
                         </div>
                     @endforeach

@@ -73,7 +73,12 @@ class SmiController extends Controller
             'og_image_height' => $request->og_image_height,
             'vk_image' => $request->vk_image
         ];
-        $smi->seo()?->updateOrCreate($seoData);
+
+        if($smi->seo == null){
+            $smi->seo()?->create($seoData);
+        }else{
+            $smi->seo()?->update($seoData);
+        }
 
         return to_route('admin.smi.index')->with('success', 'СМИ успешно добавлено');
     }
@@ -134,6 +139,12 @@ class SmiController extends Controller
             'vk_image' => $request->vk_image
         ];
         $smi->seo()?->updateOrCreate($seoData);
+
+        if($smi->seo == null){
+            $smi->seo()?->create($seoData);
+        }else{
+            $smi->seo()?->update($seoData);
+        }
 
         return to_route('admin.smi.index')->with('success', 'СМИ успешно обновлено');
     }

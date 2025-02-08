@@ -74,7 +74,11 @@ class VideoController extends Controller
             'vk_image' => $request->vk_image
         ];
 
-        $video->seo()?->updateOrCreate($seoData);
+        if($video->seo == null){
+            $video->seo()?->create($seoData);
+        }else{
+            $video->seo()?->update($seoData);
+        }
         return to_route('admin.video.index')->with('success', 'Видео успешно добавлено');
     }
 
@@ -90,7 +94,7 @@ class VideoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StoreRequest $request, string $id)
     {
         $video = Video::findOrFail($id);
 
@@ -137,7 +141,11 @@ class VideoController extends Controller
             'vk_image' => $request->vk_image
         ];
 
-        $video->seo()?->updateOrCreate($seoData);
+        if($video->seo == null){
+            $video->seo()?->create($seoData);
+        }else{
+            $video->seo()?->update($seoData);
+        }
 
         return to_route('admin.video.index')->with('success', 'Видео успешно обновлено');
     }

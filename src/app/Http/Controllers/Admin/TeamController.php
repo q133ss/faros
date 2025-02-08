@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\TeamController\StoreRequest;
 use App\Models\Author;
+use App\Models\Seo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -158,7 +159,6 @@ class TeamController extends Controller
         }
 
         $post = Author::findOrFail($id);
-        $update = $post->update($data);
 
         $seoData = [
             'meta_title' => $request->meta_title ?? $post->name,
@@ -176,7 +176,14 @@ class TeamController extends Controller
             'og_image_height' => $request->og_image_height,
             'vk_image' => $request->vk_image
         ];
-        $post->seo()?->updateOrCreate($seoData);
+        if($post->seo == null){
+            $post->seo()?->create($seoData);
+        }else{
+            $post->seo()?->update($seoData);
+        }
+
+
+        $update = $post->update($data);
 
         return to_route('admin.team.index')->withSuccess('Автор успешно обновлен');
     }
