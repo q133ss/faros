@@ -186,6 +186,13 @@
                             <p>СМИ</p>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="{{route('admin.seo.index')}}" class="nav-link">
+                            <i class="nav-icon bi bi-palette"></i>
+                            <p>СЕО</p>
+                        </a>
+                    </li>
                 </ul>
                 <!--end::Sidebar Menu-->
             </nav>

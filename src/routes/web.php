@@ -50,11 +50,10 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
    Route::resource('post', \App\Http\Controllers\Admin\PostController::class);
    Route::resource('video', \App\Http\Controllers\Admin\VideoController::class);
    Route::resource('smi', \App\Http\Controllers\Admin\SmiController::class);
+   Route::get('seo', [\App\Http\Controllers\Admin\SeoController::class, 'index'])->name('seo.index');
+   Route::get('seo/{id}', [\App\Http\Controllers\Admin\SeoController::class, 'edit'])->name('seo.edit');
+   Route::patch('seo/{id}', [\App\Http\Controllers\Admin\SeoController::class, 'update'])->name('seo.update');
 });
-
-# TODO админка
-// Список заявок+++, CRUD| Услуги++, кейсы++, команда++, статьи++, мы в эфире++, СМИ, Отзывы!
-// Настройки SEO для страниц
 
 # TODO прокликать все кейсы на предмет фото!
 
