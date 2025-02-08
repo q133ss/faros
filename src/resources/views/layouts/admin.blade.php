@@ -172,6 +172,13 @@
                             <p>Статьи</p>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="{{route('admin.video.index')}}" class="nav-link">
+                            <i class="nav-icon bi bi-palette"></i>
+                            <p>Видео</p>
+                        </a>
+                    </li>
                 </ul>
                 <!--end::Sidebar Menu-->
             </nav>

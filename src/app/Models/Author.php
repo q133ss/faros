@@ -12,4 +12,9 @@ class Author extends Model
     {
         return $this->belongsTo(Article::class, 'author_id', 'id');
     }
+
+    public function seo(): \Illuminate\Database\Eloquent\Relations\MorphOne
+    {
+        return $this->morphOne(Seo::class, 'seable');
+    }
 }

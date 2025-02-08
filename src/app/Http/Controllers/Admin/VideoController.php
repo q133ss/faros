@@ -3,20 +3,20 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\TeamController\StoreRequest;
-use App\Models\Author;
+use App\Http\Requests\Admin\VideoController\StoreRequest;
+use App\Models\Video;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-class TeamController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $team = Author::get();
-        return view('admin.team.index', compact('team'));
+        $videos = Video::all();
+        return view('admin.video.index', compact('videos'));
     }
 
     /**
@@ -24,7 +24,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        return view('admin.team.create');
+        return view('admin.video.create');
     }
 
     /**
@@ -48,15 +48,7 @@ class TeamController extends Controller
         unset($data['og_image_width']);
         unset($data['og_image_height']);
         unset($data['vk_image']);
-
         unset($data['slug']);
-        unset($data['has_detail']);
-        unset($data['list_show']);
-        unset($data['img']);
-
-        if($request->file('img') != null){
-            $data['img'] = '/storage/'.$request->file('img')->store('img', 'public');
-        }
 
         if($request->slug != null){
             $data['slug'] = $request->slug;
@@ -64,22 +56,9 @@ class TeamController extends Controller
             $data['slug'] = Str::slug($request->post_name, '-');
         }
 
-        if(isset($request->has_detail)){
-            $data['has_detail'] = true;
-        }else{
-            $data['has_detail'] = false;
-        }
-
-        if(isset($request->list_show)){
-            $data['list_show'] = true;
-        }else{
-            $data['list_show'] = false;
-        }
-
-        $post = Author::create($data);
-
+        $video = Video::create($data);
         $seoData = [
-            'meta_title' => $request->meta_title ?? $post->name,
+            'meta_title' => $request->meta_title ?? $video->title,
             'meta_description' => $request->meta_description,
             'meta_keywords' => $request->meta_keywords,
             'canonical' => $request->canonical ?? 'https://faros.media',
@@ -94,9 +73,9 @@ class TeamController extends Controller
             'og_image_height' => $request->og_image_height,
             'vk_image' => $request->vk_image
         ];
-        $post->seo()?->updateOrCreate($seoData);
 
-        return to_route('admin.team.index')->withSuccess('Автор успешно добавлен');
+        $video->seo()?->updateOrCreate($seoData);
+        return to_route('admin.video.index')->with('success', 'Видео успешно добавлено');
     }
 
     /**
@@ -104,15 +83,17 @@ class TeamController extends Controller
      */
     public function edit(string $id)
     {
-        $author = Author::findOrFail($id);
-        return view('admin.team.edit', compact('author'));
+        $video = Video::findOrFail($id);
+        return view('admin.video.edit', compact('video'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreRequest $request, string $id)
+    public function update(Request $request, string $id)
     {
+        $video = Video::findOrFail($id);
+
         $data = $request->validated();
 
         unset($data['meta_title']);
@@ -129,27 +110,7 @@ class TeamController extends Controller
         unset($data['og_image_width']);
         unset($data['og_image_height']);
         unset($data['vk_image']);
-
         unset($data['slug']);
-        unset($data['has_detail']);
-        unset($data['list_show']);
-        unset($data['img']);
-
-        if($request->file('img') != null){
-            $data['img'] = '/storage/'.$request->file('img')->store('img', 'public');
-        }
-
-        if(isset($request->has_detail)){
-            $data['has_detail'] = true;
-        }else{
-            $data['has_detail'] = false;
-        }
-
-        if(isset($request->list_show)){
-            $data['list_show'] = true;
-        }else{
-            $data['list_show'] = false;
-        }
 
         if($request->slug != null){
             $data['slug'] = $request->slug;
@@ -157,11 +118,10 @@ class TeamController extends Controller
             $data['slug'] = Str::slug($request->post_name, '-');
         }
 
-        $post = Author::findOrFail($id);
-        $update = $post->update($data);
+        $update = $video->update($data);
 
         $seoData = [
-            'meta_title' => $request->meta_title ?? $post->name,
+            'meta_title' => $request->meta_title ?? $video->title,
             'meta_description' => $request->meta_description,
             'meta_keywords' => $request->meta_keywords,
             'canonical' => $request->canonical ?? 'https://faros.media',
@@ -176,9 +136,10 @@ class TeamController extends Controller
             'og_image_height' => $request->og_image_height,
             'vk_image' => $request->vk_image
         ];
-        $post->seo()?->updateOrCreate($seoData);
 
-        return to_route('admin.team.index')->withSuccess('Автор успешно обновлен');
+        $video->seo()?->updateOrCreate($seoData);
+
+        return to_route('admin.video.index')->with('success', 'Видео успешно обновлено');
     }
 
     /**
@@ -186,7 +147,7 @@ class TeamController extends Controller
      */
     public function destroy(string $id)
     {
-        Author::findOrFail($id)->delete();
-        return to_route('admin.team.index')->withSuccess('Автор успешно удален');
+        Video::findOrFail($id)->delete();
+        return to_route('admin.video.index')->with('success', 'Видео успешно удаленно');
     }
 }

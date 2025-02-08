@@ -74,15 +74,15 @@ class PostController extends Controller
         }
 
         $seoData = [
-            'meta_title' => $request->meta_title,
+            'meta_title' => $request->meta_title ?? $post->post_name,
             'meta_description' => $request->meta_description,
             'meta_keywords' => $request->meta_keywords,
             'canonical' => $request->canonical ?? 'https://faros.media',
             'og_title' => $request->og_title,
             'og_description' => $request->og_description,
             'og_url' => $request->og_url,
-            'og_type' => $request->og_type,
-            'og_site_name' => $request->og_site_name,
+            'og_type' => $request->og_type ?? 'website',
+            'og_site_name' => $request->og_site_name ?? 'FAROS',
             'og_image' => $request->og_image,
             'og_image_type' => $request->og_image_type,
             'og_image_width' => $request->og_image_width,
@@ -150,7 +150,7 @@ class PostController extends Controller
         }
 
         $seoData = [
-            'meta_title' => $request->meta_title,
+            'meta_title' => $request->meta_title ?? $post->post_name,
             'meta_description' => $request->meta_description,
             'meta_keywords' => $request->meta_keywords,
             'canonical' => $request->canonical ?? 'https://faros.media',

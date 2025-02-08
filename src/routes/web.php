@@ -46,13 +46,13 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
    Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('index');
    Route::get('/callbacks', [\App\Http\Controllers\Admin\CallbackController::class, 'index'])->name('callbacks.index');
    Route::resource('case', \App\Http\Controllers\Admin\CaseController::class);
-   #todo СЕО В КОМАНДЕ!
    Route::resource('team', \App\Http\Controllers\Admin\TeamController::class);
    Route::resource('post', \App\Http\Controllers\Admin\PostController::class);
+   Route::resource('video', \App\Http\Controllers\Admin\VideoController::class);
 });
 
 # TODO админка
-// Список заявок+++, CRUD| Услуги++, кейсы++, команда++, статьи++, мы в эфире, СМИ, Отзывы!
+// Список заявок+++, CRUD| Услуги++, кейсы++, команда++, статьи++, мы в эфире++, СМИ, Отзывы!
 // Настройки SEO для страниц
 
 # TODO прокликать все кейсы на предмет фото!
