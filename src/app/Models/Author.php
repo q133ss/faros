@@ -10,7 +10,7 @@ class Author extends Model
 
     public function articles()
     {
-        return $this->belongsTo(Article::class, 'author_id', 'id');
+        return $this->hasMany(Article::class, 'author_id', 'id');
     }
 
     public function seo(): \Illuminate\Database\Eloquent\Relations\MorphOne

@@ -19,6 +19,7 @@ Route::get('/filters/case/reset', [\App\Http\Controllers\CaseController::class, 
 
 Route::get('/team', [\App\Http\Controllers\TeamController::class, 'index'])->name('team.index');
 Route::get('/authors/{slug}', [\App\Http\Controllers\TeamController::class, 'show'])->name('team.show');
+Route::get('/filters/author/{author}/{category}', [\App\Http\Controllers\TeamController::class, 'filters'])->name('team.filters');
 
 Route::get('/articles', [\App\Http\Controllers\ArticlesController::class, 'index'])->name('articles.index');
 Route::get('/articles/{slug}', [\App\Http\Controllers\ArticlesController::class, 'show'])->name('articles.show');

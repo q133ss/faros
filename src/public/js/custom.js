@@ -51,6 +51,32 @@ $('form#audit_form').submit(function () {
     return false;
 });
 
+function goToBiografy(){
+    $('.about').show();
+    $('.all-articles').hide();
+}
+
+// Статьи автора
+function getArticleForAuthor(author_id, category_id){
+    $.ajax({
+        url: '/filters/author/'+author_id+'/'+category_id,
+        method: 'GET',
+        data: {
+            category: category_id,
+            author_id: author_id,
+            sort: case_sort
+        },
+        success: function(response) {
+            $('.about').hide();
+            $('.all-articles').show();
+            $('.all-articles').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Ошибка выполнения запроса:', error);
+        }
+    });
+}
+
 function filterMaterials(section_id = null) {
     if (section_id == null) {
         section_id = $('.material-section.active a').data('id');
