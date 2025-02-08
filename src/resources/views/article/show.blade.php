@@ -385,7 +385,7 @@
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a title="Как загубить лояльность маркетинговыми активностями" itemprop="item">
+                        <a title="{{$post->post_name}}" itemprop="item">
                             <span itemprop="name">{{$post->post_name}}</span>
                             <meta itemprop="position" content="2">
 
@@ -395,104 +395,43 @@
                 <div class="sinpleHeaderTitle sticker">
                     <div class="sinpleHeader">
                         <div class="sinpleHeader__bread">
-                            <a href="/authors/lena-medvedeva/"
-                               class="sinpleHeader__bread__link">Лена Медведева</a>
-                            <a href="../@section_id=6" class="sinpleHeader__bread__tag">МАРКЕТИНГ</a>
+                            <a href="{{route('team.show', $post->author?->slug)}}"
+                               class="sinpleHeader__bread__link">{{$post->author?->name}}</a>
+                            @if($post->category_id)
+                                <a href="{{route('articles.index')}}?category={{$post->category_id}}" class="sinpleHeader__bread__tag">{{$post->category?->name}}</a>
+                            @endif
                         </div>
                     </div>
-                    <h1 class="sinpleHeaderTitle">Как загубить лояльность маркетинговыми активностями</h1>
+                    <h1 class="sinpleHeaderTitle">{{$post->post_name}}</h1>
                 </div>
 
 
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
                         <img src="/images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
-                        <p class="sinpleHeader__data__item__text">20.10.2022</p>
+                        <p class="sinpleHeader__data__item__text">{{$post->created_at?->format('d.m.Y')}}</p>
                     </div>
 
                     <div class="sinpleHeader__data__item">
                         <img src="/images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
-                        <p class="sinpleHeader__data__item__text">3128 просмотров</p>
+                        <p class="sinpleHeader__data__item__text">{{$post->views}} просмотров</p>
                     </div>
                     <div class="sinpleHeader__data__item sinpleHeader__data__item_headerTags">
-                        <a href="../@material_tag=FarosMedia"
-                           class="sinpleHeader__data__item__tag">#FarosMedia</a>
-                        <a href="../@material_tag=РњР°СЂРєРµС‚РёРЅРі"
-                           class="sinpleHeader__data__item__tag">#Маркетинг</a>
-                        <a href="../@material_tag=СѓРїСЂР°РІР»РµРЅРёРµ&#32;СЂРµРїСѓС‚Р°С†РёРµР№"
-                           class="sinpleHeader__data__item__tag">#управление репутацией</a>
+                        @foreach($post->tags as $tag)
+                        <a href="{{route('articles.index')}}?tag={{$tag->id}}"
+                           class="sinpleHeader__data__item__tag">#{{$tag->name}}</a>
+                        @endforeach
                     </div>
                 </div>
 
                 <picture class="authorWrap__left__banner authorWrap__left__banner_articles">
-                    <img src="/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp" alt="Как загубить лояльность маркетинговыми активностями" title="Как загубить лояльность маркетинговыми активностями">
+                    <img src="{{$post->img}}" alt="{{$post->post_name}}" title="Как загубить лояльность маркетинговыми активностями">
                 </picture>
 
                 <div class="author1 blog">
                     <p class="author1__partName"></p>
 
-                    <div class="author1__partCont">
-                        <p class="author1__partCont__text"><p>
-                            В&nbsp;России репутационный менеджмент начал развиваться относительно недавно, и&nbsp;понимание ценности репутации и&nbsp;необходимости тщательной работы с&nbsp;ней для построения успешного бизнеса сложилось не&nbsp;везде. Особенно это характерно для регионов, в&nbsp;доказательство&nbsp;— весьма наглядный<a href="https://faros.media/case/"> кейс по репутации </a>из&nbsp;рабочей практики о программе лояльности.
-                        </p>
-                        <p>
-                            Некогда один наш довольный клиент порекомендовал Faros.Media своему знакомому. Заранее стоит оговориться, что клиентам, которые пришли не «с улицы», а по знакомству либо рекомендации, отказать трудно — есть риск испортить отношения со «знакомыми» и «рекомендующими», но об этом расскажем в отдельной статье.
-                        </p>
-                        <h2>Проблемы розничных продаж в регионах</h2>
-                        <p>
-                            Итак наш новый клиент работает в крупном регионе за Уралом и является собственником производства с несколькими линейками продуктов (переработка мяса, молочная продукция и кондитерские изделия), а также более 60 продуктовых магазинов — не супермаркетов с самообслуживанием, а товарных витрин с продавцами за прилавком.
-                        </p>
-                        <p>
-                            Список проблем сводился к следующему: «в 12 из моих магазинов плохо пахнет», «рядом Пятёрочки — понастроили, и никто не приходит!», также, по словам клиента, его продукция высокого качества, но она не пользуется спросом.
-                        </p>
-                        <h2>Поможет ли маркетинг, когда ищешь поводы его не применять</h2>
-                        <p>
-                            В&nbsp;ходе разговора выяснилось:
-                        </p>
-                        <ul>
-                            <li>&nbsp;с&nbsp;запахом ничего нельзя сделать&nbsp;— люди работать не&nbsp;хотят, никого не&nbsp;заставишь поддерживать чистоту;</li>
-                            <li>&nbsp;статистику по&nbsp;объёмам, сезонности и&nbsp;тому подобному не&nbsp;ведут, в&nbsp;наличии только накладные и&nbsp;учётная тетрадь;</li>
-                            <li>&nbsp;маркетинговой стратегии нет, но&nbsp;есть маркетолог, который ведёт группы в&nbsp;социальных сетях (ВКонтакте и&nbsp;Одноклассники; в&nbsp;сумме&nbsp;— 600 человек подписчиков);</li>
-                            <li>&nbsp;даже на разработку стратегии для соцсетей пока не готовы: "Приведите нам на какую-нибудь акцию каких-нибудь клиентов за маленький бюджет, а дальше посмотрим!"</li>
-                        </ul>
-                        <h2>Как привести продажи, если собственник не верит в digital?</h2>
-                        <p>
-                            Напомним, что клиент не с улицы и отказать в проекте = отказать в помощи. Ничего не остается, как продумать и реализовать акцию, которая повлечет быстрый сбыт.
-                        </p>
-                        <p>
-                            Таким образом, зафикировали план работы: настраиваем ВКонтакте на 20 тысяч таргетированную рекламу по геолокации всех торговых точек, сеть в это время делает акции со скидками на товары. Нарисовали баннеры и запустили рекламу. Учитывая, что это регион, отклик получили незамедлительный и действительно хороший (по итогам пришло 900 новых подписчиков).
-                        </p>
-                        <h2>Как фейковую программу лояльности раскусил потребитель</h2>
-                        <p>
-                            Но вот, почему с ростом активности и вовлеченность вдруг вместо роста продаж пришло катастрофическое падение лояльности?<br>
-                            ЧП случилось практически на второй день. Сообщество закидали гневными комментариями посетившие магазин потребители.
-                        </p>
-                        <p>
-                            Оказалось:
-                        </p>
-                        <ul>
-                            <li>&nbsp;во-первых, так называемая акционная курица «по&nbsp;Х рублей» стоит на&nbsp;4&nbsp;рубля дороже, чем обычно в&nbsp;этом магазине;</li>
-                            <li>&nbsp;зефир, на&nbsp;который также якобы снизили цену, стоит столько&nbsp;же, сколько и&nbsp;всегда;</li>
-                            <li>&nbsp;известное всем печенье «Орео», которое&nbsp;мы, по&nbsp;просьбе заказчика, разместили на&nbsp;баннере с&nbsp;привычной упаковкой и&nbsp;фотографией, в&nbsp;сети продаётся под названием «ОреоН» и&nbsp;выглядит несколько иначе.</li>
-                        </ul>
-                        <h2>Региональный бизнес хочет мгновенный ROMI</h2>
-                        <p>
-                            В&nbsp;ответ на&nbsp;наше недоумение последовало встречное недоумение:
-                        </p>
-                        <p>
-                            «Курица&nbsp;— наша продукция. Во&nbsp;всех других магазинах её&nbsp;продают на&nbsp;6&nbsp;рублей дороже, а&nbsp;мы&nbsp;на&nbsp;время акции решили поднять цену. Вы&nbsp;ведь рекламу нам крутите&nbsp;— нам&nbsp;бы хотелось не&nbsp;только рекламу отбить, но&nbsp;и&nbsp;заработать. Зефир нашего производства в&nbsp;соседних магазинах продаётся в&nbsp;разы дороже. Печенье и&nbsp;правда у&nbsp;нас называется „ОреоН“&nbsp;— оно точь-в-точь по&nbsp;технологии оригинала, но&nbsp;нашего производства».
-                        </p>
-                        <p>
-                            К&nbsp;сожалению, нам не&nbsp;удалось убедить заказчика в ошибочности действий&nbsp;— акция продолжилась до&nbsp;полной открутки рекламного бюджета, после чего мы распрощались.
-                        </p>
-                        <h2>Финальное слово про лояльность</h2>
-                        <p>
-                            Подобный пример&nbsp;— один из&nbsp;многих кейсов, когда попытка заработать больше приводит к&nbsp;высоким репутационным и, как следствие, финансовым потерям. Возможно, это послужит хорошим уроком неправильной работы с&nbsp;аудиторией, которая не&nbsp;способствует лояльности. А&nbsp;лояльный клиент, как известно, вернётся не&nbsp;раз и&nbsp;приведёт свою аудиторию.
-                        </p>
-                        <p>
-                            ROMI - return of marketing investments - показатель возврата инвестиций в маркетинг - безусловно, его необходимо считать, но даже в самых простых бизнес-моделях он не может быть мгновенный. Работа с аудиторией - вот наше будущее в эпоху, когда предложение в десятки раз превышает спрос.
-                        </p></p>
-                    </div>
+                    <div class="author1__partCont">{!! $post->pre_title !!}</div>
 
                     <div class="author1__partName author1__partName_contents">
                         <div class="author1__partName_contents__button" id="contentButton">
@@ -510,6 +449,14 @@
                         </div>
                     </div>
 
+                    <div class="author1__partName author1__partName_center">
+                        <div class="author1__partName__persent">
+                        </div>
+                    </div>
+
+                    <div class="author1__partCont">
+                        {!! $post->content !!}
+                    </div>
 
                 </div>
 
@@ -519,15 +466,15 @@
                 <div class="pageAuthor">
                     <div class="pageAuthor__left">
                         <picture class="pageAuthor__left__pic">
-                            <a href="/authors/lena-medvedeva/">
-                                <img src="/upload/iblock/297/gzuagvngx86f1rqte0ytw81c1qfa8qi1/lena.webp" alt="Лена Медведева" title="Лена Медведева">
+                            <a href="{{route('team.show', $post->author?->slug)}}">
+                                <img src="{{$post->author?->img}}" alt="{{$post->author?->name}}" title="{{$post->author?->name}}">
                             </a>
                         </picture>
 
                         <div class="pageAuthor__left__data">
-                            <a href="/authors/lena-medvedeva/"
-                               class="pageAuthor__left__name">Лена Медведева</a>
-                            <p class="pageAuthor__left__post">Автор</p>
+                            <a href="{{route('team.show', $post->author?->slug)}}"
+                               class="pageAuthor__left__name">{{$post->author?->name}}</a>
+                            <p class="pageAuthor__left__post">{{$post->author?->list_post}}</p>
                         </div>
                     </div>
 
@@ -616,63 +563,16 @@
                     <p class="simpleSliderWrap__tit">Читать далее</p>
 
                     <div class="simpleSlider" id="simpleSlider">
-                        <a href="../reklama-otklika-brenda-v-2022-m-godu-chto-eto-i-kak-ee-zapustit/" class="simpleSlider__slide">
+                        @foreach($relation as $rpost)
+                        <a href="{{route('articles.show', $rpost->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="https://faros.media/upload/iblock/3ab/ynvlpk808rvhmbwxhxqpumk1z7yv6t5q/webpc-passthru.webp">
+                                    <img src="{{$rpost->list_img}}">
                                 </picture>
                             </div>
-                            <p class="simpleSlider__slide__text">Реклама отклика бренда в 2022-м году: что это и как ее запустить</p>
+                            <p class="simpleSlider__slide__text">{{$rpost->list_name}}</p>
                         </a>
-                        <a href="../tri-priema-kotorye-delayut-kontent-luchshe/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/1d7/gejwi8xt6bbxp0hgk9ysurovxg84vdo9/webpc-passthru.webp">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">Три приема, которые делают контент лучше</p>
-                        </a>
-                        <a href="../v-gostyah-horosho-a-doma-luchshe/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/6dc/2xeb3mnh38d4sf14hk15hys979uomk2p/webpc-passthru.webp">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">В гостях хорошо, а дома лучше</p>
-                        </a>
-                        <a href="../5-klassicheskih-fakapov-s-reputatsiej/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/576/eblyekiyivbdtu0miuqu6tld5rloomil/5.webp">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">5 классических факапов с репутацией</p>
-                        </a>
-                        <a href="../kakie-tipy-statej-lyubit-facebook/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/6b9/zl33l6ft07a3g2f09kiwz74xan378sfh/webpc-passthru.webp">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">Какие типы статей любит Facebook?</p>
-                        </a>
-                        <a href="../vazhnost-marketingovykh-issledovaniy-dlya-pravitelstva/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="https://faros.media/upload/iblock/3ab/ynvlpk808rvhmbwxhxqpumk1z7yv6t5q/webpc-passthru.webp">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">Важность маркетинговых исследований для правительства</p>
-                        </a>
-                        <a href="../5-sposobov-prodvigat-tovary-v-sotssetyah-i-ne-byt-navyazchivym/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/resize_cache/webp/iblock/955/qn3c07itxet53hy25u42e5epji0ibify/rr.webp">
-                                </picture>
-                            </div>
-                            <p class="simpleSlider__slide__text">5 способов продвигать товары в соцсетях и не быть навязчивым</p>
-                        </a>
-
+                        @endforeach
                     </div>
                 </div>
             </div>

@@ -8,9 +8,9 @@
             </picture>
 
             <div class="articlesVidget__body__item__data">
-                <a href="/articles/nazad-v-budushhee-kontekstnoj-reklamy/"
+                <a href="{{route('articles.show', $post->slug)}}"
                    class="articlesVidget__body__item__data__tit">{{$post->list_name}}</a>
-                <a href="/articles?category={{$post->category?->id}}"
+                <a href="{{route('articles.index')}}?category={{$post->category?->id}}"
                    class="articlesVidget__body__item__data__link">{{$post->category?->name}}</a>
             </div>
         </div>

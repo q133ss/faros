@@ -47,6 +47,7 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
    Route::get('/callbacks', [\App\Http\Controllers\Admin\CallbackController::class, 'index'])->name('callbacks.index');
    Route::resource('case', \App\Http\Controllers\Admin\CaseController::class);
    Route::resource('team', \App\Http\Controllers\Admin\TeamController::class);
+   Route::resource('post', \App\Http\Controllers\Admin\PostController::class);
 });
 
 # TODO админка

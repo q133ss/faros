@@ -21,7 +21,8 @@ class ArticlesController extends Controller
     public function show(string $slug)
     {
         $post = Article::where('slug', $slug)->firstOrFail();
-        return view('article.show', compact('post'));
+        $relation = Article::where('id', '!=', $post->id)->inRandomOrder()->limit(7)->get();
+        return view('article.show', compact('post', 'relation'));
     }
 
     public function more(string $page)
