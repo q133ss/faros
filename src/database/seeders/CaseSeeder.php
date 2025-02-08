@@ -164,9 +164,6 @@ class CaseSeeder extends Seeder
                 'type' => $type
             ];
 
-            #todo проверить контент у "Продвижение бренда детских колясок и товаров INGLESINA"
-            # todo там половины фоток нету!
-
             // Найти соответствующую детальную информацию по полю 'slug'
             $caseDetail = $this->findCaseDetail($casesDetails, $slug);
 

@@ -45,13 +45,14 @@ Route::post('/login', [\App\Http\Controllers\LoginController::class, 'login'])->
 Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(function () {
    Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('index');
    Route::get('/callbacks', [\App\Http\Controllers\Admin\CallbackController::class, 'index'])->name('callbacks.index');
-   #todo теги!
    Route::resource('case', \App\Http\Controllers\Admin\CaseController::class);
+   Route::resource('team', \App\Http\Controllers\Admin\TeamController::class);
 });
 
 # TODO админка
-// Список заявок+++, CRUD| Услуги++, кейсы++, команда, статьи, мы в эфире, СМИ, Отзывы!
+// Список заявок+++, CRUD| Услуги++, кейсы++, команда++, статьи, мы в эфире, СМИ, Отзывы!
 
+# TODO прокликать все кейсы на предмет фото!
 
 # todo добавить значок ВК
 # TODO Спросить, что делать с платежкой?

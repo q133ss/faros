@@ -65,6 +65,16 @@
                     <input type="color" class="form-control my-colorpicker2 colorpicker-element" name="text_color" value="{{ $case->text_color ?? '' }}">
                 </div>
 
+                <div class="form-group">
+                    <label for="tags">Теги</label>
+                    @foreach($tags as $tag)
+                        <div class="form-check">
+                            <input id="tag_{{$tag->id}}" @if(in_array($tag->id, $caseTags)) checked @endif class="form-check-input" value="{{$tag->id}}" name="tags[]" type="checkbox">
+                            <label for="tag_{{$tag->id}}" class="form-check-label">{{$tag->name}}</label>
+                        </div>
+                    @endforeach
+                </div>
+
                 <!-- Изображения -->
                 <div class="border mt-2 p-2">
                     <img src="{{ $case->logo }}" width="100px" alt="Логотип">

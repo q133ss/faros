@@ -1,13 +1,13 @@
 @extends('layouts.admin')
-@section('title', 'Добавить кейс')
+@section('title', 'Добавить в команду')
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Добавить кейс</h3>
+            <h3 class="card-title">Добавить в команду</h3>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form method="POST" action="{{route('admin.case.store')}}" enctype="multipart/form-data">
+        <form method="POST" action="{{route('admin.team.store')}}" enctype="multipart/form-data">
             @csrf
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -25,86 +25,90 @@
                     <input type="text" class="form-control" id="slug" name="slug" value="{{ old('slug') }}">
                 </div>
                 <div class="form-group">
-                    <label for="list_name">Название в списке*</label>
-                    <input type="text" class="form-control" id="list_name" name="list_name" value="{{ old('list_name') }}">
+                    <label for="name">Имя*</label>
+                    <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
                 </div>
                 <div class="form-group">
-                    <label for="post_name">Название на детальной странице*</label>
-                    <input type="text" class="form-control" id="post_name" name="post_name" value="{{ old('post_name') }}">
+                    <label for="list_post">Должность на странице "Команда"</label>
+                    <input type="text" class="form-control" id="list_post" name="list_post" value="{{ old('list_post') }}">
                 </div>
                 <div class="form-group">
-                    <label for="type">Тип</label>
-                    <select class="form-control" name="type" id="type">
-                        <option value="default" @if(old('type') == 'default') selected @endif>Обычный</option>
-                        <option value="bgYellow" @if(old('type') == 'bgYellow') selected @endif>Желтый фон</option>
-                        <option value="double" @if(old('type') == 'double') selected @endif>Двойной</option>
-                    </select>
+                    <label for="page_post">Должность на детальной странице</label>
+                    <input type="text" class="form-control" id="page_post" name="page_post" value="{{ old('page_post') }}">
                 </div>
                 <div class="form-group">
-                    <label for="author_id">Автор*</label>
-                    <select class="form-control" name="author_id" id="author_id">
-                        @foreach($authors as $author)
-                            <option value="{{ $author->id }}" @if(old('author_id') == $author->id) selected @endif>{{ $author->name }}</option>
-                        @endforeach
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="text">Текст</label>
-                    <textarea class="form-control d-none" id="text" name="text" rows="3">{{ old('text') }}</textarea>
+                    <label for="list_text">Текст на странице "Команда"</label>
+                    <textarea class="form-control d-none" id="list_text" name="list_text" rows="3">{{ old('list_text') }}</textarea>
                     <div id="code-editor"></div>
                 </div>
 
-                <!-- Цвет фона и текста -->
                 <div class="form-group">
-                    <label for="bg_color">Цвет фона</label>
-                    <input type="color" class="form-control my-colorpicker1 colorpicker-element" name="bg_color" value="{{ old('bg_color') }}">
+                    <label for="rating">Рейтинг</label>
+                    <input type="number" class="form-control" id="rating" name="rating" placeholder="1244" value="{{ old('rating') }}">
                 </div>
+
                 <div class="form-group">
-                    <label for="text_color">Цвет текста</label>
-                    <input type="color" class="form-control my-colorpicker2 colorpicker-element" name="text_color" value="{{ old('text_color') }}">
+                    <label for="post_count">Кол-во статей</label>
+                    <input type="text" class="form-control" id="post_count" name="post_count" placeholder="54 статьи" value="{{ old('post_count') }}">
+                </div>
+
+                <div class="form-group">
+                    <label for="smi_count">Кол-во публикаций в СМИ</label>
+                    <input type="text" class="form-control" id="smi_count" name="smi_count" placeholder="1 публикация" value="{{ old('smi_count') }}">
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Слова от автора</label>
+                    <textarea class="form-control d-none" id="text" name="from_author" rows="3">{{ old('from_author') }}</textarea>
+                    <div id="code-editor"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Образование</label>
+                    <textarea class="form-control d-none" id="text" name="education" rows="3">{{ old('education') }}</textarea>
+                    <div id="code-editor"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Дополнительное образование</label>
+                    <textarea class="form-control d-none" id="text" name="additional_educational" rows="3">{{ old('additional_educational') }}</textarea>
+                    <div id="code-editor"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="mail@email.net" value="{{ old('email') }}">
+                </div>
+
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="url" class="form-control" id="instagram" name="instagram" placeholder="https://instagram.com/" value="{{ old('instagram') }}">
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input id="hasDetail" class="form-check-input" value="1" name="has_detail" type="checkbox">
+                        <label for="hasDetail" class="form-check-label">Разрешить переход на детальную страницу</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input id="list_show" class="form-check-input" value="1" name="list_show" type="checkbox">
+                        <label for="list_show" class="form-check-label">Отображать на странице "Команда"</label>
+                    </div>
                 </div>
 
                 <!-- Изображения -->
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
-                        <label for="logo">Логотип</label>
+                        <label for="logo">Фото</label>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" name="logo" class="custom-file-input" id="logo">
+                                <input type="file" name="img" class="custom-file-input" id="logo">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="border mt-2 p-2">
-                    <div class="form-group mt-2">
-                        <label for="list_img">Изображение в списке</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" name="list_img" class="custom-file-input" id="list_img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="border mt-2 p-2">
-                    <div class="form-group mt-2">
-                        <label for="img">Изображение на детальной странице</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" name="img" class="custom-file-input" id="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="tags">Теги</label>
-                    @foreach($tags as $tag)
-                        <div class="form-check">
-                            <input id="tag_{{$tag->id}}" @if(old('tags') != null && in_array($tag->id, old('tags'))) checked @endif class="form-check-input" value="{{$tag->id}}" name="tags[]" type="checkbox">
-                            <label for="tag_{{$tag->id}}" class="form-check-label">{{$tag->name}}</label>
-                        </div>
-                    @endforeach
                 </div>
 
                 <!-- Настройки SEO -->

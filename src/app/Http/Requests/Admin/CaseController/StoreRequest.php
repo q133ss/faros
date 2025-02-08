@@ -22,7 +22,7 @@ class StoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'slug' => 'nullable|string|max:255|unique:client_cases,slug',
+            'slug' => 'nullable|string|max:255',
             'list_name' => 'required|string|max:255',
             'post_name' => 'required|string|max:255',
             'type' =>      'required|in:default,bgYellow,double',
@@ -33,6 +33,7 @@ class StoreRequest extends FormRequest
             'list_img' => 'nullable|image',
             'img' => 'nullable|image',
             'text' => 'required|string',
+            'tags' => 'nullable|array',
 
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',

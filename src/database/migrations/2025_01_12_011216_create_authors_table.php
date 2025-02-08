@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('img')->nullable();
             $table->string('name');
-            $table->string('list_post')->comment('Должность на странице списка');
+            $table->string('list_post')->comment('Должность на странице списка')->nullable();
             $table->string('page_post')->comment('Должность на детальной странице')->nullable();
             $table->text('list_text')->nullable();
             $table->integer('rating')->default(0);

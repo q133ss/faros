@@ -1563,13 +1563,13 @@
                     @foreach(\App\Models\Author::whereIn('id', [1,2,10])->get() as $author)
                     <div class="authVidget__body__item">
                         <picture class="authVidget__body__item__pic">
-                            <a href="index.html">
+                            <a href="{{route('team.show', $author->slug)}}">
                                 <img src="{{$author->img}}">
                             </a>
                         </picture>
 
                         <div class="authVidget__body__item__data">
-                            <a href="index.html"
+                            <a href="{{route('team.show', $author->slug)}}"
                                class="authVidget__body__item__data__name">{{$author->name}}</a>
                             <p class="authVidget__body__item__data__post">{{$author->list_post}}</p>
                         </div>
