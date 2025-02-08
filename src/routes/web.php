@@ -55,8 +55,6 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
    Route::patch('seo/{id}', [\App\Http\Controllers\Admin\SeoController::class, 'update'])->name('seo.update');
 });
 
-# TODO прокликать все кейсы на предмет фото!
-
 # todo добавить значок ВК
 # TODO Спросить, что делать с платежкой?
 

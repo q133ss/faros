@@ -129,7 +129,7 @@ class CaseSeeder extends Seeder
                 case 'lego-benzin-preview.png':
                     $formattedImg = 'lego-benzin-preview.webp';
                     break;
-                case 'ubeditelnyy-brending-kurinogo-myasa-dlya-detskogo-pitaniya':
+                case 'Group 1225.png':
                     $formattedImg = 'Group 1225.webp';
                     break;
             }
