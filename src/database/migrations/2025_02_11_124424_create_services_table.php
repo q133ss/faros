@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('subtitle')->nullable()->comment('Подзаголовок. Краткое описание');
             $table->string('short_description')->nullable()->comment('Краткое описание на детальной странице');
             $table->string('bg_color')->default('#e94a47')->comment('Цвет фона на детальной странице');
-            $table->string('img');
+            $table->string('img')->nullable();
 
             $table->string('section_one_percent')->nullable()->comment('Процент/Заголовок в первой секции');
             $table->string('section_one_percent_description')->nullable()->comment('Описание процента в секции 1');

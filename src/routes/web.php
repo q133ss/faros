@@ -44,6 +44,7 @@ Route::post('/login', [\App\Http\Controllers\LoginController::class, 'login'])->
 Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(function () {
    Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('index');
    Route::get('/callbacks', [\App\Http\Controllers\Admin\CallbackController::class, 'index'])->name('callbacks.index');
+   Route::resource('service', \App\Http\Controllers\Admin\ServiceController::class);
    Route::resource('case', \App\Http\Controllers\Admin\CaseController::class);
    Route::resource('team', \App\Http\Controllers\Admin\TeamController::class);
    Route::resource('post', \App\Http\Controllers\Admin\PostController::class);
