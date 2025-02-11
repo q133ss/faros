@@ -28,21 +28,20 @@
 
     <!--home mMini blocks START-->
     <div class="allServiceMiniBlocks">
-        <!--1/2 height, min width, home miniBlock START-->
-        <a href="{{route('service.orm')}}" class="miniBlock _bgRed1 scene addY"
-        >
+        @foreach($services as $service)
+        <a href="{{route('service.show', $service->slug)}}" class="miniBlock _bgRed1 scene addY" style="background-color: {{$service->bg_color}}">
             <div class="miniBlock__wrap">
-                <p class="allServiceMiniBlocks__title _colorWhite">ORM</p>
-                <p class="allServiceMiniBlocks__content _colorWhite">Комплексное управление репутацией от ведущего SERM и ORM агентства</p>
+                <p class="allServiceMiniBlocks__title _colorWhite">{{$service->name}}</p>
+                <p class="allServiceMiniBlocks__content _colorWhite">{{$service->subtitle}}</p>
             </div>
 
             <div class="miniBlock__layer miniBlock__layer_first parallax">
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_first" data-depth="0.6">
-                    <img src="../upload/iblock/c9c/k25xohuxr8oi31l8l3lv7yuy20k3jl6u/s.png">
+                    <img src="{{$service->img}}">
                 </picture>
 
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_mob">
-                    <img src="../upload/iblock/c9c/k25xohuxr8oi31l8l3lv7yuy20k3jl6u/s.png">
+                    <img src="{{$service->img}}">
                 </picture>
             </div>
 
@@ -51,82 +50,7 @@
                      class="allServiceMiniBlocks__mobButton__ico">
             </button>
         </a>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <a href="{{route('service.smm')}}" class="miniBlock _bgRed1 scene addY"
-           style="background-color: #1B236D"
-        >
-            <div class="miniBlock__wrap">
-                <p class="allServiceMiniBlocks__title _colorWhite">SMM</p>
-                <p class="allServiceMiniBlocks__content _colorWhite">выстроим эффективную коммуникацию в соцсетях и поднимем продажи</p>
-            </div>
-
-            <div class="miniBlock__layer miniBlock__layer_first parallax">
-                <picture class="miniBlock__layer__pic miniBlock__layer__pic_first" data-depth="0.6">
-                    <img src="../upload/resize_cache/webp/iblock/02a/52uvd0o8zykwtm6mimza3z78jbihms6m/clip-online-advertising-smm&#32;1.webp">
-                </picture>
-
-                <picture class="miniBlock__layer__pic miniBlock__layer__pic_mob">
-                    <img src="../upload/resize_cache/webp/iblock/02a/52uvd0o8zykwtm6mimza3z78jbihms6m/clip-online-advertising-smm&#32;1.webp">
-                </picture>
-            </div>
-
-            <button class="allServiceMiniBlocks__mobButton" type="button">
-                <img src="../images/min/icons/awworWhiteBGOrange.svg"
-                     class="allServiceMiniBlocks__mobButton__ico">
-            </button>
-        </a>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <a href="{{route('service.pr')}}" class="miniBlock _bgRed1 scene addY"
-           style="background-color: #000000"
-        >
-            <div class="miniBlock__wrap">
-                <p class="allServiceMiniBlocks__title _colorWhite">PR</p>
-                <p class="allServiceMiniBlocks__content _colorWhite">Обеспечим рост популярности вашего бренда через продвижение на авторитетных площадках</p>
-            </div>
-
-            <div class="miniBlock__layer miniBlock__layer_first parallax">
-                <picture class="miniBlock__layer__pic miniBlock__layer__pic_first" data-depth="0.6">
-                    <img src="../upload/iblock/a17/ca0vky3miofiklevfums4qfeudrurcj9/ss.png">
-                </picture>
-
-                <picture class="miniBlock__layer__pic miniBlock__layer__pic_mob">
-                    <img src="../upload/iblock/a17/ca0vky3miofiklevfums4qfeudrurcj9/ss.png">
-                </picture>
-            </div>
-
-            <button class="allServiceMiniBlocks__mobButton" type="button">
-                <img src="../images/min/icons/awworWhiteBGOrange.svg"
-                     class="allServiceMiniBlocks__mobButton__ico">
-            </button>
-        </a>
-        <!--1/2 height, min width, home miniBlock END-->
-        <!--1/2 height, min width, home miniBlock START-->
-        <a href="{{route('service.marketing')}}" class="miniBlock _bgRed1 scene addY"
-           style="background-color: #B945D6"
-        >
-            <div class="miniBlock__wrap">
-                <p class="allServiceMiniBlocks__title _colorWhite">Комплекс для фарм.продуктов</p>
-                <p class="allServiceMiniBlocks__content _colorWhite">ORM-SERM-PR-SMM для препаратов &#40;рецептурные и безрецептурные лекарства, БАДы&#41;</p>
-            </div>
-
-            <div class="miniBlock__layer miniBlock__layer_first parallax">
-                <picture class="miniBlock__layer__pic miniBlock__layer__pic_first" data-depth="0.6">
-                    <img src="../upload/resize_cache/webp/iblock/ab6/y63njkoqpnh3ntdjgd93vfak8wxad38t/19&#32;-&#32;Medecine.webp">
-                </picture>
-
-                <picture class="miniBlock__layer__pic miniBlock__layer__pic_mob">
-                    <img src="../upload/resize_cache/webp/iblock/ab6/y63njkoqpnh3ntdjgd93vfak8wxad38t/19&#32;-&#32;Medecine.webp">
-                </picture>
-            </div>
-
-            <button class="allServiceMiniBlocks__mobButton" type="button">
-                <img src="../images/min/icons/awworWhiteBGOrange.svg"
-                     class="allServiceMiniBlocks__mobButton__ico">
-            </button>
-        </a>
-        <!--1/2 height, min width, home miniBlock END-->
+        @endforeach
     </div>
     <!--home mMini blocks END-->
 

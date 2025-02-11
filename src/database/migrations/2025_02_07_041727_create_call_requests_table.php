@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('call_requests', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('phone');
-            $table->string('site');
-            $table->json('service_type');
-            $table->json('problem');
+            $table->string('site')->nullable();
+            $table->json('service_type')->nullable();
+            $table->json('problem')->nullable();
             $table->timestamps();
         });
     }

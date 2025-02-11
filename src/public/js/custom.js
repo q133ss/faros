@@ -1,36 +1,19 @@
 if ($('.phone_mask').length) {
     $(".phone_mask").mask("+7 (999) 999-9999");
 }
-// $('form#feedback').submit(function () {
-//     let form = $(this);
-//     $.ajax({
-//         url: '/ajax/send.php',
-//         type: 'post',
-//         dataType: 'json',
-//         data: form.serialize(),
-//         success: function (res) {
-//             if (res.success) {
-//                 $('.formBlockWrap').hide();
-//                 $('.fullHeightMinWidth_thanks').show();
-//                 // form.addClass('res-message')
-//                 // form.html(res.msg);
-//             }
-//         }
-//     });
-//     return false;
-// });
 
 $('form#orderservice_form').submit(function () {
     let form = $(this);
     $.ajax({
-        url: '/ajax/send.php',
+        url: '/form/service',
         type: 'post',
         dataType: 'json',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         data: form.serialize(),
         success: function (res) {
-            if (res.success) {
-                form.html(res.msg);
-            }
+            form.html("<h3>Ваша заявка отправлена, спасибо!</h3>");
         }
     });
     return false;
@@ -38,14 +21,15 @@ $('form#orderservice_form').submit(function () {
 $('form#audit_form').submit(function () {
     let form = $(this);
     $.ajax({
-        url: '/ajax/send.php',
+        url: '/form/service',
         type: 'post',
         dataType: 'json',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         data: form.serialize(),
         success: function (res) {
-            if (res.success) {
-                form.html(res.msg);
-            }
+            form.html("<h3>Ваша заявка отправлена, спасибо!</h3>");
         }
     });
     return false;
@@ -349,48 +333,6 @@ $(document).ready(function () {
     });
 });
 
-
-// Это убрал я
-// $('.material-section a').click(function () {
-//     filterMaterials($(this).data('id'));
-// });
-
-// $('.case-section a').click(function () {
-//     filterCases($(this).data('id'));
-//     $('html, body').animate({scrollLeft: 0},500);
-//     $('html, body').animate({scrollTop: 0},500);
-// });
-
-// Это убрал я
-// $('#authSel').on('select2:select', function (e) {
-//     let url = $('#url').val();
-//     if (url === 'cases') {
-//         filterCases();
-//     } else {
-//         filterMaterials();
-//     }
-// });
-
-// Это убрал я
-// $('#authSel').on('select2:unselect', function (e) {
-//     let url = $('#url').val();
-//     if (url === 'cases') {
-//         filterCases();
-//     } else {
-//         filterMaterials();
-//     }
-// });
-
-// Это убрал я
-// $('#sortSel').on('select2:select', function (e) {
-//     let url = $('#url').val();
-//     if (url === 'cases') {
-//         filterCases();
-//     } else {
-//         filterMaterials();
-//     }
-// });
-
 function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -421,13 +363,6 @@ if (material_tag) {
     filterMaterials();
 }
 
-// let case_tag = getUrlParameter('case_tag');
-// if (case_tag) {
-//     $('#authSel').val(case_tag); // Select the option with a value of '1'
-//     $('#authSel').trigger('change'); // Notify any JS components that the value changed
-//     filterCases();
-// }
-
 $('form.subscriptions').submit(function () {
     let form = $(this);
     $.ajax({
@@ -448,30 +383,6 @@ $('form.subscriptions').submit(function () {
 $('.show-popup').click(function () {
     $('.dark-popap.review').show();
 });
-
-
-// $('form#send_review').submit(function () {
-//     let form = $(this);
-//     var file_data = $('#uploadFile').prop('files')[0];
-//     var form_data = new FormData();
-//     form_data.append('file', file_data);
-//
-//     $.ajax({
-//         url: '/ajax/review.php',
-//         type: 'post',
-//         data: form_data,
-//         dataType: 'json',
-//         success: function (res) {
-//             if (res.success) {
-//                 form.html(res.msg);
-//             }
-//         }
-//     });
-//
-//
-//     return false;
-// });
-
 
 if (document.querySelector('#send_review')) {
     document.querySelector('#send_review').addEventListener('submit', e => {
@@ -550,15 +461,7 @@ if (document.querySelector('#send_review')) {
         }
     });
 }
-// $('.show-more-items').click(function () {
-//     $('.none-display').each(function () {
-//         $(this).removeClass('none-display');
-//         $(this).show();
-//     });
-//     $('.allarticlesFooter').remove();
-//     $(window).resize();
-//
-// });
+
 if ($($('select')).is('#sortSelMedia')) {
     $('#sortSelMedia').select2({
         // minimumResultsForSearch: -1,
@@ -580,12 +483,7 @@ $('#sortSelMedia').on('select2:select', function (e) {
     return false;
 });
 $('a.show_pdf').click(function () {
-    // $('#pdfPopup').removeClass('img');
     let href = $(this).attr('href');
-    // console.log(href.toLowerCase().indexOf('.pdf'));
-    // if(href.toLowerCase().indexOf('.pdf') === -1){
-    //     $('#pdfPopup').addClass('img');
-    // }
     $('#pdfPopup embed').attr('src', href);
     $('#pdfPopUp').show();
     return false;
@@ -609,22 +507,3 @@ $("h1, h2, h3").each(function (i) {
         i + "' title='" + current.attr("tagName") + "'>" +
         current.html() + "</a></li>");
 });
-
-// Это убрал я
-// $('#search-input').keyup(function() {
-//     let q = $(this).val();
-//     let url = $('#url').val();
-//     if(q.length >= 3){
-//         if (url === 'cases') {
-//             filterCases();
-//         } else {
-//             filterMaterials();
-//         }
-//     }else if(q.length === 0){
-//         if (url === 'cases') {
-//             filterCases();
-//         } else {
-//             filterMaterials();
-//         }
-//     }
-// });

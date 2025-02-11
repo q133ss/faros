@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/styles.min.css?v=63">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    @include('inc.seo')
+    @include('inc.seo', ['post' => $post])
 </head>
 <body class="_bgLightGray">
 <style>

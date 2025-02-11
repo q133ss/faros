@@ -6,10 +6,8 @@ Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('
 Route::get('/filters/index', [\App\Http\Controllers\IndexController::class, 'filter']);
 
 Route::get('/service', [\App\Http\Controllers\ServiceController::class, 'index'])->name('service.index');
-Route::view('/service/orm', 'service.orm')->name('service.orm');
-Route::view('/service/smm', 'service.smm')->name('service.smm');
-Route::view('/service/pr', 'service.pr')->name('service.pr');
-Route::view('/service/marketing-strategiya-orm-pharm-serm/', 'service.marketing')->name('service.marketing');
+Route::get('/service/{slug}', [\App\Http\Controllers\ServiceController::class, 'show'])->name('service.show');
+Route::post('/form/service', [\App\Http\Controllers\ServiceController::class, 'form'])->name('service.form');
 
 Route::get('/case', [\App\Http\Controllers\CaseController::class, 'index'])->name('case.index');
 Route::get('/case/{slug}', [\App\Http\Controllers\CaseController::class, 'show'])->name('case.show');
@@ -57,7 +55,6 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
 });
 
 # todo добавить значок ВК
-# TODO Спросить, что делать с платежкой?
 
 # TODO ищем все тудушки
 # todo при сохранении фото в админке добавить вебп (но это потом)

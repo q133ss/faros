@@ -34,5 +34,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ArticlesSeeder::class);
         $this->call(CaseSeoSeeder::class);
         $this->call(SmiSeoSeeder::class);
+        $this->call(ServiceSeeder::class);
     }
 }
