@@ -106,61 +106,84 @@
                     role="menu"
                     data-accordion="false"
                 >
+                    @php
+                        $permissions = [];
+                        if(auth()->user()->role?->permissions?->permissions) {
+                            $permissions = auth()->user()->role->permissions?->permissions;
+                        }
+                    @endphp
+                    @if(in_array('show_orders', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.callbacks.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-palette"></i>
                             <p>Заявки</p>
                         </a>
                     </li>
-
+                    @endif
+                    @if(in_array('show_services', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.service.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-clipboard2-check"></i>
                             <p>Услуги</p>
                         </a>
                     </li>
-
+                    @endif
+                    @if(in_array('show_cases', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.case.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-person-lines-fill"></i>
                             <p>Кейсы</p>
                         </a>
                     </li>
-
+                    @endif
+                    @if(in_array('show_teams', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.team.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-people"></i>
                             <p>Команда</p>
                         </a>
                     </li>
-
+                    @endif
+                    @if(in_array('show_articles', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.post.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-book"></i>
                             <p>Статьи</p>
                         </a>
                     </li>
-
+                    @endif
+                    @if(in_array('show_videos', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.video.index')}}" class="nav-link">
                             <i class="nav-icon bi-camera-reels"></i>
                             <p>Видео</p>
                         </a>
                     </li>
-
+                    @endif
+                    @if(in_array('show_smi', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.smi.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-newspaper"></i>
                             <p>СМИ</p>
                         </a>
                     </li>
-
+                    @endif
+                    @if(in_array('show_seo', $permissions))
                     <li class="nav-item">
                         <a href="{{route('admin.seo.index')}}" class="nav-link">
                             <i class="nav-icon bi bi-gear"></i>
                             <p>СЕО</p>
                         </a>
                     </li>
+                    @endif
+                    @if(in_array('show_roles', $permissions))
+                    <li class="nav-item">
+                        <a href="{{route('admin.role.index')}}" class="nav-link">
+                            <i class="nav-icon bi bi-gear"></i>
+                            <p>Права и роли</p>
+                        </a>
+                    </li>
+                    @endif
                 </ul>
                 <!--end::Sidebar Menu-->
             </nav>

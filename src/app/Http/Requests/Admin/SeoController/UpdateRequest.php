@@ -25,7 +25,7 @@ class UpdateRequest extends FormRequest
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
             'meta_keywords' => 'nullable|string|max:255',
-            'canonical' => 'nullable|string|max:255',
+            'canonical' => 'required|string|max:255',
             'og_title' => 'nullable|string|max:255',
             'og_description' => 'nullable|string|max:255',
             'og_url' => 'nullable|string|max:255',

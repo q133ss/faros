@@ -53,6 +53,7 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
    Route::get('seo', [\App\Http\Controllers\Admin\SeoController::class, 'index'])->name('seo.index');
    Route::get('seo/{id}', [\App\Http\Controllers\Admin\SeoController::class, 'edit'])->name('seo.edit');
    Route::patch('seo/{id}', [\App\Http\Controllers\Admin\SeoController::class, 'update'])->name('seo.update');
+   Route::resource('role', \App\Http\Controllers\Admin\RoleController::class)->only('index', 'edit', 'update');
 });
 
 # todo добавить значок ВК

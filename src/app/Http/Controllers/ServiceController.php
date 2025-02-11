@@ -24,6 +24,13 @@ class ServiceController extends Controller
     public function form(ServiceFormRequest $request)
     {
         CallRequest::create($request->validated());
+        // POST /openapi/v1/lead/set/?api_key=ваш_ключ_апи
+        try{
+
+        }catch (\Exception $e){
+
+        }
+
         return response()->json([
             'message' => 'Заявка отправлена!'
         ], 201);

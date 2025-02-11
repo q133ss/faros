@@ -1,13 +1,13 @@
 @extends('layouts.admin')
-@section('title', 'Изменить СМИ')
+@section('title', 'Изменить роль')
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Изменить СМИ</h3>
+            <h3 class="card-title">Изменить роль</h3>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form method="POST" action="{{route('admin.seo.update', $post->id)}}" enctype="multipart/form-data">
+        <form method="POST" action="{{route('admin.role.update', $role->id)}}" enctype="multipart/form-data">
             @csrf
             @method('PATCH')
             @if ($errors->any())
@@ -20,8 +20,23 @@
                 </div>
             @endif
             <div class="card-body">
-                <!-- Настройки SEO -->
-                @include('admin.seo', ['post' => $post])
+                <div class="form-group">
+                    <label for="tags">Доступы</label>
+                    @php
+                        $permissions = [];
+                        if($role->permissions != null){
+                            foreach($role->permissions?->permissions as $permission) {
+                                $permissions[] = $permission;
+                            }
+                        }
+                    @endphp
+                    @foreach($role::PERMISSIONS as $permission => $name)
+                        <div class="form-check">
+                            <input id="{{$permission}}" @if(in_array($permission, $permissions)) checked @endif class="form-check-input" value="{{$permission}}" name="permissions[]" type="checkbox">
+                            <label for="{{$permission}}" class="form-check-label">{{$name}}</label>
+                        </div>
+                    @endforeach
+                </div>
             </div>
             <!-- /.card-body -->
 
@@ -56,7 +71,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            new FroalaEditor('#text', {
+            new FroalaEditor('.text-edit', {
                 language: 'ru', // Язык (русский)
                 heightMin: 300, // Минимальная высота редактора
                 //toolbarButtons: ['bold', 'italic', 'formatOL', 'formatUL', 'h2'], // Ограничиваем инструменты

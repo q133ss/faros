@@ -108,69 +108,7 @@
                 </div>
 
                 <!-- Настройки SEO -->
-                <div class="card mt-4">
-                    <div class="card-header">
-                        <h5 class="card-title">Настройки SEO</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="meta_title">Meta Title</label>
-                            <input type="text" class="form-control" id="meta_title" name="meta_title" value="{{ old('meta_title') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="meta_description">Meta Description</label>
-                            <textarea class="form-control" id="meta_description" name="meta_description" rows="3">{{ old('meta_description') }}</textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="meta_keywords">Meta Keywords</label>
-                            <input type="text" class="form-control" id="meta_keywords" name="meta_keywords" value="{{ old('meta_keywords') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="canonical">Canonical URL</label>
-                            <input type="text" class="form-control" id="canonical" name="canonical" value="{{ old('canonical') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_title">OG Title</label>
-                            <input type="text" class="form-control" id="og_title" name="og_title" value="{{ old('og_title') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_description">OG Description</label>
-                            <textarea class="form-control" id="og_description" name="og_description" rows="3">{{ old('og_description') }}</textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="og_url">OG URL</label>
-                            <input type="text" class="form-control" id="og_url" name="og_url" value="{{ old('og_url') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_type">OG Type</label>
-                            <input type="text" class="form-control" id="og_type" name="og_type" value="{{ old('og_type') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_site_name">OG Site Name</label>
-                            <input type="text" class="form-control" id="og_site_name" name="og_site_name" value="{{ old('og_site_name') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_image">OG Image</label>
-                            <input type="text" class="form-control" id="og_image" name="og_image" value="{{ old('og_image') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_image_type">OG Image Type</label>
-                            <input type="text" class="form-control" id="og_image_type" name="og_image_type" value="{{old('og_image_type') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_image_width">OG Image Width</label>
-                            <input type="number" class="form-control" id="og_image_width" name="og_image_width" value="{{ old('og_image_width') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="og_image_height">OG Image Height</label>
-                            <input type="number" class="form-control" id="og_image_height" name="og_image_height" value="{{ old('og_image_height') }}">
-                        </div>
-                        <div class="form-group">
-                            <label for="vk_image">VK Image</label>
-                            <input type="text" class="form-control" id="vk_image" name="vk_image" value="{{ old('vk_image') }}">
-                        </div>
-                    </div>
-                </div>
+                @include('admin.seo')
             </div>
             <!-- /.card-body -->
 
