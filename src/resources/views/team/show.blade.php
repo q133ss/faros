@@ -28,7 +28,7 @@
                 <div class="user">
                     <div class="user__data">
                         <picture class="user__data__pic">
-                            <img src="{{$author->img}}">
+                            <img src="{{$author->img}}" alt="Faros Media">
                         </picture>
 
                         <div class="user__data__info">
@@ -204,7 +204,7 @@
                 <div class="newsMiniBlock _bgWhite author__newsMiniBlock material-item material-tag-6">
                     <picture class="newsMiniBlock__pic">
                         <a href="{{route('articles.show', $post->slug)}}">
-                            <img src="{{$post->list_img}}">
+                            <img src="{{$post->list_img}}" alt="Faros Media">
                         </a>
                     </picture>
 
@@ -246,7 +246,7 @@
                     <div class="authVidget__body__item">
                         <picture class="authVidget__body__item__pic">
                             <a href="{{route('team.show', $author->slug)}}">
-                                <img src="{{$author->img}}">
+                                <img src="{{$author->img}}" alt="Faros Media">
                             </a>
                         </picture>
 
@@ -268,7 +268,7 @@
             <div class="grow-full"></div>
 
             <div class="contacts__data__logoWrap">
-                <img src="../../images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+                <img src="../../images/min/logourl.svg" alt="Faros Media" class="contacts__data__logoWrap__logo"/>
             </div>
             <p class="contacts__data__adress">
                 Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

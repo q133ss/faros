@@ -2,7 +2,7 @@
     <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
         <a href="{{route('smi.show', $post->slug)}}">
             <picture class="newsMiniBlock__pic">
-                <img src="{{$post->img}}" data-depth="0.6">
+                <img src="{{$post->img}}" data-depth="0.6" alt="Faros Media">
             </picture>
         </a>
 
@@ -13,7 +13,7 @@
             @if($post->logo != '')
                 <!--noindex--><a target="_blank" href="{{$post->source}}"  class="newsMiniBlock__cont__logo" rel="nofollow">
                     <picture class="newsMiniBlock__cont__logo__pic">
-                        <img src="{{$post->logo}}" data-depth="0.6">
+                        <img src="{{$post->logo}}" data-depth="0.6" alt="Faros Media">
                     </picture>
                 </a><!--/noindex-->
             @endif

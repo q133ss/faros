@@ -458,7 +458,7 @@
         </div>
         <div class="allarticlesFooter">
             <button type="button" class="allarticlesFooter__but show-more-items" onclick="loadMore()">
-                <img src="../images/min/icons/reload_orange.svg" class="allarticlesFooter__but__ico">
+                <img src="../images/min/icons/reload_orange.svg" class="allarticlesFooter__but__ico" alt="Faros media">
                 <p class="allarticlesFooter__but__text">ЗАГРУЗИТЬ ЕЩЕ СТАТЬИ</p>
             </button>
         </div>

@@ -13,7 +13,7 @@
         <picture class="fullHeightBigDarkBlock__pic fullHeightBigDarkBlock__pic_team">
             <source type="image/webp" srcset="/images/min/team/teamBG.webp" media="(min-width: 769px)">
             <source type="image/webp" srcset="/images/min/team/teamBG_small.webp">
-            <img srcset="../images/min/team/teamBG_small.png 320w, ../images/min/team/teamBG.png 768w" src="../images/min/team/teamBG.png">
+            <img srcset="../images/min/team/teamBG_small.png 320w, ../images/min/team/teamBG.png 768w" alt="Faros Media" src="../images/min/team/teamBG.png">
 
         </picture>
     </div>
@@ -24,11 +24,11 @@
         <div class="team__item">
             @if($counter == 1)
             <picture class="team__item__imgSecondWrap">
-                <img class="team__item__imgSecondWrap__img" src="/upload/iblock/pencil.png">
+                <img class="team__item__imgSecondWrap__img" src="/upload/iblock/pencil.png" alt="Faros Media">
             </picture>
             @endif
             <picture class="team__item__pic">
-                <img src="{{$team->img}}">
+                <img src="{{$team->img}}" alt="Faros Media">
             </picture>
 
             <div class="team__item__data">
@@ -47,12 +47,12 @@
                     @if($team->instagram)
                         <!--noindex--><a  href="{{$team->instagram}}"  target="_blank"
                                           class="team__item__data__soc__link" rel="nofollow">
-                            <img src="../images/min/team/insta.svg" class="team__item__data__soc__ico">
+                            <img src="../images/min/team/insta.svg" alt="Faros Media" class="team__item__data__soc__ico">
                         </a><!--/noindex-->
                     @endif
                     @if($team->email)
                     <a href="mailto:{{$team->email}}" class="team__item__data__soc__link">
-                        <img src="../images/min/team/mail.svg" class="team__item__data__soc__ico">
+                        <img src="../images/min/team/mail.svg" alt="Faros Media" class="team__item__data__soc__ico">
                     </a>
                     @endif
                 </div>
@@ -61,7 +61,7 @@
             <div class="grow-full"></div>
             @if($counter == 2)
                 <picture class="team__item__imgFirstWrap">
-                    <img class="team__item__imgFirstWrap__img" src="/upload/iblock/star.webp">
+                    <img class="team__item__imgFirstWrap__img" src="/upload/iblock/star.webp" alt="Faros Media">
                 </picture>
             @endif
         </div>

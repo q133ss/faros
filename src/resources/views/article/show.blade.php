@@ -476,7 +476,7 @@
 
                     <div class="pageAuthor__right">
                         <button class="pageAuthor__right__top" id="scrolltotop">
-                            <img class="pageAuthor__right__top__ico" src="/images/min/icons/top.svg">
+                            <img class="pageAuthor__right__top__ico" alt="Faros Media" src="/images/min/icons/top.svg">
                             <span class="pageAuthor__right__top__text">Наверх</span>
                         </button>
 
@@ -562,7 +562,7 @@
                         <a href="{{route('articles.show', $rpost->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="{{$rpost->list_img}}">
+                                    <img src="{{$rpost->list_img}}" alt="Faros Media">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">{{$rpost->list_name}}</p>
@@ -581,7 +581,7 @@
                     <div class="grow-full"></div>
 
                     <div class="contacts__data__logoWrap">
-                        <img src="/images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+                        <img src="/images/min/logourl.svg" alt="Faros Media" class="contacts__data__logoWrap__logo"/>
                     </div>
                     <p class="contacts__data__adress">
                         Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

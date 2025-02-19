@@ -10,12 +10,12 @@
             <a href="#orderservice" type="submit" class="button ormButton">ЗАКАЗАТЬ УСЛУГУ</a>
 
             <picture class="ormBanner__left__pic">
-                <img src="{{$service->img}}">
+                <img src="{{$service->img}}" alt="Faros Media">
             </picture>
         </div>
 
         <picture class="ormBanner__right">
-            <img src="{{$service->img}}">
+            <img src="{{$service->img}}" alt="Faros Media">
         </picture>
     </div>
 
@@ -150,7 +150,7 @@
 
             <picture class="ormBlock__right__formPic">
                 <source type="image/webp" srcset="/images/min/orm/form.webp">
-                <img src="/images/min/orm/form.png">
+                <img src="/images/min/orm/form.png" alt="Faros Media">
             </picture>
         </div>
     </div>

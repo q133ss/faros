@@ -420,9 +420,9 @@
                         <a href="{{route('video.show', $relation->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="{{$relation->img}}">
+                                    <img src="{{$relation->img}}" alt="Faros Media">
                                 </picture>
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
+                                <img class="simpleSlider__slide__picWrap__play" alt="Faros Media" src="/images/min/icons/play.svg">
                             </div>
                             <p class="simpleSlider__slide__text">{{$relation->title}}</p>
                         </a>

@@ -4,13 +4,13 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="../upload/resize_cache/webp/iblock/d5d/e3ajd9tt8o8b41twzna56ewrj9fr6o9z/1122.webp" data-depth="0.6">
+                        <img src="../upload/resize_cache/webp/iblock/d5d/e3ajd9tt8o8b41twzna56ewrj9fr6o9z/1122.webp" alt="Faros Media" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
-                        <img src="../upload/resize_cache/webp/iblock/223/procncjqjf3ck0d2bvepcdbnltzo6oab/2a22737c829158537637231d0ddb3ab8-benzin-preview.webp">
+                        <img src="../upload/resize_cache/webp/iblock/223/procncjqjf3ck0d2bvepcdbnltzo6oab/2a22737c829158537637231d0ddb3ab8-benzin-preview.webp" alt="Faros Media">
                 </span>
 
                 <a href="/case/reputatsiya-banka-otrazhenie-hakerskoj-ataki" class="miniBlock__wrap__tit _colorWhite"
@@ -44,7 +44,7 @@
         >
             <div class="miniBlock__layer">
                         <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/iblock/99f/u2yqx2jvq1t3wnzguerogd3pxad73ytw/1126.png" data-depth="0.6">
+                                                            <img src="../upload/iblock/99f/u2yqx2jvq1t3wnzguerogd3pxad73ytw/1126.png" data-depth="0.6" alt="Faros Media">
                                                     </span>
             </div>
 
@@ -83,7 +83,7 @@
         </div>
 
         <picture class="projBlock__bg">
-            <img src="../upload/resize_cache/webp/iblock/4cf/oeuo0yblidd5bcd9rirjtqfidcq9kn5e/projbg.webp">
+            <img src="../upload/resize_cache/webp/iblock/4cf/oeuo0yblidd5bcd9rirjtqfidcq9kn5e/projbg.webp" alt="Faros Media">
         </picture>
     </div>
     <div class="homeMiniBlocksLast other-cases" title="10" style="grid-template-columns: repeat(10, max-content);">

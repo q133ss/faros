@@ -7,7 +7,7 @@
                  id="popapClase">
             <picture class="dark-popap__formBlock__pic">
                 <source type="image/webp" srcset="/images/min/popap.png">
-                <img src="/images/min/popap.png">
+                <img src="/images/min/popap.png" alt="Faros Media">
             </picture>
 
             <p class="dark-popap__formBlock__title">Отзыв</p>
@@ -55,7 +55,7 @@
 
     <picture class="fullHeightBigDarkBlock__pic fullHeightBigDarkBlock__pic_testemonial">
         <source type="image/webp" srcset="/images/min/testimonialBG.png">
-        <img src="/images/min/testimonialBG.png">
+        <img src="/images/min/testimonialBG.png" alt="Faros Media">
     </picture>
 
 </div>
@@ -87,7 +87,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png">
+                    <img src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -140,7 +140,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png">
+                        <img src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -192,7 +192,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png">
+                        <img src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -224,7 +224,7 @@
     <div class="fullHeightMinWidthAwards__awards">
         <div class="fullHeightMinWidthAwards__awards__item">
             <div class="fullHeightMinWidthAwards__awards__item__img">
-                <img src="../upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico">
+                <img src="../upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
             </div>
 
             <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -240,7 +240,7 @@
         </div>
         <div class="fullHeightMinWidthAwards__awards__item">
             <div class="fullHeightMinWidthAwards__awards__item__img">
-                <img src="../upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico">
+                <img src="../upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
             </div>
 
             <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -258,7 +258,7 @@
 
     <picture class="fullHeightMinWidthAwards__bg parallax">
         <source type="image/webp" srcset="/images/min/home/awardsbg.webp">
-        <img src="/images/min/home/awardsbg.png" data-depth="0.6">
+        <img src="/images/min/home/awardsbg.png" data-depth="0.6" alt="Faros Media">
     </picture>
 </div>
 <!--Full height, min width, home awards END-->
@@ -293,7 +293,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png">
+                        <img src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -348,7 +348,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png">
+                        <img src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -399,7 +399,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png">
+                    <img src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -448,7 +448,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png">
+                    <img src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -497,7 +497,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png">
+                    <img src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -546,7 +546,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png">
+                    <img src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -595,7 +595,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png">
+                    <img src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -686,7 +686,7 @@
     </div>
 </div>
 <div class="fullHeightMinWidth fullHeightMinWidth_thanks" style="display: none;">
-    <img src="/images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img">
+    <img src="/images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img" alt="Faros Media">
     <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
     <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
     <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
@@ -697,7 +697,7 @@
         <div class="grow-full"></div>
 
         <div class="contacts__data__logoWrap">
-            <img src="/images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+            <img src="/images/min/logourl.svg" class="contacts__data__logoWrap__logo" alt="Faros Media" />
         </div>
         <p class="contacts__data__adress">
             Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

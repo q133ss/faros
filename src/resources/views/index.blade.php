@@ -28,7 +28,7 @@
             <div class="fullHeightBigWidth__awardsB">
                 <div class="fullHeightBigWidth__awardsB__item">
                     <div class="fullHeightBigWidth__awardsB__item__img">
-                        <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico">
+                        <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" alt="Faros Media" class="fullHeightMinWidthAwards__awards__item__ico">
                     </div>
 
                     <div class="fullHeightBigWidth__awardsB__item__cont">
@@ -84,7 +84,7 @@
         </div>
         <div class="fullHeightMinWidth__bottom">
             <picture class="fullHeightMinWidth__bottom__bg">
-                <img src="{{$lastCase->list_img}}">
+                <img src="{{$lastCase->list_img}}" alt="Faros media">
             </picture>
             <div class="fullHeightMinWidth__bottom__content">
                 <p class="fullHeightMinWidth__bottom__content__status">НОВЫЙ КЕЙС</p>
@@ -114,7 +114,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg">
+                        <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -153,7 +153,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/гемотест лого.jpeg">
+                        <img src="/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/гемотест лого.jpeg" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -196,7 +196,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg">
+                        <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -239,7 +239,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="upload/iblock/fe5/0mgpfzzgmpms3ygie9kqw9de1b3adfho/ross.jpg">
+                        <img src="upload/iblock/fe5/0mgpfzzgmpms3ygie9kqw9de1b3adfho/ross.jpg" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -282,7 +282,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="upload/iblock/f54/hrv2n63xjvz84pzxaqzijf9mt2pdpzi6/chees.png">
+                        <img src="upload/iblock/f54/hrv2n63xjvz84pzxaqzijf9mt2pdpzi6/chees.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -325,7 +325,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="upload/iblock/bd4/dw9pct9lgca27j6wfjzyuvp3oepan40j/donstroy.png">
+                        <img src="upload/iblock/bd4/dw9pct9lgca27j6wfjzyuvp3oepan40j/donstroy.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -368,7 +368,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="upload/iblock/cd1/4pq2clizge31it53t8uf1b9qat4p591c/pavel.jpeg">
+                        <img src="upload/iblock/cd1/4pq2clizge31it53t8uf1b9qat4p591c/pavel.jpeg" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -411,7 +411,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="upload/iblock/72c/svbsobjrdsln4zlft2zjrzsveb7cv712/cipa.png">
+                        <img src="upload/iblock/72c/svbsobjrdsln4zlft2zjrzsveb7cv712/cipa.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -454,7 +454,7 @@
             <div class="fullHeightMinWidthComents__cont">
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
-                        <img src="upload/iblock/6e5/prgag0odmjoqw9alrouo68v3li1xvh3q/abn.png">
+                        <img src="upload/iblock/6e5/prgag0odmjoqw9alrouo68v3li1xvh3q/abn.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -485,7 +485,7 @@
         <div class="fullHeightMinWidthAwards__awards">
             <div class="fullHeightMinWidthAwards__awards__item">
                 <div class="fullHeightMinWidthAwards__awards__item__img">
-                    <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico">
+                    <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
                 </div>
 
                 <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -501,7 +501,7 @@
             </div>
             <div class="fullHeightMinWidthAwards__awards__item">
                 <div class="fullHeightMinWidthAwards__awards__item__img">
-                    <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico">
+                    <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
                 </div>
 
                 <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -519,7 +519,7 @@
 
         <picture class="fullHeightMinWidthAwards__bg parallax">
             <source type="image/webp" srcset="/images/min/home/awardsbg.webp">
-            <img src="images/min/home/awardsbg.png" data-depth="0.6">
+            <img src="images/min/home/awardsbg.png" alt="Faros Media" data-depth="0.6">
         </picture>
     </div>
     <!--Full height, min width, home awards END-->
@@ -533,7 +533,7 @@
                 <div class="miniCenterBlock _bgWhite">
                     <div class="miniCenterBlock__layer">
                         <div class="miniCenterBlock__layer__pic">
-                            <img src="images/min/home/flesh.svg">
+                            <img src="images/min/home/flesh.svg" alt="Faros Media">
                         </div>
                     </div>
 
@@ -558,14 +558,14 @@
                 >
                     <div class="miniBlock__layer">
                         <picture class="miniBlock__layer__pic parallax">
-                            <img src="{{$case->list_img}}" data-depth="0.6">
+                            <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
                         </picture>
                     </div>
 
                     <div class="miniBlock__wrap">
                         @if($case->logo != null)
                         <picture class="miniBlock__wrap__pic">
-                            <img src="{{$case->logo}}">
+                            <img src="{{$case->logo}}" alt="Faros Media">
                         </picture>
                         @endif
 
@@ -589,7 +589,7 @@
                 >
                     <div class="miniBlock__layer">
                         <picture class="miniBlock__layer__pic parallax">
-                            <img src="{{$case->list_img}}" data-depth="0.6">
+                            <img src="{{$case->list_img}}" data-depth="0.6" alt="Faros Media">
                         </picture>
                     </div>
 
@@ -597,7 +597,7 @@
 
                         @if($case->logo != null)
                             <picture class="miniBlock__wrap__pic">
-                                <img src="{{$case->logo}}">
+                                <img src="{{$case->logo}}" alt="Faros Media">
                             </picture>
                         @endif
 
@@ -683,7 +683,7 @@
         </div>
     </div>
     <div class="fullHeightMinWidth fullHeightMinWidth_thanks" style="display: none;">
-        <img src="images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img">
+        <img src="images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img" alt="Faros Media">
         <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
         <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
         <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
@@ -726,7 +726,7 @@
             <div class="newsMiniBlock _bgWhite material-item">
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', $article->slug)}}">
-                        <img src="{{$article->list_img}}">
+                        <img src="{{$article->list_img}}" alt="Faros Media">
                     </a>
                 </picture>
 
@@ -751,7 +751,7 @@
 
                     <div class="newsDoubleBlock__left__ava">
                         <picture class="newsDoubleBlock__left__ava__pic">
-                            <img src="upload/iblock/3c1/2uslay8qo2cbqcidhgu44k0g2gnkwull/IMG_7470.jpg">
+                            <img src="upload/iblock/3c1/2uslay8qo2cbqcidhgu44k0g2gnkwull/IMG_7470.jpg" alt="Faros Media">
                         </picture>
 
                         <div class="newsDoubleBlock__left__ava__data">
@@ -764,7 +764,7 @@
 
                 <div class="newsDoubleBlock__right">
                     <picture class="newsDoubleBlock__right__pic parallax">
-                        <img src="upload/iblock/c79/1nkowixd2gjcznria46tly29830obbgd/newsdoublebg.png" data-depth="0.6">
+                        <img src="upload/iblock/c79/1nkowixd2gjcznria46tly29830obbgd/newsdoublebg.png" alt="Faros Media" data-depth="0.6">
                     </picture>
                 </div>
             </div>
@@ -778,7 +778,7 @@
             <div class="grow-full"></div>
 
             <div class="contacts__data__logoWrap">
-                <img src="images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+                <img src="images/min/logourl.svg" class="contacts__data__logoWrap__logo" alt="Faros Media" />
             </div>
             <p class="contacts__data__adress">
                 Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

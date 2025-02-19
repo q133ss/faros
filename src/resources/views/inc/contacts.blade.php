@@ -4,7 +4,7 @@
         <div class="grow-full"></div>
 
         <div class="contacts__data__logoWrap">
-            <img src="/images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+            <img src="/images/min/logourl.svg" alt="Faros Media" class="contacts__data__logoWrap__logo"/>
         </div>
         <p class="contacts__data__adress">
             Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

@@ -409,7 +409,7 @@
 
                 @if($case->img != null && $case->img != '/images/case/')
                 <picture class="authorWrap__left__banner authorWrap__left__banner_case">
-                    <img src="{{$case->img}}">
+                    <img src="{{$case->img}}" alt="Faros Media">
                 </picture>
                 @endif
 
@@ -449,7 +449,7 @@
                         <a href="{{route('case.show', $post->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="{{$post->list_img}}">
+                                    <img src="{{$post->list_img}}" alt="Faros Media">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">{{$post->list_name}}</p>
@@ -469,11 +469,11 @@
                             <picture class="authVidget__body__item__pic">
                                 @if($case->author_id != null)
                                     <a href="{{route('team.show', $case->author?->id)}}">
-                                        <img src="{{$case->author_img}}">
+                                        <img src="{{$case->author_img}}" alt="Faros Media">
                                     </a>
                                 @else
                                     <a href="#">
-                                        <img src="{{$case->author_img}}">
+                                        <img src="{{$case->author_img}}" alt="Faros Media">
                                     </a>
                                 @endif
                             </picture>
@@ -506,7 +506,7 @@
                     <div class="grow-full"></div>
 
                     <div class="contacts__data__logoWrap">
-                        <img src="../../images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+                        <img src="../../images/min/logourl.svg" alt="Faros Media" class="contacts__data__logoWrap__logo"/>
                     </div>
                     <p class="contacts__data__adress">
                         Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

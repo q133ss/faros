@@ -7,14 +7,14 @@
             >
                 <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" data-depth="0.6">
+                        <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
                 </span>
                 </div>
 
                 <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
                     @if($case->logo != null)
-                        <img src="{{$case->logo}}">
+                        <img src="{{$case->logo}}" alt="Faros Media">
                     @endif
                 </span>
 
@@ -36,14 +36,14 @@
             >
                 <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" data-depth="0.6">
+                        <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
                 </span>
                 </div>
 
                 <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
                     @if($case->logo != null)
-                        <img src="{{$case->logo}}">
+                        <img src="{{$case->logo}}" alt="Faros Media">
                     @endif
                 </span>
                     <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"
@@ -72,7 +72,7 @@
     </div>
 
     <picture class="projBlock__bg">
-        <img src="../upload/resize_cache/webp/iblock/4cf/oeuo0yblidd5bcd9rirjtqfidcq9kn5e/projbg.webp">
+        <img src="../upload/resize_cache/webp/iblock/4cf/oeuo0yblidd5bcd9rirjtqfidcq9kn5e/projbg.webp" alt="Faros Media">
     </picture>
 </div>        <!--full height, yellow allcases block END-->
 
@@ -87,14 +87,14 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" data-depth="0.6">
+                        <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 @if($case->logo != null)
                     <span class="miniBlock__wrap__pic">
-                        <img src="{{$case->logo}}">
+                        <img src="{{$case->logo}}" alt="Faros Media">
                 </span>
                 @endif
                 <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"
@@ -178,7 +178,7 @@
     </div>
 </div>
 <div class="fullHeightMinWidth fullHeightMinWidth_thanks" style="display: none;">
-    <img src="../images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img">
+    <img src="../images/min/home/thanks.svg" alt="Faros Media" class="fullHeightMinWidth__thanks-img">
     <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
     <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
     <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
@@ -191,7 +191,7 @@
         <div class="grow-full"></div>
 
         <div class="contacts__data__logoWrap">
-            <img src="../images/min/logourl.svg" class="contacts__data__logoWrap__logo"/>
+            <img src="../images/min/logourl.svg" alt="Faros Media" class="contacts__data__logoWrap__logo"/>
         </div>
         <p class="contacts__data__adress">
             Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10
