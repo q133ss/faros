@@ -58,7 +58,7 @@
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
                         <label for="list_img">Изображение в списке</label>
-                        <img src="{{$post->list_img}}" width="100px" alt="Faros media">
+                        <img src="{{$post->list_img}}" title="Faros Media" width="100px" alt="Faros media">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="list_img" class="custom-file-input" id="list_img">
@@ -69,7 +69,7 @@
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
                         <label for="img">Изображение на детальной странице</label>
-                        <img src="{{$post->img}}" width="100px" alt="Faros media">
+                        <img src="{{$post->img}}" title="Faros Media" width="100px" alt="Faros media">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="img" class="custom-file-input" id="img">

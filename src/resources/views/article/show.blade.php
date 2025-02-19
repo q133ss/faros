@@ -420,7 +420,7 @@
                 </div>
 
                 <picture class="authorWrap__left__banner authorWrap__left__banner_articles">
-                    <img src="{{$post->img}}" alt="{{$post->post_name}}" title="Как загубить лояльность маркетинговыми активностями">
+                    <img src="{{$post->img}}" alt="{{$post->post_name}}" title="{{$post->post_name}}">
                 </picture>
 
                 <div class="author1 blog">
@@ -562,7 +562,7 @@
                         <a href="{{route('articles.show', $rpost->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="{{$rpost->list_img}}" alt="Faros Media">
+                                    <img src="{{$rpost->list_img}}" title="Faros Media" alt="Faros Media">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">{{$rpost->list_name}}</p>

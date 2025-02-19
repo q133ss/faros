@@ -433,7 +433,7 @@
                     @if($post->logo != '')
                     <div class="pageAuthor__left">
                         <picture class="pageAuthor__left__pic pageAuthor__left__pic_logo">
-                            <img src="{{$post->logo}}" alt="Faros Media" alt="Faros media" title="">
+                            <img src="{{$post->logo}}" alt="Faros media" title="Faros Media">
                         </picture>
                     </div>
                     @endif
@@ -529,7 +529,7 @@
                         <a href="{{route('video.show', $video->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="{{$video->img}}" alt="Faros Media">
+                                    <img src="{{$video->img}}" title="Faros Media" alt="Faros Media">
                                 </picture>
 
                                 <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg" alt="Faros Media">

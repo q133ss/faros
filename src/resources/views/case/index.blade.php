@@ -11,14 +11,14 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" alt="{{$case->list_name}}" data-depth="0.6">
+                        <img src="{{$case->list_img}}" title="Faros Media" alt="{{$case->list_name}}" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
                     @if($case->logo != null)
-                        <img src="{{$case->logo}}" alt="{{$case->list_name}}">
+                        <img src="{{$case->logo}}" title="Faros Media" alt="{{$case->list_name}}">
                     @endif
                 </span>
 
@@ -40,14 +40,14 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" data-depth="0.6" alt="Faros Media">
+                        <img src="{{$case->list_img}}" title="Faros Media" data-depth="0.6" alt="Faros Media">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
                     @if($case->logo != null)
-                        <img src="{{$case->logo}}" alt="Faros media">
+                        <img src="{{$case->logo}}" title="Faros Media" alt="Faros media">
                     @endif
                 </span>
                 <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"
@@ -91,14 +91,14 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
+                        <img src="{{$case->list_img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 @if($case->logo != null)
                 <span class="miniBlock__wrap__pic">
-                        <img src="{{$case->logo}}" alt="Faros Media">
+                        <img src="{{$case->logo}}" title="Faros Media" alt="Faros Media">
                 </span>
                 @endif
                 <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"

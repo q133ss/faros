@@ -5,7 +5,7 @@
         @foreach($videos as $video)
         <div class="allVideoContainer__item " >
             <picture class="allVideoContainer__item__pic absolute-full">
-                <img src="{{$video->img}}" alt="Faros Media">
+                <img src="{{$video->img}}" title="Faros Media" alt="Faros Media">
             </picture>
 
             <div class="allVideoContainer__item__content">

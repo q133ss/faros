@@ -2,7 +2,7 @@
     <div class="newsMiniBlock _bgWhite author__newsMiniBlock material-item material-tag-6">
         <picture class="newsMiniBlock__pic">
             <a href="{{route('articles.show', $post->slug)}}">
-                <img src="{{$post->list_img}}" alt="Faros Media">
+                <img src="{{$post->list_img}}" title="Faros Media" alt="Faros Media">
             </a>
         </picture>
 

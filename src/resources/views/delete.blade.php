@@ -92,7 +92,7 @@
         >
             <div class="miniBlock__layer">
                         <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/iblock/bbc/pv46pijhkimfwmcm9fx1vbjuc1btlo9i/1124.png" data-depth="0.6">
+                                                            <img src="../upload/iblock/bbc/pv46pijhkimfwmcm9fx1vbjuc1btlo9i/1124.png" title="Faros Media" data-depth="0.6">
                                                     </span>
             </div>
 
@@ -131,13 +131,13 @@
         >
             <div class="miniBlock__layer">
                         <span class="miniBlock__layer__pic parallax">
-                                                            <img src="../upload/resize_cache/webp/iblock/7cb/gqbpzcp6rngxtklp8g0i04jvwd7rcb6o/fruitsPack_01.jpgA72B999A-EC10-48F8-B69B-4F65F34EB73DLarge-benzin-preview.webp" data-depth="0.6">
+                                                            <img src="../upload/resize_cache/webp/iblock/7cb/gqbpzcp6rngxtklp8g0i04jvwd7rcb6o/fruitsPack_01.jpgA72B999A-EC10-48F8-B69B-4F65F34EB73DLarge-benzin-preview.webp" title="Faros Media" data-depth="0.6">
                                                     </span>
             </div>
 
             <div class="miniBlock__wrap">
                         <span class="miniBlock__wrap__pic">
-                                                            <img src="../upload/iblock/822/2zmovpc9j25liy7lka0ii9f9cexl3gcu/el.webp">
+                                                            <img src="../upload/iblock/822/2zmovpc9j25liy7lka0ii9f9cexl3gcu/el.webp" title="Faros Media">
                                                     </span>
 
                 <a href="/case/case-smm-prodvizhenie-diety-pohudenie" class="miniBlock__wrap__tit _colorWhite"

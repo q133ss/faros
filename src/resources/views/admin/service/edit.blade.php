@@ -51,7 +51,7 @@
                     <div class="form-group mt-2">
                         <label for="list_img">Изображение</label>
                         <br>
-                        <img src="{{$service->img}}" width="100px" alt="Faros media">
+                        <img src="{{$service->img}}" title="Faros Media" width="100px" alt="Faros media">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="img" class="custom-file-input" id="list_img">

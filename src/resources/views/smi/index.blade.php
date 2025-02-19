@@ -393,7 +393,7 @@
                                 @if($post->logo != '')
                                 <!--noindex--><a href="{{$post->source}}" target="_blank" class="articlesDoubleBlock__content__top__logo" rel="nofollow">
                                     <picture class="articlesDoubleBlock__content__top__logo__img">
-                                        <img src="{{$post->logo}}" alt="Faros Media">
+                                        <img src="{{$post->logo}}" title="Faros Media" alt="Faros Media">
                                     </picture>
                                 </a><!--/noindex-->
                                 @endif
@@ -403,7 +403,7 @@
                         </div>
 
                         <picture class="articlesDoubleBlock__pic parallax">
-                            <img src="{{$post->img}}" data-depth="0.6" alt="Faros Media">
+                            <img src="{{$post->img}}" title="Faros Media" data-depth="0.6" alt="Faros Media">
                         </picture>
                     </div>
                 @elseif($post->type == 'yellow_bg')
@@ -413,7 +413,7 @@
                                     @if($post->logo != '')
                                     <!--noindex--><a target="_blank" href="{{$post->source}}" class="articlesDoubleBlock__content__top__logo" rel="nofollow">
                                         <picture class="articlesDoubleBlock__content__top__logo__img">
-                                            <img src="{{$post->logo}}" alt="Faros Media" data-depth="0.6">
+                                            <img src="{{$post->logo}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                                         </picture>
                                     </a><!--/noindex-->
                                     @endif
@@ -426,7 +426,7 @@
                             </div>
                             <a href="{{route('smi.show', $post->slug)}}">
                                 <picture class="articlesDoubleBlock__pic articlesDoubleBlock__pic_second">
-                                    <img src="{{$post->img}}" alt="Faros Media" data-depth="0.6">
+                                    <img src="{{$post->img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                                 </picture>
                             </a>
                         </div>
@@ -434,7 +434,7 @@
                     <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                         <a href="{{route('smi.show', $post->slug)}}">
                             <picture class="newsMiniBlock__pic">
-                                <img src="{{$post->img}}" alt="Faros Media" data-depth="0.6">
+                                <img src="{{$post->img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                             </picture>
                         </a>
 
@@ -446,7 +446,7 @@
                             @if($post->logo != '')
                             <!--noindex--><a target="_blank" href="{{$post->source}}"  class="newsMiniBlock__cont__logo" rel="nofollow">
                                 <picture class="newsMiniBlock__cont__logo__pic">
-                                    <img src="{{$post->logo}}" alt="Faros Media" data-depth="0.6">
+                                    <img src="{{$post->logo}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                                 </picture>
                             </a><!--/noindex-->
                             @endif

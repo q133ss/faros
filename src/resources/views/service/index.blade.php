@@ -37,11 +37,11 @@
 
             <div class="miniBlock__layer miniBlock__layer_first parallax">
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_first" data-depth="0.6">
-                    <img src="{{$service->img}}" alt="Услуги">
+                    <img src="{{$service->img}}" title="Faros Media" alt="Услуги">
                 </picture>
 
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_mob">
-                    <img src="{{$service->img}}" alt="Услуги">
+                    <img src="{{$service->img}}" title="Faros Media" alt="Услуги">
                 </picture>
             </div>
 

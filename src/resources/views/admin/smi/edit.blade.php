@@ -60,7 +60,7 @@
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
                         <label for="logo">Логотип</label>
-                        <img src="{{$post->logo}}" width="100px" alt="Faros media">
+                        <img src="{{$post->logo}}" title="Faros Media" width="100px" alt="Faros media">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="logo" class="custom-file-input" id="logo">
@@ -71,7 +71,7 @@
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
                         <label for="img">Изображение</label>
-                        <img src="{{$post->img}}" width="100px" alt="Faros media">
+                        <img src="{{$post->img}}" title="Faros Media" width="100px" alt="Faros media">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="img" class="custom-file-input" id="img">

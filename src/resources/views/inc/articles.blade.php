@@ -4,7 +4,7 @@
         @foreach(\App\Models\Article::take(7)->get() as $post)
         <div class="articlesVidget__body__item">
             <picture class="articlesVidget__body__item__pic">
-                <img src="{{$post->list_img}}" alt="{{$post->list_name}}">
+                <img src="{{$post->list_img}}" title="{{$post->list_name}}" alt="{{$post->list_name}}">
             </picture>
 
             <div class="articlesVidget__body__item__data">

@@ -5,14 +5,14 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
+                        <img src="{{$case->list_img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
                     @if($case->logo != null)
-                        <img src="{{$case->logo}}" alt="Faros Media">
+                        <img src="{{$case->logo}}" title="Faros Media" alt="Faros Media">
                     @endif
                 </span>
 
@@ -34,14 +34,14 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
+                        <img src="{{$case->list_img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
                     @if($case->logo != null)
-                        <img src="{{$case->logo}}" alt="Faros Media">
+                        <img src="{{$case->logo}}" title="Faros Media" alt="Faros Media">
                     @endif
                 </span>
                 <a href="{{route('case.show', $case->slug)}}" style="color: {{$case->text_color}}!important;" class="miniBlock__wrap__tit _colorWhite"

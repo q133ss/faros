@@ -28,7 +28,7 @@
                 <div class="user">
                     <div class="user__data">
                         <picture class="user__data__pic">
-                            <img src="{{$author->img}}" alt="Faros Media">
+                            <img src="{{$author->img}}" title="Faros Media" alt="Faros Media">
                         </picture>
 
                         <div class="user__data__info">
@@ -204,7 +204,7 @@
                 <div class="newsMiniBlock _bgWhite author__newsMiniBlock material-item material-tag-6">
                     <picture class="newsMiniBlock__pic">
                         <a href="{{route('articles.show', $post->slug)}}">
-                            <img src="{{$post->list_img}}" alt="Faros Media">
+                            <img src="{{$post->list_img}}" title="Faros Media" alt="Faros Media">
                         </a>
                     </picture>
 
@@ -246,7 +246,7 @@
                     <div class="authVidget__body__item">
                         <picture class="authVidget__body__item__pic">
                             <a href="{{route('team.show', $author->slug)}}">
-                                <img src="{{$author->img}}" alt="Faros Media">
+                                <img src="{{$author->img}}" title="Faros Media" alt="Faros Media">
                             </a>
                         </picture>
 

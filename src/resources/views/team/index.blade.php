@@ -28,7 +28,7 @@
             </picture>
             @endif
             <picture class="team__item__pic">
-                <img src="{{$team->img}}" alt="Faros Media">
+                <img src="{{$team->img}}" title="Faros Media" alt="Faros Media">
             </picture>
 
             <div class="team__item__data">

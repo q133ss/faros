@@ -39,7 +39,7 @@
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
                         <label for="logo">Фото</label>
-                        <img src="{{$video->img}}" width="100px" alt="Faros media">
+                        <img src="{{$video->img}}" title="Faros Media" width="100px" alt="Faros media">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="img" class="custom-file-input" id="logo">

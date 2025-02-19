@@ -10,12 +10,12 @@
             <a href="#orderservice" type="submit" class="button ormButton">ЗАКАЗАТЬ УСЛУГУ</a>
 
             <picture class="ormBanner__left__pic">
-                <img src="{{$service->img}}" alt="Faros Media">
+                <img src="{{$service->img}}" title="Faros Media" alt="Faros Media">
             </picture>
         </div>
 
         <picture class="ormBanner__right">
-            <img src="{{$service->img}}" alt="Faros Media">
+            <img src="{{$service->img}}"  title="Faros Media" alt="Faros Media">
         </picture>
     </div>
 

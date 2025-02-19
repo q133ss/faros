@@ -84,7 +84,7 @@
         </div>
         <div class="fullHeightMinWidth__bottom">
             <picture class="fullHeightMinWidth__bottom__bg">
-                <img src="{{$lastCase->list_img}}" alt="Faros media">
+                <img src="{{$lastCase->list_img}}" title="Faros Media" alt="Faros media">
             </picture>
             <div class="fullHeightMinWidth__bottom__content">
                 <p class="fullHeightMinWidth__bottom__content__status">НОВЫЙ КЕЙС</p>
@@ -558,14 +558,14 @@
                 >
                     <div class="miniBlock__layer">
                         <picture class="miniBlock__layer__pic parallax">
-                            <img src="{{$case->list_img}}" alt="Faros Media" data-depth="0.6">
+                            <img src="{{$case->list_img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
                         </picture>
                     </div>
 
                     <div class="miniBlock__wrap">
                         @if($case->logo != null)
                         <picture class="miniBlock__wrap__pic">
-                            <img src="{{$case->logo}}" alt="Faros Media">
+                            <img src="{{$case->logo}}" title="Faros Media" alt="Faros Media">
                         </picture>
                         @endif
 
@@ -589,7 +589,7 @@
                 >
                     <div class="miniBlock__layer">
                         <picture class="miniBlock__layer__pic parallax">
-                            <img src="{{$case->list_img}}" data-depth="0.6" alt="Faros Media">
+                            <img src="{{$case->list_img}}" title="Faros Media" data-depth="0.6" alt="Faros Media">
                         </picture>
                     </div>
 
@@ -597,7 +597,7 @@
 
                         @if($case->logo != null)
                             <picture class="miniBlock__wrap__pic">
-                                <img src="{{$case->logo}}" alt="Faros Media">
+                                <img src="{{$case->logo}}" title="Faros Media" alt="Faros Media">
                             </picture>
                         @endif
 
@@ -726,7 +726,7 @@
             <div class="newsMiniBlock _bgWhite material-item">
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', $article->slug)}}">
-                        <img src="{{$article->list_img}}" alt="Faros Media">
+                        <img src="{{$article->list_img}}" title="Faros Media" alt="Faros Media">
                     </a>
                 </picture>
 
