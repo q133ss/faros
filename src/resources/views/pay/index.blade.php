@@ -3,14 +3,14 @@
 @section('content')
     <div class="pay _bgBlack6 _first">
         <div class="pay__logoBlock">
-            <a href="../index.html" class="pay__logoBlock__logoWrap">
-                <img src="../images/min/logourl.svg" alt="" class="pay__logoBlock__logoWrap__ico"/>
+            <a href="{{route('index')}}" class="pay__logoBlock__logoWrap">
+                <img src="../images/min/logourl.svg" alt="Faros media" class="pay__logoBlock__logoWrap__ico"/>
             </a>
 
-            <img src="../images/min/icons/closegray.svg" alt="" class="pay__logoBlock__close"/>
+            <img src="../images/min/icons/closegray.svg" alt="Faros media" class="pay__logoBlock__close"/>
 
-            <a href="../index.html" class="pay__logoBlock__logoWrap">
-                <img src="../images/min/pay/tinkov.svg" alt="" class="pay__logoBlock__logoWrap__tinkov"/>
+            <a href="{{route('index')}}" class="pay__logoBlock__logoWrap">
+                <img src="../images/min/pay/tinkov.svg" alt="Faros media" class="pay__logoBlock__logoWrap__tinkov"/>
             </a>
         </div>
         <h1 class="pay__title _colorWhite"><span class="_colorYellow">Faros.Media</span> - команда
@@ -42,7 +42,7 @@
 
         <div class="grow-full"></div>
 
-        <form action="index.html#" class="formBlock">
+        <form action="#" class="formBlock">
             <div class="formBlock__top">
                 <div class="formBlock__top__wrap">
                     <input type="text" class="formBlock__input" placeholder="Введите сумму платежа"

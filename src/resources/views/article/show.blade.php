@@ -100,11 +100,6 @@
     }
 </style>
 <div class="preloader" id="preloader">
-    <!-- <div class="preloader__wrap">
-        <img src="/images/min/preloader.svg" alt="" class="preloader__img">
-        <img src="/images/min/grid.svg" alt="" class="preloader__grid">
-    </div> -->
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
             .st0 {
@@ -373,7 +368,7 @@
             <div class="authorWrap__left">
                 <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="/" title="Главная" itemprop="item">
+                        <a href="{{route('index')}}" title="Главная" itemprop="item">
                             <span itemprop="name">Главная</span>
                             <meta itemprop="position" content="0">
                         </a>
@@ -408,17 +403,17 @@
 
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
-                        <img src="/images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/calendar_gray.svg" alt="Faros Media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$post->created_at?->format('d.m.Y')}}</p>
                     </div>
 
                     <div class="sinpleHeader__data__item">
-                        <img src="/images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/eye_gray.svg" alt="Faros Media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$post->views}} просмотров</p>
                     </div>
                     <div class="sinpleHeader__data__item sinpleHeader__data__item_headerTags">
                         @foreach($post->tags as $tag)
-                        <a href="{{route('articles.index')}}?tag={{$tag->id}}"
+                        <a href="{{route('articles.index')}}"
                            class="sinpleHeader__data__item__tag">#{{$tag->name}}</a>
                         @endforeach
                     </div>
@@ -435,7 +430,7 @@
 
                     <div class="author1__partName author1__partName_contents">
                         <div class="author1__partName_contents__button" id="contentButton">
-                            <img src="/images/min/icons/slickprev.svg" alt=""
+                            <img src="/images/min/icons/slickprev.svg" alt="Faros Media"
                                  class="author1__partName_contents__button__arrow">
                             <span>Содержание статьи</span>
                         </div>
@@ -487,7 +482,7 @@
 
                         <div class="subscribeWrap">
                             <button class="subscribe" type="button" id="toggleSoc">
-                                <img src="/images/min/icons/shareblog.svg" alt="" class="subscribe__ico">
+                                <img src="/images/min/icons/shareblog.svg" alt="Faros Media" class="subscribe__ico">
                                 <span class="subscribe__text">Поделиться статьей</span>
                             </button>
 
@@ -675,7 +670,7 @@
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../"><meta itemprop="name" content="Материалы"></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../"><meta itemprop="name" content="МАРКЕТИНГ"></a><meta itemprop="position" content="3"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Article" style="display:none"><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://faros.media/articles/kak-zagubit-loyalnost-marketingovymi-aktivnostyami/"><meta itemprop="headline" content="Как загубить лояльность маркетинговыми активностями"><div itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="32"></div><div itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><link itemprop="url" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><meta itemprop="width" content="1920px"><meta itemprop="height" content="1440px"></div><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/images/min/logourl.svg"><link itemprop="url" href="https://faros.media/images/min/logourl.svg"><meta itemprop="width" content="px"><meta itemprop="height" content="px"></div><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="name" content="репутационное агентство Фарос.Медиа"></div><meta itemprop="datePublished" content="2021-10-20T10:55:19+03:00"><meta itemprop="dateModified" content="2023-08-21T14:16:30+03:00"><meta itemprop="description" content="Как загубить лояльность маркетинговыми активностями "></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../"><meta itemprop="name" content="Материалы"></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../"><meta itemprop="name" content="МАРКЕТИНГ"></a><meta itemprop="position" content="3"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Article" style="display:none"><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://faros.media/articles/kak-zagubit-loyalnost-marketingovymi-aktivnostyami/"><meta itemprop="headline" content="Как загубить лояльность маркетинговыми активностями"><div itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="32"></div><div itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><link itemprop="url" href="https://faros.media/upload/iblock/043/80k2o2kijoqou5jqac1h2a9w6dd5yvd7/webpc-passthru.webp"><meta itemprop="width" content="1920px"><meta itemprop="height" content="1440px"></div><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl" href="https://faros.media/images/min/logourl.svg"><link itemprop="url" href="https://faros.media/images/min/logourl.svg"><meta itemprop="width" content="px"><meta itemprop="height" content="px"></div><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="name" content="репутационное агентство Фарос.Медиа"></div><meta itemprop="datePublished" content="2021-10-20T10:55:19+03:00"><meta itemprop="dateModified" content="2023-08-21T14:16:30+03:00"><meta itemprop="description" content="Как загубить лояльность маркетинговыми активностями "></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

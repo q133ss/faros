@@ -100,10 +100,6 @@
     }
 </style>
 <div class="preloader" id="preloader">
-    <!-- <div class="preloader__wrap">
-        <img src="/images/min/preloader.svg" alt="" class="preloader__img">
-        <img src="/images/min/grid.svg" alt="" class="preloader__grid">
-    </div> -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
@@ -400,7 +396,7 @@
                 <button class="horizMenu__filter" type="button">
                     <span class="horizMenu__filter__text">Теги</span>
                     <span class="horizMenu__filter__quant">0</span>
-                    <img src="../images/min/icons/arroworange.svg" alt="" class="horizMenu__filter__arrow">
+                    <img src="../images/min/icons/arroworange.svg" alt="Faros Media" class="horizMenu__filter__arrow">
                 </button>
 
                 <select class="selectWrap__sel articleTags" id="authSel" multiple="multiple">
@@ -413,14 +409,14 @@
             </div>
 
             <div class="horizMenu__filter horizMenu__filter_mw">
-                <img src="../images/min/icons/top_bottom.svg" alt=""
+                <img src="../images/min/icons/top_bottom.svg" alt="Faros Media"
                      class="horizMenu__filter__sort horizMenu__filter__sort_abs">
                 <select class="selectWrap__sel article-sort-select" id="sortSel">
                     <option value="new">Новые</option>
                     <option value="old">Старые</option>
                     <option value="popular">По популярности</option>
                 </select>
-                <img src="../images/min/icons/arroworange.svg" alt=""
+                <img src="../images/min/icons/arroworange.svg" alt="Faros Media"
                      class="horizMenu__filter__arrow horizMenu__filter__arrow_abs">
             </div>
         </div>
@@ -432,7 +428,7 @@
 
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', $post->slug)}}">
-                        <img src="{{$post->list_img}}" alt="" title="">
+                        <img src="{{$post->list_img}}" alt="Faros Media" title="">
                     </a>
                 </picture>
 
@@ -507,7 +503,7 @@
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('articles.index')}}"><meta itemprop="name" content="Материалы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('articles.index')}}"><meta itemprop="name" content="Материалы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

@@ -100,10 +100,6 @@
     }
 </style>
 <div class="preloader" id="preloader">
-    <!-- <div class="preloader__wrap">
-        <img src="/images/min/preloader.svg" alt="" class="preloader__img">
-        <img src="/images/min/grid.svg" alt="" class="preloader__grid">
-    </div> -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
@@ -373,7 +369,7 @@
             <div class="authorWrap__left videoPage">
                 <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="/" title="Главная" itemprop="item">
+                        <a href="{{route('index')}}" title="Главная" itemprop="item">
                             <span itemprop="name">Главная</span>
                             <meta itemprop="position" content="0">
                         </a>
@@ -394,7 +390,7 @@
                 </ul>
                 <div class="sinpleHeader">
                     <div class="sinpleHeader__bread">
-                        <a href="/" class="sinpleHeader__bread__tag">ВИДЕО</a>
+                        <a href="{{route('index')}}" class="sinpleHeader__bread__tag">ВИДЕО</a>
                     </div>
                 </div>
 
@@ -402,12 +398,12 @@
 
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
-                        <img src="/images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/calendar_gray.svg" alt="Faros media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$video->created_at?->format('d.m.Y')}}</p>
                     </div>
 
                     <div class="sinpleHeader__data__item">
-                        <img src="/images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/eye_gray.svg" alt="Faros media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$video->views_count}} просмотров</p>
                     </div>
                 </div>
@@ -420,76 +416,17 @@
                     <p class="simpleSliderWrap__tit">Похожие видео</p>
 
                     <div class="simpleSlider" id="simpleSlider">
-                        <a href="/" class="simpleSlider__slide">
+                        @foreach(\App\Models\Video::where('id', '!=', $video->id)->limit(6)->get() as $relation)
+                        <a href="{{route('video.show', $relation->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/0f9/9e3g0sysnln96cw33ar4cwbbr3m5tw6j/cover-03.jpg">
+                                    <img src="{{$relation->img}}">
                                 </picture>
-
                                 <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
                             </div>
-                            <p class="simpleSlider__slide__text">Екатерина Тулянкина и Елена Кириленко в программе 3600 секунд на Mediametrics</p>
+                            <p class="simpleSlider__slide__text">{{$relation->title}}</p>
                         </a>
-                        <a href="/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/64a/e5e26l5bt47r3pdh8bnk4d9yw3luqzz7/cover-01.jpg">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">Екатерина Тулянкина с обучающей лекцией «обзоры методов продвижения в соцсетях»</p>
-                        </a>
-                        <a href="/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/1c3/aqiql18nrpkud1ez0e1odcrhsqlammk0/cover-02.jpg">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">SMM для букмекерских контор // Faros.media</p>
-                        </a>
-                        <a href="/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/e82/j213984p5acaggc38q3842vggrca1c5e/cover-04.jpg">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">«Нейросети и отзывы», — Екатерина Тулянкина в программе «доброе утро» на первом канале</p>
-                        </a>
-                        <a href="/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">Анна Тимофеева рассказала о том, можно ли зарабатывать на мемах</p>
-                        </a>
-                        <a href="/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/a84/ka14y8m33zt8stx312cq1e8qj9qklu0e/Screenshot_46.webp">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">Екатерина Тулянкина : Активации в соцсетях</p>
-                        </a>
-                        <a href="/" class="simpleSlider__slide">
-                            <div class="simpleSlider__slide__picWrap">
-                                <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="/upload/iblock/d12/qldczkjpkz2g01orkhbkhoy3a1plqtsz/webpc-passthru.webp">
-                                </picture>
-
-                                <img class="simpleSlider__slide__picWrap__play" src="/images/min/icons/play.svg">
-                            </div>
-                            <p class="simpleSlider__slide__text">БИЗНЕС ИНСАЙТ: Елена Медведева. Управление восприятием: продажи по любви</p>
-                        </a>
-
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -506,7 +443,7 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="index.html" width="100%" class="pdf-popap__embed"  />
+            <embed src="/" width="100%" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>
@@ -520,7 +457,7 @@
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/index.html"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

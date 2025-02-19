@@ -6,7 +6,7 @@
         <div class="fullHeightBigWidth fullHeightBigWidth__allservices">
             <picture class="fullHeightBigWidth__bg absolute-full">
                 <source type="image/webp" srcset="/images/min/allservices/firstBG.webp">
-                <img src="../images/min/allservices/firstBG.png">
+                <img src="../images/min/allservices/firstBG.png" alt="Услуги">
             </picture>
 
             <div class="fullHeightBigWidth__wrap">
@@ -16,7 +16,7 @@
                     личный
                     бизнес-консультант</p>
                 <div class="fullHeightBigWidth__wrap__control">
-                    <a href="/#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
+                    <a href="{{route('index')}}#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
                 </div>
 
                 <div class="fullHeightBigWidth__wrap__afterGrow"></div>
@@ -37,17 +37,19 @@
 
             <div class="miniBlock__layer miniBlock__layer_first parallax">
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_first" data-depth="0.6">
-                    <img src="{{$service->img}}">
+                    <img src="{{$service->img}}" alt="Услуги">
                 </picture>
 
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_mob">
-                    <img src="{{$service->img}}">
+                    <img src="{{$service->img}}" alt="Услуги">
                 </picture>
             </div>
 
             <button class="allServiceMiniBlocks__mobButton" type="button">
                 <img src="../images/min/icons/awworWhiteBGOrange.svg"
-                     class="allServiceMiniBlocks__mobButton__ico">
+                     class="allServiceMiniBlocks__mobButton__ico"
+                     alt="Услуги"
+                >
             </button>
         </a>
         @endforeach
@@ -118,10 +120,10 @@
         </div>
     </div>
     <div class="fullHeightMinWidth fullHeightMinWidth_thanks" style="display: none;">
-        <img src="../images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img">
+        <img src="../images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img" alt="Услуги">
         <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
         <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
-        <a href="../case/" class="button">НАШИ КЕЙСЫ</a>
+        <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
     </div>
     <!--full height, form END-->
 

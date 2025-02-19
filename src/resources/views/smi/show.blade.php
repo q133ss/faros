@@ -101,8 +101,8 @@
 </style>
 <div class="preloader" id="preloader">
     <!-- <div class="preloader__wrap">
-        <img src="/images/min/preloader.svg" alt="" class="preloader__img">
-        <img src="/images/min/grid.svg" alt="" class="preloader__grid">
+        <img src="/images/min/preloader.svg" alt="Faros media" class="preloader__img">
+        <img src="/images/min/grid.svg" alt="Faros media" class="preloader__grid">
     </div> -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
@@ -374,7 +374,7 @@
             <div class="authorWrap__left">
                 <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="/" title="Главная" itemprop="item">
+                        <a href="{{route('index')}}" title="Главная" itemprop="item">
                             <span itemprop="name">Главная</span>
                             <meta itemprop="position" content="0">
                         </a>
@@ -395,7 +395,7 @@
                 <div class="sinpleHeaderTitle sticker">
                     <div class="sinpleHeader">
                         <div class="sinpleHeader__bread">
-                            <a href="index.html#" class="sinpleHeader__bread__tag">РЕПУТАЦИЯ</a>
+                            <a href="{{route('smi.show', $post->slug)}}" class="sinpleHeader__bread__tag">РЕПУТАЦИЯ</a>
                         </div>
                     </div>
 
@@ -404,12 +404,12 @@
                 </div>
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
-                        <img src="/images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/calendar_gray.svg" alt="Faros media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$post->created_at->format('d.m.Y')}}</p>
                     </div>
 
                     <div class="sinpleHeader__data__item">
-                        <img src="/images/min/icons/eye_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="/images/min/icons/eye_gray.svg" alt="Faros media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$post->views}} просмотр(ов)</p>
                     </div>
                 </div>
@@ -433,7 +433,7 @@
                     @if($post->logo != '')
                     <div class="pageAuthor__left">
                         <picture class="pageAuthor__left__pic pageAuthor__left__pic_logo">
-                            <img src="{{$post->logo}}" alt="" title="">
+                            <img src="{{$post->logo}}" alt="Faros media" title="">
                         </picture>
                     </div>
                     @endif
@@ -464,12 +464,12 @@
 
                         <div class="subscribeWrap">
                             <button class="subscribe" type="button" id="toggleSoc">
-                                <img src="/images/min/icons/subscribe.svg" alt="" class="subscribe__ico">
+                                <img src="/images/min/icons/subscribe.svg" alt="Faros media" class="subscribe__ico">
                                 <span class="subscribe__text">Подписаться</span>
                             </button>
 
                             <div class="subscribeWrap__soc" id="social">
-                                <a href="index.html#" class="subscribeWrap__soc__link">
+                                <a href="https://vk.com/faros.media" class="subscribeWrap__soc__link">
                                     <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0)">
                                             <path d="M14.9363 9.771C14.6453 9.4035 14.7285 9.24 14.9363 8.9115C14.94 8.90775 17.3422 5.58825 17.5897 4.4625L17.5912 4.46175C17.7143 4.0515 17.5913 3.75 16.9965 3.75H15.0285C14.5275 3.75 14.2965 4.00875 14.1727 4.29825C14.1727 4.29825 13.1707 6.69675 11.7533 8.2515C11.2957 8.70075 11.0843 8.84475 10.8345 8.84475C10.7115 8.84475 10.5203 8.70075 10.5203 8.2905V4.46175C10.5203 3.96975 10.38 3.75 9.96525 3.75H6.87075C6.5565 3.75 6.36975 3.9795 6.36975 4.19325C6.36975 4.65975 7.0785 4.767 7.152 6.0795V8.92725C7.152 9.55125 7.03875 9.666 6.7875 9.666C6.1185 9.666 4.49475 7.25775 3.5325 4.5015C3.33825 3.96675 3.1485 3.75075 2.64375 3.75075H0.675C0.11325 3.75075 0 4.0095 0 4.299C0 4.8105 0.669 7.35375 3.111 10.7138C4.7385 13.0073 7.0305 14.25 9.1155 14.25C10.3688 14.25 10.5218 13.974 10.5218 13.4993C10.5218 11.3078 10.4085 11.1008 11.0363 11.1008C11.3273 11.1008 11.8282 11.2448 12.9982 12.351C14.3355 13.6628 14.5553 14.25 15.3038 14.25H17.2717C17.8328 14.25 18.117 13.974 17.9535 13.4295C17.5793 12.2843 15.0503 9.9285 14.9363 9.771Z"
@@ -482,13 +482,13 @@
                                         </defs>
                                     </svg>
                                 </a>
-                                <a href="index.html#" class="subscribeWrap__soc__link">
+                                <a href="https://www.facebook.com/Faros.Media" class="subscribeWrap__soc__link">
                                     <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.3936 18V9.78996H13.1482L13.5615 6.58941H10.3936V4.54632C10.3936 3.61998 10.6498 2.98869 11.9796 2.98869L13.673 2.98799V0.125307C13.3802 0.0872508 12.3749 0 11.2049 0C8.76181 0 7.08919 1.49127 7.08919 4.22934V6.58941H4.32617V9.78996H7.08919V18H10.3936Z"
                                               fill="white"/>
                                     </svg>
                                 </a>
-                                <a href="index.html#" class="subscribeWrap__soc__link">
+                                <a href="https://x.com" class="subscribeWrap__soc__link">
                                     <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0)">
                                             <path d="M18 3.41887C17.3306 3.7125 16.6174 3.90712 15.8737 4.00162C16.6388 3.54487 17.2226 2.82712 17.4971 1.962C16.7839 2.38725 15.9964 2.68763 15.1571 2.85525C14.4799 2.13413 13.5146 1.6875 12.4616 1.6875C10.4186 1.6875 8.77387 3.34575 8.77387 5.37863C8.77387 5.67113 8.79862 5.95237 8.85938 6.22012C5.7915 6.0705 3.07687 4.60013 1.25325 2.36025C0.934875 2.91263 0.748125 3.54488 0.748125 4.2255C0.748125 5.5035 1.40625 6.63637 2.38725 7.29225C1.79437 7.281 1.21275 7.10888 0.72 6.83775C0.72 6.849 0.72 6.86363 0.72 6.87825C0.72 8.6715 1.99912 10.161 3.6765 10.5041C3.37612 10.5863 3.04875 10.6256 2.709 10.6256C2.47275 10.6256 2.23425 10.6121 2.01038 10.5626C2.4885 12.024 3.84525 13.0984 5.4585 13.1332C4.203 14.1154 2.60888 14.7071 0.883125 14.7071C0.5805 14.7071 0.29025 14.6936 0 14.6565C1.63462 15.7106 3.57188 16.3125 5.661 16.3125C12.4515 16.3125 16.164 10.6875 16.164 5.81175C16.164 5.64862 16.1584 5.49113 16.1505 5.33475C16.8829 4.815 17.4982 4.16587 18 3.41887Z"
@@ -501,7 +501,7 @@
                                         </defs>
                                     </svg>
                                 </a>
-                                <a href="index.html#" class="subscribeWrap__soc__link">
+                                <a href="https://telegram.org" class="subscribeWrap__soc__link">
                                     <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0)">
                                             <path d="M7.06288 11.3861L6.76513 15.5741C7.19113 15.5741 7.37563 15.3911 7.59688 15.1713L9.59413 13.2626L13.7326 16.2933C14.4916 16.7163 15.0264 16.4936 15.2311 15.5951L17.9476 2.86605L17.9484 2.8653C18.1891 1.7433 17.5426 1.30455 16.8031 1.5798L0.835633 7.69306C-0.254117 8.11606 -0.237617 8.72356 0.650383 8.99881L4.73263 10.2686L14.2149 4.3353C14.6611 4.0398 15.0669 4.2033 14.7331 4.4988L7.06288 11.3861Z"
@@ -552,7 +552,7 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="index.html" width="100%" class="pdf-popap__embed"  />
+            <embed src="/" width="100%" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>
@@ -566,7 +566,7 @@
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

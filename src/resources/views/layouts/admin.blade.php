@@ -88,7 +88,7 @@
         <!--begin::Sidebar Brand-->
         <div class="sidebar-brand">
             <!--begin::Brand Link-->
-            <a href="/" class="brand-link">
+            <a href="{{route('index')}}" class="brand-link">
                 <!--begin::Brand Text-->
                 <span class="brand-text fw-light">FarosMedia</span>
                 <!--end::Brand Text-->

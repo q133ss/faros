@@ -80,7 +80,7 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
         trackHash:true
     });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/47553889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+{{--<noscript><div><img src="https://mc.yandex.ru/watch/47553889" style="position:absolute; left:-9999px;" alt="Faros media" /></div></noscript>--}}
 <!-- /Yandex.Metrika counter -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -11,14 +11,14 @@
         >
             <div class="miniBlock__layer">
                 <span class="miniBlock__layer__pic parallax">
-                        <img src="{{$case->list_img}}" data-depth="0.6">
+                        <img src="{{$case->list_img}}" alt="{{$case->list_name}}" data-depth="0.6">
                 </span>
             </div>
 
             <div class="miniBlock__wrap">
                 <span class="miniBlock__wrap__pic">
                     @if($case->logo != null)
-                        <img src="{{$case->logo}}">
+                        <img src="{{$case->logo}}" alt="{{$case->list_name}}">
                     @endif
                 </span>
 
@@ -26,7 +26,7 @@
                 >{{$case->list_name}}</a>
                 <div class="miniBlock__wrap__hashWrap">
                     @foreach($case->tags as $tag)
-                    <a href="?tag={{$tag->id}}"
+                    <a href="#"
                        class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #b9b9b9"
                     >#{{$tag->name}}</a>
@@ -54,7 +54,7 @@
                 >{{$case->list_name}}</a>
                 <div class="miniBlock__wrap__hashWrap">
                     @foreach($case->tags as $tag)
-                    <a href="?tag={{$tag->id}}"
+                    <a href="#"
                        class="miniBlock__wrap__hashWrap__link _colorSky"
                        style="color: #7494b9"
                     >#{{$tag->name}}</a>
@@ -106,7 +106,7 @@
 
                 <div class="miniBlock__wrap__hashWrap">
                     @foreach($case->tags as $tag)
-                        <a href="?tag={{$tag->id}}"
+                        <a href="#"
                            class="miniBlock__wrap__hashWrap__link _colorSky"
                            style="color: #7494b9"
                         >#{{$tag->name}}</a>
@@ -186,7 +186,7 @@
         <img src="../images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img">
         <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
         <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
-        <a href="index.html" class="button">НАШИ КЕЙСЫ</a>
+        <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
     </div>
     <!--full height, form END-->
 
@@ -220,9 +220,9 @@
 
             <div class="contacts__data__links">
                 <div class="contacts__data__links__nav">
-                    <a href="../team/index.html" class="contacts__data__links__nav__link">Команда</a>
-                    <a href="../service/index.html" class="contacts__data__links__nav__link">Услуги</a>
-                    <a href="index.html" class="contacts__data__links__nav__link">Кейсы</a>
+                    <a href="{{route('team.index')}}" class="contacts__data__links__nav__link">Команда</a>
+                    <a href="{{route('service.index')}}" class="contacts__data__links__nav__link">Услуги</a>
+                    <a href="{{route('case.index')}}" class="contacts__data__links__nav__link">Кейсы</a>
                 </div>
 
                 <div class="contacts__data__links__soc">

@@ -20,7 +20,7 @@
                 >{{$case->list_name}}</a>
                 <div class="miniBlock__wrap__hashWrap">
                     @foreach($case->tags as $tag)
-                        <a href="?tag={{$tag->id}}"
+                        <a href="{{route('case.index')}}"
                            class="miniBlock__wrap__hashWrap__link _colorSky"
                            style="color: #b9b9b9"
                         >#{{$tag->name}}</a>
@@ -48,7 +48,7 @@
                 >{{$case->list_name}}</a>
                 <div class="miniBlock__wrap__hashWrap">
                     @foreach($case->tags as $tag)
-                        <a href="?tag={{$tag->id}}"
+                        <a href="{{route('case.index')}}"
                            class="miniBlock__wrap__hashWrap__link _colorSky"
                            style="color: #7494b9"
                         >#{{$tag->name}}</a>

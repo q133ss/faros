@@ -4,7 +4,7 @@
         @foreach(\App\Models\Article::take(7)->get() as $post)
         <div class="articlesVidget__body__item">
             <picture class="articlesVidget__body__item__pic">
-                <img src="{{$post->list_img}}">
+                <img src="{{$post->list_img}}" alt="{{$post->list_name}}">
             </picture>
 
             <div class="articlesVidget__body__item__data">
@@ -18,6 +18,6 @@
     </div>
     <a href="{{route('articles.index')}}" class="arrow-link vidgets__arrow-link">
         <span class="arrow-link__text">Все статьи</span>
-        <img src="/images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
+        <img src="/images/min/icons/yellowarrow.svg" alt="Faros media" class="arrow-link__arrow">
     </a>
 </div>

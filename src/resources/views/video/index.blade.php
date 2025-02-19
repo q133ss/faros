@@ -91,7 +91,7 @@
         <img src="../images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img">
         <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
         <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
-        <a href="../case/index.html" class="button">НАШИ КЕЙСЫ</a>
+        <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
     </div>
     <!--full height, form END-->
 
@@ -125,9 +125,9 @@
 
             <div class="contacts__data__links">
                 <div class="contacts__data__links__nav">
-                    <a href="../team/index.html" class="contacts__data__links__nav__link">Команда</a>
-                    <a href="../service/index.html" class="contacts__data__links__nav__link">Услуги</a>
-                    <a href="../case/index.html" class="contacts__data__links__nav__link">Кейсы</a>
+                    <a href="{{route('team.index')}}" class="contacts__data__links__nav__link">Команда</a>
+                    <a href="{{route('service.index')}}" class="contacts__data__links__nav__link">Услуги</a>
+                    <a href="{{route('case.index')}}" class="contacts__data__links__nav__link">Кейсы</a>
                 </div>
 
                 <div class="contacts__data__links__soc">

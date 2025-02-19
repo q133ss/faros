@@ -2,7 +2,7 @@
 @section('title', 'Агентство Faros.Media - управление репутацией и восприятием с 2016 года')
 @section('content')
     <!--Full height, big width START-->     <div class="fullHeightBigWidth _first">
-        <img src="images/min/home/firstScrBg.svg" alt="" class="fullHeightBigWidth__bg-first">
+        <img src="images/min/home/firstScrBg.svg" alt="Faros Media" class="fullHeightBigWidth__bg-first">
 
         <div class="fullHeightBigWidth__wrap">
             <div class="fullHeightBigWidth__wrap__beforeGrow"></div>
@@ -16,10 +16,10 @@
                 <span style="color: #000000;">(Чарьлз Калеб Колтон о репутации)</span><br>
                 <br></p>
             <div class="fullHeightBigWidth__wrap__control">
-                <a href="/#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
+                <a href="{{route('index')}}#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
                 <a href="{{route('service.index')}}" class="arrow-link">
                     <span class="arrow-link__text">Все услуги</span>
-                    <img src="images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
+                    <img src="images/min/icons/yellowarrow.svg" alt="Faros Media" class="arrow-link__arrow">
                 </a>
             </div>
 
@@ -44,7 +44,7 @@
                 </div>
                 <div class="fullHeightBigWidth__awardsB__item">
                     <div class="fullHeightBigWidth__awardsB__item__img">
-                        <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico">
+                        <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" alt="Faros Media" class="fullHeightMinWidthAwards__awards__item__ico">
                     </div>
 
                     <div class="fullHeightBigWidth__awardsB__item__cont">
@@ -67,18 +67,18 @@
     <div class="fullHeightMinWidth">
         <div class="fullHeightMinWidth__top">
             <div class="fullHeightMinWidth__top__comp">
-                <img src="/images/min/home/gerb.svg" alt="" class="fullHeightMinWidth__top__comp__gerb">
+                <img src="/images/min/home/gerb.svg" alt="Faros Media" class="fullHeightMinWidth__top__comp__gerb">
                 <p class="fullHeightMinWidth__top__comp__amount">170</p>
-                <img src="/images/min/home/gerb.svg" alt=""
+                <img src="/images/min/home/gerb.svg" alt="Faros Media"
                      class="fullHeightMinWidth__top__comp__gerb fullHeightMinWidth__top__comp__gerb_right">
             </div>
 
             <p class="fullHeightMinWidth__top__tit">Довольных клиентов</p>
             <p class="fullHeightMinWidth__top__descr">Наш источник вдохновения – это наши клиенты. Мы помогли более 170 компаниям улучшить репутацию и увеличить обороты.</p>
 
-            <a href="team.1.html" class="arrow-link">
+            <a href="{{route('team.index')}}" class="arrow-link">
                 <span class="arrow-link__text">Наша команда</span>
-                <img src="/images/min/icons/yellowarrow.svg" alt=""
+                <img src="/images/min/icons/yellowarrow.svg" alt="Faros Media"
                      class="arrow-link__arrow fullHeightMinWidth__top__arrow">
             </a>
         </div>
@@ -92,7 +92,7 @@
 
                 <div class="fullHeightMinWidth__bottom__content__tags">
                     @foreach($lastCase->tags as $tag)
-                    <a href="{{route('case.index')}}?tag={{$tag->id}}" class="fullHeightMinWidth__bottom__content__tags__item">#{{$tag->name}}</a>
+                    <a href="{{route('case.index')}}" class="fullHeightMinWidth__bottom__content__tags__item">#{{$tag->name}}</a>
                     @endforeach
                 </div>
             </div>
@@ -102,12 +102,12 @@
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt=""
+                    <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -125,7 +125,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Благодарность за успешное и плодотворное оказание услуг по репутационному менеджменту с мая 2019 года по настоящий момент. </p>
 
                 <a href="/upload/iblock/3a1/s2pbbosj4o9zrizqtszww3a7ek624n13/drycleanFarosMedia.pdf" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -134,19 +134,19 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/гемотест лого.jpeg" alt=""
+                    <img src="/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/гемотест лого.jpeg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -164,7 +164,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Благодарим Faros.Media за оказание услуг по мониторингу, анализу и управлению репутацией бренда Гемотест в период с мая 2019 по март 2021 года. </p>
 
                 <a href="http://faros.media/upload/iblock/d6c/mrpurssa48g9sosvqfoi4ryd6qy6lpr1/faros-гемотест.pdf" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -173,23 +173,23 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt=""
+                    <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
-                <a href="/cases/55/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
-                    <img src="images/min/icons/see.svg" alt="" class="fullHeightMinWidthComents__header__seemore__ico">
+                <a href="{{route('case.index')}}" target="_blank" class="fullHeightMinWidthComents__header__seemore">
+                    <img src="images/min/icons/see.svg" alt="Faros media" class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
                 </a>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -207,7 +207,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Спасибо за реализацию сложной задачи: в кратчайшие сроки на основе недоработанного прототипа создали сайт группы компаний с отображением производственных площадок, торговых марок, взаимодействующий с конечными клиентами по форме отзывов и обратной связи. </p>
 
                 <a href="http://faros.media/upload/iblock/1f9/y2exprd80sg16t15wge8wmpfch2vejrx/faros_письмо_белый фрегат.pdf" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -216,23 +216,23 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="upload/iblock/fe5/0mgpfzzgmpms3ygie9kqw9de1b3adfho/ross.jpg" alt=""
+                    <img src="upload/iblock/fe5/0mgpfzzgmpms3ygie9kqw9de1b3adfho/ross.jpg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
-                <a href="/cases/55/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
-                    <img src="images/min/icons/see.svg" alt="" class="fullHeightMinWidthComents__header__seemore__ico">
+                <a href="{{route('case.index')}}" target="_blank" class="fullHeightMinWidthComents__header__seemore">
+                    <img src="images/min/icons/see.svg" alt="Faros media" class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
                 </a>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -250,7 +250,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Выражаем агентству Faros.Media благодарность за профессиональную поддержку нашей компании в социальных медиа и оперативное консультирование по вопросам управления репутацией.</p>
 
                 <a href="upload/iblock/e6a/3eubmd07f7nx3529n6se4m0y4xtlg0p5/ross1.jpg" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -259,23 +259,23 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="upload/iblock/f54/hrv2n63xjvz84pzxaqzijf9mt2pdpzi6/chees.png" alt=""
+                    <img src="upload/iblock/f54/hrv2n63xjvz84pzxaqzijf9mt2pdpzi6/chees.png" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
-                <a href="/cases/90/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
-                    <img src="images/min/icons/see.svg" alt="" class="fullHeightMinWidthComents__header__seemore__ico">
+                <a href="{{route('case.index')}}" target="_blank" class="fullHeightMinWidthComents__header__seemore">
+                    <img src="images/min/icons/see.svg" alt="Faros media" class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
                 </a>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -293,7 +293,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Выражаем агентству Faros.Media благодарность за профессиональную поддержку нашей компании в социальных медиа и оперативное консультирование по вопросам управления репутацией.</p>
 
                 <a href="upload/iblock/8e5/07dh2vx67n1uy84l7fc5d1eukzqdlibe/chees1.png" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -302,23 +302,23 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="upload/iblock/bd4/dw9pct9lgca27j6wfjzyuvp3oepan40j/donstroy.png" alt=""
+                    <img src="upload/iblock/bd4/dw9pct9lgca27j6wfjzyuvp3oepan40j/donstroy.png" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
-                <a href="/cases/90/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
-                    <img src="images/min/icons/see.svg" alt="" class="fullHeightMinWidthComents__header__seemore__ico">
+                <a href="{{route('case.index')}}" target="_blank" class="fullHeightMinWidthComents__header__seemore">
+                    <img src="images/min/icons/see.svg" alt="Faros media" class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
                 </a>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -336,7 +336,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Компания "СМАРТ СЕРВИС" выражает благодарность Екатерине Тулянкиной и компании Faros.Media за профессионализм и плодотворное сотрудничество в сфере управления репутацией. Наша совместная работа длится уже более двух лет, и мы надеемся на ее продолжение в дальнейшем.</p>
 
                 <a href="upload/iblock/701/xszh36rro05z2ockh5apn6yl3nxwb3rs/donstroy1.jpg" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -345,23 +345,23 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="upload/iblock/cd1/4pq2clizge31it53t8uf1b9qat4p591c/pavel.jpeg" alt=""
+                    <img src="upload/iblock/cd1/4pq2clizge31it53t8uf1b9qat4p591c/pavel.jpeg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
-                <a href="/cases/60/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
-                    <img src="images/min/icons/see.svg" alt="" class="fullHeightMinWidthComents__header__seemore__ico">
+                <a href="{{route('case.index')}}" target="_blank" class="fullHeightMinWidthComents__header__seemore">
+                    <img src="images/min/icons/see.svg" alt="Faros media" class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
                 </a>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -379,7 +379,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Студия дизайна интерьеров Павла Полынова выражает благодарность агентству Faros.Media и лично Екатерине Тулянкиной за многолетнее и плодотворное сотрудничество в сфере интернет-маркетинга и управления восприятием бренда. Рекомендуем как надежного и креативного партнера.</p>
 
                 <a href="upload/iblock/4a4/ovmhixuza7v84d5wlhhny61881y4a0yg/pavel1.jpg" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -388,23 +388,23 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="upload/iblock/72c/svbsobjrdsln4zlft2zjrzsveb7cv712/cipa.png" alt=""
+                    <img src="upload/iblock/72c/svbsobjrdsln4zlft2zjrzsveb7cv712/cipa.png" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
-                <a href="/cases/60/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
-                    <img src="images/min/icons/see.svg" alt="" class="fullHeightMinWidthComents__header__seemore__ico">
+                <a href="{{route('case.index')}}" target="_blank" class="fullHeightMinWidthComents__header__seemore">
+                    <img src="images/min/icons/see.svg" alt="Faros media" class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
                 </a>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -422,7 +422,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Выражаем благодарность всему творческому коллективу не только за качественную и оперативную работу, которая выполняется профессионально и в срок, но и за высокое чувство стиля и креативный подход к решению поставленных задач, смесь которых лишь подтверждает врожденный утонченный вкус, отшлифованный профильным образованием и опытом работы.</p>
 
                 <a href="upload/iblock/921/wq8ctpdsp33k8iy4pdnew35n2vtk5xif/cipa1.jpg" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -431,23 +431,23 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidthComents">
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="upload/iblock/6e5/prgag0odmjoqw9alrouo68v3li1xvh3q/abn.png" alt=""
+                    <img src="upload/iblock/6e5/prgag0odmjoqw9alrouo68v3li1xvh3q/abn.png" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
-                <a href="/cases/57/" target="_blank" class="fullHeightMinWidthComents__header__seemore">
-                    <img src="images/min/icons/see.svg" alt="" class="fullHeightMinWidthComents__header__seemore__ico">
+                <a href="{{route('case.index')}}" target="_blank" class="fullHeightMinWidthComents__header__seemore">
+                    <img src="images/min/icons/see.svg" alt="Faros media" class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
                 </a>
             </div>
 
-            <img src="images/min/home/say.svg" alt="" class="fullHeightMinWidthComents__topMb">
+            <img src="images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -465,7 +465,7 @@
                 <p class="fullHeightMinWidthComents__cont__text">Благодарим агентство Faros.Media (ООО "ПД") за профессиональную поддержку в области управления репутацией и продвижения услуг компании ООО «АБН-Консалт» с июня 2016-го года по настоящий момент. Желаем дальнейших успехов и процветания.</p>
 
                 <a href="upload/iblock/49f/uxi3qloefkdqq77jjrqfkf5b0iqfztrv/abn1.jpg" target="_blank" class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="images/min/icons/pdf.svg" alt="" class="fullHeightMinWidthComents__cont__pdf__ico">
+                    <img src="images/min/icons/pdf.svg" alt="Faros media" class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
                 </a>
             </div>
@@ -474,7 +474,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt=""
+                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -576,7 +576,7 @@
 
                         <div class="miniBlock__wrap__hashWrap">
                             @foreach($case->tags as $tag)
-                                <a href="{{route('case.index')}}?tag={{$tag->id}}" class="miniBlock__wrap__hashWrap__link _colorSky"
+                                <a href="{{route('case.index')}}" class="miniBlock__wrap__hashWrap__link _colorSky"
                                    style="color: #6b2421"
                                 >#{{$tag->name}}</a>
                             @endforeach
@@ -609,7 +609,7 @@
 
                         <div class="miniBlock__wrap__hashWrap">
                             @foreach($case->tags as $tag)
-                                <a href="{{route('case.index')}}?tag={{$tag->id}}" class="miniBlock__wrap__hashWrap__link _colorSky"
+                                <a href="{{route('case.index')}}" class="miniBlock__wrap__hashWrap__link _colorSky"
                                    style="color: {{$case->text_color}}"
                                 >#{{$tag->name}}</a>
                             @endforeach
@@ -714,7 +714,7 @@
 
             <a href="{{route('articles.index')}}" class="arrow-link horizMenu__arrow-link">
                 <span class="arrow-link__text">Все статьи</span>
-                <img src="images/min/icons/grayarrow.svg" alt="" class="arrow-link__arrow">
+                <img src="images/min/icons/grayarrow.svg" alt="Faros media" class="arrow-link__arrow">
             </a>
         </div>
         <!--news home menu END-->

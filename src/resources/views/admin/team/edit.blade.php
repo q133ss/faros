@@ -105,7 +105,7 @@
                     <div class="form-group mt-2">
                         <label for="logo">Фото</label>
                         <br>
-                        <img src="{{$author->img}}" width="100px" alt="">
+                        <img src="{{$author->img}}" width="100px" alt="Faros media">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input type="file" name="img" class="custom-file-input" id="logo">

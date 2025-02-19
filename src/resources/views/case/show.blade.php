@@ -100,10 +100,6 @@
     }
 </style>
 <div class="preloader" id="preloader">
-    <!-- <div class="preloader__wrap">
-        <img src="/images/min/preloader.svg" alt="" class="preloader__img">
-        <img src="/images/min/grid.svg" alt="" class="preloader__grid">
-    </div> -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">
         <style type="text/css">
@@ -374,7 +370,7 @@
             <div class="authorWrap__left">
                 <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="/" title="Главная" itemprop="item">
+                        <a href="{{route('index')}}" title="Главная" itemprop="item">
                             <span itemprop="name">Главная</span>
                             <meta itemprop="position" content="0">
                         </a>
@@ -400,12 +396,12 @@
 
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
-                        <img src="../../images/min/icons/calendar_gray.svg" alt="" class="sinpleHeader__data__item__ico">
+                        <img src="../../images/min/icons/calendar_gray.svg" alt="Faros media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$case->created_at?->format('d.m.Y')}}</p>
                     </div>
                     <div class="sinpleHeader__data__item">
                         @foreach($case->tags as $tag)
-                        <a href="{{route('case.index')}}?tag={{$tag->id}}"
+                        <a href="{{route('case.index')}}"
                            class="sinpleHeader__data__item__tag">#{{$tag->name}}</a>
                         @endforeach
                     </div>
@@ -437,7 +433,7 @@
 
                     <div class="author1__partCont author1__partCont_tags">
                         @foreach($case->tags as $tag)
-                            <a href="{{route('case.index')}}?tag={{$tag->id}}"
+                            <a href="{{route('case.index')}}"
                                class="author1__partCont__tag">{{$tag->name}}</a>
                         @endforeach
                     </div>
@@ -495,7 +491,7 @@
                             </div>
                         </div>
 
-                        <img src="../../images/min/icons/sayw.svg" alt="" class="authVidget__header__ico">
+                        <img src="../../images/min/icons/sayw.svg" alt="Faros media" class="authVidget__header__ico">
                     </div>
 
                     <div class="blogBG"></div>
@@ -599,7 +595,7 @@
 <script src="/js/maskedinput.js"></script>
 <script src="/js/custom.js"></script>
 
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('case.index')}}"><meta itemprop="name" content="Кейсы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('case.index')}}"><meta itemprop="name" content="Кейсы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 <!-- VK Widget -->

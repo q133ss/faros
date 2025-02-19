@@ -22,7 +22,7 @@
     <div class="ormBlock">
         <div class="ormBlock__left">
             <div class="ormBlock__left__persent">
-                <img src="/images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
+                <img src="/images/min/icons/info.svg" alt="Faros media" class="ormBlock__left__persent__ico">
 
                 <div class="ormBlock__left__persent__data">
                     <p class="ormBlock__left__persent__data__count">{{$service->section_one_percent}}</p>
@@ -42,14 +42,14 @@
                      id="ormAdvantage">
                     @foreach($service->advantages as $adv)
                     <div class="ormBlock__right__content__iconBlock__block">
-                        <img src="{{$adv['img']}}" alt=""
+                        <img src="{{$adv['img']}}" alt="Faros media"
                              class="ormBlock__right__content__iconBlock__block__ico">
                         <p class="ormBlock__right__content__iconBlock__block__text">{{$adv['text']}}</p>
                     </div>
                     @endforeach
                 </div>
 
-                <a href="/#audit" type="submit" class="button">ОСТАВИТЬ ЗАЯВКУ</a>
+                <a href="{{route('index')}}#audit" type="submit" class="button">ОСТАВИТЬ ЗАЯВКУ</a>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
     <div class="ormBlock _bgWhite">
         <div class="ormBlock__left">
             <div class="ormBlock__left__persent">
-                <img src="/images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
+                <img src="/images/min/icons/info.svg" alt="Faros media" class="ormBlock__left__persent__ico">
 
                 <div class="ormBlock__left__persent__data">
                     <p class="ormBlock__left__persent__data__count">{{$service->section_two_percent}}</p>
@@ -100,7 +100,7 @@
                     @foreach($service->how_it_works as $work)
                         @php $step++; @endphp
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="{{$work['img']}}" alt=""
+                        <img src="{{$work['img']}}" alt="Faros media"
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__work__content__light ormBlock__right__content__iconBlock__block__work__content__mb">
@@ -169,7 +169,7 @@
                 <div class="ormBlock__right__content__iconBlock ormBlock__right__content__slider1400700" id="ormWe">
                     @foreach($service->why_choose_us as $why)
                     <div class="ormBlock__right__content__iconBlock__block ormBlock__right__content__iconBlock__block__work _bgWhite">
-                        <img src="{{$why['img']}}" alt=""
+                        <img src="{{$why['img']}}" alt="Faros media"
                              class="ormBlock__right__content__iconBlock__block__work__workIco">
                         <div class="ormBlock__right__content__iconBlock__block__work__content">
                             <p class="ormBlock__right__content__iconBlock__block__work__content__black ormBlock__right__content__iconBlock__block__work__content__mb grow-full">{{$why['title']}}</p>
@@ -276,7 +276,7 @@
     <div class="ormBlock _bgWhite">
         <div class="ormBlock__left">
             <div class="ormBlock__left__persent">
-                <img src="/images/min/icons/info.svg" alt="" class="ormBlock__left__persent__ico">
+                <img src="/images/min/icons/info.svg" alt="Faros media" class="ormBlock__left__persent__ico">
 
                 <div class="ormBlock__left__persent__data">
                     <p class="ormBlock__left__persent__data__count"></p>

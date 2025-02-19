@@ -5,7 +5,7 @@
         <div class="authorWrap__left">
             <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="/" title="Главная" itemprop="item">
+                    <a href="{{route('index')}}" title="Главная" itemprop="item">
                         <span itemprop="name">Главная</span>
                         <meta itemprop="position" content="0">
                     </a>
@@ -41,7 +41,7 @@
 
                         <div class="subscribeWrap subscribe_max1000">
                             <button class="subscribe toggleSoc-js" type="button">
-                                <img src="../../images/min/icons/subscribe.svg" alt="" class="subscribe__ico">
+                                <img src="../../images/min/icons/subscribe.svg" alt="Faros media" class="subscribe__ico">
                                 <span class="subscribe__text">Подписаться</span>
                             </button>
 
@@ -66,7 +66,7 @@
                     <div class="indicators__wrap">
                         @if($author->rating != 0)
                         <div class="indicators__item">
-                            <img src="../../images/min/author/star.svg" alt=""
+                            <img src="../../images/min/author/star.svg" alt="Faros media"
                                  class="indicators__item__ico">
 
                             <div class="indicators__item__data">
@@ -77,7 +77,7 @@
                         @endif
                         @if($author->post_count != '')
                         <div class="indicators__item">
-                            <img src="../../images/min/author/micro.svg" alt=""
+                            <img src="../../images/min/author/micro.svg" alt="Faros media"
                                  class="indicators__item__ico">
 
                             <div class="indicators__item__data">
@@ -88,7 +88,7 @@
                         @endif
                         @if($author->smi_count != '')
                         <div class="indicators__item">
-                            <img src="../../images/min/author/megaphone.svg" alt=""
+                            <img src="../../images/min/author/megaphone.svg" alt="Faros media"
                                  class="indicators__item__ico">
 
                             <div class="indicators__item__data">
@@ -100,7 +100,7 @@
                     </div>
                     <div class="subscribeWrap subscribe_min1000">
                         <button class="subscribe toggleSoc-js" type="button">
-                            <img src="../../images/min/icons/subscribe.svg" alt="" class="subscribe__ico">
+                            <img src="../../images/min/icons/subscribe.svg" alt="Faros media" class="subscribe__ico">
                             <span class="subscribe__text">Подписаться</span>
                         </button>
 
@@ -128,7 +128,7 @@
                 <ul class="horizMenu__menu horizMenu__menu__author" id="newsMenu">
                     <li class="horizMenu__menu__item active material-section" data-order="0">
                         <a class="horizMenu__menu__item__link" data-id="-1" onclick="goToBiografy()">
-                            <img src="../../images/min/bluebook.svg" alt="" class="horizMenu__menu__item__link__ico">
+                            <img src="../../images/min/bluebook.svg" alt="Faros media" class="horizMenu__menu__item__link__ico">
                             <span>БИОГРАФИЯ</span>
                         </a>
                     </li>
@@ -156,7 +156,7 @@
                     <button class="horizMenu__filter" type="button">
                         <span class="horizMenu__filter__text">Теги</span>
                         <span class="horizMenu__filter__quant">0</span>
-                        <img src="../../images/min/icons/arroworange.svg" alt="" class="horizMenu__filter__arrow">
+                        <img src="../../images/min/icons/arroworange.svg" alt="Faros media" class="horizMenu__filter__arrow">
                     </button>
 
                     <select class="selectWrap__sel" id="authSel" multiple="multiple">
@@ -167,14 +167,14 @@
                 </div>
 
                 <div class="horizMenu__filter horizMenu__filter_mw author-sort" style="display: none">
-                    <img src="../../images/min/icons/top_bottom.svg" alt=""
+                    <img src="../../images/min/icons/top_bottom.svg" alt="Faros media"
                          class="horizMenu__filter__sort horizMenu__filter__sort_abs">
                     <select class="selectWrap__sel" id="sortSel">
                         <option value="popular">По популярности</option>
                         <option value="new">Новые</option>
                         <option value="old">Старые</option>
                     </select>
-                    <img src="../../images/min/icons/arroworange.svg" alt=""
+                    <img src="../../images/min/icons/arroworange.svg" alt="Faros media"
                          class="horizMenu__filter__arrow horizMenu__filter__arrow_abs">
                 </div>
             </div>
@@ -237,7 +237,7 @@
 
                     <a href="{{route('team.index')}}" class="arrow-link">
                         <span class="arrow-link__text">Все авторы</span>
-                        <img src="../../images/min/icons/yellowarrow.svg" alt="" class="arrow-link__arrow">
+                        <img src="../../images/min/icons/yellowarrow.svg" alt="Faros media" class="arrow-link__arrow">
                     </a>
                 </div>
 

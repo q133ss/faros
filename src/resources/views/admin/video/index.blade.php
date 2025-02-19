@@ -16,7 +16,7 @@
             @foreach($videos as $item)
                 <tr>
                     <td>{{$item->id}}</td>
-                    <td><img src="{{$item->img}}" width="100px" alt=""></td>
+                    <td><img src="{{$item->img}}" width="100px" alt="Faros media"></td>
                     <td>{{$item->title}}</td>
                     <td>
                         <div class="d-flex gap-2">
