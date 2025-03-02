@@ -379,7 +379,13 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="//api-maps.yandex.ru/2.1/?load=package.standard&lang=ru_RU" type="text/javascript"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 <script src="/js/script.js"></script>
+<script src="/js/sliders.js"></script>
+
+
 {{--<script src="/js/TweenMax.min.js"></script>--}}
 {{--<script src="/js/ScrollMagic.js"></script>--}}
 {{--<script src="/js/debug.addIndicators.js"></script>--}}

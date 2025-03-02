@@ -227,6 +227,7 @@ const addedListeners = () => {
         });
     }
 
+    // TODO странный код, это вообще не слайдер!
     if($(div).is('#fullHeightBigWidthSlider')){
         $('#fullHeightBigWidthSlider').slick({
             dots: false,
