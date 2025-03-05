@@ -2,7 +2,7 @@
 @section('title', 'Агентство Faros.Media - управление репутацией и восприятием с 2016 года')
 @section('content')
     <!--Full height, big width START-->     <div class="fullHeightBigWidth _first">
-        <img src="images/min/home/firstScrBg.svg" alt="Faros Media" class="fullHeightBigWidth__bg-first">
+        <img src="images/min/home/firstScrBg-min.svg" alt="Faros Media" loading="lazy" class="fullHeightBigWidth__bg-first">
 
         <div class="fullHeightBigWidth__wrap">
             <div class="fullHeightBigWidth__wrap__beforeGrow"></div>

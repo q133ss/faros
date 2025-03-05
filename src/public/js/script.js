@@ -2,7 +2,6 @@ const isTouchDevice = () => 'ontouchstart' in window;
 if (isTouchDevice()) {
     document.body.classList.add('touch');
 }
-let readyYamps = false;
 document.addEventListener('DOMContentLoaded', function () {
     if (!isTouchDevice()) {
         document.body.classList.add('horizontal');
@@ -38,54 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     addedListeners();
-
-    // Проверка на YandexMaps
-    if (document.querySelector('div#map')) {
-        ymaps.ready(function () {
-            readyYamps = true;
-            init();
-        });
-    }
-
-    // Yandex Maps
-    if (document.querySelector('div#map')) {
-        if (readyYamps) {
-            init();
-        } else {
-            ymaps.ready(init);
-        }
-    }
 });
-
-// Инициализация YandexMaps
-function init() {
-    if (document.querySelector('#map')) {
-        let coordinatesText = document.querySelector('#coordinates').textContent;
-        let coordinates = coordinatesText.split(',').map(Number);
-
-        var myMap = new ymaps.Map('map', {
-                center: coordinates,
-                zoom: 9,
-                controls: []
-            }, { suppressMapOpenBlock: true }),
-
-            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-            ),
-
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: '',
-                balloonContent: ''
-            }, {
-                iconLayout: 'default#image',
-                iconImageHref: '/images/logo.svg',
-                iconImageSize: [30, 42],
-                iconImageOffset: [-5, -38]
-            });
-
-        myMap.geoObjects.add(myPlacemark);
-    }
-}
 
 // Клик по мобильному меню
 const addedListeners = () => {
