@@ -3,11 +3,11 @@
 <div class="dark-popap review" style="display: none;">
     <div class="dark-popap-wrap">
         <div class="dark-popap__formBlock">
-            <img src="/images/min/icons/closegray.svg" alt="Faros media" class="dark-popap__formBlock__close"
+            <img loading="lazy" src="/images/min/icons/closegray.svg" alt="Faros media" class="dark-popap__formBlock__close"
                  id="popapClase">
             <picture class="dark-popap__formBlock__pic">
                 <source type="image/webp" srcset="/images/min/popap.png">
-                <img src="/images/min/popap.png" alt="Faros Media">
+                <img loading="lazy" src="/images/min/popap.png" alt="Faros Media">
             </picture>
 
             <p class="dark-popap__formBlock__title">Отзыв</p>
@@ -55,7 +55,7 @@
 
     <picture class="fullHeightBigDarkBlock__pic fullHeightBigDarkBlock__pic_testemonial">
         <source type="image/webp" srcset="/images/min/testimonialBG.png">
-        <img src="/images/min/testimonialBG.png" alt="Faros Media">
+        <img loading="lazy" src="/images/min/testimonialBG.png" alt="Faros Media">
     </picture>
 
 </div>
@@ -67,19 +67,19 @@
     >
         <div class="fullHeightMinWidthComents__header">
             <div class="fullHeightMinWidthComents__header__logoWrap">
-                <img src="/upload/iblock/67d/0brc6c9cgg6zpmrchz1a5hbzskwoncqy/диана лого.jpeg" alt="Faros media"
+                <img loading="lazy" src="/upload/iblock/67d/0brc6c9cgg6zpmrchz1a5hbzskwoncqy/диана лого.jpeg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__logoWrap__logo">
             </div>
 
             <a href="{{route('index')}}"
                class="fullHeightMinWidthComents__header__seemore">
-                <img src="/images/min/icons/see.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__seemore__ico">
                 <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
             </a>
         </div>
 
-        <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+        <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
         <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -87,7 +87,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png" alt="Faros Media">
+                    <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -100,7 +100,7 @@
             <a href="/upload/iblock/3a1/s2pbbosj4o9zrizqtszww3a7ek624n13/drycleanFarosMedia.pdf"
                target="_blank"
                class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__cont__pdf__ico">
                 <p class="fullHeightMinWidthComents__cont__pdf__text _colorWhite">Благодарственное
                     письмо</p>
@@ -119,20 +119,20 @@
         >
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/гемотест лого.jpeg" alt="Faros media"
+                    <img loading="lazy" src="/upload/iblock/26c/qhk4qmnqvr08xazu5ugux9rhcn04b4sm/гемотест лого.jpeg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
 
                 <a href="{{route('index')}}"
                    class="fullHeightMinWidthComents__header__seemore">
-                    <img src="/images/min/icons/see.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text _colorWhite">Смотреть
                         кейс</p>
                 </a>
             </div>
 
-            <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+            <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -140,7 +140,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png" alt="Faros Media">
+                        <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -153,7 +153,7 @@
                 <a href="/upload/iblock/d6c/mrpurssa48g9sosvqfoi4ryd6qy6lpr1/faros-гемотест.pdf"
                    target="_blank"
                    class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text _colorWhite">Благодарственное
                         письмо</p>
@@ -171,20 +171,20 @@
         >
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="/upload/iblock/877/fk0snb6nx59y1q49y7yy2gucylwo8183/ситимобил лого.png" alt="Faros media"
+                    <img loading="lazy" src="/upload/iblock/877/fk0snb6nx59y1q49y7yy2gucylwo8183/ситимобил лого.png" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
 
                 <a href="{{route('index')}}"
                    class="fullHeightMinWidthComents__header__seemore">
-                    <img src="/images/min/icons/see.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text _colorWhite">Смотреть
                         кейс</p>
                 </a>
             </div>
 
-            <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+            <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -192,7 +192,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png" alt="Faros Media">
+                        <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -204,7 +204,7 @@
                 <a href="/upload/iblock/4db/ql1n7a3v0ng3z3nnt8q5wcrjw3jsv19i/farosmedia_ситимобил.pdf"
                    target="_blank"
                    class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text _colorWhite">Благодарственное
                         письмо</p>
@@ -224,7 +224,7 @@
     <div class="fullHeightMinWidthAwards__awards">
         <div class="fullHeightMinWidthAwards__awards__item">
             <div class="fullHeightMinWidthAwards__awards__item__img">
-                <img src="../upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
+                <img loading="lazy" src="../upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
             </div>
 
             <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -240,7 +240,7 @@
         </div>
         <div class="fullHeightMinWidthAwards__awards__item">
             <div class="fullHeightMinWidthAwards__awards__item__img">
-                <img src="../upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
+                <img loading="lazy" src="../upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
             </div>
 
             <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -258,7 +258,7 @@
 
     <picture class="fullHeightMinWidthAwards__bg parallax">
         <source type="image/webp" srcset="/images/min/home/awardsbg.webp">
-        <img src="/images/min/home/awardsbg.png" data-depth="0.6" alt="Faros Media">
+        <img loading="lazy" src="/images/min/home/awardsbg.png" data-depth="0.6" alt="Faros Media">
     </picture>
 </div>
 <!--Full height, min width, home awards END-->
@@ -272,20 +272,20 @@
         >
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt="Faros media"
+                    <img loading="lazy" src="/upload/iblock/18c/8miz0v6c8jbkq0mh86fkelj6ixxnmyc3/белый фрегат лого.jpeg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
 
                 <a href="https://faros.media/cases/55/"
                    class="fullHeightMinWidthComents__header__seemore">
-                    <img src="/images/min/icons/see.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text _colorWhite">Смотреть
                         кейс</p>
                 </a>
             </div>
 
-            <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+            <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -293,7 +293,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png" alt="Faros Media">
+                        <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -305,7 +305,7 @@
                 <a href="/upload/iblock/1f9/y2exprd80sg16t15wge8wmpfch2vejrx/faros_письмо_белый фрегат.pdf"
                    target="_blank"
                    class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text _colorWhite">
                         Благодарственное
@@ -327,20 +327,20 @@
         >
             <div class="fullHeightMinWidthComents__header">
                 <div class="fullHeightMinWidthComents__header__logoWrap">
-                    <img src="../upload/iblock/fe5/0mgpfzzgmpms3ygie9kqw9de1b3adfho/ross.jpg" alt="Faros media"
+                    <img loading="lazy" src="../upload/iblock/fe5/0mgpfzzgmpms3ygie9kqw9de1b3adfho/ross.jpg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__logoWrap__logo">
                 </div>
 
                 <a href="https://faros.media/cases/55/"
                    class="fullHeightMinWidthComents__header__seemore">
-                    <img src="/images/min/icons/see.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__header__seemore__ico">
                     <p class="fullHeightMinWidthComents__header__seemore__text _colorWhite">Смотреть
                         кейс</p>
                 </a>
             </div>
 
-            <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+            <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
             <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -348,7 +348,7 @@
                 <div class="fullHeightMinWidthComents__cont__user">
                     <picture class="fullHeightMinWidthComents__cont__user__ava">
                         <source type="image/webp" srcset="/images/min/home/ava.png">
-                        <img src="/images/min/home/ava.png" alt="Faros Media">
+                        <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                     </picture>
 
                     <div class="fullHeightMinWidthComents__cont__user__data">
@@ -360,7 +360,7 @@
                 <a href="../upload/iblock/e6a/3eubmd07f7nx3529n6se4m0y4xtlg0p5/ross1.jpg"
                    target="_blank"
                    class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                    <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                    <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                          class="fullHeightMinWidthComents__cont__pdf__ico">
                     <p class="fullHeightMinWidthComents__cont__pdf__text _colorWhite">
                         Благодарственное
@@ -379,19 +379,19 @@
     <div class="fullHeightMinWidthComents">
         <div class="fullHeightMinWidthComents__header">
             <div class="fullHeightMinWidthComents__header__logoWrap">
-                <img src="../upload/iblock/f54/hrv2n63xjvz84pzxaqzijf9mt2pdpzi6/chees.png" alt="Faros media"
+                <img loading="lazy" src="../upload/iblock/f54/hrv2n63xjvz84pzxaqzijf9mt2pdpzi6/chees.png" alt="Faros media"
                      class="fullHeightMinWidthComents__header__logoWrap__logo">
             </div>
 
             <a href="https://faros.media/cases/90/" target="_blank"
                class="fullHeightMinWidthComents__header__seemore">
-                <img src="/images/min/icons/see.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__seemore__ico">
                 <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
             </a>
         </div>
 
-        <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+        <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
         <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -399,7 +399,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png" alt="Faros Media">
+                    <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -411,7 +411,7 @@
 
             <a href="../upload/iblock/8e5/07dh2vx67n1uy84l7fc5d1eukzqdlibe/chees1.png" target="_blank"
                class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__cont__pdf__ico">
                 <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
             </a>
@@ -421,26 +421,26 @@
 
         <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
             <span class="arrow-link__text">Все отзывы</span>
-            <img src="/images/min/icons/yellowarrow.svg" alt="Faros media"
+            <img loading="lazy" src="/images/min/icons/yellowarrow.svg" alt="Faros media"
                  class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
         </a>
     </div>
     <div class="fullHeightMinWidthComents">
         <div class="fullHeightMinWidthComents__header">
             <div class="fullHeightMinWidthComents__header__logoWrap">
-                <img src="../upload/iblock/bd4/dw9pct9lgca27j6wfjzyuvp3oepan40j/donstroy.png" alt="Faros media"
+                <img loading="lazy" src="../upload/iblock/bd4/dw9pct9lgca27j6wfjzyuvp3oepan40j/donstroy.png" alt="Faros media"
                      class="fullHeightMinWidthComents__header__logoWrap__logo">
             </div>
 
             <a href="https://faros.media/cases/90/" target="_blank"
                class="fullHeightMinWidthComents__header__seemore">
-                <img src="/images/min/icons/see.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__seemore__ico">
                 <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
             </a>
         </div>
 
-        <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+        <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
         <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -448,7 +448,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png" alt="Faros Media">
+                    <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -460,7 +460,7 @@
 
             <a href="../upload/iblock/701/xszh36rro05z2ockh5apn6yl3nxwb3rs/donstroy1.jpg" target="_blank"
                class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__cont__pdf__ico">
                 <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
             </a>
@@ -470,26 +470,26 @@
 
         <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
             <span class="arrow-link__text">Все отзывы</span>
-            <img src="/images/min/icons/yellowarrow.svg" alt="Faros media"
+            <img loading="lazy" src="/images/min/icons/yellowarrow.svg" alt="Faros media"
                  class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
         </a>
     </div>
     <div class="fullHeightMinWidthComents">
         <div class="fullHeightMinWidthComents__header">
             <div class="fullHeightMinWidthComents__header__logoWrap">
-                <img src="../upload/iblock/cd1/4pq2clizge31it53t8uf1b9qat4p591c/pavel.jpeg" alt="Faros media"
+                <img loading="lazy" src="../upload/iblock/cd1/4pq2clizge31it53t8uf1b9qat4p591c/pavel.jpeg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__logoWrap__logo">
             </div>
 
             <a href="https://faros.media/cases/60/" target="_blank"
                class="fullHeightMinWidthComents__header__seemore">
-                <img src="/images/min/icons/see.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__seemore__ico">
                 <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
             </a>
         </div>
 
-        <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+        <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
         <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -497,7 +497,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png" alt="Faros Media">
+                    <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -509,7 +509,7 @@
 
             <a href="../upload/iblock/4a4/ovmhixuza7v84d5wlhhny61881y4a0yg/pavel1.jpg" target="_blank"
                class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__cont__pdf__ico">
                 <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
             </a>
@@ -519,26 +519,26 @@
 
         <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
             <span class="arrow-link__text">Все отзывы</span>
-            <img src="/images/min/icons/yellowarrow.svg" alt="Faros media"
+            <img loading="lazy" src="/images/min/icons/yellowarrow.svg" alt="Faros media"
                  class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
         </a>
     </div>
     <div class="fullHeightMinWidthComents">
         <div class="fullHeightMinWidthComents__header">
             <div class="fullHeightMinWidthComents__header__logoWrap">
-                <img src="../upload/iblock/72c/svbsobjrdsln4zlft2zjrzsveb7cv712/cipa.png" alt="Faros media"
+                <img loading="lazy" src="../upload/iblock/72c/svbsobjrdsln4zlft2zjrzsveb7cv712/cipa.png" alt="Faros media"
                      class="fullHeightMinWidthComents__header__logoWrap__logo">
             </div>
 
             <a href="https://faros.media/cases/60/" target="_blank"
                class="fullHeightMinWidthComents__header__seemore">
-                <img src="/images/min/icons/see.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__seemore__ico">
                 <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
             </a>
         </div>
 
-        <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+        <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
         <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -546,7 +546,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png" alt="Faros Media">
+                    <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -558,7 +558,7 @@
 
             <a href="../upload/iblock/921/wq8ctpdsp33k8iy4pdnew35n2vtk5xif/cipa1.jpg" target="_blank"
                class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__cont__pdf__ico">
                 <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
             </a>
@@ -568,26 +568,26 @@
 
         <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
             <span class="arrow-link__text">Все отзывы</span>
-            <img src="/images/min/icons/yellowarrow.svg" alt="Faros media"
+            <img loading="lazy" src="/images/min/icons/yellowarrow.svg" alt="Faros media"
                  class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
         </a>
     </div>
     <div class="fullHeightMinWidthComents">
         <div class="fullHeightMinWidthComents__header">
             <div class="fullHeightMinWidthComents__header__logoWrap">
-                <img src="../upload/iblock/6e5/prgag0odmjoqw9alrouo68v3li1xvh3q/abn.png" alt="Faros media"
+                <img loading="lazy" src="../upload/iblock/6e5/prgag0odmjoqw9alrouo68v3li1xvh3q/abn.png" alt="Faros media"
                      class="fullHeightMinWidthComents__header__logoWrap__logo">
             </div>
 
             <a href="https://faros.media/cases/57/" target="_blank"
                class="fullHeightMinWidthComents__header__seemore">
-                <img src="/images/min/icons/see.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/see.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__header__seemore__ico">
                 <p class="fullHeightMinWidthComents__header__seemore__text">Смотреть кейс</p>
             </a>
         </div>
 
-        <img src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
+        <img loading="lazy" src="/images/min/home/say.svg" alt="Faros media" class="fullHeightMinWidthComents__topMb">
 
         <div class="fullHeightMinWidthComents__beforeGrow"></div>
 
@@ -595,7 +595,7 @@
             <div class="fullHeightMinWidthComents__cont__user">
                 <picture class="fullHeightMinWidthComents__cont__user__ava">
                     <source type="image/webp" srcset="/images/min/home/ava.png">
-                    <img src="/images/min/home/ava.png" alt="Faros Media">
+                    <img loading="lazy" src="/images/min/home/ava.png" alt="Faros Media">
                 </picture>
 
                 <div class="fullHeightMinWidthComents__cont__user__data">
@@ -607,7 +607,7 @@
 
             <a href="../upload/iblock/49f/uxi3qloefkdqq77jjrqfkf5b0iqfztrv/abn1.jpg" target="_blank"
                class="fullHeightMinWidthComents__cont__pdf show_pdf">
-                <img src="/images/min/icons/pdf.svg" alt="Faros media"
+                <img loading="lazy" src="/images/min/icons/pdf.svg" alt="Faros media"
                      class="fullHeightMinWidthComents__cont__pdf__ico">
                 <p class="fullHeightMinWidthComents__cont__pdf__text">Благодарственное письмо</p>
             </a>
@@ -617,7 +617,7 @@
 
         <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
             <span class="arrow-link__text">Все отзывы</span>
-            <img src="/images/min/icons/yellowarrow.svg" alt="Faros media"
+            <img loading="lazy" src="/images/min/icons/yellowarrow.svg" alt="Faros media"
                  class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
         </a>
     </div>
@@ -686,7 +686,7 @@
     </div>
 </div>
 <div class="fullHeightMinWidth fullHeightMinWidth_thanks" style="display: none;">
-    <img src="/images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img" alt="Faros Media">
+    <img loading="lazy" src="/images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img" alt="Faros Media">
     <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
     <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
     <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>
@@ -697,7 +697,7 @@
         <div class="grow-full"></div>
 
         <div class="contacts__data__logoWrap">
-            <img src="/images/min/logourl.svg" class="contacts__data__logoWrap__logo" alt="Faros Media" />
+            <img loading="lazy" src="/images/min/logourl.svg" class="contacts__data__logoWrap__logo" alt="Faros Media" />
         </div>
         <p class="contacts__data__adress">
             Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

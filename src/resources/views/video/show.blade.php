@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="/css/styles.min.css?v=11">
+    @include('inc.style')
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo', ['post' => $video])
@@ -447,21 +446,6 @@
         </div>
     </div>
 </div>
-<script src="/js/TweenMax.min.js"></script>
-<script src="/js/ScrollMagic.js"></script>
-<script src="/js/debug.addIndicators.js"></script>
-<script src="/js/animation.gsap.min.js"></script>
-<script src="//api-maps.yandex.ru/2.1/?load=package.standard&lang=ru_RU" type="text/javascript"></script>
-<script src="/js/sticky.js"></script>
-<script src="/js/scripts.min.js?v=19"></script>
-<script src="/js/maskedinput.js"></script>
-<script src="/js/custom.js"></script>
-
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<script src="/js/script.js" defer></script>
+</body>
 </html>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 127027390, {disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
-</script>

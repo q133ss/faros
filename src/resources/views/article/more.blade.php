@@ -3,7 +3,7 @@
 
         <picture class="newsMiniBlock__pic">
             <a href="{{route('articles.show', $post->slug)}}">
-                <img src="{{$post->list_img}}" title="Faros Media" alt="Faros media">
+                <img loading="lazy" src="{{$post->list_img}}" title="Faros Media" alt="Faros media">
             </a>
         </picture>
 

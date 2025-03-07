@@ -1,5 +1,9 @@
 @extends('layouts.team')
 @section('title', $author->name)
+@section('meta')
+    <link rel="preload" href="/css/team.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/team.css"></noscript>
+@endsection
 @section('content')
     <div class="authorWrap">
         <div class="authorWrap__left">

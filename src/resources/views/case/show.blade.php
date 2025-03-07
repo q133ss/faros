@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="/css/styles.min.css?v=66">
+    @include('inc.style')
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo', ['post' => $case])
@@ -396,7 +395,7 @@
 
                 <div class="sinpleHeader__data">
                     <div class="sinpleHeader__data__item">
-                        <img src="../../images/min/icons/calendar_gray.svg" alt="Faros media" class="sinpleHeader__data__item__ico">
+                        <img src="../../images/min/icons/calendar_gray.svg" loading="lazy" alt="Faros media" class="sinpleHeader__data__item__ico">
                         <p class="sinpleHeader__data__item__text">{{$case->created_at?->format('d.m.Y')}}</p>
                     </div>
                     <div class="sinpleHeader__data__item">
@@ -409,7 +408,7 @@
 
                 @if($case->img != null && $case->img != '/images/case/')
                 <picture class="authorWrap__left__banner authorWrap__left__banner_case">
-                    <img src="{{$case->img}}" title="Faros Media" alt="Faros Media">
+                    <img src="{{$case->img}}" loading="lazy" title="Faros Media" alt="Faros Media">
                 </picture>
                 @endif
 
@@ -449,7 +448,7 @@
                         <a href="{{route('case.show', $post->slug)}}" class="simpleSlider__slide">
                             <div class="simpleSlider__slide__picWrap">
                                 <picture class="simpleSlider__slide__picWrap__pic">
-                                    <img src="{{$post->list_img}}" title="Faros Media" alt="Faros Media">
+                                    <img src="{{$post->list_img}}" loading="lazy" title="Faros Media" alt="Faros Media">
                                 </picture>
                             </div>
                             <p class="simpleSlider__slide__text">{{$post->list_name}}</p>
@@ -469,11 +468,11 @@
                             <picture class="authVidget__body__item__pic">
                                 @if($case->author_id != null)
                                     <a href="{{route('team.show', $case->author?->id)}}">
-                                        <img src="{{$case->author_img}}" title="Faros Media" alt="Faros Media">
+                                        <img src="{{$case->author_img}}" loading="lazy" title="Faros Media" alt="Faros Media">
                                     </a>
                                 @else
                                     <a href="#">
-                                        <img src="{{$case->author_img}}" title="Faros Media" alt="Faros Media">
+                                        <img src="{{$case->author_img}}" loading="lazy" title="Faros Media" alt="Faros Media">
                                     </a>
                                 @endif
                             </picture>
@@ -491,7 +490,7 @@
                             </div>
                         </div>
 
-                        <img src="../../images/min/icons/sayw.svg" alt="Faros media" class="authVidget__header__ico">
+                        <img src="../../images/min/icons/sayw.svg" loading="lazy" alt="Faros media" class="authVidget__header__ico">
                     </div>
 
                     <div class="blogBG"></div>
@@ -506,7 +505,7 @@
                     <div class="grow-full"></div>
 
                     <div class="contacts__data__logoWrap">
-                        <img src="../../images/min/logourl.svg" alt="Faros Media" class="contacts__data__logoWrap__logo"/>
+                        <img src="../../images/min/logourl.svg" loading="lazy" alt="Faros Media" class="contacts__data__logoWrap__logo"/>
                     </div>
                     <p class="contacts__data__adress">
                         Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10
@@ -585,21 +584,6 @@
         </div>
     </div>
 </div>
-<script src="/js/TweenMax.min.js"></script>
-<script src="/js/ScrollMagic.js"></script>
-<script src="/js/debug.addIndicators.js"></script>
-<script src="/js/animation.gsap.min.js"></script>
-<script src="//api-maps.yandex.ru/2.1/?load=package.standard&lang=ru_RU" type="text/javascript"></script>
-<script src="/js/sticky.js"></script>
-<script src="/js/scripts.min.js?v=11"></script>
-<script src="/js/maskedinput.js"></script>
-<script src="/js/custom.js"></script>
-
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('case.index')}}"><meta itemprop="name" content="Кейсы"></a><meta itemprop="position" content="2"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<script src="/js/script.js" defer></script>
+</body>
 </html>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 127027390, {disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
-</script>

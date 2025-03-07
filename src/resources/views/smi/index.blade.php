@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/js/modernizr-custom.js"></script>
-    <link rel="stylesheet" href="/css/styles.min.css?v=53">
+    @include('inc.style')
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo')
@@ -371,14 +370,14 @@
             <p class="bread horizMenu__menu horizMenu__menu__media">СМИ о нас</p>
 
             <div class="horizMenu__filter horizMenu__filter_mw">
-                <img src="/images/min/icons/top_bottom.svg" alt="Faros media"
+                <img src="/images/min/icons/top_bottom.svg" loading="lazy" alt="Faros media"
                      class="horizMenu__filter__sort horizMenu__filter__sort_abs">
                 <select class="selectWrap__sel" id="sortSelMedia">
                     <option value="new">Новые</option>
                     <option value="old">Старые</option>
                     <option value="popular">По популярности</option>
                 </select>
-                <img src="/images/min/icons/arroworange.svg" alt="Faros media"
+                <img src="/images/min/icons/arroworange.svg" loading="lazy" alt="Faros media"
                      class="horizMenu__filter__arrow horizMenu__filter__arrow_abs">
             </div>
         </div>
@@ -393,7 +392,7 @@
                                 @if($post->logo != '')
                                 <!--noindex--><a href="{{$post->source}}" target="_blank" class="articlesDoubleBlock__content__top__logo" rel="nofollow">
                                     <picture class="articlesDoubleBlock__content__top__logo__img">
-                                        <img src="{{$post->logo}}" title="Faros Media" alt="Faros Media">
+                                        <img src="{{$post->logo}}" loading="lazy" title="Faros Media" alt="Faros Media">
                                     </picture>
                                 </a><!--/noindex-->
                                 @endif
@@ -403,7 +402,7 @@
                         </div>
 
                         <picture class="articlesDoubleBlock__pic parallax">
-                            <img src="{{$post->img}}" title="Faros Media" data-depth="0.6" alt="Faros Media">
+                            <img src="{{$post->img}}" loading="lazy" title="Faros Media" data-depth="0.6" alt="Faros Media">
                         </picture>
                     </div>
                 @elseif($post->type == 'yellow_bg')
@@ -413,7 +412,7 @@
                                     @if($post->logo != '')
                                     <!--noindex--><a target="_blank" href="{{$post->source}}" class="articlesDoubleBlock__content__top__logo" rel="nofollow">
                                         <picture class="articlesDoubleBlock__content__top__logo__img">
-                                            <img src="{{$post->logo}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
+                                            <img src="{{$post->logo}}" loading="lazy" title="Faros Media" alt="Faros Media" data-depth="0.6">
                                         </picture>
                                     </a><!--/noindex-->
                                     @endif
@@ -426,7 +425,7 @@
                             </div>
                             <a href="{{route('smi.show', $post->slug)}}">
                                 <picture class="articlesDoubleBlock__pic articlesDoubleBlock__pic_second">
-                                    <img src="{{$post->img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
+                                    <img src="{{$post->img}}" loading="lazy" title="Faros Media" alt="Faros Media" data-depth="0.6">
                                 </picture>
                             </a>
                         </div>
@@ -434,7 +433,7 @@
                     <div class="newsMiniBlock _bgWhite media__newsMiniBlock">
                         <a href="{{route('smi.show', $post->slug)}}">
                             <picture class="newsMiniBlock__pic">
-                                <img src="{{$post->img}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
+                                <img src="{{$post->img}}" loading="lazy" title="Faros Media" alt="Faros Media" data-depth="0.6">
                             </picture>
                         </a>
 
@@ -446,7 +445,7 @@
                             @if($post->logo != '')
                             <!--noindex--><a target="_blank" href="{{$post->source}}"  class="newsMiniBlock__cont__logo" rel="nofollow">
                                 <picture class="newsMiniBlock__cont__logo__pic">
-                                    <img src="{{$post->logo}}" title="Faros Media" alt="Faros Media" data-depth="0.6">
+                                    <img src="{{$post->logo}}" loading="lazy" title="Faros Media" alt="Faros Media" data-depth="0.6">
                                 </picture>
                             </a><!--/noindex-->
                             @endif
@@ -466,22 +465,6 @@
         </div>
     </div>
 </div>
-<script src="/js/TweenMax.min.js"></script>
-<script src="/js/ScrollMagic.js"></script>
-<script src="/js/debug.addIndicators.js"></script>
-<script src="/js/animation.gsap.min.js"></script>
-{{--<script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>--}}
-<script src="//api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru_RU" type="text/javascript"></script>
-<script src="/js/sticky.js"></script>
-<script src="/js/scripts.min.js?v=5"></script>
-<script src="/js/maskedinput.js"></script>
-<script src="/js/custom.js"></script>
-
-<!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="https://faros.media/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
+<script src="/js/script.js" defer></script>
+</body>
 </html>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 127027390, {disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
-</script>

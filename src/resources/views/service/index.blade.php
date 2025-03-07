@@ -37,11 +37,11 @@
 
             <div class="miniBlock__layer miniBlock__layer_first parallax">
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_first" data-depth="0.6">
-                    <img src="{{$service->img}}" title="Faros Media" alt="Услуги">
+                    <img src="{{$service->img}}" loading="lazy" title="Faros Media" alt="Услуги">
                 </picture>
 
                 <picture class="miniBlock__layer__pic miniBlock__layer__pic_mob">
-                    <img src="{{$service->img}}" title="Faros Media" alt="Услуги">
+                    <img src="{{$service->img}}" loading="lazy" title="Faros Media" alt="Услуги">
                 </picture>
             </div>
 
@@ -49,6 +49,7 @@
                 <img src="../images/min/icons/awworWhiteBGOrange.svg"
                      class="allServiceMiniBlocks__mobButton__ico"
                      alt="Услуги"
+                     loading="lazy"
                 >
             </button>
         </a>
@@ -120,7 +121,7 @@
         </div>
     </div>
     <div class="fullHeightMinWidth fullHeightMinWidth_thanks" style="display: none;">
-        <img src="../images/min/home/thanks.svg" class="fullHeightMinWidth__thanks-img" alt="Услуги">
+        <img src="../images/min/home/thanks.svg" loading="lazy" class="fullHeightMinWidth__thanks-img" alt="Услуги">
         <p class="fullHeightMinWidth__thanks-tit">Спасибо, что обратились в нашу кампанию!</p>
         <p class="fullHeightMinWidth__thanks-descr">Мы перезвоним в течение 20 минут.</p>
         <a href="{{route('case.index')}}" class="button">НАШИ КЕЙСЫ</a>

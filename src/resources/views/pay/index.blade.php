@@ -1,16 +1,20 @@
 @extends('layouts.app')
 @section('title', 'Оплата')
+@section('meta')
+    <link rel="preload" href="/css/pay.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/pay.css"></noscript>
+@endsection
 @section('content')
     <div class="pay _bgBlack6 _first">
         <div class="pay__logoBlock">
             <a href="{{route('index')}}" class="pay__logoBlock__logoWrap">
-                <img src="../images/min/logourl.svg" alt="Faros media" class="pay__logoBlock__logoWrap__ico"/>
+                <img src="../images/min/logourl.svg" loading="lazy" alt="Faros media" class="pay__logoBlock__logoWrap__ico"/>
             </a>
 
-            <img src="../images/min/icons/closegray.svg" alt="Faros media" class="pay__logoBlock__close"/>
+            <img src="../images/min/icons/closegray.svg" loading="lazy" alt="Faros media" class="pay__logoBlock__close"/>
 
             <a href="{{route('index')}}" class="pay__logoBlock__logoWrap">
-                <img src="../images/min/pay/tinkov.svg" alt="Faros media" class="pay__logoBlock__logoWrap__tinkov"/>
+                <img src="../images/min/pay/tinkov.svg" loading="lazy" alt="Faros media" class="pay__logoBlock__logoWrap__tinkov"/>
             </a>
         </div>
         <h1 class="pay__title _colorWhite"><span class="_colorYellow">Faros.Media</span> - команда
@@ -47,15 +51,15 @@
                 <div class="formBlock__top__wrap">
                     <input type="text" class="formBlock__input" placeholder="Введите сумму платежа"
                            value=""/>
-                    <img class="formBlock__top__wrap__ico" alt="Faros Media" src="../images/min/icons/err.svg"/>
+                    <img loading="lazy" class="formBlock__top__wrap__ico" alt="Faros Media" src="../images/min/icons/err.svg"/>
                 </div>
                 <div class="formBlock__top__wrap">
                     <input type="text" class="formBlock__input" placeholder="ФИО плательщика"/>
-                    <img class="formBlock__top__wrap__ico" alt="Faros Media" src="../images/min/icons/err.svg"/>
+                    <img loading="lazy" class="formBlock__top__wrap__ico" alt="Faros Media" src="../images/min/icons/err.svg"/>
                 </div>
                 <div class="formBlock__top__wrap">
                     <input type="text" class="formBlock__input phone_mask" placeholder="Ваш номер телефона"/>
-                    <img class="formBlock__top__wrap__ico" alt="Faros Media" src="../images/min/icons/err.svg"/>
+                    <img loading="lazy" class="formBlock__top__wrap__ico" alt="Faros Media" src="../images/min/icons/err.svg"/>
                 </div>
                 <div class="formBlock__top__wrap error">
                     <input type="email" class="formBlock__input" placeholder="Email"/>
@@ -81,21 +85,21 @@
                 <div class="formBlockWrap__pay__footer__wrap__link formBlockWrap__pay__footer__wrap__link_first">
                     <picture class="formBlockWrap__pay__footer__wrap__link__pic">
                         <source type="image/webp" srcset="/images/min/pay/visa.webp">
-                        <img src="../images/min/pay/visa.png" alt="Faros Media">
+                        <img loading="lazy" src="../images/min/pay/visa.png" alt="Faros Media">
                     </picture>
                 </div>
 
                 <div class="formBlockWrap__pay__footer__wrap__link formBlockWrap__pay__footer__wrap__link_second">
                     <picture class="formBlockWrap__pay__footer__wrap__link__pic">
                         <source type="image/webp" srcset="/images/min/pay/mastercart.png">
-                        <img src="../images/min/pay/mastercart.png" alt="Faros Media">
+                        <img loading="lazy" src="../images/min/pay/mastercart.png" alt="Faros Media">
                     </picture>
                 </div>
 
                 <div class="formBlockWrap__pay__footer__wrap__link formBlockWrap__pay__footer__wrap__link_thrid">
                     <picture class="formBlockWrap__pay__footer__wrap__link__pic">
                         <source type="image/webp" srcset="/images/min/pay/mir.webp">
-                        <img src="../images/min/pay/mir.png" alt="Faros Media">
+                        <img loading="lazy" src="../images/min/pay/mir.png" alt="Faros Media">
                     </picture>
                 </div>
             </div>
