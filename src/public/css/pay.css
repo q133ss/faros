@@ -1,0 +1,236 @@
+.pay {
+    width: 94.5rem;
+    height: 100%;
+    padding: 14.4rem 8rem 2.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay {
+        width: 100%;
+        height: auto;
+        padding: 11rem 3.2rem 3.8rem;
+    }
+}
+@media screen and (max-width: 428px) {
+    .pay {
+        padding: 3.2rem 2.4rem 3.8rem;
+    }
+}
+.pay__logoBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 4.8rem;
+}
+@media screen and (max-width: 428px) {
+    .pay__logoBlock {
+        margin-bottom: 2.4rem;
+    }
+}
+.pay__logoBlock__logoWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@media screen and (min-width: 769px) and (hover) {
+    .pay__logoBlock__logoWrap {
+        cursor: pointer;
+        -webkit-transition: opacity 1s, -webkit-transform 0.3s;
+        transition: opacity 1s, -webkit-transform 0.3s;
+        -o-transition: opacity 1s, transform 0.3s;
+        transition: opacity 1s, transform 0.3s;
+        transition: opacity 1s, transform 0.3s, -webkit-transform 0.3s;
+    }
+    .pay__logoBlock__logoWrap:hover {
+        opacity: 0.4;
+    }
+    .pay__logoBlock__logoWrap:active {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+.pay__logoBlock__logoWrap__ico {
+    display: block;
+    width: 17.4rem;
+    height: 5.2rem;
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__logoBlock__logoWrap__ico {
+        width: 11.6rem;
+        height: 3.5rem;
+    }
+}
+.pay__logoBlock__close {
+    display: block;
+    margin: 0 1.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__logoBlock__close {
+        margin: 0 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+.pay__logoBlock__logoWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.pay__logoBlock__logoWrap__tinkov {
+    display: block;
+    width: 17.7rem;
+    height: 1.8rem;
+}
+@media screen and (min-width: 769px) and (hover) {
+    .pay__logoBlock__logoWrap__tinkov {
+        cursor: pointer;
+        -webkit-transition: opacity 1s, -webkit-transform 0.3s;
+        transition: opacity 1s, -webkit-transform 0.3s;
+        -o-transition: opacity 1s, transform 0.3s;
+        transition: opacity 1s, transform 0.3s;
+        transition: opacity 1s, transform 0.3s, -webkit-transform 0.3s;
+    }
+    .pay__logoBlock__logoWrap__tinkov:hover {
+        opacity: 0.4;
+    }
+    .pay__logoBlock__logoWrap__tinkov:active {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__logoBlock__logoWrap__tinkov {
+        width: 11.8rem;
+        height: 1.2rem;
+    }
+}
+.pay__title {
+    font-family: CoreSansC, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__title {
+        font-size: 3.2rem;
+    }
+}
+@media screen and (max-width: 428px) {
+    .pay__title {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+}
+.pay__pic {
+    display: block;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 2.4rem 0 4.7rem;
+    position: relative;
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__pic {
+        margin: 1.5rem auto 0;
+        width: 100%;
+        max-width: 50.5rem;
+    }
+}
+@media screen and (max-width: 428px) {
+    .pay__pic {
+        display: none;
+    }
+}
+.pay__pic img {
+    display: block;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__pic img {
+        position: static;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__pic {
+        width: 100%;
+        max-width: 49.8rem;
+    }
+    .pay__pic img {
+        height: auto;
+    }
+}
+@media screen and (max-width: 428px) {
+    .pay__pic {
+        max-width: 24.1rem;
+    }
+}
+.pay__bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+}
+@media screen and (orientation: portrait), screen and (max-width: 768px) {
+    .pay__bottom {
+        display: none;
+    }
+}
+.pay__bottom__text {
+    color: #9595a1;
+    font-family: CoreSansC, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+}
+.pay__bottom__text__link {
+    color: #fff;
+}
+@media screen and (min-width: 769px) and (hover) {
+    .pay__bottom__text__link {
+        cursor: pointer;
+        -webkit-transition: color 1s, -webkit-transform 0.3s;
+        transition: color 1s, -webkit-transform 0.3s;
+        -o-transition: color 1s, transform 0.3s;
+        transition: color 1s, transform 0.3s;
+        transition: color 1s, transform 0.3s, -webkit-transform 0.3s;
+    }
+    .pay__bottom__text__link:hover {
+        color: #fff;
+    }
+    .pay__bottom__text__link:active {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}

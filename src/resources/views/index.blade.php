@@ -19,7 +19,7 @@
                 <a href="{{route('index')}}#form" class="button fullHeightBigWidth__wrap__control__button">КОНСУЛЬТАЦИЯ</a>
                 <a href="{{route('service.index')}}" class="arrow-link">
                     <span class="arrow-link__text">Все услуги</span>
-                    <img src="images/min/icons/yellowarrow.svg" alt="Faros Media" class="arrow-link__arrow">
+                    <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros Media" class="arrow-link__arrow">
                 </a>
             </div>
 
@@ -28,7 +28,7 @@
             <div class="fullHeightBigWidth__awardsB">
                 <div class="fullHeightBigWidth__awardsB__item">
                     <div class="fullHeightBigWidth__awardsB__item__img">
-                        <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" alt="Faros Media" class="fullHeightMinWidthAwards__awards__item__ico">
+                        <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" loading="lazy" alt="Faros Media" class="fullHeightMinWidthAwards__awards__item__ico">
                     </div>
 
                     <div class="fullHeightBigWidth__awardsB__item__cont">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="fullHeightBigWidth__awardsB__item">
                     <div class="fullHeightBigWidth__awardsB__item__img">
-                        <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" alt="Faros Media" class="fullHeightMinWidthAwards__awards__item__ico">
+                        <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" loading="lazy" alt="Faros Media" class="fullHeightMinWidthAwards__awards__item__ico">
                     </div>
 
                     <div class="fullHeightBigWidth__awardsB__item__cont">
@@ -67,9 +67,9 @@
     <div class="fullHeightMinWidth">
         <div class="fullHeightMinWidth__top">
             <div class="fullHeightMinWidth__top__comp">
-                <img src="/images/min/home/gerb.svg" alt="Faros Media" class="fullHeightMinWidth__top__comp__gerb">
+                <img src="/images/min/home/gerb.svg" loading="lazy" alt="Faros Media" class="fullHeightMinWidth__top__comp__gerb">
                 <p class="fullHeightMinWidth__top__comp__amount">170</p>
-                <img src="/images/min/home/gerb.svg" alt="Faros Media"
+                <img src="/images/min/home/gerb.svg" loading="lazy" alt="Faros Media"
                      class="fullHeightMinWidth__top__comp__gerb fullHeightMinWidth__top__comp__gerb_right">
             </div>
 
@@ -78,13 +78,13 @@
 
             <a href="{{route('team.index')}}" class="arrow-link">
                 <span class="arrow-link__text">Наша команда</span>
-                <img src="/images/min/icons/yellowarrow.svg" alt="Faros Media"
+                <img src="/images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros Media"
                      class="arrow-link__arrow fullHeightMinWidth__top__arrow">
             </a>
         </div>
         <div class="fullHeightMinWidth__bottom">
             <picture class="fullHeightMinWidth__bottom__bg">
-                <img src="{{$lastCase->list_img}}" title="Faros Media" alt="Faros media">
+                <img src="{{$lastCase->list_img}}" loading="lazy" title="Faros Media" alt="Faros media">
             </picture>
             <div class="fullHeightMinWidth__bottom__content">
                 <p class="fullHeightMinWidth__bottom__content__status">НОВЫЙ КЕЙС</p>
@@ -134,7 +134,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -173,7 +173,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -216,7 +216,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -259,7 +259,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -302,7 +302,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -345,7 +345,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -388,7 +388,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -431,7 +431,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -474,7 +474,7 @@
 
             <a href="{{route('review.index')}}" class="arrow-link fullHeightMinWidthComents__arrow-link">
                 <span class="arrow-link__text">Все отзывы</span>
-                <img src="images/min/icons/yellowarrow.svg" alt="Faros media"
+                <img src="images/min/icons/yellowarrow.svg" loading="lazy" alt="Faros media"
                      class="arrow-link__arrow fullHeightMinWidthComents__arrow-link__arrow">
             </a>
         </div>
@@ -485,7 +485,7 @@
         <div class="fullHeightMinWidthAwards__awards">
             <div class="fullHeightMinWidthAwards__awards__item">
                 <div class="fullHeightMinWidthAwards__awards__item__img">
-                    <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
+                    <img src="upload/iblock/966/ht1fswgdnz4cz9ih7euchvk7bixz2a8n/RUWARD.png" loading="lazy" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
                 </div>
 
                 <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -501,7 +501,7 @@
             </div>
             <div class="fullHeightMinWidthAwards__awards__item">
                 <div class="fullHeightMinWidthAwards__awards__item__img">
-                    <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
+                    <img src="upload/iblock/b69/gbgfyt3cel1xwffvkbhb3pan38891lhh/REPA_logo.png" loading="lazy" class="fullHeightMinWidthAwards__awards__item__ico" alt="Faros Media">
                 </div>
 
                 <div class="fullHeightMinWidthAwards__awards__item__cont">
@@ -533,7 +533,7 @@
                 <div class="miniCenterBlock _bgWhite">
                     <div class="miniCenterBlock__layer">
                         <div class="miniCenterBlock__layer__pic">
-                            <img src="images/min/home/flesh.svg" alt="Faros Media">
+                            <img src="images/min/home/flesh.svg" loading="lazy" alt="Faros Media">
                         </div>
                     </div>
 
@@ -726,7 +726,7 @@
             <div class="newsMiniBlock _bgWhite material-item">
                 <picture class="newsMiniBlock__pic">
                     <a href="{{route('articles.show', $article->slug)}}">
-                        <img src="{{$article->list_img}}" title="Faros Media" alt="Faros Media">
+                        <img src="{{$article->list_img}}" title="Faros Media" loading="lazy" alt="Faros Media">
                     </a>
                 </picture>
 
@@ -778,7 +778,7 @@
             <div class="grow-full"></div>
 
             <div class="contacts__data__logoWrap">
-                <img src="images/min/logourl.svg" class="contacts__data__logoWrap__logo" alt="Faros Media" />
+                <img src="images/min/logourl.svg" loading="lazy" class="contacts__data__logoWrap__logo" alt="Faros Media" />
             </div>
             <p class="contacts__data__adress">
                 Бизнес-центр «West plaza», г. Москва, ул.Рябиновая, д. 26, стр. 10

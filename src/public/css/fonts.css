@@ -1,0 +1,144 @@
+@font-face {
+    font-family: CoreSansC;
+    src: url(../fonts/CoreSansC/CoreSansC-15Thin.eot);
+    src: local("Core Sans C 15 Thin"), local("CoreSansC-15Thin"),
+    url(../fonts/CoreSansC/CoreSansC-15Thin.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/CoreSansC/CoreSansC-15Thin.woff2) format("woff2"),
+    url(../fonts/CoreSansC/CoreSansC-15Thin.woff) format("woff"),
+    url(../fonts/CoreSansC/CoreSansC-15Thin.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: CoreSansC;
+    src: url(../fonts/CoreSansC/CoreSansC-35Light.eot);
+    src: local("Core Sans C 35 Light"), local("CoreSansC-35Light"),
+    url(../fonts/CoreSansC/CoreSansC-35Light.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/CoreSansC/CoreSansC-35Light.woff2) format("woff2"),
+    url(../fonts/CoreSansC/CoreSansC-35Light.woff) format("woff"),
+    url(../fonts/CoreSansC/CoreSansC-35Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: CoreSansC;
+    src: url(../fonts/CoreSansC/CoreSansC-45Regular.eot);
+    src: local("Core Sans C 45 Regular"), local("CoreSansC-45Regular"),
+    url(../fonts/CoreSansC/CoreSansC-45Regular.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/CoreSansC/CoreSansC-45Regular.woff2) format("woff2"),
+    url(../fonts/CoreSansC/CoreSansC-45Regular.woff) format("woff"),
+    url(../fonts/CoreSansC/CoreSansC-45Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: CoreSansC;
+    src: url(../fonts/CoreSansC/CoreSansC-55Medium.eot);
+    src: local("Core Sans C 55 Medium"), local("CoreSansC-55Medium"),
+    url(../fonts/CoreSansC/CoreSansC-55Medium.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/CoreSansC/CoreSansC-55Medium.woff2) format("woff2"),
+    url(../fonts/CoreSansC/CoreSansC-55Medium.woff) format("woff"),
+    url(../fonts/CoreSansC/CoreSansC-55Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: CoreSansC;
+    src: url(../fonts/CoreSansC/CoreSansC-65Bold.eot);
+    src: local("Core Sans C 65 Bold"), local("CoreSansC-65Bold"),
+    url(../fonts/CoreSansC/CoreSansC-65Bold.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/CoreSansC/CoreSansC-65Bold.woff2) format("woff2"),
+    url(../fonts/CoreSansC/CoreSansC-65Bold.woff) format("woff"),
+    url(../fonts/CoreSansC/CoreSansC-65Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: CoreSansC;
+    src: url(../fonts/CoreSansC/CoreSansC-95Black.eot);
+    src: local("Core Sans C 95 Black"), local("CoreSansC-95Black"),
+    url(../fonts/CoreSansC/CoreSansC-95Black.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/CoreSansC/CoreSansC-95Black.woff2) format("woff2"),
+    url(../fonts/CoreSansC/CoreSansC-95Black.woff) format("woff"),
+    url(../fonts/CoreSansC/CoreSansC-95Black.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: VisueltPro;
+    src: url(../fonts/VisueltPro/VisueltPro-Thin.eot);
+    src: local("VisueltPro-Thin"),
+    url(../fonts/VisueltPro/VisueltPro-Thin.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/VisueltPro/VisueltPro-Thin.woff2) format("woff2"),
+    url(../fonts/VisueltPro/VisueltPro-Thin.woff) format("woff"),
+    url(../fonts/VisueltPro/VisueltPro-Thin.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: VisueltPro;
+    src: url(../fonts/VisueltPro/VisueltPro-Light.eot);
+    src: local("VisueltPro-Light"),
+    url(../fonts/VisueltPro/VisueltPro-Light.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/VisueltPro/VisueltPro-Light.woff2) format("woff2"),
+    url(../fonts/VisueltPro/VisueltPro-Light.woff) format("woff"),
+    url(../fonts/VisueltPro/VisueltPro-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: VisueltPro;
+    src: url(../fonts/VisueltPro/VisueltPro-Regular.eot);
+    src: local("VisueltPro-Regular"),
+    url(../fonts/VisueltPro/VisueltPro-Regular.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/VisueltPro/VisueltPro-Regular.woff2) format("woff2"),
+    url(../fonts/VisueltPro/VisueltPro-Regular.woff) format("woff"),
+    url(../fonts/VisueltPro/VisueltPro-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: VisueltPro;
+    src: url(../fonts/VisueltPro/VisueltPro-Medium.eot);
+    src: local("VisueltPro-Medium"),
+    url(../fonts/VisueltPro/VisueltPro-Medium.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/VisueltPro/VisueltPro-Medium.woff2) format("woff2"),
+    url(../fonts/VisueltPro/VisueltPro-Medium.woff) format("woff"),
+    url(../fonts/VisueltPro/VisueltPro-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: VisueltPro;
+    src: url(../fonts/VisueltPro/VisueltPro-Bold.eot);
+    src: local("VisueltPro-Bold"),
+    url(../fonts/VisueltPro/VisueltPro-Bold.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/VisueltPro/VisueltPro-Bold.woff2) format("woff2"),
+    url(../fonts/VisueltPro/VisueltPro-Bold.woff) format("woff"),
+    url(../fonts/VisueltPro/VisueltPro-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: VisueltPro;
+    src: url(../fonts/VisueltPro/VisueltPro-Black.eot);
+    src: local("VisueltPro-Black"),
+    url(../fonts/VisueltPro/VisueltPro-Black.eot?#iefix)
+    format("embedded-opentype"),
+    url(../fonts/VisueltPro/VisueltPro-Black.woff2) format("woff2"),
+    url(../fonts/VisueltPro/VisueltPro-Black.woff) format("woff"),
+    url(../fonts/VisueltPro/VisueltPro-Black.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
