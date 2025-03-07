@@ -5,7 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-uii">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="/css/styles.min.css">
+{{--    <link rel="stylesheet" href="/css/critical.min.css">--}}
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.seo')
@@ -360,7 +363,8 @@
 <!--Header START-->
 @include('inc.header')
 @include('inc.mobmenu')
-<!--Header END--><div class="hidden" id="hidden">
+<!--Header END-->
+<div class="hidden" id="hidden">
     <div class="wrapper @yield('wrap_class')" id="wrapper">
         @yield('content')
     </div>
@@ -377,8 +381,12 @@
 
 {{--НУЖНО ЧТО СДЕЛАТЬ С firstScrBg!--}}
 <script src="/js/script.js" defer></script>
-<script src="/js/sliders.js" defer></script>
-<script src="/js/yandex.js" defer></script>
+{{--Нужно добавлять их динамически через 3 секунды!--}}
+{{--<script src="/js/sliders.js" defer></script>--}}
+{{--<script src="/js/yandex.js" defer></script>--}}
+{{--<script src="/js/paralax.js" defer></script>--}}
+
+
 
 {{--<script src="/js/modernizr-custom.js"></script>--}}
 {{--<script src="/js/TweenMax.min.js"></script>--}}
@@ -393,9 +401,12 @@
 
 <!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160" defer></script>
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript" defer>
-    VK.Widgets.CommunityMessages("vk_community_messages", 127027390, {disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
-</script>
+
+
+
+{{--<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160" defer></script>--}}
+{{--<!-- VK Widget -->--}}
+{{--<div id="vk_community_messages"></div>--}}
+{{--<script type="text/javascript" defer>--}}
+{{--    VK.Widgets.CommunityMessages("vk_community_messages", 127027390, {disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});--}}
+{{--</script>--}}

@@ -1,46 +1,3 @@
-// // Инициализация YandexMaps
-// function init() {
-//     if (document.querySelector('#map')) {
-//         let coordinatesText = document.querySelector('#coordinates').textContent;
-//         let coordinates = coordinatesText.split(',').map(Number);
-//
-//         var myMap = new ymaps.Map('map', {
-//                 center: coordinates,
-//                 zoom: 9,
-//                 controls: []
-//             }, { suppressMapOpenBlock: true }),
-//
-//             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-//                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-//             ),
-//
-//             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-//                 hintContent: '',
-//                 balloonContent: ''
-//             }, {
-//                 iconLayout: 'default#image',
-//                 iconImageHref: '/images/logo.svg',
-//                 iconImageSize: [30, 42],
-//                 iconImageOffset: [-5, -38]
-//             });
-//
-//         myMap.geoObjects.add(myPlacemark);
-//     }
-// }
-//
-//
-// let readyYamps = false;
-// // Yandex Maps
-// document.addEventListener('DOMContentLoaded', function () {
-//     if (document.querySelector('div#map')) {
-//         if (readyYamps) {
-//             init();
-//         } else {
-//             ymaps.ready(init);
-//         }
-//     }
-// });
-
 let ymapsLoaded = false;
 
 // Функция для динамической загрузки Yandex Maps API
@@ -106,17 +63,12 @@ function init() {
     }
 }
 
-// Загрузка карты при готовности DOM
-document.addEventListener('DOMContentLoaded', function () {
-    if (document.querySelector('div#map')) {
-        if (ymapsLoaded) {
-            // Если API уже загружено, инициализируем карту
-            init();
-        } else {
-            // Если API не загружено, подгружаем его и инициализируем карту
-            loadYandexMapsAPI()
-                .then(() => ymaps.ready(init))
-                .catch((error) => console.error('Ошибка загрузки Yandex Maps API:', error));
-        }
+setTimeout(() => {
+    if (ymapsLoaded) {
+        init();
+    } else {
+        loadYandexMapsAPI()
+            .then(() => ymaps.ready(init))
+            .catch((error) => console.error('Ошибка загрузки Yandex Maps API:', error));
     }
-});
+}, 2000);

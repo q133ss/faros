@@ -376,13 +376,6 @@ const addedListeners = () => {
         });
     }
 
-    if($(select).is('#mainFormServicies')){
-        $('#mainFormServicies').select2({
-            minimumResultsForSearch: -1,
-            theme: "formBlock__top__select"
-        });
-    }
-
     if($('ul').is('#newsMenu')) {
         $('#newsMenu').on('click', '.dropdown-toggle', function () {
             $('.dropdown-menu').toggle();

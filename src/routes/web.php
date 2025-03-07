@@ -57,7 +57,6 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
 });
 
 # todo добавить значок ВК
-# todo СЖАТЬ ВСЕ ФАЙЛЫ
 
 Route::get('/slugs', function (){
     $c = \App\Models\Smi::pluck('slug')->all();

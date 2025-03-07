@@ -57,40 +57,53 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
     <meta property="og:image:height" content="{{$post->seo?->og_image_height}}" />
     <meta property="vk:image" content="{{$post->seo?->vk_image}}" />
 @endif
-
-<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d4e4e5a0a85d485b74c9e5539d376e8e"]); _ba.push(["host", "faros.media"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
-
-
 <link rel="preconnect" href="//api-maps.yandex.ru">
 <link rel="dns-prefetch" href="//api-maps.yandex.ru">
 <meta property="og:description" content="">
 
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Функция для динамической загрузки скрипта
+        function loadScript(src, callback) {
+            const script = document.createElement('script');
+            script.src = src;
+            script.async = true;
 
-    ym(47553889, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        trackHash:true
+            if (callback) {
+                script.onload = callback;
+            }
+
+            document.body.appendChild(script);
+        }
+
+        // Отложенная загрузка через 3 секунды
+        setTimeout(() => {
+            // Загрузка Yandex.Metrika
+            loadScript("https://mc.yandex.ru/metrika/tag.js", function () {
+                window.ym = window.ym || function () {
+                    (window.ym.a = window.ym.a || []).push(arguments);
+                };
+                window.ym.l = 1 * new Date();
+
+                ym(47553889, "init", {
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    trackHash: true
+                });
+            });
+
+            // Загрузка Google Analytics
+            loadScript("https://www.googletagmanager.com/gtag/js?id=UA-89493693-1", function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-89493693-1');
+            });
+            // zverushki
+            window.Zverushki=window.Zverushki||{};window.Zverushki.Microm={"Breadcrumb":true,"Business":true,"Product":"Disabled","Article":false,"version":"2.2.1","format":{"json-ld":"Disabled","microdata":true},"execute":{"time":0,"scheme":{"Breadcrumb":null,"Business":null,"Article":null}}};
+        }, 3000); // Задержка в 3 секунды
     });
 </script>
-{{--<noscript><div><img src="https://mc.yandex.ru/watch/47553889" style="position:absolute; left:-9999px;" alt="Faros media" /></div></noscript>--}}
-<!-- /Yandex.Metrika counter -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89493693-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-89493693-1');
-</script>
-
-<!-- Zverushki\Microm --><script data-skip-moving="true">window.Zverushki=window.Zverushki||{};window.Zverushki.Microm={"Breadcrumb":true,"Business":true,"Product":"Disabled","Article":false,"version":"2.2.1","format":{"json-ld":"Disabled","microdata":true},"execute":{"time":0,"scheme":{"Breadcrumb":null,"Business":null,"Article":null}}};</script><!-- end Zverushki\Microm -->
