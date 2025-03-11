@@ -1,6 +1,28 @@
 @extends('layouts.app')
 @section('title', 'Агентство Faros.Media - управление репутацией и восприятием с 2016 года')
 @section('content')
+    <style>
+        .slick-slide{
+            padding-bottom: 0!important;
+        }
+        .slick-slide div{
+            height: 100%;
+        }
+        .slick-arrow:before{
+            content: "";
+        }
+        .slick-arrow:hover{
+            transform: none!important;
+        }
+
+        .slick-arrow{
+            top: 95%!important;
+        }
+
+        .fullHeightMinWidthComents__cont__user{
+            height: auto!important;
+        }
+    </style>
     <!--Full height, big width START-->     <div class="fullHeightBigWidth _first">
         <img src="images/min/home/firstScrBg-min.svg" alt="Faros Media" loading="lazy" class="fullHeightBigWidth__bg-first">
 

@@ -206,6 +206,6 @@
         xhr.send();
     }
 </script>
-<script src="/js/script.js" defer></script>
+<script src="/js/script.js" data-detail="true" defer></script>
 </body>
 </html>

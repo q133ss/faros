@@ -58,6 +58,9 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'is.admin'])->group(
 
 # todo добавить значок ВК
 
+// TODO CUSTOM!!!!
+// Я разобрал на части и оптимизировал скрипт из 10к строк
+
 Route::get('/slugs', function (){
     $c = \App\Models\Smi::pluck('slug')->all();
     foreach ($c as $slug) {

@@ -322,26 +322,18 @@
         </div>
     </div>
 </div>
-
-{{--НУЖНО ЧТО СДЕЛАТЬ С firstScrBg!--}}
 <script src="/js/script.js" defer></script>
-{{--Нужно добавлять их динамически через 3 секунды!--}}
-{{--<script src="/js/sliders.js" defer></script>--}}
-{{--<script src="/js/yandex.js" defer></script>--}}
-{{--<script src="/js/paralax.js" defer></script>--}}
 
-
-
-{{--<script src="/js/modernizr-custom.js"></script>--}}
-{{--<script src="/js/TweenMax.min.js"></script>--}}
-{{--<script src="/js/ScrollMagic.js"></script>--}}
-{{--<script src="/js/debug.addIndicators.js"></script>--}}
-{{--<script src="/js/animation.gsap.min.js"></script>--}}
+{{--<script src="/js/OLD/modernizr-custom.js"></script>--}}
+{{--<script src="/js/OLD/TweenMax.min.js"></script>--}}
+{{--<script src="/js/OLD/ScrollMagic.js"></script>--}}
+{{--<script src="/js/OLD/debug.addIndicators.js"></script>--}}
+{{--<script src="/js/OLD/animation.gsap.min.js"></script>--}}
 {{--<script src="//api-maps.yandex.ru/2.1/?load=package.standard&lang=ru_RU" type="text/javascript"></script>--}}
-{{--<script src="/js/sticky.js"></script>--}}
-{{--<script src="/js/scripts.min.js"></script>--}}
-{{--<script src="/js/maskedinput.js"></script>--}}
-{{--<script src="/js/custom.js"></script>--}}
+{{--<script src="/js/OLD/sticky.js"></script>--}}
+{{--<script src="/js/OLD/scripts.min.js"></script>--}}
+{{--<script src="/js/OLD/maskedinput.js"></script>--}}
+{{--<script src="/js/OLD/custom.js"></script>--}}
 
 <!-- Zverushki\Microm --><ol data-module=zverushki_microm itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('index')}}"><meta itemprop="name" content="Главная"></a><meta itemprop="position" content="1"></li></ol><div data-module=zverushki_microm itemscope itemtype="http://schema.org/Store" style="display:none"><meta itemprop="name" content="репутационное агентство Фарос.Медиа"><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><meta itemprop="streetAddress" content="Москва ул Рябиновая"><meta itemprop="postalCode" content="119019"><meta itemprop="addressLocality" content="Москва"><meta itemprop="addressCountry" content="RU"></div><meta itemprop="image" content="/images/min/logourl.svg"><meta itemprop="priceRange" content="индивидуально"></div><!-- end Zverushki\Microm --></body>
 </html>
