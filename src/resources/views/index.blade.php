@@ -718,7 +718,7 @@
                     <a class="horizMenu__menu__item__link" data-id="0" onclick="indexCategory(0)">ВСЕ СТАТЬИ</a>
                 </li>
                 @foreach($categories as $category)
-                <li class="horizMenu__menu__item material-section" data-order="1" onclick="indexCategory({{$category->id}})">
+                <li class="horizMenu__menu__item material-section" data-order="1" onclick="indexCategory('{{$category->id}}')">
                     <a class="horizMenu__menu__item__link"
                        data-id="5">{{$category->name}}</a>
                 </li>

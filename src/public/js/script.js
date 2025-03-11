@@ -288,53 +288,114 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // const responseMenu = () => {
+    //     $('ul.horizMenu__menu li.dd_menu ul.dropdown-menu li.horizMenu__menu__item').appendTo('ul.horizMenu__menu');
+    //     let items = $('ul.horizMenu__menu').find('li.horizMenu__menu__item.active');
+    //     let dataOrder = 0;
+    //     let wW = $(window).width();
+    //
+    //     while($('li').is('[data-order=' + String(dataOrder) + ']')){
+    //         if(!$('[data-order=' + String(dataOrder) + ']').hasClass('active')){
+    //             items = items.add($('[data-order=' + String(dataOrder) + ']'));
+    //         }
+    //
+    //         dataOrder = dataOrder + 1;
+    //     }
+    //
+    //     let max_width = $('ul.horizMenu__menu').width() - $('ul.horizMenu__menu li.dd_menu').outerWidth();
+    //     let width = 0;
+    //     let hide_from = 0;
+    //
+    //     $(items).css({'width':'auto'});
+    //
+    //     items.each(function(index){
+    //         if (width + $(this).outerWidth() > max_width)
+    //         {
+    //             return false;
+    //         }
+    //         else
+    //         {
+    //             hide_from = index;
+    //             width += $(this).outerWidth();
+    //         }
+    //     });
+    //
+    //     $('ul.horizMenu__menu li.dd_menu').hide();
+    //
+    //     if(wW > 500 || !isTouch) $('.horizMenu_hide-scroll').removeClass('horizMenu_hide-scroll');
+    //     else $('.horizMenu').addClass('horizMenu_hide-scroll');
+    //
+    //     if (hide_from < items.length - 1 && (wW > 500 || !isTouch)) {
+    //         items.eq(hide_from).nextAll('li.horizMenu__menu__item').appendTo('ul.dropdown-menu');
+    //         // items.css({'width':(max_width / (hide_from + 1)) + 'px'});
+    //         $('ul.horizMenu__menu li.dd_menu').show();
+    //     }
+    //     else
+    //     {
+    //         $('ul.horizMenu__menu li.dd_menu').hide();
+    //     }
+    // }
+
     const responseMenu = () => {
-        $('ul.horizMenu__menu li.dd_menu ul.dropdown-menu li.horizMenu__menu__item').appendTo('ul.horizMenu__menu');
-        let items = $('ul.horizMenu__menu').find('li.horizMenu__menu__item.active');
+        // Перемещаем элементы из выпадающего меню в основное меню
+        const dropdownItems = document.querySelectorAll('ul.horizMenu__menu li.dd_menu ul.dropdown-menu li.horizMenu__menu__item');
+        const mainMenu = document.querySelector('ul.horizMenu__menu');
+        dropdownItems.forEach(item => mainMenu.appendChild(item));
+
+        // Находим активные элементы и элементы с атрибутом data-order
+        const items = Array.from(document.querySelectorAll('ul.horizMenu__menu li.horizMenu__menu__item.active'));
         let dataOrder = 0;
-        let wW = $(window).width();
+        const wW = window.innerWidth;
 
-        while($('li').is('[data-order=' + String(dataOrder) + ']')){
-            if(!$('[data-order=' + String(dataOrder) + ']').hasClass('active')){
-                items = items.add($('[data-order=' + String(dataOrder) + ']'));
+        // Добавляем элементы по порядку, пока не закончатся элементы с data-order
+        while (document.querySelector(`li[data-order="${dataOrder}"]`)) {
+            const item = document.querySelector(`li[data-order="${dataOrder}"]`);
+            if (!item.classList.contains('active')) {
+                items.push(item);
             }
-
-            dataOrder = dataOrder + 1;
+            dataOrder++;
         }
 
-        let max_width = $('ul.horizMenu__menu').width() - $('ul.horizMenu__menu li.dd_menu').outerWidth();
+        // Вычисляем максимальную доступную ширину для элементов
+        const ddMenuWidth = document.querySelector('ul.horizMenu__menu li.dd_menu')?.offsetWidth || 0;
+        const max_width = mainMenu.offsetWidth - ddMenuWidth;
         let width = 0;
         let hide_from = 0;
 
-        $(items).css({'width':'auto'});
+        // Сбрасываем ширину элементов
+        items.forEach(item => item.style.width = 'auto');
 
-        items.each(function(index){
-            if (width + $(this).outerWidth() > max_width)
-            {
-                return false;
+        // Вычисляем, сколько элементов помещается в доступную ширину
+        for (let i = 0; i < items.length; i++) {
+            const itemWidth = items[i].offsetWidth;
+            if (width + itemWidth > max_width) {
+                break;
+            } else {
+                hide_from = i;
+                width += itemWidth;
             }
-            else
-            {
-                hide_from = index;
-                width += $(this).outerWidth();
-            }
-        });
+        }
 
-        $('ul.horizMenu__menu li.dd_menu').hide();
+        // Скрываем выпадающее меню
+        const ddMenu = document.querySelector('ul.horizMenu__menu li.dd_menu');
+        ddMenu.style.display = 'none';
 
-        if(wW > 500 || !isTouch) $('.horizMenu_hide-scroll').removeClass('horizMenu_hide-scroll');
-        else $('.horizMenu').addClass('horizMenu_hide-scroll');
+        // Проверяем условия для touch-устройств и ширины экрана
+        if (wW > 500 || !isTouch) {
+            document.querySelector('.horizMenu').classList.remove('horizMenu_hide-scroll');
+        } else {
+            document.querySelector('.horizMenu').classList.add('horizMenu_hide-scroll');
+        }
 
+        // Если нужно скрыть элементы, перемещаем их в выпадающее меню
         if (hide_from < items.length - 1 && (wW > 500 || !isTouch)) {
-            items.eq(hide_from).nextAll('li.horizMenu__menu__item').appendTo('ul.dropdown-menu');
-            // items.css({'width':(max_width / (hide_from + 1)) + 'px'});
-            $('ul.horizMenu__menu li.dd_menu').show();
+            const dropdownMenu = document.querySelector('ul.dropdown-menu');
+            items.slice(hide_from + 1).forEach(item => dropdownMenu.appendChild(item));
+            ddMenu.style.display = 'block';
+        } else {
+            ddMenu.style.display = 'none';
         }
-        else
-        {
-            $('ul.horizMenu__menu li.dd_menu').hide();
-        }
-    }
+    };
 
     // Загружаем скрипты через 3 секунды
     setTimeout(() => {
@@ -351,6 +412,10 @@ document.addEventListener('DOMContentLoaded', function () {
         loadScript('/js/paralax.js')
             .then(() => console.log('paralax.js загружен'))
             .catch((error) => console.error('Ошибка загрузки paralax.js:', error));
+
+        loadScript('/js/custom.js')
+            .then(() => console.log('custom.js загружен'))
+            .catch((error) => console.error('Ошибка загрузки custom.js:', error));
     }, 3000); // Задержка в 3 секунды
 
     // Проверка наличия элемента #newsMenu
@@ -458,22 +523,3 @@ const addedListeners = () => {
         });
     }
 };
-
-// Правильное отображение на детальных страницах
-function detailPageView(){
-    const isMobileNow = window.innerWidth <= 768 || window.innerWidth <= window.innerHeight;
-    if (!isMobileNow) {
-        // Получаем ссылки на необходимые элементы
-        const htmlElement = document.documentElement;
-        const hiddenElement = document.querySelector('.hidden');
-        const bodyElement = document.body;
-        htmlElement.style.overflow = 'visible';
-        alert(htmlElement.style.overflow)
-        if (hiddenElement) {
-            hiddenElement.style.overflow = 'auto';
-        }
-        if (bodyElement.classList.contains('horizontal')) {
-            bodyElement.classList.remove('horizontal');
-        }
-    }
-}
