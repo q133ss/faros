@@ -54,7 +54,7 @@
 
                 <div class="form-group">
                     <label for="text">Текст</label>
-                    <textarea class="form-control d-none" id="text" name="text" rows="3">{{ $post->text }}</textarea>
+                    <textarea class="form-control text-edit" id="text" name="text" rows="3">{{ $post->text }}</textarea>
                     <div id="code-editor"></div>
                 </div>
 
@@ -103,6 +103,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="text_color">Порядковый номер</label>
+                    <input type="number" class="form-control" name="order" value="{{ $post->order }}">
                 </div>
 
                 <div class="form-group">

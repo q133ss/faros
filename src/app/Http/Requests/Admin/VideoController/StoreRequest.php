@@ -25,7 +25,8 @@ class StoreRequest extends FormRequest
             'slug' => 'nullable|string|max:255',
             'title' => 'required|string|max:255',
             'iframe' => 'required|string',
-            'img' => 'nullable|image'
+            'img' => 'nullable|image',
+            'text' => 'nullable|string'
         ];
     }
 
@@ -40,7 +41,8 @@ class StoreRequest extends FormRequest
             'iframe.required' => 'Укажите iframe',
             'iframe.string' => 'iframe должен быть строкой',
             'iframe.max' => 'iframe не должен превышать 255 символов',
-            'img.image' => 'Неверный тип изображения'
+            'img.image' => 'Неверный тип изображения',
+            'text.string' => 'Текст должен быть строкой'
         ];
     }
 }

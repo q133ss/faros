@@ -53,7 +53,7 @@ class VideoController extends Controller
         if($request->slug != null){
             $data['slug'] = $request->slug;
         }else{
-            $data['slug'] = Str::slug($request->post_name, '-');
+            $data['slug'] = Str::slug($request->title, '-');
         }
 
         $video = Video::create($data);
@@ -119,7 +119,7 @@ class VideoController extends Controller
         if($request->slug != null){
             $data['slug'] = $request->slug;
         }else{
-            $data['slug'] = Str::slug($request->post_name, '-');
+            $data['slug'] = Str::slug($request->title, '-');
         }
 
         $update = $video->update($data);

@@ -34,7 +34,6 @@
                     <input type="text" class="form-control" id="iframe" name="iframe" value="{{ $video->iframe }}">
                 </div>
 
-
                 <!-- Изображения -->
                 <div class="border mt-2 p-2">
                     <div class="form-group mt-2">
@@ -46,6 +45,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Текст</label>
+                    <textarea class="form-control" id="text" name="text">{{ $video->text }}</textarea>
                 </div>
 
                 <!-- Настройки SEO -->

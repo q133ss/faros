@@ -96,6 +96,11 @@
 
                 {!! $video->iframe !!}
 
+                <div class="author1">
+                    {!! $video->text !!}
+                </div>
+
+
                 <div class="blogBG blogBG_nomt"></div>
 
                 <div class="simpleSliderWrap">

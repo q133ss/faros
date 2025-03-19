@@ -18,7 +18,7 @@ class CaseController extends Controller
      */
     public function index()
     {
-        $cases = ClientCase::orderBy('created_at', 'desc')->get();
+        $cases = ClientCase::orderBy('order', 'asc')->get();
         return view('admin.case.index', compact('cases'));
     }
 
@@ -124,7 +124,8 @@ class CaseController extends Controller
             'type' => $data['type'],
             'author_id' => $data['author_id'],
             'bg_color' => $data['bg_color'],
-            'text_color' => $data['text_color']
+            'text_color' => $data['text_color'],
+            'order' => $data['order']
         ];
 
         if($request->file('logo') != null){

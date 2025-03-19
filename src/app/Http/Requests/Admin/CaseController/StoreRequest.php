@@ -34,6 +34,7 @@ class StoreRequest extends FormRequest
             'img' => 'nullable|image',
             'text' => 'required|string',
             'tags' => 'nullable|array',
+            'order' => 'nullable|integer',
 
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
@@ -94,7 +95,8 @@ class StoreRequest extends FormRequest
             'og_image_type.max' => 'OG Image Type не должен превышать 255 символов.',
             'og_image_width.max' => 'OG Image Width не должен превышать 255 символов.',
             'og_image_height.max' => 'OG Image Height не должен превышать 255 символов.',
-            'vk_image.max' => 'VK Image не должен превышать 255 символов.'
+            'vk_image.max' => 'VK Image не должен превышать 255 символов.',
+            'order.integer' => 'Порядковый номер должен быть числом'
         ];
     }
 }

@@ -51,7 +51,7 @@
 
                 <div class="form-group">
                     <label for="text">Текст</label>
-                    <textarea class="form-control d-none" id="text" name="text" rows="3">{{ old('text') }}</textarea>
+                    <textarea class="form-control text-edit" id="text" name="text" rows="3">{{ old('text') }}</textarea>
                     <div id="code-editor"></div>
                 </div>
 
@@ -131,6 +131,7 @@
             margin-bottom: 10px;
         }
     </style>
+    <div id="editorjs"></div>
 @endsection
 
 @section('scripts')
@@ -143,7 +144,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            new FroalaEditor('#text', {
+            new FroalaEditor('.text-edit', {
                 language: 'ru', // Язык (русский)
                 heightMin: 300, // Минимальная высота редактора
                 //toolbarButtons: ['bold', 'italic', 'formatOL', 'formatUL', 'h2'], // Ограничиваем инструменты

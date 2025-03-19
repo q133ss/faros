@@ -7,6 +7,7 @@
             <thead>
             <tr>
                 <th>ID</th>
+                <th>Порядковый номер</th>
                 <th>Фото в списке</th>
                 <th>Название в списке</th>
                 <th>Действия</th>
@@ -16,6 +17,7 @@
             @foreach($cases as $item)
                 <tr>
                     <td>{{$item->id}}</td>
+                    <td>{{$item->order}}</td>
                     <td><img src="{{$item->list_img}}" title="Faros Media" width="100px" alt="Faros media"></td>
                     <td>{{$item->list_name}}</td>
                     <td>

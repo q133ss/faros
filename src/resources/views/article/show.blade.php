@@ -348,5 +348,17 @@
     </div>
 </div>
 <script src="/js/script.js" data-detail="true" defer></script>
+<style>
+    .hidden{
+        height: auto!important;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Находим все элементы с классом 'hidden'
+        const hiddenElement = document.querySelector('.hidden');
+        hiddenElement.style.height = 'auto';
+    });
+</script>
 </body>
 </html>
