@@ -6,11 +6,12 @@
         </a>
 
         <nav class="header__menu hide-scroll">
-            <a href="{{route('index')}}#form" class="header__menu__item">
-                <div class="header__menu__item__icoWrap">
-                    <img loading="lazy" src="/images/min/icons/start.svg" alt="Faros media" class="header__menu__item__ico">
-                </div>
-                <span class="header__menu__item__name">Начать проект</span>
+                <a href="{{route('index')}}#form" class="header__menu__item">
+                    <div class="header__menu__item__icoWrap">
+                        <img loading="lazy" src="/images/min/icons/start.svg" alt="Faros media" class="header__menu__item__ico">
+                    </div>
+                    <span class="header__menu__item__name">Начать проект</span>
+                </a>
                 <a href="{{route('service.index')}}" class="header__menu__item">
                     <div class="header__menu__item__icoWrap">
                         <img loading="lazy" src="/images/min/icons/services.svg" alt="Faros media" class="header__menu__item__ico">

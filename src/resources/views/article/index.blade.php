@@ -152,7 +152,7 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="/" width="100%" class="pdf-popap__embed"  />
+            <embed src="/" style="width: 100%;" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>

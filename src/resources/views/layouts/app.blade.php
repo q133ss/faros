@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,41 +9,42 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     @include('inc.seo')
     @yield('meta')
+
+    <style>
+        @keyframes light {
+            0% {
+                transform: rotateZ(4deg) translate(-0.5%, 0);
+            }
+            100% {
+                transform: rotateZ(-4deg) translate(0.5%, 0);
+            }
+        }
+
+        ._colorBlack a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        ._colorBlack a:hover {
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+
+        form.res-message {
+            font-size: 48px;
+            text-align: center;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 <body class="custom">
-<style>
-    @keyframes light {
-        0% {
-            transform: rotateZ(4deg) translate(-0.5%, 0);
-        }
-        100% {
-            transform: rotateZ(-4deg) translate(0.5%, 0);
-        }
-    }
-
-    ._colorBlack a {
-        color: #1a1a1a;
-        text-decoration: none;
-        transition: 0.5s;
-    }
-
-    ._colorBlack a:hover {
-        opacity: 0.5;
-        transition: 0.5s;
-    }
-
-    form.res-message {
-        font-size: 48px;
-        text-align: center;
-    }
-
-    #map {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-    }
-</style>
 {{--<div class="preloader" id="preloader">--}}
 {{--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729 655" class="preloader__svg">--}}
 {{--        <style type="text/css">--}}
@@ -317,7 +318,7 @@
     <div class="pdf-popap__close"></div>
     <div class="pdf-popap__dark">
         <div class="pdf-popap__block" id="pdfPopup">
-            <embed src="{{route('index')}}" width="100%" class="pdf-popap__embed"  />
+            <embed src="{{route('index')}}" style="width: 100%;" class="pdf-popap__embed"  />
         </div>
     </div>
 </div>
