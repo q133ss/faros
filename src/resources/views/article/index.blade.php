@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @include('inc.style')
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     @include('inc.header')
 </head>
 <body class="_bgLightGray">

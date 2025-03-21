@@ -156,7 +156,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            new FroalaEditor('.text-edit', {
+            new FroalaEditor('#text', {
                 language: 'ru', // Язык (русский)
                 heightMin: 300, // Минимальная высота редактора
                 //toolbarButtons: ['bold', 'italic', 'formatOL', 'formatUL', 'h2'], // Ограничиваем инструменты

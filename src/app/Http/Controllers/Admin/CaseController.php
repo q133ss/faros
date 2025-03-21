@@ -115,6 +115,7 @@ class CaseController extends Controller
      */
     public function update(StoreRequest $request, string $id)
     {
+        dd($request);
         $data = $request->validated();
 
         $caseData = [
