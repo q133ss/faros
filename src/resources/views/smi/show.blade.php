@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a title="{{$post->post_title}}" itemprop="item">
+                        <a title="{{$post->post_title}}" href="#" itemprop="item">
                             <span itemprop="name">{{$post->post_title}}</span>
                             <meta itemprop="position" content="2">
                         </a>
@@ -94,8 +94,8 @@
                     </div>
                 </div>
 
-                <picture class="authorWrap__left__banner">
-                </picture>
+{{--                <picture class="authorWrap__left__banner">--}}
+{{--                </picture>--}}
 
                 <div class="author1 blog">
                     <div class="author1__partName author1__partName_center">
@@ -156,7 +156,7 @@
                                                   fill="white"/>
                                         </g>
                                         <defs>
-                                            <clipPath id="clip0">
+                                            <clipPath id="clip_0">
                                                 <rect width="18" height="18" fill="white"/>
                                             </clipPath>
                                         </defs>
@@ -175,7 +175,7 @@
                                                   fill="white"/>
                                         </g>
                                         <defs>
-                                            <clipPath id="clip1">
+                                            <clipPath id="clip_1">
                                                 <rect width="18" height="18" fill="white"/>
                                             </clipPath>
                                         </defs>

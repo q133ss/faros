@@ -8,7 +8,9 @@ $seo = \App\Models\Seo::where('seable_id', $currentUrl)->first();
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="{{$seo->meta_keywords}}">
     <meta name="description" content="{{$seo->meta_description}}">
-    <link rel="canonical" href="{{$seo->canonical}}">
+    @if($seo->canonical != null)
+        <link rel="canonical" href="{{$seo->canonical}}">
+    @endif
     <meta property="og:type" content="{{$seo->og_type}}">
     <meta property="og:site_name" content="{{$seo->og_site_name}}">
 

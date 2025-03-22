@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="{{$author->name}}" itemprop="item">
+                    <a title="{{$author->name}}" href="#" itemprop="item">
                         <span itemprop="name">{{$author->name}}</span>
                         <meta itemprop="position" content="2">
 
@@ -51,7 +51,7 @@
 
                             <div class="subscribeWrap__soc completed">
                                 <form class="subscriptions subscribeInp form">
-                                    <input name="author_id" type="hidden" value="28" required>
+                                    <input name="author_id" type="hidden" value="{{$author->id}}">
                                     <input name="email" class="subscribeInp__inp" type="email" placeholder="email"
                                            required/>
                                     <button type="submit" class="button">Ok</button>
@@ -110,7 +110,7 @@
 
                         <div class="subscribeWrap__soc">
                             <form class="subscriptions subscribeInp form">
-                                <input type="hidden" name="author_id" value="28" required>
+                                <input type="hidden" name="author_id" value="28">
                                 <input name="email" class="subscribeInp__inp" type="email" placeholder="email"
                                        required/>
                                 <button type="submit" class="button">Ok</button>
@@ -206,11 +206,11 @@
 
                 @foreach($author->articles->take(8) as $post)
                 <div class="newsMiniBlock _bgWhite author__newsMiniBlock material-item material-tag-6">
-                    <picture class="newsMiniBlock__pic">
-                        <a href="{{route('articles.show', $post->slug)}}">
+                    <a href="{{route('articles.show', $post->slug)}}">
+                        <picture class="newsMiniBlock__pic">
                             <img src="{{$post->list_img}}" title="Faros Media" alt="Faros Media">
-                        </a>
-                    </picture>
+                        </picture>
+                    </a>
 
                     <div class="newsMiniBlock__cont">
                         @if($post->category)

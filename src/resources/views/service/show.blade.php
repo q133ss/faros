@@ -7,7 +7,7 @@
             <a href="#" class="ormBanner__left__tag">{{$service->name}}</a>
             <h1 class="ormBanner__left__tit">{{$service->subtitle}}</h1>
             <p class="ormBanner__left__descr"></p>
-            <a href="#orderservice" type="submit" class="button ormButton">ЗАКАЗАТЬ УСЛУГУ</a>
+            <a href="#orderservice" class="button ormButton">ЗАКАЗАТЬ УСЛУГУ</a>
 
             <picture class="ormBanner__left__pic">
                 <img loading="lazy" src="{{$service->img}}" title="Faros Media" alt="Faros Media">
@@ -49,7 +49,7 @@
                     @endforeach
                 </div>
 
-                <a href="{{route('index')}}#audit" type="submit" class="button">ОСТАВИТЬ ЗАЯВКУ</a>
+                <a href="{{route('index')}}#audit" class="button">ОСТАВИТЬ ЗАЯВКУ</a>
             </div>
         </div>
     </div>

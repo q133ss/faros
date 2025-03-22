@@ -12,8 +12,6 @@
             Ваших
             проектов.</p>
         <picture class="fullHeightBigDarkBlock__pic fullHeightBigDarkBlock__pic_team">
-            <source type="image/webp" srcset="/images/min/team/teamBG.webp" media="(min-width: 769px)">
-            <source type="image/webp" srcset="/images/min/team/teamBG_small.webp">
             <img loading="lazy" srcset="../images/min/team/teamBG_small.png 320w, ../images/min/team/teamBG.png 768w" alt="Faros Media" src="../images/min/team/teamBG.png">
         </picture>
     </div>

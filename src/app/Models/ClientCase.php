@@ -49,9 +49,9 @@ class ClientCase extends Model
                 }
             )
             ->when($request->query('search'),
-            function (Builder $query, $search) {
-                return $query->whereAny(['list_name', 'post_name', 'slug'], 'LIKE', "%{$search}%");
-            })
+                function (Builder $query, $search) {
+                    return $query->whereAny(['list_name', 'post_name', 'slug'], 'LIKE', "%{$search}%");
+                })
             ->when($request->query('sort'), function (Builder $query, $sort) {
                 switch ($sort) {
                     case 'new':
@@ -80,5 +80,45 @@ class ClientCase extends Model
     public function seo()
     {
         return $this->morphOne(Seo::class, 'seable');
+    }
+
+    /**
+     * Аксессор для поля logo
+     */
+    public function getLogoAttribute($value)
+    {
+        return $this->replaceSpaces($value);
+    }
+
+    /**
+     * Аксессор для поля list_img
+     */
+    public function getListImgAttribute($value)
+    {
+        return $this->replaceSpaces($value);
+    }
+
+    /**
+     * Аксессор для поля img
+     */
+    public function getImgAttribute($value)
+    {
+        return $this->replaceSpaces($value);
+    }
+
+    /**
+     * Аксессор для поля author_img
+     */
+    public function getAuthorImgAttribute($value)
+    {
+        return $this->replaceSpaces($value);
+    }
+
+    /**
+     * Вспомогательный метод для замены пробелов на %20
+     */
+    private function replaceSpaces($value)
+    {
+        return $value ? str_replace(' ', '%20', $value) : null;
     }
 }

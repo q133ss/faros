@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('meta_title')->nullable(); // Название страницы
             $table->text('meta_description')->nullable();
             $table->string('meta_keywords')->nullable();
-            $table->string('canonical')->default('https://faros.media/');
+            $table->string('canonical')->nullable();
 
             $table->string('og_title')->nullable();
             $table->text('og_description')->nullable();
